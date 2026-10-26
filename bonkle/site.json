@@ -1,0 +1,26 @@
+{
+ "name": "Bonkle",
+ "ticker": "BONKLE",
+ "logo": "/workspace/meme-research/sample/logo.png",
+ "ca": "BoNKLExampLE1111111111111111111111111111pump",
+ "chain": "solana",
+ "x_url": "https://x.com/bonkle_example",
+ "tg_url": "https://t.me/bonkle_example",
+ "tagline": "The happiest little blob on Solana.",
+ "supply": "1,000,000,000",
+ "banner": "/workspace/meme-research/sample/banner.jpg",
+ "socials": [
+  {
+   "type": "website",
+   "url": "bonkle.example"
+  },
+  {
+   "type": "discord",
+   "url": "https://discord.gg/example"
+  },
+  {
+   "type": "tiktok",
+   "url": "https://tiktok.com/@bonkle_example"
+  }
+ ]
+}
