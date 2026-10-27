@@ -2,22 +2,22 @@
   "format": "meme-site-studio/site@1",
   "name": "Gangstar",
   "ticker": "Gangstar",
-  "template": "zen-garden",
+  "template": "acid-pop",
   "domain": "gangstart.lol",
   "ca": "TBA",
   "chain": "bsc",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
-      "value": "76.76.21.21",
+      "value": "216.150.1.1",
       "host": "gangstart.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
-      "value": "cname.vercel-dns.com",
+      "value": "37895c73b3534d5d.vercel-dns-016.com",
       "host": "www.gangstart.lol"
     }
   ],
@@ -36,8 +36,8 @@
   "dex_name": "PancakeSwap V3",
   "native": "",
   "wallet": "",
-  "vercel_a": "",
-  "vercel_cname": "",
+  "vercel_a": "216.150.1.1",
+  "vercel_cname": "37895c73b3534d5d.vercel-dns-016.com",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [
@@ -67,5 +67,5 @@
   },
   "site_slug": "gangstar",
   "project_id": "pmvqid2o3u3thp",
-  "exported_at": "2026-10-27T09:53:46.273Z"
+  "exported_at": "2026-10-27T09:58:10.444Z"
 }
