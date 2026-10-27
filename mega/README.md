@@ -22,10 +22,10 @@ Status: Not connected
 
 | Type | Name | Value |
 |------|------|-------|
-| A | @ | 76.76.21.21 |
-| CNAME | www | cname.vercel-dns.com |
+| A | @ | 216.150.1.1 |
+| CNAME | www | 79ca2af6cfb20d43.vercel-dns-016.com |
 
    If Vercel shows a different (project-specific) IP or CNAME target in Settings → Domains, use Vercel’s values. Remove other A/AAAA records on the same name.
 4. Wait for DNS to update (minutes, up to 48 h). Vercel issues HTTPS automatically.
 
-Check: `dig +short A megaonsol.lol` should return 76.76.21.21.
+Check: `dig +short A megaonsol.lol` should return 216.150.1.1.
