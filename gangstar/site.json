@@ -1,0 +1,71 @@
+{
+  "format": "meme-site-studio/site@1",
+  "name": "Gangstar",
+  "ticker": "Gangstar",
+  "template": "zen-garden",
+  "domain": "gangstart.lol",
+  "ca": "TBA",
+  "chain": "bsc",
+  "domain_status": "not_connected",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "76.76.21.21",
+      "host": "gangstart.lol"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "cname.vercel-dns.com",
+      "host": "www.gangstart.lol"
+    }
+  ],
+  "tagline": "https://x.com/search?q=$Gangstar",
+  "about": "",
+  "x_url": "gangstarbnb",
+  "tg_url": "",
+  "socials": [],
+  "buy_url": "",
+  "dexs_url": "",
+  "supply": "",
+  "tax": "",
+  "lp": "",
+  "dex": "pancakeswap-v3",
+  "dex_auto": false,
+  "dex_name": "PancakeSwap V3",
+  "native": "",
+  "wallet": "",
+  "vercel_a": "",
+  "vercel_cname": "",
+  "logo": "assets/logo.png",
+  "banner": "assets/banner.webp",
+  "images": [
+    "assets/meme1.jpg",
+    "assets/meme2.jpg",
+    "assets/meme3.jpg",
+    "assets/meme4.jpg",
+    "assets/meme5.jpg",
+    "assets/meme6.jpg"
+  ],
+  "characters": [
+    "assets/char1.jpg",
+    "assets/char2.jpg",
+    "assets/char3.jpg",
+    "assets/char4.jpg",
+    "assets/char5.jpg",
+    "assets/char6.jpg"
+  ],
+  "resolved": {
+    "dex_name": "PancakeSwap V3",
+    "dex_logo": "assets/dex.png",
+    "buy_url_source": "dex",
+    "buy_url": "https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=TBA",
+    "chart_page": "https://dexscreener.com/bsc/TBA",
+    "chart_embed": "https://dexscreener.com/bsc/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "BNB Chain"
+  },
+  "site_slug": "gangstar",
+  "project_id": "pmvqid2o3u3thp",
+  "exported_at": "2026-10-27T09:53:46.273Z"
+}
