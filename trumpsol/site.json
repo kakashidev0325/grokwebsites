@@ -2,22 +2,22 @@
   "format": "meme-site-studio/site@1",
   "name": "Super President",
   "ticker": "Trump",
-  "template": "bnb-1",
+  "template": "doodle-notebook",
   "domain": "supertrumpsol.lol",
   "ca": "TBA",
   "chain": "solana",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
-      "value": "76.76.21.21",
+      "value": "216.150.1.1",
       "host": "supertrumpsol.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
-      "value": "cname.vercel-dns.com",
+      "value": "83c75657f9e68803.vercel-dns-016.com",
       "host": "www.supertrumpsol.lol"
     }
   ],
@@ -36,8 +36,8 @@
   "dex_name": "Pump.fun",
   "native": "",
   "wallet": "",
-  "vercel_a": "",
-  "vercel_cname": "",
+  "vercel_a": "216.150.1.1",
+  "vercel_cname": "83c75657f9e68803.vercel-dns-016.com",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [],
@@ -53,5 +53,5 @@
   },
   "site_slug": "trumpsol",
   "project_id": "pmvqwgj1vky5uk",
-  "exported_at": "2026-10-27T16:29:22.437Z"
+  "exported_at": "2026-10-27T16:38:41.233Z"
 }
