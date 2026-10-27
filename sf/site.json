@@ -2,14 +2,14 @@
   "format": "meme-site-studio/site@1",
   "name": "Super Frongus",
   "ticker": "SF",
-  "template": "ut-cow",
+  "template": "ut-lmeow",
   "domain": "superfrongus.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "preset",
-  "theme_preset": "base-blue",
-  "theme_primary": "#0052ff",
-  "theme_secondary": "#3b7cff",
+  "theme_mode": "original",
+  "theme_preset": "",
+  "theme_primary": "#f0b90b",
+  "theme_secondary": "#f8d12f",
   "domain_status": "live",
   "dns_records": [
     {
@@ -58,5 +58,5 @@
   },
   "site_slug": "sf",
   "project_id": "pmvr408vur7aph",
-  "exported_at": "2026-10-27T20:38:29.598Z"
+  "exported_at": "2026-10-27T20:42:06.800Z"
 }

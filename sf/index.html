@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" data-theme-mode="preset" data-theme-preset="base-blue" style="">
+<html lang="en" data-theme-mode="original" data-theme-preset="" style="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- archetype: ut-cow | placeholders: Super Frongus SF assets/logo.png TBA solana   https://pump.fun/coin/TBA https://dexscreener.com/solana/TBA?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Super Frongus on Solana. RUN THE BIGGEST INU MEME SUPER INU BUT FOR FRONGUS 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana/TBA Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
+<!-- archetype: ut-lmeow | placeholders: Super Frongus SF assets/logo.png TBA solana   https://pump.fun/coin/TBA https://dexscreener.com/solana/TBA?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Super Frongus on Solana. RUN THE BIGGEST INU MEME SUPER INU BUT FOR FRONGUS 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana/TBA Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
 <title>Super Frongus ($SF) | The most memeable Super Frongus on Solana.</title>
 <meta name="description" content="RUN THE BIGGEST INU MEME SUPER INU BUT FOR FRONGUS">
 <meta property="og:title" content="Super Frongus ($SF)"><meta property="og:description" content="The most memeable Super Frongus on Solana."><meta property="og:image" content="assets/logo.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Nunito:wght@500;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;overflow-x:hidden}html{overflow-x:hidden}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
 .ico{width:1.15em!important;height:1.15em!important;max-width:1.15em!important;max-height:1.15em!important;fill:currentColor;flex:none;vertical-align:-.18em}
@@ -391,15 +391,15 @@ html.reduced-motion [data-intro] .intro-fade{
 }
 
 
-/* ===== ut-cow ===== */
+/* ===== ut-lmeow ===== */
 
 :root{
- --a:#e6b325;--a2:#8d6a12;--on:#1a1404;--acc:var(--a);--part:var(--a);
- --bg:#fffdf8;--bg-2:#fff4d6;--surface:#ffffff;--card:var(--surface);
- --ink:#1a1208;--muted:#6b5c45;--line:rgba(26,18,8,.12);
- --glow:rgba(230,179,37,.4);--grad:linear-gradient(135deg,var(--a),var(--a2));
- --radius:24px;--shadow:0 24px 40px rgba(80,60,10,.1);--border:1px solid rgba(141,106,18,.25);
- --display:Fraunces,Georgia,serif;--body:Figtree,system-ui,sans-serif;
+ --a:#ff7a59;--a2:#ffd166;--on:#2a120c;--acc:var(--a);--part:var(--a);
+ --bg:#fff6ef;--bg-2:#ffe7da;--surface:#ffffff;--card:var(--surface);
+ --ink:#241812;--muted:#6d584e;--line:rgba(36,24,18,.12);
+ --glow:rgba(255,122,89,.35);--grad:linear-gradient(135deg,var(--a),var(--a2));
+ --radius:28px;--shadow:0 24px 50px rgba(80,40,20,.12);--border:1px solid rgba(36,24,18,.08);
+ --display:Fraunces,Georgia,serif;--body:Nunito,system-ui,sans-serif;
 }
 *{box-sizing:border-box}
 html,body{overflow-x:clip}
@@ -553,17 +553,14 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   .hero h1{font-size:clamp(2.6rem,12vw,4.2rem)!important}
 }
 
-.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;padding:90px 6vw 70px}
-.hero h1{font-size:clamp(3rem,6vw,5.6rem)}
-.hero .stage{position:relative;z-index:3;height:min(560px,70vh)}
-.hero .spot{position:absolute;left:10%;right:10%;top:0;bottom:18%;background:radial-gradient(circle at 50% 30%, color-mix(in srgb,var(--a) 55%,transparent), transparent 68%)}
-.hero .floor{position:absolute;left:8%;right:8%;bottom:8%;height:70px;border-radius:50%;background:color-mix(in srgb,var(--ink) 18%,transparent)}
-.hero .star{position:absolute;left:18%;right:18%;bottom:14%;width:auto}
-.hero .coin{position:absolute;width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 35%, var(--a2), var(--a));border:3px solid var(--ink)}
-.hero .coin.a{left:6%;bottom:20%}.hero .coin.b{right:8%;bottom:28%}
-@media(max-width:860px){.hero{grid-template-columns:1fr}}
+.hero{display:block;text-align:center}
+.hero h1{font-size:clamp(3.6rem,9vw,7.2rem);text-transform:uppercase}
+.hero .hero-copy{position:absolute;left:0;right:0;top:12vh;z-index:5}
+.hero .bust{position:absolute;z-index:3;left:50%;bottom:-2vh;width:min(560px,68vw);transform:translateX(-50%)}
+.hero .floater.a{left:4%;bottom:18%;top:auto;width:min(88px,12vw)}.hero .floater.b{right:6%;top:14%;width:min(72px,10vw)}
+.hero .hero-actions{justify-content:center}
 
-h1,h2{font-weight:560}
+.top{background:color-mix(in srgb,var(--bg) 80%,white)}h2{font-weight:560}
 
 /* banner */
 .mbanner{max-width:min(1100px,100% - 40px);margin:28px auto;padding:0}.mbanner img{width:100%;height:auto;max-height:220px;object-fit:cover;border-radius:16px;border:1px solid var(--line,rgba(255,255,255,.1));display:block}
@@ -571,7 +568,7 @@ h1,h2{font-weight:560}
 <link rel="canonical" href="https://superfrongus.lol/">
 <meta property="og:url" content="https://superfrongus.lol/">
 </head>
-<body class="a-ut-cow" data-intro>
+<body class="a-ut-lmeow" data-intro>
 
 
 <header class="top">
@@ -586,33 +583,29 @@ h1,h2{font-weight:560}
   </div>
 </header>
 
-<section class="hero"><div class="props" data-parallax="-0.05"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><ellipse class="a" cx="0" cy="0" rx="28" ry="16" opacity=".2"/><ellipse class="a" cx="173" cy="97" rx="42" ry="24" opacity=".2"/><ellipse class="a" cx="346" cy="194" rx="56" ry="32" opacity=".2"/><ellipse class="a" cx="519" cy="291" rx="70" ry="16" opacity=".2"/><ellipse class="a" cx="692" cy="388" rx="28" ry="24" opacity=".2"/><ellipse class="a" cx="865" cy="485" rx="42" ry="32" opacity=".2"/><ellipse class="a" cx="1038" cy="582" rx="56" ry="16" opacity=".2"/><ellipse class="a" cx="1211" cy="679" rx="70" ry="24" opacity=".2"/><ellipse class="a" cx="1384" cy="776" rx="28" ry="32" opacity=".2"/><ellipse class="a" cx="117" cy="873" rx="42" ry="16" opacity=".2"/><ellipse class="a" cx="290" cy="70" rx="56" ry="24" opacity=".2"/><ellipse class="a" cx="463" cy="167" rx="70" ry="32" opacity=".2"/><ellipse class="a" cx="636" cy="264" rx="28" ry="16" opacity=".2"/><ellipse class="a" cx="809" cy="361" rx="42" ry="24" opacity=".2"/><ellipse class="a" cx="982" cy="458" rx="56" ry="32" opacity=".2"/><ellipse class="a" cx="1155" cy="555" rx="70" ry="16" opacity=".2"/><circle class="a" cx="1180" cy="190" r="86" fill="none" stroke="currentColor" stroke-width="16"/></svg></div><div class="grain" aria-hidden="true"></div>
-<div class="hero-copy"><p class="kicker">Pump.fun</p><h1>Super Frongus</h1><p class="lede">The most memeable Super Frongus on Solana.</p>
+<section class="hero"><div class="props" data-parallax="-0.06"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><ellipse class="a2" cx="260" cy="180" rx="240" ry="140" opacity=".55"/><ellipse class="a" cx="1160" cy="200" rx="280" ry="160" opacity=".4"/><ellipse class="surf" cx="720" cy="820" rx="560" ry="200"/><circle class="a" cx="180" cy="680" r="70" opacity=".35"/></svg></div><div class="grain" aria-hidden="true"></div>
+<img class="gchar floater a m-float" data-tilt src="assets/logo.png" alt="" width="800" height="800"><img class="gchar floater tiny b m-bob" data-tilt src="assets/logo.png" alt="" width="800" height="800">
+<div class="hero-copy"><p class="kicker">Solana</p><h1 data-letters>Super Frongus</h1><p class="lede">The most memeable Super Frongus on Solana.</p>
 <div class="hero-actions">
   <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="https://pump.fun/coin/TBA"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $SF <span class="dexon">on Pump.fun</span></a>
   <a class="btn btn-ghost" href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
   <button class="btn btn-ghost" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> <code>TBA</code></button>
 </div>
 </div>
-<div class="stage"><div class="spot"></div><div class="floor"></div>
-<div class="coin a m-bob"></div><div class="coin b m-float"></div>
-<div class="star m-bob" data-mouse="10"><img class="gchar hero-main" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div></div>
-<div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>$SF ✦ Super Frongus ✦ The most memeable Super Frongus on Solana. ✦ Solana ✦ Pump.fun ✦ </span></div></div></section>
-<div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>$SF ✦ Super Frongus ✦ The most memeable Super Frongus on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Super Frongus community. Buy $SF. Make memes. Never sell. ✦ BUY $SF ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>$SF ✦ Super Frongus ✦ The most memeable Super Frongus on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Super Frongus community. Buy $SF. Make memes. Never sell. ✦ BUY $SF ✦ </span></div></div>
+<div class="bust m-bob" data-mouse="12"><img class="gchar hero-main" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div><div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>$SF ✦ Super Frongus ✦ The most memeable Super Frongus on Solana. ✦ Solana ✦ Pump.fun ✦ </span></div></div></section>
 <figure class="mbanner" data-banner><img src="assets/banner.webp" alt="Super Frongus banner"></figure>
 <!--BANNER_SLOT-->
-<section class="sec sig sig-pr"><div class="wrap"><p class="kicker">Pasture</p><h2>A clean product page</h2><p class="prose">The most memeable Super Frongus on Solana.</p><ol class="sig-ol rv-stagger"><li><b>01</b><div><h3>Gold</h3><p>One metal, used sparingly.</p></div></li><li><b>02</b><div><h3>White</h3><p>Room for the character.</p></div></li><li><b>03</b><div><h3>Numbers</h3><p>1B supply, tax 0/0.</p></div></li></ol></div></section>
+<div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>$SF ✦ Super Frongus ✦ The most memeable Super Frongus on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Super Frongus community. Buy $SF. Make memes. Never sell. ✦ BUY $SF ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>$SF ✦ Super Frongus ✦ The most memeable Super Frongus on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Super Frongus community. Buy $SF. Make memes. Never sell. ✦ BUY $SF ✦ </span></div></div>
 
-<section class="sec about" id="lore">
-  <div class="wrap split">
-    <figure class="frame rv-l"><img class="gchar" data-tilt src="assets/logo.png" alt="Super Frongus" width="800" height="800"></figure>
-    <div class="rv-r">
+<section class="sec about about-overlap" id="lore">
+  <div class="wrap stage">
+    <div class="rv">
       <p class="kicker">Lore</p>
-      <h2>The story of <em>Super Frongus</em></h2>
+      <h2><em>Super Frongus</em> showed up and stayed.</h2>
       <p class="prose">RUN THE BIGGEST INU MEME SUPER INU BUT FOR FRONGUS</p>
-      <p class="prose">Join the Super Frongus community. Buy $SF. Make memes. Never sell. Born on Solana, traded on Pump.fun, carried by whoever decides to make the next meme.</p>
-      <ul class="facts"><li><b>1B</b><span>Supply</span></li><li><b>0/0</b><span>Tax</span></li><li><b>Burned</b><span>LP</span></li></ul>
+      <p class="prose">The most memeable Super Frongus on Solana. Join the Super Frongus community. Buy $SF. Make memes. Never sell.</p>
     </div>
+    <img class="gchar m-float" data-parallax="0.08" data-mouse="14" src="assets/logo.png" alt="Super Frongus" width="800" height="800">
   </div>
 </section>
 
@@ -629,12 +622,7 @@ h1,h2{font-weight:560}
     <p class="statline rv"><b data-count="100" data-suf="%">0%</b> crowd-owned joke. Supply 1B.</p>
   </div>
 </section>
-<section class="sec road road-stations" id="road"><div class="wrap"><p class="kicker">Roadmap</p><h2>Stations, not promises</h2><ol class="stations rv-stagger">
-<li><span>01</span><h3>Launch</h3><p>The site, the socials, and the first people who held $SF without being asked twice.</p></li>
-<li><span>02</span><h3>Culture</h3><p>Meme contests, sticker dumps, and a timeline that looks like Super Frongus lives there.</p></li>
-<li><span>03</span><h3>Listings</h3><p>Trackers, a louder chart on Pump.fun, and whoever wants the ticker in public.</p></li>
-<li><span>04</span><h3>The long game</h3><p>Merch, meetups, and ideas the community actually bothers to finish.</p></li>
-</ol></div></section>
+<section class="sec sig sig-slab"><div class="wrap slab"><p class="kicker">Soft launch</p><h2>Come sit in the sun</h2><p>Join the Super Frongus community. Buy $SF. Make memes. Never sell.</p><ol><li><b>01</b><div><h3>Wallet</h3><p>Phantom and a little SOL.</p></div></li><li><b>02</b><div><h3>Swap</h3><p>Pump.fun, paste the CA.</p></div></li><li><b>03</b><div><h3>Stay</h3><p>Super Frongus is a mood, not a promise.</p></div></li></ol></div></section>
 
 <section class="sec how" id="buy">
   <div class="wrap">
@@ -653,10 +641,10 @@ h1,h2{font-weight:560}
 </section>
 
 
-<section class="sec gal" id="memes">
+<section class="sec gal gal-polaroid" id="memes">
   <div class="wrap">
-    <p class="kicker">Memes</p><h2>The gallery</h2>
-    <div class="mosaic rv-stagger"><figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Frongus meme 1" width="800" height="800" loading="lazy"><figcaption>01</figcaption></figure>
+    <p class="kicker">Memes</p><h2>A wall of {NAME}</h2>
+    <div class="polaroids rv-stagger"><figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Frongus meme 1" width="800" height="800" loading="lazy"><figcaption>01</figcaption></figure>
 <figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Frongus meme 2" width="800" height="800" loading="lazy"><figcaption>02</figcaption></figure>
 <figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Frongus meme 3" width="800" height="800" loading="lazy"><figcaption>03</figcaption></figure>
 <figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Frongus meme 4" width="800" height="800" loading="lazy"><figcaption>04</figcaption></figure>
@@ -666,6 +654,12 @@ h1,h2{font-weight:560}
 <figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Frongus meme 8" width="800" height="800" loading="lazy"><figcaption>08</figcaption></figure></div>
   </div>
 </section>
+<section class="sec road road-stations" id="road"><div class="wrap"><p class="kicker">Roadmap</p><h2>Stations, not promises</h2><ol class="stations rv-stagger">
+<li><span>01</span><h3>Launch</h3><p>The site, the socials, and the first people who held $SF without being asked twice.</p></li>
+<li><span>02</span><h3>Culture</h3><p>Meme contests, sticker dumps, and a timeline that looks like Super Frongus lives there.</p></li>
+<li><span>03</span><h3>Listings</h3><p>Trackers, a louder chart on Pump.fun, and whoever wants the ticker in public.</p></li>
+<li><span>04</span><h3>The long game</h3><p>Merch, meetups, and ideas the community actually bothers to finish.</p></li>
+</ol></div></section>
 
 <section class="sec faq" id="faq">
   <div class="wrap faq-grid">
