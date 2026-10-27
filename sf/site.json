@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "Super Frongus",
   "ticker": "SF",
-  "template": "y2k-vaporwave",
+  "template": "sticker-cartoon",
   "domain": "superfrongus.lol",
   "ca": "TBA",
   "chain": "solana",
@@ -52,5 +52,5 @@
   },
   "site_slug": "sf",
   "project_id": "pmvr408vur7aph",
-  "exported_at": "2026-10-27T20:30:51.196Z"
+  "exported_at": "2026-10-27T20:36:06.427Z"
 }
