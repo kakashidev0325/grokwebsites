@@ -147,7 +147,38 @@ Every template has to pass this before it is done:
 - [ ] `prefers-reduced-motion` leaves the page readable: no infinite motion, reveals visible, no horizontal overflow.
 - [ ] Nothing animated depends on a color that is not a theme token.
 
-## 5. Quality pass
+## 5. Hero composition
+
+A hero is a scene, not a logo dropped on a card. The framed sticker (white pad, border, radius, shadow) is allowed twice in the whole set: once as a stamp overlapping a cutout, once as a die-cut pile. Everywhere else the logo is a cutout (`background:transparent`, no border) sitting in the drawing.
+
+Build the frame in this order:
+
+1. **Background.** The SVG scene (`gen_scenes.py`, classes `.bg .bg2 .surf .a .a2 .ink .line`) fills the viewport and moves slower than the page (`data-parallax` around `-0.1`). Theme presets recolor it because the paints are tokens, not hex.
+2. **Midground props.** Extra SVG drawn in the hero: a torn edge, a skyline, a torii, a ledge, a moon, coins, a rocket silhouette, film sprockets, a crosshair. These are shapes, not photos, and they use `var(--a)`, `var(--bg-2)`, `var(--ink)`.
+3. **The mascot, interacting.** It stands on the wordmark, climbs the tear, breaks out of a phone outline, sits on a question mark or a ledge, rides a cloud, lands on a planet curve, or wades a wave. Add one or two smaller copies (peek, satellite, lantern, flag) with `.m-bob` or `.m-float` and `data-mouse`. A speech bubble is a short label (`${{TICKER}}` or one word), not a paragraph.
+4. **Type as part of the art.** The name is display type at viewport scale: on the floor, as a vertical rail, as a neon sign, as a magazine masthead, or tilted behind the mascot. It is not a heading sitting in a padded column beside a thumbnail.
+5. **Foreground.** Grain overlay (SVG turbulence, `mix-blend-mode:overlay`), a ticker band (`.mq.hero-mq`), and floating stickers. These sit above the scene and below the sticky nav.
+
+No two heroes share that arrangement. `gen_heroes.py` keeps one function per kind (`poster`, `splitR`, `center`, `scatter`, `app`, `cinema`, `splitL`, `sky`, `orbit`, `question`, `craft`, `index`, `roof`, `product`, `letterbox`, `hud`, `ghost`, `magazine`, `seal`, `planet`, `launch`, `impact`, `desk`, `chapter`, `shrine`, `stickers`, `vertical`). `bnb-1` is the twenty-eighth: a full-bleed split field, a tear, and a large cutout overlapping it, with smaller ghosts in the sky.
+
+Motion comes only from `_motion.css` / `_core.js`: bob, float, spin on a slow ring, mouse parallax, letter entrance, marquee. The hero CSS resets `.hero .gchar` so the global sticker frame does not come back. On small screens the absolute mascots drop back into flow so nothing hangs off the side.
+
+## 6. Meme-image art direction
+
+`app_meme/meme_gen.js` keeps the same public API (`MemeGen.SCENES`, `CAPTIONS`, `LAYOUTS`, `sceneCount`, `extractPalette`, `generate`, `colorVariance`, `renderMeme`, `fitCaption`, `drawFittedCaption`, `validateAllCaptions`). `generate()` still returns `{memes, palette, sceneCount, scenes}` and each meme is `{kind, d, on, w, h, scene, layout}` at 1080 and 1600×900.
+
+The picture is built in layers, the way the reference 3D memes read:
+
+1. **A deep scene.** Twenty-six scenes (sunburst, neon city, beach, space, moon, candles, money rain, casino, street, summit, vaporwave, alley, party, desert, underwater, banner, rocket ride, coin vault, rain alley, shrine dusk, stadium, candy sky, subway, volcano, arcade, trading floor). Each has a ground plane, a horizon, and a light source. They are illustrative, not a mesh.
+2. **Atmosphere on top of the scene.** The painted background is blurred a little (stronger on a close-up) so the character stays sharp. Then light rays, a top haze, bokeh discs, and a vignette.
+3. **A pseudo-3D character.** `drawOrb` clips the logo to a circle, shades it with a radial gradient (highlight upper-left, shadow lower-right), paints a specular blob, strokes a glowing rim, drops a soft ground ellipse, and skews the disc (`transform(1, 0, -0.08, 0.94)`) so it is not a flat sticker. A white sticker frame is the rare case (under one in five), not the default.
+4. **Composition, not one crop.** Layouts are `center`, `low-left`, `low-right`, `peek-left`, `peek-right`, `break-bottom`, `rail-left`, `rail-right`, `duo` (a second smaller orb), `closeup`, and `scenic` (character smaller, scene larger).
+5. **A prop in the hand.** After the orb, `drawProp` paints coins, a rocket, or a laptop chart overlapping the lower-right of the character so it reads as held.
+6. **Caption style changes; the fit does not.** Every image still draws both lines through `drawFittedCaption`, which shrinks and wraps until the bounds sit inside the margin. The style around those lines rotates: impact fill, neon glow, a newspaper band (dark type on a paper rect), a sign board tilted near the character, or a speech bubble. `validateAllCaptions` checks every caption against every layout.
+
+`meme_demo.html` appends the canvas elements. It does not call `toDataURL` while the page is opened from disk, because a `file://` logo taints the canvas.
+
+## 7. Quality pass
 
 Look at the filled sample page, desktop and a 390px width.
 

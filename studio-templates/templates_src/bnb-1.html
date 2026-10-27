@@ -792,14 +792,17 @@ html{scroll-behavior:auto}
 .hero__tagtext{max-width:28ch}
 .hero__media{overflow:hidden;min-width:0}
 .hero__nai,.hero__ghost,.float img,.lore__art img,.t49__nai,.join__nai,.join__ghost,.ghost,.ca-card__nai,.foot__nai{object-fit:contain}
-/* Main mascot: circular framed logo fallback (no white card box) */
-img.gchar.hero__nai.char-sticker,img.gchar.lore__mascot.char-sticker,img.gchar.t49__nai.char-sticker,img.gchar.join__nai.char-sticker,img.gchar.foot__nai.char-sticker,img.gchar.ca-card__nai.char-sticker{
+/* Hero mascot is a cutout standing in the tear, not a framed badge. */
+img.gchar.hero__nai.char-sticker{background:none!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:drop-shadow(0 28px 18px rgba(40,16,0,.45))}
+img.gchar.hero__ghost.char-sticker{background:none!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+img.gchar.lore__mascot.char-sticker,img.gchar.t49__nai.char-sticker,img.gchar.join__nai.char-sticker,img.gchar.foot__nai.char-sticker,img.gchar.ca-card__nai.char-sticker{
   background:radial-gradient(circle at 30% 25%,#fff 0,var(--yellow-2,#ffe56a) 42%,var(--orange,#ff8a3d) 100%);
-  padding:10px;border:4px solid var(--ink,#1b1f4b);border-radius:50%;box-shadow:0 22px 40px -14px rgba(16,24,70,.55),6px 6px 0 rgba(255,45,149,.35);filter:drop-shadow(0 14px 18px rgba(16,24,70,.28))
+  padding:10px;border:4px solid var(--ink,#1b1f4b);border-radius:50%;box-shadow:0 22px 40px -14px rgba(16,24,70,.55)
 }
-img.gchar.char-sticker{background:#fff;padding:6px;border:3px solid var(--ink,#1b1f4b);border-radius:28px;box-shadow:6px 6px 0 rgba(255,45,149,.35);filter:drop-shadow(0 14px 18px rgba(16,24,70,.28))}
-.hero__nai{width:min(38%,340px)!important;max-width:340px;height:auto!important;right:calc(48% - clamp(60px,6vw,110px))!important;bottom:2%!important}
-.hero__ghost{opacity:.88;width:min(24%,200px)}
+img.gchar.char-sticker{background:#fff;padding:6px;border:3px solid var(--ink,#1b1f4b);border-radius:28px;box-shadow:6px 6px 0 rgba(255,45,149,.35)}
+.hero__nai{width:auto!important;max-width:none!important;height:min(88%,760px)!important;right:4%!important;bottom:-6%!important;z-index:5}
+.hero__ghost{opacity:.9;width:min(22%,190px);animation:m-bob 3.4s ease-in-out infinite}
+.hero__ghost--b{animation-delay:.4s}
 .float img{width:100%;height:auto}
 .facts{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
 .facts>div{min-width:0}
@@ -893,8 +896,8 @@ body.a-bnb-1{padding-bottom:88px}
 
 <section class="hero" aria-label="{{NAME}}">
 <div class="hero__panel riso">
-<img class="gchar hero__ghost hero__ghost--a char-sticker" src="{{LOGO}}" alt="" width="900" height="882" loading="lazy">
-<img class="gchar hero__ghost hero__ghost--b char-sticker" src="{{LOGO}}" alt="" width="811" height="900" loading="lazy">
+<img class="gchar hero__ghost hero__ghost--a char-sticker m-float" data-mouse="12" src="{{LOGO}}" alt="" width="900" height="882" loading="lazy">
+<img class="gchar hero__ghost hero__ghost--b char-sticker m-bob" data-mouse="20" src="{{LOGO}}" alt="" width="811" height="900" loading="lazy">
 <div class="hero__copy">
 <p class="hero__eyebrow"><img class="hero__chain" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2230%22%20fill%3D%22%23F3BA2F%22/%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M32%2014l6%206-6%206-6-6%206-6zm0%2024l6%206-6%206-6-6%206-6zM18%2026l6%206-6%206-6-6%206-6zm28%200l6%206-6%206-6-6%206-6z%22/%3E%3C/svg%3E" alt="" width="256" height="256"><span>On {{CHAIN_NAME}}</span></p>
 <h1 class="hero__title intro-logo" data-letters>{{NAME}}</h1>
@@ -922,7 +925,7 @@ body.a-bnb-1{padding-bottom:88px}
 </div>
 <a class="float float--x" href="{{X_URL}}" data-s aria-label="Follow on X"><img class="gchar char-sticker" src="{{LOGO}}" alt="" width="400" height="400" loading="lazy"></a>
 <a class="float float--dex" href="{{DEXS_URL}}" aria-label="Live chart"><img class="gchar char-sticker" src="{{LOGO}}" alt="" width="400" height="400" loading="lazy"></a>
-<img class="gchar hero__nai char-sticker" src="{{LOGO}}" alt="{{NAME}}" width="632" height="900" loading="lazy">
+<img class="gchar hero__nai char-sticker m-bob" data-mouse="14" src="{{LOGO}}" alt="{{NAME}}" width="632" height="900" loading="lazy">
 </section>
 <div class="mq bnb-mq" style="--mq-speed:26s" aria-hidden="true"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ </span></div></div>
 <div class="mq bnb-mq rev" style="--mq-speed:34s" aria-hidden="true"><div class="mq-track"><span>BUY ${{TICKER}} ✦ HOLD ${{TICKER}} ✦ MEME ${{TICKER}} ✦ {{NAME}} ✦ NO PRESALE ✦ </span></div></div>

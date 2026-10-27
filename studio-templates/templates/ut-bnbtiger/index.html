@@ -470,14 +470,38 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 @media(max-width:560px){.cards,.tickets,.steps,.stack,.mosaic,.polaroids{grid-template-columns:1fr}}
 
 
-.hero{min-height:100svh;position:relative;overflow:hidden;background:var(--bg);display:flex;flex-direction:column;justify-content:flex-end;text-align:center;padding-bottom:0}
-.hero .scene{position:absolute;inset:0;width:100%;height:100%}
-.hero h1{position:relative;z-index:2;font-size:clamp(3.4rem,10vw,8rem);margin:0;text-shadow:4px 4px 0 var(--ink)}
-.hero .mascot{position:relative;z-index:2;width:min(380px,70vw);margin:-10px auto -30px}
-.hero .mascot img{width:100%;filter:drop-shadow(0 18px 0 var(--a))}
-.hero-copy{position:relative;z-index:2}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:100svh;background:var(--bg);color:var(--ink)}
+.hero .gchar{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 22px 16px color-mix(in srgb,#000 45%,transparent))}
+.hero .scene{position:absolute;inset:-12% -4% auto -4%;width:108%;height:130%;z-index:0;pointer-events:none}
+.hero .grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.22;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+.hero .hero-mq{position:absolute;left:0;right:0;bottom:0;z-index:6}
+.hero .bubble{position:absolute;z-index:4;background:var(--surface);color:var(--ink);border:3px solid var(--ink);border-radius:18px 18px 18px 4px;padding:8px 12px;font-family:var(--display);font-weight:800;box-shadow:4px 4px 0 var(--a)}
+.hero .floater{position:absolute;z-index:3;width:min(120px,18vw);pointer-events:none}
+.hero .floater.tiny{width:min(72px,12vw)}
+.hero .hero-copy{position:relative;z-index:4}
+.hero h1{position:relative;z-index:4;margin:0;line-height:.86;letter-spacing:-.04em}
+.hero .lede{color:var(--muted);max-width:42ch;position:relative;z-index:4}
+.hero .kicker,.hero .hero-actions{position:relative;z-index:4}
+.hero .props{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hero .props svg{width:100%;height:100%;display:block}
+@media(min-width:801px){.hero{height:100svh}}
+@media(max-width:800px){
+  .hero{height:auto;min-height:auto;padding:92px 16px 72px}
+  .hero .hero-main,.hero .floater{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:min(240px,64vw)!important;margin:8px auto;transform:none!important}
+  .hero h1{font-size:clamp(2.6rem,12vw,4.2rem)!important}
+}
+
+.hero{text-align:center;padding-top:90px}
+.hero h1{font-size:clamp(3.6rem,10vw,8rem);text-shadow:4px 4px 0 var(--a)}
+.hero .cloud{position:absolute;z-index:2;border-radius:50%;background:var(--surface);filter:blur(.2px)}
+.hero .cloud.c1{left:8%;top:22%;width:180px;height:70px}
+.hero .cloud.c2{right:10%;top:30%;width:220px;height:80px}
+.hero .cloud.c3{left:50%;bottom:16%;width:min(520px,70vw);height:90px;transform:translateX(-50%);background:color-mix(in srgb,var(--surface) 80%,var(--a))}
+.hero .rider{position:absolute;z-index:3;left:50%;bottom:18%;width:min(380px,54vw);transform:translateX(-50%)}
+.hero .pal{position:absolute;z-index:3;width:min(110px,16vw)}
+.hero .pal.p1{left:12%;top:14%}.hero .pal.p2{right:12%;top:20%}
 .hero .lede{color:var(--ink)}
-.hero .hero-actions{justify-content:center;margin-bottom:18px}
+.hero .hero-actions{justify-content:center}
 
 h1,h2{letter-spacing:.02em}
 
@@ -500,13 +524,20 @@ h1,h2{letter-spacing:.02em}
   </div>
 </header>
 
-<section class="hero"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><g class="surf"><ellipse cx="220" cy="170" rx="130" ry="48"/><ellipse cx="300" cy="156" rx="80" ry="40"/><ellipse cx="1000" cy="140" rx="160" ry="52"/><ellipse cx="640" cy="210" rx="100" ry="36"/></g><circle class="a" cx="1180" cy="230" r="52"/><path class="a2" d="M0 690c140-80 240-20 360-54s240-8 340 46 250 16 380-36 230-30 360 16v238H0z" opacity=".85"/><path class="bg2" d="M0 780c200-40 320-8 480-34s280 14 430 18 260-24 530-8v144H0z"/></svg><div class="hero-copy"><p class="kicker">{{CHAIN_NAME}}</p><h1 data-letters>{{NAME}}</h1><p class="lede">{{TAGLINE}}</p>
+<section class="hero"><div data-parallax="-0.15"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><g class="surf"><ellipse cx="220" cy="170" rx="130" ry="48"/><ellipse cx="300" cy="156" rx="80" ry="40"/><ellipse cx="1000" cy="140" rx="160" ry="52"/><ellipse cx="640" cy="210" rx="100" ry="36"/></g><circle class="a" cx="1180" cy="230" r="52"/><path class="a2" d="M0 690c140-80 240-20 360-54s240-8 340 46 250 16 380-36 230-30 360 16v238H0z" opacity=".85"/><path class="bg2" d="M0 780c200-40 320-8 480-34s280 14 430 18 260-24 530-8v144H0z"/></svg></div><div class="grain" aria-hidden="true"></div>
+<div class="cloud c1 m-float"></div><div class="cloud c2 m-bob"></div><div class="cloud c3"></div>
+<div class="pal p1 m-float"><img class="gchar floater" data-tilt src="{{LOGO}}" alt="" width="800" height="800"></div>
+<div class="pal p2 m-bob"><img class="gchar floater tiny" data-tilt src="{{LOGO}}" alt="" width="800" height="800"></div>
+<div class="hero-copy"><p class="kicker">{{CHAIN_NAME}}</p><h1 data-letters>{{NAME}}</h1><p class="lede">{{TAGLINE}}</p>
 <div class="hero-actions">
   <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="{{BUY_URL}}">{{BUY_ICON}} Buy ${{TICKER}} <span class="dexon">on {{DEX}}</span></a>
   <a class="btn btn-ghost" href="{{DEXS_URL}}" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
   <button class="btn btn-ghost" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> <code>{{CA_SHORT}}</code></button>
 </div>
-</div><div class="mascot"><img class="gchar m-bob" data-tilt data-mouse="18" src="{{LOGO}}" alt="{{NAME}}" width="800" height="800"></div></section>
+</div>
+<div class="rider" data-mouse="12"><img class="gchar hero-main" data-tilt src="{{LOGO}}" alt="" width="800" height="800"></div>
+<div class="bubble" style="left:58%;bottom:42%">gm</div>
+<div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ {{CHAIN_NAME}} ✦ {{DEX}} ✦ </span></div></div></section>
 <div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div>
 <figure class="mbanner" data-banner><img src="{{BANNER}}" alt="{{NAME}} banner"></figure>
 <!--BANNER_SLOT-->

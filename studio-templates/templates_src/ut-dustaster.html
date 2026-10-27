@@ -140,13 +140,34 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 @media(max-width:560px){.cards,.tickets,.steps,.stack,.mosaic,.polaroids{grid-template-columns:1fr}}
 
 
-.hero{min-height:100svh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;position:relative;overflow:hidden;background:var(--bg);padding:80px 4vw 40px;gap:24px}
-.hero .scene{position:absolute;inset:0;width:100%;height:100%;opacity:.9}
-.hero-copy,.hero .mascot{position:relative;z-index:2}
-.hero h1{font-size:clamp(3rem,6vw,6.2rem);letter-spacing:-.045em;margin:0}
-.hero .mascot img{width:min(520px,100%);background:var(--surface);border:var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
-.hero .lede{color:var(--muted);max-width:42ch}
-@media(max-width:860px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:96px}}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:100svh;background:var(--bg);color:var(--ink)}
+.hero .gchar{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 22px 16px color-mix(in srgb,#000 45%,transparent))}
+.hero .scene{position:absolute;inset:-12% -4% auto -4%;width:108%;height:130%;z-index:0;pointer-events:none}
+.hero .grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.22;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+.hero .hero-mq{position:absolute;left:0;right:0;bottom:0;z-index:6}
+.hero .bubble{position:absolute;z-index:4;background:var(--surface);color:var(--ink);border:3px solid var(--ink);border-radius:18px 18px 18px 4px;padding:8px 12px;font-family:var(--display);font-weight:800;box-shadow:4px 4px 0 var(--a)}
+.hero .floater{position:absolute;z-index:3;width:min(120px,18vw);pointer-events:none}
+.hero .floater.tiny{width:min(72px,12vw)}
+.hero .hero-copy{position:relative;z-index:4}
+.hero h1{position:relative;z-index:4;margin:0;line-height:.86;letter-spacing:-.04em}
+.hero .lede{color:var(--muted);max-width:42ch;position:relative;z-index:4}
+.hero .kicker,.hero .hero-actions{position:relative;z-index:4}
+.hero .props{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hero .props svg{width:100%;height:100%;display:block}
+@media(min-width:801px){.hero{height:100svh}}
+@media(max-width:800px){
+  .hero{height:auto;min-height:auto;padding:92px 16px 72px}
+  .hero .hero-main,.hero .floater{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:min(240px,64vw)!important;margin:8px auto;transform:none!important}
+  .hero h1{font-size:clamp(2.6rem,12vw,4.2rem)!important}
+}
+
+.hero{display:grid;grid-template-columns:1fr .9fr;align-items:center;padding:80px 4vw 70px}
+.hero h1{font-size:clamp(3.2rem,6vw,6.4rem)}
+.hero .tear{position:absolute;z-index:2;right:34%;top:0;bottom:0;width:80px}
+.hero .climb{position:absolute;z-index:3;right:6%;bottom:8%;width:min(520px,46vw);transform:rotate(-8deg)}
+.hero .floater{left:8%;bottom:18%}
+.hero .bubble{right:18%;top:18%}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.hero .climb{position:relative;right:auto;width:min(300px,70vw);transform:none}}
 
 h1,h2{font-weight:560}.kicker{letter-spacing:.28em}
 @@BODY@@
@@ -164,13 +185,19 @@ h1,h2{font-weight:560}.kicker{letter-spacing:.28em}
   </div>
 </header>
 
-<section class="hero"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><path class="line" d="M0 30H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 72H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 114H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 156H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 198H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 240H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 282H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 324H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 366H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 408H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 450H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 492H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 534H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 576H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 618H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 660H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 702H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 744H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 786H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 828H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 870H1440" stroke-width="1" opacity=".2"/><g class="a" fill="none" stroke="currentColor" stroke-width="4"><path d="M70 70h140M70 70v140M1370 70h-140M1370 70v140M70 830h140M70 830v-140M1370 830h-140M1370 830v-140"/></g><circle class="a2" cx="1180" cy="200" r="80" opacity=".35"/></svg><div class="hero-copy"><p class="kicker">{{DEX}} on {{CHAIN_NAME}}</p><h1 data-letters>{{NAME}}</h1><p class="lede">{{TAGLINE}}</p><p class="lede">{{ABOUT}}</p>
+<section class="hero"><div data-parallax="-0.08"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><path class="line" d="M0 30H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 72H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 114H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 156H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 198H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 240H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 282H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 324H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 366H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 408H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 450H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 492H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 534H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 576H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 618H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 660H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 702H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 744H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 786H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 828H1440" stroke-width="1" opacity=".2"/><path class="line" d="M0 870H1440" stroke-width="1" opacity=".2"/><g class="a" fill="none" stroke="currentColor" stroke-width="4"><path d="M70 70h140M70 70v140M1370 70h-140M1370 70v140M70 830h140M70 830v-140M1370 830h-140M1370 830v-140"/></g><circle class="a2" cx="1180" cy="200" r="80" opacity=".35"/></svg></div>
+<svg class="tear" viewBox="0 0 80 900" aria-hidden="true"><path class="a" d="M40 0c18 40-10 70 8 110s-20 80 4 120-16 90 6 130 8 100-8 140 20 90-4 140-22 80 6 130 4 70-10 130v40H0V0z" fill="var(--a)" opacity=".9"/></svg>
+<div class="grain" aria-hidden="true"></div><div class="bubble m-bob">hold</div>
+<div class="climb" data-mouse="18"><img class="gchar hero-main" data-tilt src="{{LOGO}}" alt="" width="800" height="800"></div>
+<img class="gchar floater m-float" data-tilt src="{{LOGO}}" alt="" width="800" height="800">
+<div class="hero-copy"><p class="kicker">{{DEX}} on {{CHAIN_NAME}}</p><h1 data-letters>{{NAME}}</h1><p class="lede">{{TAGLINE}}</p><p class="lede">{{ABOUT}}</p>
 <div class="hero-actions">
   <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a>
   <a class="btn btn-ghost" href="{{DEXS_URL}}" target="_blank" rel="noopener">[[DEX]] Chart</a>
   <button class="btn btn-ghost" type="button" data-copy>[[COPY]] <code>{{CA_SHORT}}</code></button>
 </div>
-</div><div class="mascot"><img class="gchar m-bob" data-tilt data-mouse="18" src="{{LOGO}}" alt="{{NAME}}" width="800" height="800"></div></section>
+</div>
+<div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ {{CHAIN_NAME}} ✦ {{DEX}} ✦ </span></div></div></section>
 <div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div>
 <!--BANNER_SLOT-->
 <section class="sec sig sig-pr"><div class="wrap"><p class="kicker">Corner marks</p><h2>What the mark means</h2><p class="prose">{{TAGLINE}}</p><ol class="sig-ol rv-stagger"><li><b>01</b><div><h3>One character</h3><p>The logo is the whole cast until you upload more.</p></div></li><li><b>02</b><div><h3>One contract</h3><p>{{CA_SHORT}} on {{CHAIN_NAME}}.</p></div></li><li><b>03</b><div><h3>One job</h3><p>Make the timeline worse in a good way.</p></div></li></ol></div></section>

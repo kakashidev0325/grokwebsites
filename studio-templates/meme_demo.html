@@ -28,12 +28,20 @@ var logo=new Image();
 logo.onload=function(){
   var palette=MemeGen.extractPalette(logo,null);
   var grid=document.getElementById('grid');
+  var layouts=['center','low-left','low-right','peek-left','duo','closeup','scenic','break-bottom','peek-right'];
+  var caps=[
+    {a:'WHEN $BONKLE HITS', b:'THE WHOLE TIMELINE MOVES'},
+    {a:'SHHH STEALTH LAUNCH', b:'NOBODY SAW THIS ONE'},
+    {a:'WAGMI', b:'COINS IN BOTH HANDS'},
+    {a:'TO THE MOON', b:'HOLD THE ROCKET'}
+  ];
   MemeGen.SCENES.forEach(function(scene,i){
     [[1080,1080,'1080 square'],[1600,900,'1600×900']].forEach(function(sz,k){
       var rendered=MemeGen.renderMeme({
         W:sz[0], H:sz[1], logo:logo, name:'Bonkle', ticker:'BONKLE', palette:palette,
-        rng:mulberry32(1000+i*17+k), scene:scene, layout:k?'rail-right':'center',
-        caption:{a:'WHEN $BONKLE', b:k?'WIDE FRAME':'HITS DIFFERENT'}
+        rng:mulberry32(1000+i*17+k*9), scene:scene,
+        layout:k?'rail-'+(i%2?'left':'right'):layouts[i%layouts.length],
+        caption:caps[i%caps.length]
       });
       var fig=document.createElement('figure');
       var canvas=rendered.canvas;

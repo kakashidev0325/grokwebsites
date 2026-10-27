@@ -470,15 +470,32 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 @media(max-width:560px){.cards,.tickets,.steps,.stack,.mosaic,.polaroids{grid-template-columns:1fr}}
 
 
-.hero{min-height:100svh;background:var(--bg);display:grid;grid-template-columns:120px 1fr;position:relative;overflow:hidden}
-.hero .scene{position:absolute;inset:0;width:100%;height:100%;opacity:.45}
-.hero .idx{position:relative;z-index:2;border-right:1px solid var(--line);display:grid;place-items:center;font-family:var(--display);font-size:1.2rem;letter-spacing:.2em}
-.hero-copy{position:relative;z-index:2;align-self:end;padding:40px 6vw 10vh;max-width:900px}
-.hero h1{font-size:clamp(3rem,7vw,6.5rem);margin:0;font-weight:500}
-.hero .mascot{position:absolute;right:6vw;top:18vh;width:min(300px,32vw);z-index:2}
-.hero .mascot img{width:100%;background:var(--surface);border:1px solid var(--line)}
-.hero .lede{color:var(--muted);font-size:1.15rem}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.hero .idx{display:none}.hero .mascot{position:relative;top:auto;right:auto;width:min(220px,60vw);margin:80px 0 0 6vw}}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:100svh;background:var(--bg);color:var(--ink)}
+.hero .gchar{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 22px 16px color-mix(in srgb,#000 45%,transparent))}
+.hero .scene{position:absolute;inset:-12% -4% auto -4%;width:108%;height:130%;z-index:0;pointer-events:none}
+.hero .grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.22;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+.hero .hero-mq{position:absolute;left:0;right:0;bottom:0;z-index:6}
+.hero .bubble{position:absolute;z-index:4;background:var(--surface);color:var(--ink);border:3px solid var(--ink);border-radius:18px 18px 18px 4px;padding:8px 12px;font-family:var(--display);font-weight:800;box-shadow:4px 4px 0 var(--a)}
+.hero .floater{position:absolute;z-index:3;width:min(120px,18vw);pointer-events:none}
+.hero .floater.tiny{width:min(72px,12vw)}
+.hero .hero-copy{position:relative;z-index:4}
+.hero h1{position:relative;z-index:4;margin:0;line-height:.86;letter-spacing:-.04em}
+.hero .lede{color:var(--muted);max-width:42ch;position:relative;z-index:4}
+.hero .kicker,.hero .hero-actions{position:relative;z-index:4}
+.hero .props{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hero .props svg{width:100%;height:100%;display:block}
+@media(min-width:801px){.hero{height:100svh}}
+@media(max-width:800px){
+  .hero{height:auto;min-height:auto;padding:92px 16px 72px}
+  .hero .hero-main,.hero .floater{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:min(240px,64vw)!important;margin:8px auto;transform:none!important}
+  .hero h1{font-size:clamp(2.6rem,12vw,4.2rem)!important}
+}
+
+.hero{display:block}
+.hero .bleed{position:absolute;z-index:1;right:-6%;top:0;width:min(720px,58vw);height:120%;object-fit:cover}
+.hero .idx{position:absolute;z-index:4;left:4vw;top:18vh;font-family:var(--display);font-size:clamp(4rem,10vw,8rem);line-height:.8;color:var(--a)}
+.hero .hero-copy{position:absolute;z-index:4;left:4vw;bottom:12vh;max-width:520px;background:color-mix(in srgb,var(--bg) 78%,transparent);padding:16px}
+.hero h1{font-size:clamp(2.6rem,5vw,4.4rem)}
 
 h2{font-weight:500}p{font-size:1.05rem}
 
@@ -501,13 +518,17 @@ h2{font-weight:500}p{font-size:1.05rem}
   </div>
 </header>
 
-<section class="hero"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><g class="ink" opacity=".16" stroke="currentColor"><path d="M90 110H1340"/><path d="M90 144H1340"/><path d="M90 178H1340"/><path d="M90 212H1340"/><path d="M90 246H1340"/><path d="M90 280H1340"/><path d="M90 314H1340"/><path d="M90 348H1340"/><path d="M90 382H1340"/><path d="M90 416H1340"/><path d="M90 450H1340"/><path d="M90 484H1340"/><path d="M90 518H1340"/><path d="M90 552H1340"/><path d="M90 586H1340"/><path d="M90 620H1340"/><path d="M90 654H1340"/><path d="M90 688H1340"/><path d="M90 722H1340"/><path d="M90 756H1340"/><path d="M90 790H1340"/><path d="M90 824H1340"/><path d="M90 858H1340"/></g><rect class="a" x="70" y="70" width="8" height="760"/></svg><div class="idx">01 — ${{TICKER}}</div><div class="mascot"><img class="gchar m-bob" data-tilt data-mouse="18" src="{{LOGO}}" alt="{{NAME}}" width="800" height="800"></div><div class="hero-copy"><p class="kicker">Essay</p><h1>{{NAME}}</h1><p class="lede">{{ABOUT}}</p>
+<section class="hero"><div data-parallax="-0.06"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><g class="ink" opacity=".16" stroke="currentColor"><path d="M90 110H1340"/><path d="M90 144H1340"/><path d="M90 178H1340"/><path d="M90 212H1340"/><path d="M90 246H1340"/><path d="M90 280H1340"/><path d="M90 314H1340"/><path d="M90 348H1340"/><path d="M90 382H1340"/><path d="M90 416H1340"/><path d="M90 450H1340"/><path d="M90 484H1340"/><path d="M90 518H1340"/><path d="M90 552H1340"/><path d="M90 586H1340"/><path d="M90 620H1340"/><path d="M90 654H1340"/><path d="M90 688H1340"/><path d="M90 722H1340"/><path d="M90 756H1340"/><path d="M90 790H1340"/><path d="M90 824H1340"/><path d="M90 858H1340"/></g><rect class="a" x="70" y="70" width="8" height="760"/></svg></div>
+<div class="bleed" data-mouse="8" data-parallax="0.04"><img class="gchar hero-main" data-tilt src="{{LOGO}}" alt="" width="800" height="800"></div><div class="grain" aria-hidden="true"></div>
+<div class="idx">01</div>
+<div class="hero-copy"><p class="kicker">${{TICKER}}</p><h1>{{NAME}}</h1><p class="lede">{{ABOUT}}</p>
 <div class="hero-actions">
   <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="{{BUY_URL}}">{{BUY_ICON}} Buy ${{TICKER}} <span class="dexon">on {{DEX}}</span></a>
   <a class="btn btn-ghost" href="{{DEXS_URL}}" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
   <button class="btn btn-ghost" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> <code>{{CA_SHORT}}</code></button>
 </div>
-</div></section>
+</div>
+<div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ {{CHAIN_NAME}} ✦ {{DEX}} ✦ </span></div></div></section>
 <figure class="mbanner" data-banner><img src="{{BANNER}}" alt="{{NAME}} banner"></figure>
 <!--BANNER_SLOT-->
 <div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div>

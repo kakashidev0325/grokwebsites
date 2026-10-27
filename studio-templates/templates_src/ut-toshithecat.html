@@ -140,14 +140,33 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 @media(max-width:560px){.cards,.tickets,.steps,.stack,.mosaic,.polaroids{grid-template-columns:1fr}}
 
 
-.hero{min-height:100svh;display:grid;grid-template-columns:.9fr 1.1fr;background:var(--bg);position:relative;overflow:hidden}
-.hero .scene{position:absolute;inset:0;width:100%;height:100%}
-.hero .mascot{position:relative;z-index:1;display:grid;place-items:end center;padding:80px 0 0 4vw}
-.hero .mascot img{width:min(560px,46vw);filter:drop-shadow(16px 24px 0 var(--a))}
-.hero-copy{position:relative;z-index:2;align-self:center;padding:40px 6vw}
-.hero h1{font-size:clamp(3rem,6.4vw,6.6rem);margin:0;letter-spacing:-.04em}
-.hero .lede{color:var(--muted)}
-@media(max-width:860px){.hero{grid-template-columns:1fr}.hero .mascot img{width:min(420px,80vw)}}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:100svh;background:var(--bg);color:var(--ink)}
+.hero .gchar{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 22px 16px color-mix(in srgb,#000 45%,transparent))}
+.hero .scene{position:absolute;inset:-12% -4% auto -4%;width:108%;height:130%;z-index:0;pointer-events:none}
+.hero .grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.22;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+.hero .hero-mq{position:absolute;left:0;right:0;bottom:0;z-index:6}
+.hero .bubble{position:absolute;z-index:4;background:var(--surface);color:var(--ink);border:3px solid var(--ink);border-radius:18px 18px 18px 4px;padding:8px 12px;font-family:var(--display);font-weight:800;box-shadow:4px 4px 0 var(--a)}
+.hero .floater{position:absolute;z-index:3;width:min(120px,18vw);pointer-events:none}
+.hero .floater.tiny{width:min(72px,12vw)}
+.hero .hero-copy{position:relative;z-index:4}
+.hero h1{position:relative;z-index:4;margin:0;line-height:.86;letter-spacing:-.04em}
+.hero .lede{color:var(--muted);max-width:42ch;position:relative;z-index:4}
+.hero .kicker,.hero .hero-actions{position:relative;z-index:4}
+.hero .props{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hero .props svg{width:100%;height:100%;display:block}
+@media(min-width:801px){.hero{height:100svh}}
+@media(max-width:800px){
+  .hero{height:auto;min-height:auto;padding:92px 16px 72px}
+  .hero .hero-main,.hero .floater{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:min(240px,64vw)!important;margin:8px auto;transform:none!important}
+  .hero h1{font-size:clamp(2.6rem,12vw,4.2rem)!important}
+}
+
+.hero{display:grid;grid-template-columns:.9fr 1.1fr;align-items:end}
+.hero h1{font-size:clamp(4rem,8vw,8rem);text-transform:uppercase}
+.hero .hero-copy{position:relative;z-index:4;padding:12vh 4vw 12vh 6vw;align-self:center}
+.hero .bust{position:relative;z-index:3;width:min(640px,52vw);margin-bottom:-4vh;justify-self:end}
+.hero .floater{left:4%;bottom:16%}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.hero .bust{width:min(360px,80vw);justify-self:center}}
 
 .top{border-bottom:1px solid var(--line)}
 @@BODY@@
@@ -165,13 +184,15 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   </div>
 </header>
 
-<section class="hero"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><ellipse class="a" cx="1080" cy="430" rx="360" ry="300"/><ellipse class="a2" cx="1200" cy="360" rx="170" ry="150" opacity=".75"/><circle class="a" cx="180" cy="160" r="50" opacity=".15"/><circle class="a" cx="240" cy="760" r="100" opacity=".1"/></svg><div class="mascot"><img class="gchar m-bob" data-tilt data-mouse="18" src="{{LOGO}}" alt="{{NAME}}" width="800" height="800"></div><div class="hero-copy"><p class="kicker">${{TICKER}}</p><h1>{{NAME}}</h1><p class="lede">{{TAGLINE}}</p>
+<section class="hero"><div data-parallax="-0.04"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><ellipse class="a" cx="1080" cy="430" rx="360" ry="300"/><ellipse class="a2" cx="1200" cy="360" rx="170" ry="150" opacity=".75"/><circle class="a" cx="180" cy="160" r="50" opacity=".15"/><circle class="a" cx="240" cy="760" r="100" opacity=".1"/></svg></div><div class="grain" aria-hidden="true"></div><img class="gchar floater tiny m-float" data-tilt src="{{LOGO}}" alt="" width="800" height="800">
+<div class="hero-copy"><p class="kicker">${{TICKER}}</p><h1>{{NAME}}</h1><p class="lede">{{TAGLINE}}</p>
 <div class="hero-actions">
   <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a>
   <a class="btn btn-ghost" href="{{DEXS_URL}}" target="_blank" rel="noopener">[[DEX]] Chart</a>
   <button class="btn btn-ghost" type="button" data-copy>[[COPY]] <code>{{CA_SHORT}}</code></button>
 </div>
-</div></section>
+</div>
+<div class="bust m-bob" data-mouse="10"><img class="gchar hero-main" data-tilt src="{{LOGO}}" alt="" width="800" height="800"></div><div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ {{CHAIN_NAME}} ✦ {{DEX}} ✦ </span></div></div></section>
 <div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div>
 <!--BANNER_SLOT-->
 
