@@ -3,7 +3,7 @@
   "name": "Gangstar",
   "ticker": "Gangstar",
   "template": "acid-pop",
-  "domain": "gangstart.lol",
+  "domain": "gangstar.lol",
   "ca": "TBA",
   "chain": "bsc",
   "domain_status": "live",
@@ -12,13 +12,13 @@
       "type": "A",
       "name": "@",
       "value": "216.150.1.1",
-      "host": "gangstart.lol"
+      "host": "gangstar.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "37895c73b3534d5d.vercel-dns-016.com",
-      "host": "www.gangstart.lol"
+      "host": "www.gangstar.lol"
     }
   ],
   "tagline": "https://x.com/search?q=$Gangstar",
@@ -67,5 +67,5 @@
   },
   "site_slug": "gangstar",
   "project_id": "pmvqid2o3u3thp",
-  "exported_at": "2026-10-27T09:58:10.444Z"
+  "exported_at": "2026-10-27T10:01:16.607Z"
 }
