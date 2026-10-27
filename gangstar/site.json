@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "Gangstar",
   "ticker": "Gangstar",
-  "template": "acid-pop",
+  "template": "doodle-notebook",
   "domain": "gangstar.lol",
   "ca": "0xe62028a1446b251ea50a89c1faf0f53885a7dbc0",
   "chain": "bsc",
@@ -72,5 +72,5 @@
   },
   "site_slug": "gangstar",
   "project_id": "pmvqid2o3u3thp",
-  "exported_at": "2026-10-27T10:51:13.693Z"
+  "exported_at": "2026-10-27T11:10:53.373Z"
 }
