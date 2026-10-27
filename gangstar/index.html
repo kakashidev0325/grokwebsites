@@ -1,38 +1,80 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme-mode="original" data-theme-preset="" style="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- archetype: acid-pop | placeholders: Gangstar Gangstar assets/logo.png 0xc69176fe3f729c6d6ffe0ab695779ae243091cf6 bsc https://x.com/gangstarbnb  https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0xc69176fe3f729c6d6ffe0ab695779ae243091cf6 https://dexscreener.com/bsc/0xc69176fe3f729c6d6ffe0ab695779ae243091cf6?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Gangstar on BNB Chain. Gangstar ($Gangstar) is a community-driven meme coin on BNB Chain. No team allocation, no roadmap promises, just vibes, memes and a community that refuses to sell. 1,000,000,000 0/0 PancakeSwap V3 BNB MetaMask https://dexscreener.com/bsc/0xc69176fe3f729c6d6ffe0ab695779ae243091cf6 BNB Chain <img class="dexic" src="assets/dex.png" alt="PancakeSwap V3">=raw html) -->
+<!-- archetype: ut-penpehood | placeholders: Gangstar Gangstar assets/logo.png 0xc69176fe3f729c6d6ffe0ab695779ae243091cf6 bsc https://x.com/gangstarbnb  https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0xc69176fe3f729c6d6ffe0ab695779ae243091cf6 https://dexscreener.com/bsc/0xc69176fe3f729c6d6ffe0ab695779ae243091cf6?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Gangstar on BNB Chain. Gangstar ($Gangstar) is a community-driven meme coin on BNB Chain. No team allocation, no roadmap promises, just vibes, memes and a community that refuses to sell. 1,000,000,000 0/0 PancakeSwap V3 BNB MetaMask https://dexscreener.com/bsc/0xc69176fe3f729c6d6ffe0ab695779ae243091cf6 BNB Chain <img class="dexic" src="assets/dex.png" alt="PancakeSwap V3">=raw html) -->
 <title>Gangstar ($Gangstar) | The most memeable Gangstar on BNB Chain.</title>
 <meta name="description" content="Gangstar ($Gangstar) is a community-driven meme coin on BNB Chain. No team allocation, no roadmap promises, just vibes, memes and a community that refuses to sell.">
 <meta property="og:title" content="Gangstar ($Gangstar)"><meta property="og:description" content="The most memeable Gangstar on BNB Chain."><meta property="og:image" content="assets/logo.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Mulish:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;overflow-x:hidden}html{overflow-x:hidden}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
-.ico{width:1.15em;height:1.15em;fill:currentColor;flex:none;vertical-align:-.18em}
+.ico{width:1.15em!important;height:1.15em!important;max-width:1.15em!important;max-height:1.15em!important;fill:currentColor;flex:none;vertical-align:-.18em}
+/* ---- scroll reveals (varied) ---- */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
 .rv-l{opacity:0;transform:translateX(-36px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}.rv-l.in{opacity:1;transform:none}
 .rv-r{opacity:0;transform:translateX(36px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}.rv-r.in{opacity:1;transform:none}
 .rv-z{opacity:0;transform:scale(.88);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}.rv-z.in{opacity:1;transform:none}
+.rv-rot{opacity:0;transform:rotate(-6deg) translateY(24px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}.rv-rot.in{opacity:1;transform:none}
+.rv-blur{opacity:0;filter:blur(12px);transform:translateY(16px);transition:opacity .8s ease,filter .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}.rv-blur.in{opacity:1;filter:none;transform:none}
+.rv-stagger>*{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.8,.2,1)}
+.rv-stagger.in>*{opacity:1;transform:none}
+.rv-stagger.in>*:nth-child(1){transition-delay:.05s}.rv-stagger.in>*:nth-child(2){transition-delay:.12s}.rv-stagger.in>*:nth-child(3){transition-delay:.19s}.rv-stagger.in>*:nth-child(4){transition-delay:.26s}.rv-stagger.in>*:nth-child(5){transition-delay:.33s}.rv-stagger.in>*:nth-child(6){transition-delay:.4s}.rv-stagger.in>*:nth-child(7){transition-delay:.47s}.rv-stagger.in>*:nth-child(8){transition-delay:.54s}.rv-stagger.in>*:nth-child(n+9){transition-delay:.6s}
+/* ---- marquees ---- */
 .mq{overflow:hidden;white-space:nowrap;display:flex;user-select:none}.mq-track{display:flex;flex:none;gap:2.5rem;padding-right:2.5rem;animation:mq var(--mq-speed,28s) linear infinite}.mq.rev .mq-track{animation-direction:reverse}@keyframes mq{to{transform:translateX(-100%)}}
 .chart{position:relative;width:100%;padding-top:56%;overflow:hidden}.chart iframe{position:absolute;inset:0;width:100%;height:100%;border:0}@media(max-width:700px){.chart{padding-top:0;height:460px}}
 .ca-text{word-break:break-all;overflow-wrap:anywhere}
 #toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,120px);background:#111;color:#fff;padding:12px 20px;border-radius:999px;font:600 14px/1 system-ui,sans-serif;z-index:9999;transition:transform .35s cubic-bezier(.2,1.4,.4,1);box-shadow:0 10px 30px rgba(0,0,0,.35)}#toast.show{transform:translate(-50%,0)}
-/* shared motion helpers */
+/* ---- continuous motion ---- */
 .floaty{animation:floaty 3.6s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
 .bob{animation:bob 3.2s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-16px) rotate(2deg)}}
+.wiggle{animation:wiggle 2.8s ease-in-out infinite}@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-4deg)}75%{transform:rotate(4deg)}}
 .spin-slow{animation:spin 18s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
 .pulse-glow{animation:pglow 2.4s ease-in-out infinite}@keyframes pglow{50%{filter:drop-shadow(0 0 18px currentColor)}}
-.tilt:hover{transform:rotate(-2deg) scale(1.03);transition:transform .2s}
+.breath{animation:breath 3.4s ease-in-out infinite}@keyframes breath{50%{transform:scale(1.04)}}
 .parallax-layer{will-change:transform}
 .sparkle-burst{position:fixed;pointer-events:none;z-index:10000;width:8px;height:8px;border-radius:50%;animation:spark .7s ease-out forwards}@keyframes spark{to{transform:translate(var(--dx),var(--dy)) scale(0);opacity:0}}
+.confetti-piece{position:fixed;pointer-events:none;z-index:10000;width:8px;height:12px;border-radius:2px;animation:conf .9s ease-out forwards}@keyframes conf{to{transform:translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(.4);opacity:0}}
 .particles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
 .particles i{position:absolute;width:6px;height:6px;border-radius:50%;opacity:.55;animation:rise linear infinite}@keyframes rise{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
 [data-copy].copied{animation:pop .35s ease}@keyframes pop{50%{transform:scale(1.08)}}
-@media(prefers-reduced-motion:reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;transition:none!important}.rv,.rv-l,.rv-r,.rv-z{opacity:1;transform:none}.floaty,.bob,.spin-slow,.pulse-glow{animation:none!important}}
+/* ---- progress bar ---- */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:10001;background:linear-gradient(90deg,#ffd23f,#ff6fa8,#7c4dff);pointer-events:none;transform-origin:left center}
+/* ---- magnetic / shine / tilt / glow buy ---- */
+.btn-shine{position:relative;overflow:hidden}
+.btn-shine::after{content:"";position:absolute;inset:-40% auto -40% -60%;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite}@keyframes shine{0%,60%{left:-60%}100%{left:140%}}
+.btn-pulse{animation:bpulse 1.8s ease-in-out infinite}@keyframes bpulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,currentColor 45%,transparent)}50%{box-shadow:0 0 0 12px transparent}}
+.tilt-3d{transform-style:preserve-3d;transition:transform .25s ease}
+.icon-wiggle:hover{animation:wiggle .5s ease}
+/* ---- hero intro ---- */
+[data-intro] .intro-logo{opacity:0;transform:scale(.4);animation:introPop .7s cubic-bezier(.2,1.4,.3,1) .15s forwards}@keyframes introPop{to{opacity:1;transform:scale(1)}}
+[data-intro] .intro-title .word>span{display:inline-block;opacity:0;transform:translateY(1.1em) rotate(8deg);animation:letterIn .55s cubic-bezier(.2,.8,.2,1) forwards}@keyframes letterIn{to{opacity:1;transform:none}}
+[data-intro] .intro-fade{opacity:0;transform:translateY(18px);animation:introFade .7s ease forwards}@keyframes introFade{to{opacity:1;transform:none}}
+/* ---- typing cursor ---- */
+.typing::after{content:"|";animation:blink 1s step-end infinite;margin-left:2px}@keyframes blink{50%{opacity:0}}
+/* ---- cursor trail (desktop) ---- */
+.cursor-dot{position:fixed;width:10px;height:10px;border-radius:50%;pointer-events:none;z-index:10002;mix-blend-mode:difference;background:#fff;transform:translate(-50%,-50%);transition:width .15s,height .15s;display:none}
+.cursor-ring{position:fixed;width:28px;height:28px;border:1.5px solid rgba(255,255,255,.55);border-radius:50%;pointer-events:none;z-index:10002;mix-blend-mode:difference;transform:translate(-50%,-50%);transition:width .2s,height .2s,border-color .2s;display:none}
+/* ---- animated dividers ---- */
+.div-wave{display:block;width:100%;height:48px;background:radial-gradient(circle at 10px 0,transparent 9px,currentColor 10px) repeat-x;background-size:20px 48px;opacity:.15;animation:waveShift 4s linear infinite}@keyframes waveShift{to{background-position:40px 0}}
+.div-zig{height:14px;background:repeating-linear-gradient(-45deg,currentColor 0 6px,transparent 6px 12px);opacity:.18;animation:zigMove 2.4s linear infinite}@keyframes zigMove{to{background-position:24px 0}}
+/* ---- gradient / noise bg helpers ---- */
+.anim-grad{background-size:200% 200%;animation:gradShift 10s ease infinite}@keyframes gradShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.noise-bg{position:relative}
+.noise-bg::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;z-index:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+/* ---- meme rail drag ---- */
+.meme-rail{overflow:hidden;cursor:grab;touch-action:pan-y}.meme-rail:active{cursor:grabbing}.meme-rail .rail-track{display:flex;gap:16px;width:max-content;animation:railAuto 40s linear infinite}.meme-rail:hover .rail-track,.meme-rail.is-drag .rail-track{animation-play-state:paused}@keyframes railAuto{to{transform:translateX(-50%)}}
+/* ---- reduced motion ---- */
+@media(prefers-reduced-motion:reduce){
+ *{animation-duration:.001s!important;animation-iteration-count:1!important;transition:none!important}
+ .rv,.rv-l,.rv-r,.rv-z,.rv-rot,.rv-blur,.rv-stagger>*{opacity:1;transform:none;filter:none}
+ .floaty,.bob,.wiggle,.spin-slow,.pulse-glow,.breath,.btn-pulse,.btn-shine::after{animation:none!important}
+ [data-intro] .intro-logo,[data-intro] .intro-title .word>span,[data-intro] .intro-fade{opacity:1;transform:none;animation:none!important}
+ .cursor-dot,.cursor-ring,.scroll-progress,.particles{display:none!important}
+}
 /* banner + extra links (shared) */
 .mbanner{display:block;margin-left:auto;margin-right:auto;width:100%;box-sizing:border-box}
 .mbanner img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;max-height:460px}
@@ -40,109 +82,421 @@
 .xlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:1100px;margin:0 auto;padding:30px 20px 10px;position:relative;z-index:2}
 .xlinks a{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:2px solid currentColor;border-radius:999px;font-weight:700;font-size:14px;line-height:1;opacity:.9;transition:transform .15s,opacity .15s;text-decoration:none;color:inherit}
 .xlinks a:hover{opacity:1;transform:translateY(-2px)}
-@media(max-width:700px){a.xs{display:none!important}.mbanner img{aspect-ratio:2/1}}
+@media(max-width:700px){a.xs{display:none!important}.mbanner img{aspect-ratio:2/1}.particles i:nth-child(n+12){display:none}}
 /* DEX on buy buttons */
-.dexic{width:1.25em;height:1.25em;border-radius:50%;object-fit:cover;flex:none;vertical-align:-.25em;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.dexic{width:1.25em!important;height:1.25em!important;max-width:1.25em!important;max-height:1.25em!important;border-radius:50%;object-fit:cover;flex:none;vertical-align:-.25em;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.15);margin:0!important;padding:0!important;filter:none!important;display:inline-block!important}
 .dexon{font-size:.82em;opacity:.92;white-space:nowrap}
 
-/* ===== acid-pop ===== */
-:root{--lime:#d4ff3a;--k:#0d0d0d;--w:#fff;--pink:#ff5fa2;--blue:#5b7cff;--orange:#ff8a3d}
-body{background:var(--lime);color:var(--k);font-family:Inter,sans-serif}
-.bg{font-family:'Bricolage Grotesque',sans-serif}
-.wrap{max-width:1240px;margin:auto;padding:0 22px}
-nav{padding:16px 0}nav .wrap{display:flex;justify-content:space-between;align-items:center}
-.pillnav{display:flex;gap:4px;background:var(--k);padding:6px;border-radius:999px}.pillnav a{color:var(--w);padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px}.pillnav a:hover{background:var(--lime);color:var(--k)}
-.b{display:flex;gap:10px;align-items:center;font-family:'Bricolage Grotesque';font-weight:800;font-size:1.5rem}.b img{width:44px;height:44px;border-radius:50%;border:3px solid var(--k);object-fit:cover}
-.soc{display:flex;gap:6px}.soc a{width:44px;height:44px;border-radius:50%;background:var(--k);color:var(--lime);display:grid;place-items:center;transition:.2s}.soc a:hover{transform:rotate(-12deg) scale(1.1);background:var(--pink);color:var(--k)}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border-radius:999px;font-weight:700;font-size:1.05rem;background:var(--k);color:var(--lime);transition:.2s}.btn:hover{transform:scale(1.05) rotate(-2deg)}.btn.w{background:var(--w);color:var(--k);border:3px solid var(--k)}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:30px 0 70px}
-.kick{display:inline-flex;gap:8px;align-items:center;background:var(--w);border:2px solid var(--k);border-radius:999px;padding:6px 14px 6px 6px;font-weight:700;font-size:14px}.kick b{background:var(--pink);border-radius:999px;padding:3px 10px}
-h1{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(3.6rem,10vw,9rem);line-height:.86;letter-spacing:-.045em;margin:20px 0}
-h1 .em{display:inline-block;background:var(--k);color:var(--lime);padding:0 .14em;border-radius:.2em;transform:rotate(-3deg)}
-.lead{font-size:1.3rem;font-weight:500;max-width:32ch}
-.mascot{position:relative;aspect-ratio:1}.mascot .blob{position:absolute;inset:4%;background:var(--pink);border-radius:42% 58% 63% 37%/41% 44% 56% 59%;animation:morph 9s ease-in-out infinite;border:4px solid var(--k)}@keyframes morph{50%{border-radius:58% 42% 35% 65%/55% 62% 38% 45%;transform:rotate(12deg)}}
-.mascot img{position:relative;width:84%;margin:8% auto 0;animation:hop 3s ease-in-out infinite}@keyframes hop{50%{transform:translateY(-16px) rotate(-3deg)}}
-.tag{position:absolute;background:var(--w);border:3px solid var(--k);border-radius:999px;padding:8px 16px;font-weight:700;box-shadow:4px 4px 0 var(--k);animation:hop 4s ease-in-out infinite}
-.ca{display:flex;align-items:center;gap:10px;background:var(--w);border:3px solid var(--k);border-radius:999px;padding:6px 6px 6px 20px;margin-top:26px;max-width:580px;box-shadow:6px 6px 0 var(--k)}.ca .ca-text{flex:1;font-size:13px;font-weight:700}.ca button{border:0;background:var(--k);color:var(--lime);border-radius:999px;padding:12px 18px;font-weight:700}
-.band{background:var(--k);color:var(--lime);font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(2rem,5vw,3.6rem);padding:14px 0;transform:rotate(-2deg);margin:0 -20px}.band span{display:inline-flex;gap:2.5rem;align-items:center}.band img{width:50px;height:50px;border-radius:50%}
-.band.b2{background:var(--pink);color:var(--k);transform:rotate(2deg);margin-top:-14px;--mq-speed:34s}
-section{padding:110px 0}
-h2{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(2.8rem,7vw,6rem);letter-spacing:-.04em;line-height:.9;margin:0 0 40px}
-.cardx{background:var(--w);border:3px solid var(--k);border-radius:32px;padding:32px;box-shadow:8px 8px 0 var(--k)}
-.about{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}.about p{font-size:1.35rem;font-weight:500;line-height:1.5}
-.emo{display:grid;place-items:center;font-size:7rem;background:var(--blue);color:var(--w)}
-.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.nums .cardx{text-align:left}.nums .v{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(2rem,3.6vw,3rem);letter-spacing:-.03em}.nums .cardx:nth-child(1){background:var(--pink)}.nums .cardx:nth-child(2){background:var(--orange)}.nums .cardx:nth-child(3){background:var(--blue);color:var(--w)}.nums .cardx:nth-child(4){background:var(--k);color:var(--lime)}
-.nums .cardx:hover,.steps .cardx:hover{transform:translate(-4px,-4px);box-shadow:12px 12px 0 var(--k)}.cardx{transition:.2s}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.steps .n{width:56px;height:56px;border-radius:50%;background:var(--lime);border:3px solid var(--k);display:grid;place-items:center;font-family:'Bricolage Grotesque';font-weight:800;font-size:1.6rem;margin-bottom:14px}
-.chartx{margin-top:30px;border:3px solid var(--k);border-radius:32px;overflow:hidden;box-shadow:8px 8px 0 var(--k)}
-.road{display:flex;gap:18px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}.road .cardx{min-width:320px;scroll-snap-align:start}.road .cardx:first-child{background:var(--k);color:var(--lime)}
-.memes{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.memes img{width:100%;aspect-ratio:1;object-fit:cover;border:3px solid var(--k);border-radius:24px;background:var(--w);transition:.2s}.memes img:nth-child(1){grid-column:span 2;grid-row:span 2}.memes img:hover{transform:rotate(-4deg) scale(1.04)}
-.final{background:var(--k);color:var(--lime);border-radius:40px;padding:80px 30px;text-align:center}.final h2{color:var(--lime)}
-footer{padding:30px 0 50px;font-weight:700;font-size:14px}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-#rain span{position:fixed;top:-60px;font-size:34px;pointer-events:none;z-index:99;animation:fall linear forwards}@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
-@media(max-width:900px){.pillnav{display:none}.hero,.about{grid-template-columns:1fr}.mascot{max-width:400px;margin:auto;order:-1}.nums,.steps{grid-template-columns:1fr 1fr}.memes{grid-template-columns:repeat(3,1fr)}.emo{min-height:200px}}
-@media(max-width:520px){.nums,.steps{grid-template-columns:1fr}.soc a{width:38px;height:38px}}
+
+/* Hero content above absolute decorative layers (gradients/blobs at z-index:0).
+   Letter-split transforms create stacking contexts that would otherwise paint under those layers. */
+.hero > .wrap,.hero > .hero-grid,.hero > .hero-inner,.hero > .hero-split,.hero > .content,
+.stage > .wrap,.stage > .hero-grid,.stage > .content,
+.hero .wrap.hero-grid,.hero .hero-copy{position:relative;z-index:2}
+.hero .scene,.hero .scene-rich,.hero > [aria-hidden="true"].clean,.hero > .clean,
+.hero > .blue-blob,.hero > .hero-bg{pointer-events:none}
+
+/* ==== SELECTABLE THEME ==== */
+/* Presets set --theme-*; data-theme-mode=preset|custom remaps --a/--a2/--acc/--part.
+   data-theme-mode=original (default) keeps each template's authored accents. */
+:root,html{
+  --theme-1:var(--a,#888);--theme-2:var(--a2,#aaa);--theme-glow:rgba(0,0,0,.2);
+  --theme-grad:linear-gradient(135deg,var(--theme-1),var(--theme-2));--theme-ink:#0a0a0a;
+}
+/* Named presets (applied via data-theme-preset on <html>) */
+html[data-theme-preset="bnb-gold"]{
+  --theme-1:#F0B90B;--theme-2:#F8D12F;--theme-glow:rgba(240,185,11,.5);
+  --theme-grad:linear-gradient(135deg,#F0B90B,#F8D12F);--theme-ink:#0b0e11;
+}
+html[data-theme-preset="solana"]{
+  --theme-1:#9945FF;--theme-2:#14F195;--theme-glow:rgba(153,69,255,.5);
+  --theme-grad:linear-gradient(135deg,#9945FF,#14F195);--theme-ink:#0b0418;
+}
+html[data-theme-preset="ethereum"]{
+  --theme-1:#627EEA;--theme-2:#8FA4F3;--theme-glow:rgba(98,126,234,.5);
+  --theme-grad:linear-gradient(135deg,#627EEA,#8FA4F3);--theme-ink:#0a0e1a;
+}
+html[data-theme-preset="base-blue"]{
+  --theme-1:#0052FF;--theme-2:#3B7CFF;--theme-glow:rgba(0,82,255,.5);
+  --theme-grad:linear-gradient(135deg,#0052FF,#3B7CFF);--theme-ink:#000814;
+}
+html[data-theme-preset="neon-pink"]{
+  --theme-1:#FF2D95;--theme-2:#FF8AC5;--theme-glow:rgba(255,45,149,.5);
+  --theme-grad:linear-gradient(135deg,#FF2D95,#FF8AC5);--theme-ink:#1a0410;
+}
+html[data-theme-preset="cyber-lime"]{
+  --theme-1:#C8FF00;--theme-2:#7CFF00;--theme-glow:rgba(200,255,0,.45);
+  --theme-grad:linear-gradient(135deg,#C8FF00,#7CFF00);--theme-ink:#0a1200;
+}
+html[data-theme-preset="ocean-teal"]{
+  --theme-1:#0D9488;--theme-2:#2DD4BF;--theme-glow:rgba(13,148,136,.5);
+  --theme-grad:linear-gradient(135deg,#0D9488,#2DD4BF);--theme-ink:#021412;
+}
+html[data-theme-preset="sunset-orange"]{
+  --theme-1:#F97316;--theme-2:#FBBF24;--theme-glow:rgba(249,115,22,.5);
+  --theme-grad:linear-gradient(135deg,#F97316,#FBBF24);--theme-ink:#1a0a00;
+}
+html[data-theme-preset="lava-red"]{
+  --theme-1:#EF4444;--theme-2:#F97316;--theme-glow:rgba(239,68,68,.5);
+  --theme-grad:linear-gradient(135deg,#EF4444,#F97316);--theme-ink:#140404;
+}
+html[data-theme-preset="royal-purple"]{
+  --theme-1:#7C3AED;--theme-2:#C084FC;--theme-glow:rgba(124,58,237,.5);
+  --theme-grad:linear-gradient(135deg,#7C3AED,#C084FC);--theme-ink:#0e0618;
+}
+html[data-theme-preset="mint-pastel"]{
+  --theme-1:#6EE7B7;--theme-2:#A7F3D0;--theme-glow:rgba(110,231,183,.45);
+  --theme-grad:linear-gradient(135deg,#6EE7B7,#A7F3D0);--theme-ink:#062016;
+}
+html[data-theme-preset="monochrome"]{
+  --theme-1:#111111;--theme-2:#6B7280;--theme-glow:rgba(0,0,0,.35);
+  --theme-grad:linear-gradient(135deg,#111111,#6B7280);--theme-ink:#ffffff;
+}
+/* Custom: inline --theme-1/--theme-2 set by app/build on <html style="..."> */
+html[data-theme-mode="preset"],html[data-theme-mode="custom"]{
+  --a:var(--theme-1);--a2:var(--theme-2);--acc:var(--theme-1);--part:var(--theme-1);
+}
+/* Original: do nothing — template CSS keeps its own --a/--a2 */
+html[data-theme-mode="original"],html:not([data-theme-mode]){}
+/* Accent chrome when a preset/custom theme is active */
+html[data-theme-mode="preset"] .btn-main,
+html[data-theme-mode="preset"] .btn-pulse,
+html[data-theme-mode="preset"] a.btn[data-buy],
+html[data-theme-mode="preset"] .btn-chunk.btn-gold,
+html[data-theme-mode="preset"] .btn-chunk.btn-red,
+html[data-theme-mode="preset"] .btn-pink,
+html[data-theme-mode="custom"] .btn-main,
+html[data-theme-mode="custom"] .btn-pulse,
+html[data-theme-mode="custom"] a.btn[data-buy],
+html[data-theme-mode="custom"] .btn-chunk.btn-gold,
+html[data-theme-mode="custom"] .btn-chunk.btn-red,
+html[data-theme-mode="custom"] .btn-pink{
+  background:var(--theme-grad)!important;color:var(--theme-ink)!important;border-color:var(--theme-1)!important;
+  box-shadow:0 0 24px var(--theme-glow)!important;
+}
+html[data-theme-mode="preset"] .marquee,
+html[data-theme-mode="preset"] .mq,
+html[data-theme-mode="custom"] .marquee,
+html[data-theme-mode="custom"] .mq{
+  background:var(--theme-grad)!important;color:var(--theme-ink)!important;border-color:var(--theme-1)!important;
+}
+html[data-theme-mode="preset"] .scroll-progress,
+html[data-theme-mode="custom"] .scroll-progress{background:var(--theme-grad)!important}
+html[data-theme-mode="preset"] .market,
+html[data-theme-mode="preset"] [data-dexs-live],
+html[data-theme-mode="custom"] .market,
+html[data-theme-mode="custom"] [data-dexs-live]{border-color:var(--theme-1)!important}
+html[data-theme-mode="preset"] .roadmap .dot,
+html[data-theme-mode="preset"] .step .n,
+html[data-theme-mode="custom"] .roadmap .dot,
+html[data-theme-mode="custom"] .step .n{
+  background:var(--theme-1)!important;color:var(--theme-ink)!important;border-color:var(--theme-1)!important;
+}
+/* Color-only glow: inset box-shadow never reflows children */
+html[data-theme-mode="preset"] .hero,
+html[data-theme-mode="custom"] .hero{
+  box-shadow:inset 0 0 120px var(--theme-glow),inset 0 -40px 80px color-mix(in srgb,var(--theme-2) 18%,transparent);
+}
+html[data-theme-mode="preset"] .particles i,
+html[data-theme-mode="custom"] .particles i{background:var(--theme-1)!important;box-shadow:0 0 8px var(--theme-glow)}
+html[data-theme-mode="preset"] .confetti-piece,
+html[data-theme-mode="custom"] .confetti-piece{background:var(--theme-1)!important}
+html[data-theme-mode="preset"] .sparkle-burst,
+html[data-theme-mode="custom"] .sparkle-burst{background:var(--theme-2)!important}
+/* Headlines: never mid-word break (letter-split safe) */
+h1,.disp,.hero h1,.sec-title{
+  word-break:normal;overflow-wrap:normal;hyphens:none;-webkit-hyphens:none;
+}
+.intro-title .word{display:inline-block;white-space:nowrap}
+.intro-title .word>span{display:inline-block}
+
+h1.disp,h1.intro-title,.hero h1{overflow:visible}
+.hero-copy,.hero-inner,.hero-grid>div:first-child{min-width:0}
+
+/* ===== ut-penpehood ===== */
+:root{--acc:#0d1a0c;--lime:#ccff00;--ink:#0d1a0c;--mute:#3a4a38;--card:#fff;--line:rgba(13,26,12,.1);--part:#0d1a0c;--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--lime);color:var(--ink);font-family:Mulish,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
+.wrap{width:min(1100px,100% - 36px);margin-inline:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:12px}
+.brand{font-family:"Baloo 2",cursive;font-weight:800;font-size:1.5rem;letter-spacing:-.02em}
+.links{display:flex;gap:22px;font-size:.9rem;font-weight:700}
+.links a:hover{text-decoration:underline}
+.nav-r{display:flex;align-items:center;gap:8px}
+.btn-dark{height:42px;padding:0 18px;border-radius:999px;background:var(--ink);color:var(--lime);font-weight:800;display:inline-flex;align-items:center;gap:6px}
+.btn-dark:hover{filter:brightness(1.15)}
+.ic{width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--lime);display:grid;place-items:center}
+.burger{display:none}
+@media(max-width:800px){.links{display:none}.burger{display:block;font-size:22px}body.menu-open .links{display:flex;flex-direction:column;position:absolute;top:72px;left:16px;right:16px;background:#fff;padding:16px;border-radius:12px;z-index:50}}
+.hero{min-height:calc(100vh - 72px);min-height:calc(100dvh - 72px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px 0 48px}
+.mascot{width:min(360px,70vw);height:auto;max-height:480px;object-fit:contain;filter:drop-shadow(0 18px 28px rgba(0,0,0,.25));margin-bottom:8px}
+.hero h1{font-family:"Baloo 2",cursive;font-size:clamp(4rem,14vw,8rem);line-height:.9;margin:0 0 8px;font-weight:800;letter-spacing:-.03em}
+.hero .tag{font-size:1.15rem;font-weight:700;max-width:36ch;margin:0 0 24px;color:var(--mute)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.about{background:#fff;padding:72px 0;color:var(--ink)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:800px){.about-grid{grid-template-columns:1fr}}
+.about h2{font-family:"Baloo 2",cursive;font-size:clamp(2rem,4vw,3rem);margin:0 0 12px}
+.about p{line-height:1.65;color:var(--mute);margin:0}
+.about img{width:min(280px,80%);height:auto;object-fit:contain;margin-inline:auto;filter:drop-shadow(0 12px 20px rgba(0,0,0,.12))}
+.tok{padding:72px 0;background:var(--lime)}
+.tok h2{font-family:"Baloo 2",cursive;font-size:clamp(2rem,4vw,3rem);text-align:center;margin:0 0 28px}
+.tok-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:800px){.tok-grid{grid-template-columns:1fr 1fr}}
+.tok-grid article{background:#fff;border-radius:18px;padding:20px;text-align:center;border:2px solid var(--ink)}
+.tok-grid span{display:block;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-bottom:6px}
+.tok-grid b{font-family:"Baloo 2",cursive;font-size:1.4rem}
+.gallery{padding:64px 0;background:#fff}
+.gallery h2{font-family:"Baloo 2",cursive;font-size:clamp(2rem,4vw,3rem);text-align:center;margin:0 0 24px}
+.rail{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px}
+.rail figure{flex:0 0 180px;margin:0;aspect-ratio:1;border-radius:16px;background:var(--lime);border:2px solid var(--ink);display:grid;place-items:center;padding:14px}
+.rail img{width:100%;height:100%;object-fit:contain}
+.market{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 18px;border-radius:16px;background:#fff;border:2px solid var(--ink);margin:0 auto 24px;max-width:1100px}
+.market .id{display:flex;align-items:center;gap:10px;font-weight:800}
+.market .id img{width:34px;height:34px;object-fit:contain;border-radius:50%}
+.cells{display:flex;gap:14px;flex-wrap:wrap}.cells span{display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);font-weight:800}
+.ca-pill{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 12px;border-radius:999px;background:var(--lime);border:2px solid var(--ink);font-size:.78rem;font-weight:700}
+.ca-pill code{font-family:ui-monospace,monospace}
+.buy-sec{padding:48px 0;background:var(--lime)}
+.buy-sec h2{font-family:"Baloo 2",cursive;font-size:clamp(1.8rem,3.5vw,2.6rem);text-align:center;margin:0 0 20px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:1100px;margin:0 auto;padding:0 18px}
+@media(max-width:800px){.steps{grid-template-columns:1fr 1fr}}
+.step{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:14px}
+.step .n{font-family:"Baloo 2",cursive;font-size:1.5rem}
+.join{text-align:center;padding:80px 0;background:#fff}
+.join img{width:120px;height:120px;object-fit:contain;margin:0 auto 12px}
+.join h2{font-family:"Baloo 2",cursive;font-size:clamp(2rem,4vw,3.2rem);margin:0 0 16px}
+footer{padding:28px 0 48px;background:var(--lime);border-top:2px solid var(--ink);font-size:.88rem;text-align:center;font-weight:700}
 
 /* banner */
-.mbanner{max-width:1240px;padding:0 22px;margin:0 auto 50px}.mbanner img{border:3px solid #0d0d0d;border-radius:32px;box-shadow:8px 8px 0 #0d0d0d}
+.mbanner{max-width:min(1100px,100% - 40px);margin:28px auto;padding:0}.mbanner img{width:100%;height:auto;max-height:220px;object-fit:cover;border-radius:16px;border:1px solid var(--line,rgba(255,255,255,.1));display:block}
 </style>
 <link rel="canonical" href="https://gangstar.lol/">
 <meta property="og:url" content="https://gangstar.lol/">
 </head>
-<body class="a-acid-pop">
-<nav><div class="wrap"><a class="b" href="#"><img src="assets/logo.png" alt="">Gangstar</a><div class="pillnav"><a href="#about">About</a><a href="#numbers">Numbers</a><a href="#buy">Buy</a><a href="#next">Next</a><a href="#memes">Memes</a></div><div class="soc"><a data-s href="https://x.com/gangstarbnb" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/bsc/0xc69176fe3f729c6d6ffe0ab695779ae243091cf6" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a></div></div></nav>
-<header class="wrap hero">
- <div><span class="kick"><b>LIVE</b> on BNB Chain ✨</span><h1>Meet <span class="em">$Gangstar</span>.</h1><p class="lead">The most memeable Gangstar on BNB Chain.</p>
- <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px"><a class="btn" data-s href="https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0xc69176fe3f729c6d6ffe0ab695779ae243091cf6"><img class="dexic" src="assets/dex.png" alt="PancakeSwap V3"> Buy $Gangstar <span class="dexon">on PancakeSwap V3</span></a><a class="btn w" data-s href="https://dexscreener.com/bsc/0xc69176fe3f729c6d6ffe0ab695779ae243091cf6"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a></div>
- <div class="ca"><span class="ca-text">0xc69176fe3f729c6d6ffe0ab695779ae243091cf6</span><button data-copy>Copy CA</button></div></div>
- <div class="mascot"><div class="blob"></div><img src="assets/logo.png" alt="Gangstar"><span class="tag" style="top:8%;left:-4%">100% community 💚</span><span class="tag" style="bottom:12%;right:-2%;animation-delay:-2s">0% tax 🔥</span></div>
+<body class="a-ut-penpehood">
+<body data-particles data-intro>
+<header class="wrap">
+<div class="nav">
+<a class="brand intro-logo" href="#top">Gangstar</a>
+<nav class="links" id="menu"><a href="#about">About</a><a href="#tok">Tokenomics</a><a href="#buy">Launch</a><a href="#gallery">Gallery</a><a href="#join">Follow ↗</a></nav>
+<div class="nav-r">
+<a class="btn-dark btn-shine" data-magnetic data-buy href="https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0xc69176fe3f729c6d6ffe0ab695779ae243091cf6"><img class="dexic" src="assets/dex.png" alt="PancakeSwap V3"> Buy $Gangstar <span class="dexon">on PancakeSwap V3</span></a>
+<a class="ic icon-wiggle" href="https://x.com/gangstarbnb" data-s aria-label="X"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a class="ic icon-wiggle" href="" data-s aria-label="TG"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>
+
+<button class="burger" data-menu aria-label="Menu">☰</button>
+</div>
+</div>
 </header>
+<main id="top">
+<section class="hero wrap">
+<img class="gchar mascot breath intro-logo" data-tilt data-parallax="0.05" src="assets/char1.jpg" alt="Gangstar" width="800" height="800">
+<h1 class="disp" data-letters>Gangstar</h1>
+<p class="tag intro-fade">The most memeable Gangstar on BNB Chain.</p>
+<div class="cta-row intro-fade">
+<a class="btn-dark btn-pulse" data-magnetic data-buy href="https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0xc69176fe3f729c6d6ffe0ab695779ae243091cf6"><img class="dexic" src="assets/dex.png" alt="PancakeSwap V3"> Buy $Gangstar <span class="dexon">on PancakeSwap V3</span></a>
+</div>
+</section>
 <figure class="mbanner" data-banner><img src="assets/banner.webp" alt="Gangstar banner"></figure>
-<div class="band mq"><div class="mq-track"><span>$Gangstar <img src="assets/logo.png" alt=""> Gangstar <img src="assets/logo.png" alt=""> GOOD VIBES ONLY <img src="assets/logo.png" alt=""></span></div></div>
-<div class="band b2 mq rev"><div class="mq-track"><span>✦ NO TEAM ✦ NO PRESALE ✦ JUST Gangstar ✦ BNB Chain ✦</span></div></div>
-<section id="about"><div class="wrap"><h2>Okay but<br>what is it?</h2><div class="about"><div class="cardx rv"><p>Gangstar ($Gangstar) is a community-driven meme coin on BNB Chain. No team allocation, no roadmap promises, just vibes, memes and a community that refuses to sell.</p><p>It's the coin your group chat won't stop talking about. It's a mood. It's a movement. It's $Gangstar.</p></div><div class="cardx emo rv">🤪</div></div></div></section>
-<section id="numbers" style="padding-top:0"><div class="wrap"><h2>The numbers</h2><div class="nums"><div class="cardx rv"><div>Supply</div><div class="v">1,000,000,000</div></div><div class="cardx rv"><div>Tax</div><div class="v">0/0</div></div><div class="cardx rv"><div>Liquidity</div><div class="v">Burned</div></div><div class="cardx rv"><div>Chain</div><div class="v">BNB Chain</div></div></div></div></section>
-<section id="buy" style="padding-top:0"><div class="wrap"><h2>Get some</h2><div class="steps"><div class="cardx rv"><div class="n">1</div><b>Get MetaMask</b><p>Takes 2 minutes.</p></div><div class="cardx rv"><div class="n">2</div><b>Add BNB</b><p>From any exchange.</p></div><div class="cardx rv"><div class="n">3</div><b>Open PancakeSwap V3</b><p>Paste the CA.</p></div><div class="cardx rv"><div class="n">4</div><b>Swap!</b><p>Welcome to $Gangstar.</p></div></div><div class="chartx rv"><div class="chart"><iframe src="https://dexscreener.com/bsc/0xc69176fe3f729c6d6ffe0ab695779ae243091cf6?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15" title="chart" loading="lazy"></iframe></div></div></div></section>
-<section id="next" style="padding-top:0"><div class="wrap"><h2>What's next →</h2><div class="road"><div class="cardx"><b>Now</b><h3 class="bg" style="font-size:2rem;margin:8px 0">Launch szn</h3><p>Fair launch, socials, first 1k holders.</p></div><div class="cardx"><b>Soon</b><h3 class="bg" style="font-size:2rem;margin:8px 0">Everywhere</h3><p>Listings, trending, big collabs.</p></div><div class="cardx"><b>Later</b><h3 class="bg" style="font-size:2rem;margin:8px 0">Main character</h3><p>CEX, merch, IRL events.</p></div><div class="cardx"><b>Eventually</b><h3 class="bg" style="font-size:2rem;margin:8px 0">🌕</h3><p>You know where.</p></div></div></div></section>
-<section id="memes" style="padding-top:0"><div class="wrap"><h2>Memes ✌️</h2><div class="memes"><img class="gimg rv" src="assets/meme1.jpg" alt=""><img class="gimg rv" src="assets/meme2.jpg" alt="" style="filter:hue-rotate(90deg)"><img class="gimg rv" src="assets/meme3.jpg" alt="" style="filter:hue-rotate(180deg)"><img class="gimg rv" src="assets/meme4.jpg" alt="" style="filter:hue-rotate(270deg)"><img class="gimg rv" src="assets/meme5.jpg" alt="" style="transform:scaleX(-1)"><img class="gimg rv" src="assets/meme6.jpg" alt="" style="filter:grayscale(1)"><img class="gimg rv" src="assets/meme7.png" alt="" style="filter:saturate(3)"><img class="gimg rv" src="assets/meme8.png" alt="" style="filter:invert(1)"><img class="gimg rv" src="assets/meme9.png" alt="" style="filter:sepia(1)"></div></div></section>
-<section style="padding-top:0"><div class="wrap"><div class="final rv"><h2>Don't be late.</h2><div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn w" data-s href=""><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Join Telegram</a><a class="btn w" data-s href="https://x.com/gangstarbnb"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> Follow on X</a><button class="btn" id="party" style="background:var(--lime);color:var(--k);border:0">🎉 Party mode</button></div></div></div></section>
+<!--BANNER_SLOT-->
+<section class="about" id="about">
+<div class="wrap about-grid">
+<div>
+<h2 class="rv-l">About Gangstar</h2>
+<p class="rv">Gangstar ($Gangstar) is a community-driven meme coin on BNB Chain. No team allocation, no roadmap promises, just vibes, memes and a community that refuses to sell.</p>
+</div>
+<img class="gchar bob" src="assets/char2.jpg" alt="" width="400" height="400">
+</div>
+</section>
+<section class="tok" id="tok">
+<div class="wrap">
+<h2>Tokenomics</h2>
+<div class="tok-grid rv-stagger">
+<article><span>Supply</span><b>1,000,000,000</b></article>
+<article><span>Tax</span><b>0/0</b></article>
+<article><span>Chain</span><b>BNB Chain</b></article>
+<article><span>Ticker</span><b>$Gangstar</b></article>
+</div>
+</div>
+</section>
+<section class="gallery" id="gallery">
+<div class="wrap">
+<h2>Gallery</h2>
+<div class="rail rv-stagger">
+<figure><img class="gimg" src="assets/meme1.jpg" alt="" loading="lazy"></figure>
+<figure><img class="gimg" src="assets/meme2.jpg" alt="" loading="lazy"></figure>
+<figure><img class="gimg" src="assets/meme3.jpg" alt="" loading="lazy"></figure>
+<figure><img class="gimg" src="assets/meme4.jpg" alt="" loading="lazy"></figure>
+<figure><img class="gimg" src="assets/meme5.jpg" alt="" loading="lazy"></figure>
+</div>
+</div>
+</section>
+<section class="buy-sec" id="buy" data-dexs-live data-chain="bsc">
+<div class="market wrap" style="margin-bottom:24px">
+<div class="id"><img class="gchar" src="assets/char3.jpg" alt=""><div><b>$Gangstar</b></div></div>
+<div class="cells">
+<div><span>Price</span><b data-price>—</b></div>
+<div><span>Mcap</span><b data-mcap>—</b></div>
+<div><span>Vol</span><b data-vol>—</b></div>
+<div><span>Liq</span><b data-liq>—</b></div>
+</div>
+<button class="ca-pill" type="button" data-copy><code data-ca-short>0xc691…1cf6</code></button>
+</div>
+<h2>How to buy</h2>
+<div class="steps rv-stagger">
+<div class="step"><div class="n">01</div><b>Get MetaMask</b></div>
+<div class="step"><div class="n">02</div><b>Fund BNB</b></div>
+<div class="step"><div class="n">03</div><b>Open PancakeSwap V3</b></div>
+<div class="step"><div class="n">04</div><b>Swap</b></div>
+</div>
+</section>
+
+<section class="sec wrap" id="memes-extra" style="padding:48px 0">
+<h2 style="text-align:center;margin:0 0 16px">Memes</h2>
+<div class="rv-stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px">
+<figure style="margin:0;aspect-ratio:1;border-radius:14px;overflow:hidden;background:rgba(127,127,127,.08);display:grid;place-items:center;padding:12px;border:1px solid rgba(127,127,127,.15)"><img class="gimg" src="assets/meme6.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:contain"></figure>
+<figure style="margin:0;aspect-ratio:1;border-radius:14px;overflow:hidden;background:rgba(127,127,127,.08);display:grid;place-items:center;padding:12px;border:1px solid rgba(127,127,127,.15)"><img class="gimg" src="assets/meme7.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:contain"></figure>
+<figure style="margin:0;aspect-ratio:1;border-radius:14px;overflow:hidden;background:rgba(127,127,127,.08);display:grid;place-items:center;padding:12px;border:1px solid rgba(127,127,127,.15)"><img class="gimg" src="assets/meme8.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:contain"></figure>
+<figure style="margin:0;aspect-ratio:1;border-radius:14px;overflow:hidden;background:rgba(127,127,127,.08);display:grid;place-items:center;padding:12px;border:1px solid rgba(127,127,127,.15)"><img class="gimg" src="assets/meme9.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:contain"></figure>
+<figure style="margin:0;aspect-ratio:1;border-radius:14px;overflow:hidden;background:rgba(127,127,127,.08);display:grid;place-items:center;padding:12px;border:1px solid rgba(127,127,127,.15)"><img class="gimg" src="assets/meme10.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:contain"></figure>
+<figure style="margin:0;aspect-ratio:1;border-radius:14px;overflow:hidden;background:rgba(127,127,127,.08);display:grid;place-items:center;padding:12px;border:1px solid rgba(127,127,127,.15)"><img class="gimg" src="assets/meme11.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:contain"></figure>
+</div>
+</section>
+
+<section class="join" id="join">
+<img class="gchar breath" data-tilt src="assets/char4.jpg" alt="" width="240" height="240">
+<h2>Join the Gangstar family</h2>
+<div class="cta-row">
+<a class="btn-dark btn-shine" data-magnetic data-buy href="https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0xc69176fe3f729c6d6ffe0ab695779ae243091cf6"><img class="dexic" src="assets/dex.png" alt="PancakeSwap V3"> Buy $Gangstar <span class="dexon">on PancakeSwap V3</span></a>
+<a class="ic" href="https://x.com/gangstarbnb" data-s><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a class="ic" href="" data-s><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>
+</div>
+</section>
+</main>
 <div class="xlinks" data-xlinks><a href="https://x.com/gangstarbnb" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a></div>
-<footer><div class="wrap"><span>© <span data-year></span> Gangstar</span><span style="max-width:620px">$Gangstar is a meme coin with no intrinsic value or expectation of financial return. Not financial advice.</span></div></footer>
-<div id="rain"></div>
+<footer><div class="wrap">© <span data-year></span> Gangstar ($Gangstar) · The most memeable Gangstar on BNB Chain. · Not financial advice.</div></footer>
+</body>
+
 
 <div id="toast" role="status" aria-live="polite"></div>
 <script>
 (function(){
 var CA="0xc69176fe3f729c6d6ffe0ab695779ae243091cf6";
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
+var mobile=/Mobi|Android/i.test(navigator.userAgent)||window.innerWidth<700;
 function toast(m){var t=document.getElementById('toast');if(!t){t=document.createElement('div');t.id='toast';document.body.appendChild(t)}t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('show')},1800)}
 window.memeToast=toast;
-function sparkles(x,y){if(reduce)return;for(var i=0;i<14;i++){var s=document.createElement('span');s.className='sparkle-burst';var ang=Math.random()*Math.PI*2,dist=24+Math.random()*70;
- s.style.left=x+'px';s.style.top=y+'px';s.style.setProperty('--dx',Math.cos(ang)*dist+'px');s.style.setProperty('--dy',Math.sin(ang)*dist+'px');
- s.style.background=['#ffd23f','#ff6fa8','#7c4dff','#39ff14','#01cdfe','#fff'][i%6];document.body.appendChild(s);setTimeout(function(n){n.remove()},700,s)}}
-function copy(ev){var done=function(){toast('Contract address copied ✓');if(ev&&ev.clientX)sparkles(ev.clientX,ev.clientY)};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(CA).then(done,fb)}else fb();function fb(){var ta=document.createElement('textarea');ta.value=CA;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();done()}}
+function burst(x,y,n,cls){if(reduce)return;n=n||14;cls=cls||'sparkle-burst';
+ for(var i=0;i<n;i++){var s=document.createElement('span');s.className=cls;var ang=Math.random()*Math.PI*2,dist=24+Math.random()*90;
+  s.style.left=x+'px';s.style.top=y+'px';s.style.setProperty('--dx',Math.cos(ang)*dist+'px');s.style.setProperty('--dy',Math.sin(ang)*dist+'px');
+  s.style.setProperty('--rot',(Math.random()*720-360)+'deg');
+  s.style.background=['#ffd23f','#ff6fa8','#7c4dff','#39ff14','#01cdfe','#fff','#ff9f1c'][i%7];document.body.appendChild(s);setTimeout(function(el){el.remove()},1000,s)}}
+function confetti(x,y){burst(x,y,mobile?12:28,'confetti-piece')}
+function copy(ev){var done=function(){toast('Contract address copied ✓');if(ev&&ev.clientX)confetti(ev.clientX,ev.clientY)};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(CA).then(done,fb)}else fb();function fb(){var ta=document.createElement('textarea');ta.value=CA;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();done()}}
 document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();copy(e);b.classList.add('copied');setTimeout(function(){b.classList.remove('copied')},1200)})});
+document.querySelectorAll('a[href="https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0xc69176fe3f729c6d6ffe0ab695779ae243091cf6"],a.btn-pulse,[data-buy]').forEach(function(a){a.addEventListener('click',function(e){if(e.clientX)confetti(e.clientX,e.clientY)})});
 document.querySelectorAll('a[data-s]').forEach(function(a){var h=a.getAttribute('href');if(!h||h==='#'||h.indexOf('{{')===0){a.style.display='none'}else{a.target='_blank';a.rel='noopener'}});
 document.querySelectorAll('.mq').forEach(function(m){var t=m.querySelector('.mq-track');if(t){m.appendChild(t.cloneNode(true)).setAttribute('aria-hidden','true')}});
-var revealSel='.rv,.rv-l,.rv-r,.rv-z';
-if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll(revealSel).forEach(function(el){io.observe(el)})}else document.querySelectorAll(revealSel).forEach(function(el){el.classList.add('in')});
+/* reveals */
+var revealSel='.rv,.rv-l,.rv-r,.rv-z,.rv-rot,.rv-blur,.rv-stagger';
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});document.querySelectorAll(revealSel).forEach(function(el){io.observe(el)})}else document.querySelectorAll(revealSel).forEach(function(el){el.classList.add('in')});
 document.querySelectorAll('[data-banner]').forEach(function(b){var i=b.querySelector('img');if(!i||!i.getAttribute('src')||i.getAttribute('src').indexOf('{{')===0)b.remove()});
 document.querySelectorAll('[data-xlinks]').forEach(function(x){if(!x.querySelector('a'))x.remove()});
 document.querySelectorAll('[data-year]').forEach(function(y){y.textContent=new Date().getFullYear()});
 document.querySelectorAll('[data-menu]').forEach(function(b){b.addEventListener('click',function(){document.body.classList.toggle('menu-open')})});
 document.querySelectorAll('nav a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open')})});
-/* soft parallax on hero logo / layers */
+/* short CA helpers */
+document.querySelectorAll('[data-ca-short]').forEach(function(el){var c=CA||'';if(c.length>12)el.textContent=c.slice(0,6)+'…'+c.slice(-4);else el.textContent=c});
+/* count-up stats */
+document.querySelectorAll('[data-count]').forEach(function(el){
+ var target=parseFloat(el.getAttribute('data-count'))||0,suf=el.getAttribute('data-suf')||'',pre=el.getAttribute('data-pre')||'',dec=parseInt(el.getAttribute('data-dec')||'0',10);
+ function run(){if(reduce){el.textContent=pre+target.toFixed(dec)+suf;return}
+  var t0=performance.now(),dur=1200;function step(t){var p=Math.min(1,(t-t0)/dur);p=1-Math.pow(1-p,3);el.textContent=pre+(target*p).toFixed(dec)+suf;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+ if('IntersectionObserver' in window){var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run();cio.unobserve(e.target)}})},{threshold:.4});cio.observe(el)}else run()
+});
+/* letter-split titles */
+document.querySelectorAll('[data-letters]').forEach(function(el){if(reduce)return;var txt=el.textContent;el.textContent='';el.classList.add('intro-title');
+ var words=txt.split(/(\s+)/),di=0;words.forEach(function(w){if(/^\s+$/.test(w)){el.appendChild(document.createTextNode(' '));return}
+  var wrap=document.createElement('span');wrap.className='word';
+  for(var i=0;i<w.length;i++){var sp=document.createElement('span');sp.textContent=w[i];sp.style.animationDelay=Math.min(0.04*di+0.15,0.9)+'s';wrap.appendChild(sp);di++}
+  el.appendChild(wrap)});setTimeout(function(){el.querySelectorAll('.word>span').forEach(function(s){s.style.opacity='1';s.style.transform='none';s.style.animation='none'})},1400);});
+/* typing taglines */
+document.querySelectorAll('[data-type]').forEach(function(el){if(reduce)return;var full=el.getAttribute('data-type')||el.textContent;el.textContent='';el.classList.add('typing');
+ var i=0;function tick(){el.textContent=full.slice(0,++i);if(i<full.length)setTimeout(tick,28+Math.random()*40);else el.classList.remove('typing')}setTimeout(tick,600)});
+/* scroll progress */
+if(!reduce){var bar=document.createElement('div');bar.className='scroll-progress';bar.setAttribute('aria-hidden','true');document.body.appendChild(bar);
+ window.addEventListener('scroll',function(){var h=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(h>0?(window.scrollY/h*100):0)+'%'},{passive:true})}
+/* parallax */
 if(!reduce){var layers=document.querySelectorAll('[data-parallax]');
- if(layers.length){window.addEventListener('scroll',function(){var y=window.scrollY||0;layers.forEach(function(el){var s=parseFloat(el.getAttribute('data-parallax')||'0.2');el.style.transform='translateY('+(y*s)+'px)'})},{passive:true})}
- /* ambient particles if body asks for them */
+ if(layers.length){window.addEventListener('scroll',function(){var y=window.scrollY||0;layers.forEach(function(el){var s=parseFloat(el.getAttribute('data-parallax')||'0.2');el.style.transform='translate3d(0,'+(y*s)+'px,0)'})},{passive:true})}
+ /* ambient particles */
  if(document.body.hasAttribute('data-particles')){var p=document.createElement('div');p.className='particles';p.setAttribute('aria-hidden','true');document.body.prepend(p);
-  for(var i=0;i<28;i++){var d=document.createElement('i');d.style.left=(Math.random()*100)+'%';d.style.bottom=(-10-Math.random()*20)+'vh';d.style.animationDuration=(8+Math.random()*14)+'s';d.style.animationDelay=(-Math.random()*12)+'s';d.style.background=getComputedStyle(document.body).getPropertyValue('--part')||'currentColor';d.style.opacity=String(0.25+Math.random()*0.45);p.appendChild(d)}}}
+  var n=mobile?12:28;for(var i=0;i<n;i++){var d=document.createElement('i');d.style.left=(Math.random()*100)+'%';d.style.bottom=(-10-Math.random()*20)+'vh';d.style.animationDuration=(8+Math.random()*14)+'s';d.style.animationDelay=(-Math.random()*12)+'s';d.style.background=getComputedStyle(document.body).getPropertyValue('--part')||'currentColor';d.style.opacity=String(0.25+Math.random()*0.45);p.appendChild(d)}}
+ /* canvas sparkles / particles overlay */
+ if(document.body.hasAttribute('data-sparkles')){(function(){var c=document.createElement('canvas');c.setAttribute('aria-hidden','true');c.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1';document.body.prepend(c);var ctx=c.getContext('2d'),dots=[],N=mobile?18:40;
+  function resize(){c.width=window.innerWidth;c.height=window.innerHeight}resize();window.addEventListener('resize',resize);
+  for(var i=0;i<N;i++)dots.push({x:Math.random()*c.width,y:Math.random()*c.height,r:1+Math.random()*2.2,vx:(Math.random()-.5)*.4,vy:-.2-Math.random()*.6,a:.2+Math.random()*.5});
+  function frame(){ctx.clearRect(0,0,c.width,c.height);dots.forEach(function(d){d.x+=d.vx;d.y+=d.vy;if(d.y<-10){d.y=c.height+10;d.x=Math.random()*c.width}ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,6.28);ctx.fillStyle='rgba(255,255,255,'+d.a+')';ctx.fill()});requestAnimationFrame(frame)}frame()})()}
+}
+/* magnetic buttons */
+if(!reduce&&fine){document.querySelectorAll('[data-magnetic]').forEach(function(btn){btn.addEventListener('mousemove',function(e){var r=btn.getBoundingClientRect(),dx=(e.clientX-r.left-r.width/2)*.28,dy=(e.clientY-r.top-r.height/2)*.28;btn.style.transform='translate('+dx+'px,'+dy+'px)'});btn.addEventListener('mouseleave',function(){btn.style.transform=''})})}
+/* hover tilt 3d */
+if(!reduce&&fine){document.querySelectorAll('[data-tilt]').forEach(function(el){el.classList.add('tilt-3d');el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect(),rx=((e.clientY-r.top)/r.height-.5)*-10,ry=((e.clientX-r.left)/r.width-.5)*10;el.style.transform='perspective(700px) rotateX('+rx+'deg) rotateY('+ry+'deg)'});el.addEventListener('mouseleave',function(){el.style.transform=''})})}
+/* cursor follower */
+if(!reduce&&fine&&document.body.hasAttribute('data-cursor')){(function(){var d=document.createElement('div'),r=document.createElement('div');d.className='cursor-dot';r.className='cursor-ring';d.style.display=r.style.display='block';document.body.appendChild(d);document.body.appendChild(r);var x=0,y=0,rx=0,ry=0;
+ document.addEventListener('mousemove',function(e){x=e.clientX;y=e.clientY;d.style.left=x+'px';d.style.top=y+'px'});
+ (function loop(){rx+=(x-rx)*.18;ry+=(y-ry)*.18;r.style.left=rx+'px';r.style.top=ry+'px';requestAnimationFrame(loop)})();
+ document.querySelectorAll('a,button,[data-magnetic]').forEach(function(el){el.addEventListener('mouseenter',function(){d.style.width=d.style.height='4px';r.style.width=r.style.height='44px'});el.addEventListener('mouseleave',function(){d.style.width=d.style.height='10px';r.style.width=r.style.height='28px'})})})()}
+/* meme rail drag + auto */
+document.querySelectorAll('.meme-rail').forEach(function(rail){var track=rail.querySelector('.rail-track');if(!track)return;
+ if(track.children.length){Array.prototype.slice.call(track.children).forEach(function(ch){track.appendChild(ch.cloneNode(true))})}
+ var down=false,sx=0,sl=0;
+ rail.addEventListener('pointerdown',function(e){down=true;rail.classList.add('is-drag');sx=e.clientX;sl=rail.scrollLeft||0;rail.setPointerCapture(e.pointerId)});
+ rail.addEventListener('pointermove',function(e){if(!down)return;rail.scrollLeft=sl-(e.clientX-sx)});
+ function up(){down=false;rail.classList.remove('is-drag')}rail.addEventListener('pointerup',up);rail.addEventListener('pointercancel',up)});
+/* sticky header helper */
+document.querySelectorAll('[data-sticky-header]').forEach(function(h){var on=function(){h.classList.toggle('is-stuck',window.scrollY>40)};window.addEventListener('scroll',on,{passive:true});on()});
+/* topbar rotator */
+document.querySelectorAll('[data-topbar]').forEach(function(bar){var msgs=bar.querySelectorAll('.topbar__msg');if(msgs.length<2)return;var i=0;msgs[0].classList.add('is-on');
+ setInterval(function(){msgs[i].classList.remove('is-on');i=(i+1)%msgs.length;msgs[i].classList.add('is-on')},3200)});
+/* live Dexscreener market bar */
+document.querySelectorAll('[data-dexs-live]').forEach(function(box){
+ var ca=(CA||'').trim();if(!ca||ca.indexOf('{{')===0)return;
+ var chain=box.getAttribute('data-chain')||'';
+ function fmt(n){n=+n||0;if(n>=1e9)return'$'+(n/1e9).toFixed(2)+'B';if(n>=1e6)return'$'+(n/1e6).toFixed(2)+'M';if(n>=1e3)return'$'+(n/1e3).toFixed(1)+'K';return'$'+n.toFixed(2)}
+ function set(sel,v){var el=box.querySelector(sel);if(el)el.textContent=v}
+ fetch('https://api.dexscreener.com/latest/dex/tokens/'+encodeURIComponent(ca)).then(function(r){return r.json()}).then(function(j){
+  var pairs=(j&&j.pairs)||[];if(!pairs.length)return;
+  if(chain){var c=chain.toLowerCase();var pref=pairs.filter(function(p){return(p.chainId||'').toLowerCase().indexOf(c)>=0});if(pref.length)pairs=pref}
+  pairs.sort(function(a,b){return(+b.liquidity&&b.liquidity.usd||0)-(+a.liquidity&&a.liquidity.usd||0)});
+  var p=pairs[0],px=+p.priceUsd||0;set('[data-price]',px>=1?('$'+px.toFixed(4)):('$'+px.toPrecision(4)));
+  set('[data-mcap]',fmt(p.marketCap||p.fdv));set('[data-vol]',fmt(p.volume&&p.volume.h24));set('[data-liq]',fmt(p.liquidity&&p.liquidity.usd));
+  var ch=p.priceChange&&p.priceChange.h24;if(ch!=null){var el=box.querySelector('[data-chg]');if(el){el.textContent=(ch>0?'+':'')+(+ch).toFixed(2)+'%';el.style.color=ch>=0?'#16a34a':'#dc2626'}}
+ }).catch(function(){})});
 })();
+
+/* fit-text: shrink font so nowrap lines fit their container */
+function fitText(root){root=root||document;root.querySelectorAll('h1.stacked .line, [data-fit]').forEach(function(el){
+  var box=el.closest('.hero-copy, .hero-inner, .wrap')||el.parentElement;
+  var limit=Math.max(120,(box&&box.clientWidth||el.parentElement.clientWidth)-8);
+  var max=parseFloat(getComputedStyle(el).fontSize)||48, min=16, lo=min, hi=max, best=min;
+  el.style.whiteSpace='nowrap';el.style.display='block';
+  for(var i=0;i<14;i++){var mid=(lo+hi)/2;el.style.fontSize=mid+'px';
+    if(el.scrollWidth<=limit){best=mid;lo=mid}else hi=mid}
+  el.style.fontSize=best+'px'})}
+function refit(){fitText()}refit();window.addEventListener('resize',refit);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(refit);window.addEventListener('load',refit);
+
+/* intro-logo force visible after letter anim window */
+setTimeout(function(){
+  document.querySelectorAll('.intro-logo,.frame-card img').forEach(function(el){
+    el.style.opacity='1'; el.style.transform='none'; el.style.animation='none';
+  });
+}, 1600);
 
 </script>
 <script>
-document.getElementById('party').addEventListener('click',function(){var L=document.querySelector('.b img').src;for(var i=0;i<40;i++){var s=document.createElement('span');s.style.left=Math.random()*100+'vw';s.style.animationDuration=(2+Math.random()*3)+'s';s.style.animationDelay=Math.random()+'s';s.innerHTML=Math.random()>.5?'<img src="'+L+'" style="width:44px;height:44px;border-radius:50%">':['🎉','💚','✨','🚀'][i%4];document.getElementById('rain').appendChild(s);setTimeout(function(x){return function(){x.remove()}}(s),6000)}});
-
 
 </script>
 </body>

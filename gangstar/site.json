@@ -2,10 +2,14 @@
   "format": "meme-site-studio/site@1",
   "name": "Gangstar",
   "ticker": "Gangstar",
-  "template": "acid-pop",
+  "template": "ut-penpehood",
   "domain": "gangstar.lol",
   "ca": "0xc69176fe3f729c6d6ffe0ab695779ae243091cf6",
   "chain": "bsc",
+  "theme_mode": "original",
+  "theme_preset": "",
+  "theme_primary": "#9945ff",
+  "theme_secondary": "#14f195",
   "domain_status": "live",
   "dns_records": [
     {
@@ -72,5 +76,5 @@
   },
   "site_slug": "gangstar",
   "project_id": "pmvqid2o3u3thp",
-  "exported_at": "2026-10-27T12:15:04.702Z"
+  "exported_at": "2026-10-27T14:28:54.872Z"
 }
