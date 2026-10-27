@@ -6,7 +6,7 @@
   "domain": "gangstar.lol",
   "ca": "TBA",
   "chain": "bsc",
-  "domain_status": "dns",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -21,7 +21,7 @@
       "host": "www.gangstar.lol"
     }
   ],
-  "tagline": "https://x.com/search?q=$Gangstar",
+  "tagline": "",
   "about": "",
   "x_url": "x.com/gangstarbnb",
   "tg_url": "",
@@ -46,7 +46,12 @@
     "assets/meme3.jpg",
     "assets/meme4.jpg",
     "assets/meme5.jpg",
-    "assets/meme6.jpg"
+    "assets/meme6.jpg",
+    "assets/meme7.png",
+    "assets/meme8.png",
+    "assets/meme9.png",
+    "assets/meme10.png",
+    "assets/meme11.png"
   ],
   "characters": [
     "assets/char1.jpg",
@@ -67,5 +72,5 @@
   },
   "site_slug": "gangstar",
   "project_id": "pmvqid2o3u3thp",
-  "exported_at": "2026-10-27T10:02:21.291Z"
+  "exported_at": "2026-10-27T10:06:51.645Z"
 }
