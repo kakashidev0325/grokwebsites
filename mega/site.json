@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "Make Elon Great Again",
   "ticker": "MEGA",
-  "template": "y2k-vaporwave",
+  "template": "sticker-cartoon",
   "domain": "megaoneth.lol",
   "ca": "TBA",
   "chain": "ethereum",
@@ -52,5 +52,5 @@
   },
   "site_slug": "mega",
   "project_id": "pmvpzdw2hi6wh8",
-  "exported_at": "2026-10-27T01:14:12.148Z"
+  "exported_at": "2026-10-27T01:16:47.542Z"
 }
