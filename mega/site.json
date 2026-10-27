@@ -11,18 +11,18 @@
     {
       "type": "A",
       "name": "@",
-      "value": "216.150.1.1",
+      "value": "76.76.21.21",
       "host": "megaonsol.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
-      "value": "79ca2af6cfb20d43.vercel-dns-016.com",
+      "value": "cname.vercel-dns.com",
       "host": "www.megaonsol.lol"
     }
   ],
   "tagline": "",
-  "about": "",
+  "about": "Big dreams, bold innovation, and meme culture.",
   "x_url": "https://x.com/mega2028_x",
   "tg_url": "",
   "socials": [],
@@ -36,8 +36,8 @@
   "dex_name": "Pump.fun",
   "native": "",
   "wallet": "",
-  "vercel_a": "216.150.1.1",
-  "vercel_cname": "79ca2af6cfb20d43.vercel-dns-016.com",
+  "vercel_a": "",
+  "vercel_cname": "",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [],
@@ -51,6 +51,6 @@
     "chain_name": "Solana"
   },
   "site_slug": "mega",
-  "project_id": "pmvq23xtvsdzsk",
-  "exported_at": "2026-10-27T02:22:09.712Z"
+  "project_id": "pmvq32jwpojcu4",
+  "exported_at": "2026-10-27T02:45:41.102Z"
 }
