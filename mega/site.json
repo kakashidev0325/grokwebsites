@@ -41,6 +41,7 @@
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [],
+  "characters": [],
   "resolved": {
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
@@ -52,5 +53,5 @@
   },
   "site_slug": "mega",
   "project_id": "pmvq32jwpojcu4",
-  "exported_at": "2026-10-27T02:53:50.305Z"
+  "exported_at": "2026-10-27T11:12:52.526Z"
 }
