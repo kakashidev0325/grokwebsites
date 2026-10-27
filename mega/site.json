@@ -2,22 +2,22 @@
   "format": "meme-site-studio/site@1",
   "name": "Make Elon Great Again",
   "ticker": "MEGA",
-  "template": "clay-bubbly",
+  "template": "corporate-parody",
   "domain": "megaoneth.lol",
   "ca": "TBA",
   "chain": "solana",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
-      "value": "76.76.21.21",
+      "value": "216.150.1.1",
       "host": "megaoneth.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
-      "value": "cname.vercel-dns.com",
+      "value": "79ca2af6cfb20d43.vercel-dns-016.com",
       "host": "www.megaoneth.lol"
     }
   ],
@@ -36,8 +36,8 @@
   "dex_name": "Pump.fun",
   "native": "",
   "wallet": "",
-  "vercel_a": "",
-  "vercel_cname": "",
+  "vercel_a": "216.150.1.1",
+  "vercel_cname": "79ca2af6cfb20d43.vercel-dns-016.com",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [],
@@ -52,5 +52,5 @@
   },
   "site_slug": "mega",
   "project_id": "pmvpzdw2hi6wh8",
-  "exported_at": "2026-10-27T01:05:20.075Z"
+  "exported_at": "2026-10-27T01:10:04.276Z"
 }
