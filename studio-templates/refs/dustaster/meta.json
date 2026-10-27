@@ -1,0 +1,291 @@
+{
+  "slug": "dustaster",
+  "url": "https://dustaster.com",
+  "status": "ok",
+  "reason": "",
+  "title": "DUST \u2014 The Official Mascot of Aster",
+  "final_url": "https://dustaster.com/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(8, 6, 15)",
+    "color": "rgb(255, 255, 255)",
+    "font": "Manrope, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "fonts": [
+      "Manrope",
+      "Archivo Black",
+      "Arial",
+      "Space Mono"
+    ],
+    "colors": [
+      "rgb(8, 6, 15)",
+      "rgb(255, 255, 255)",
+      "rgb(168, 158, 203)",
+      "rgba(255, 255, 255, 0.05)",
+      "rgba(123, 92, 255, 0.16)",
+      "rgba(12, 8, 24, 0.62)",
+      "rgba(123, 92, 255, 0.14)",
+      "rgba(255, 255, 255, 0.03)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "hero",
+        "h": 1371
+      },
+      {
+        "tag": "FIGURE",
+        "id": "",
+        "cls": "hero-mascot reveal is-in",
+        "h": 330
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "hero-glow",
+        "h": 475
+      },
+      {
+        "tag": "SECTION",
+        "id": "lore",
+        "cls": "lore",
+        "h": 1883
+      },
+      {
+        "tag": "SECTION",
+        "id": "mascot",
+        "cls": "mascot",
+        "h": 1451
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "ribbon",
+        "h": 212
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "marquee",
+        "h": 82
+      },
+      {
+        "tag": "SECTION",
+        "id": "token",
+        "cls": "token",
+        "h": 1072
+      },
+      {
+        "tag": "SECTION",
+        "id": "buy",
+        "cls": "buy",
+        "h": 766
+      },
+      {
+        "tag": "SECTION",
+        "id": "art",
+        "cls": "art",
+        "h": 4673
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "join",
+        "h": 546
+      }
+    ],
+    "imgCount": 108,
+    "imgs": [
+      {
+        "src": "https://dustaster.com/assets/img/mascot-avatar.avif",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/mascot-hero.avif",
+        "w": 700,
+        "h": 700,
+        "alt": "DUST, a hooded figure with a glowing halo, holding a coin of"
+      },
+      {
+        "src": "https://dustaster.com/assets/img/chapter-1.avif",
+        "w": 376,
+        "h": 620,
+        "alt": "A crowd of small hooded dust figures in the dark"
+      },
+      {
+        "src": "https://dustaster.com/assets/img/chapter-2.avif",
+        "w": 620,
+        "h": 620,
+        "alt": "DUST holding a point of light on a cliff edge"
+      },
+      {
+        "src": "https://dustaster.com/assets/img/chapter-3.avif",
+        "w": 620,
+        "h": 620,
+        "alt": "DUST channelling arcs of energy"
+      },
+      {
+        "src": "https://dustaster.com/assets/img/chapter-4.avif",
+        "w": 620,
+        "h": 620,
+        "alt": "DUST surrounded by a rising crowd"
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/01_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/02_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/03_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/04_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/05_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/06_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/07_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/08_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/09_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/10_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/11_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/12_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/13_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/14_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/15_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/16_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/17_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/18_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/19_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/20_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/01_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/02_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/03_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://dustaster.com/assets/img/community/thumbs/04_dust@DustonBNB.avif",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": true,
+    "hasChart": false,
+    "hasVideo": true,
+    "scrollH": 12409,
+    "title": "DUST \u2014 The Official Mascot of Aster"
+  },
+  "css_urls": [
+    "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap",
+    "https://dustaster.com/assets/css/style.css"
+  ]
+}

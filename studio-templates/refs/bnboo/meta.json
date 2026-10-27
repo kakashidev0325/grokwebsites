@@ -1,0 +1,121 @@
+{
+  "slug": "bnboo",
+  "url": "https://www.bnboo.monster",
+  "status": "ok",
+  "reason": "",
+  "title": "BNBO | BSC",
+  "final_url": "https://www.bnboo.monster/",
+  "http": 200,
+  "style": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "font": "Arial, Helvetica, sans-serif",
+    "fonts": [
+      "Helvetica",
+      "Arial",
+      "wfont_586bad_b2385ca33aae498c8284884c9d5873d5",
+      "madefor-text"
+    ],
+    "colors": [
+      "rgb(0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgb(17, 109, 255)",
+      "rgba(255, 255, 255, 0)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "comp-luaiidqg_r_comp-kbgajy18",
+        "cls": "ke5pl1 comp-luaiidqg_r_comp-kbgajy18-container comp-luaiidqg_r_comp-kbgajy18 ke5",
+        "h": 0
+      },
+      {
+        "tag": "SECTION",
+        "id": "comp-luaiidnk1",
+        "cls": "ke5pl1 comp-luaiidnk1-container comp-luaiidnk1 wixui-section undefined fwXYgt",
+        "h": 813
+      },
+      {
+        "tag": "SECTION",
+        "id": "comp-luaiidry_r_comp-kbgakgyt",
+        "cls": "ke5pl1 comp-luaiidry_r_comp-kbgakgyt-container comp-luaiidry_r_comp-kbgakgyt wix",
+        "h": 0
+      }
+    ],
+    "imgCount": 12,
+    "imgs": [
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_55985aea599944e49efa5f684ae53595~mv2.png/v1/fill/w_1440,h_813,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/ce592e_55985aea599944e49efa5f684ae53595~mv2.png",
+        "w": 1440,
+        "h": 813,
+        "alt": "bnbo phone.png"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_de2062c5ab4e41368b9d318ab2c79fdf~mv2.png/v1/fill/w_1440,h_825,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/RAID.png",
+        "w": 1440,
+        "h": 825,
+        "alt": "RAID.png"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_46cc203909cf498a84ce9dd5f76a4b09~mv2.gif",
+        "w": 1845,
+        "h": 960,
+        "alt": "50 (3).gif"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_85cf42c8ce0346bf9943cfd91bc547f0~mv2.png/v1/fill/w_136,h_91,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50.png",
+        "w": 136,
+        "h": 91,
+        "alt": "50.png"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_c5a7c7576c8d43a7b26150eb504e9a30~mv2.gif",
+        "w": 1845,
+        "h": 960,
+        "alt": "50.gif"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_46cc203909cf498a84ce9dd5f76a4b09~mv2.gif",
+        "w": 1845,
+        "h": 960,
+        "alt": "50 (3).gif"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_46cc203909cf498a84ce9dd5f76a4b09~mv2.gif",
+        "w": 1845,
+        "h": 960,
+        "alt": "50 (3).gif"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_46cc203909cf498a84ce9dd5f76a4b09~mv2.gif",
+        "w": 1845,
+        "h": 960,
+        "alt": "50 (3).gif"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_46cc203909cf498a84ce9dd5f76a4b09~mv2.gif",
+        "w": 1845,
+        "h": 960,
+        "alt": "50 (3).gif"
+      },
+      {
+        "src": "https://static.wixstatic.com/media/ce592e_f3f79771aeed4f6dacd7d6a2ccb30ec1~mv2.png/v1/fill/w_449,h_658,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50.png",
+        "w": 449,
+        "h": 658,
+        "alt": "50.png"
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": false,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 900,
+    "title": "BNBO | BSC"
+  },
+  "css_urls": [
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.c472a333.chunk.min.css",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[PopupRoot_Responsive].570053ec.min.css",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt_popup.edc33d2b.min.css",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[PopupCloseIconButton].c9b0a0db.min.css"
+  ]
+}

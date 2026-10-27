@@ -1,0 +1,291 @@
+@@FONTS@@ family=IBM+Plex+Mono:wght@500;700&family=DM+Sans:wght@400;700
+@@CSS@@
+
+:root{
+ --a:#c8f542;--a2:#19c37d;--on:#07140a;--acc:var(--a);--part:var(--a);
+ --bg:#07140f;--bg-2:#0d2418;--surface:#0e1c16;--card:var(--surface);
+ --ink:#e7f7ee;--muted:#b7d2c4;--line:rgba(200,245,66,.3);
+ --glow:rgba(200,245,66,.35);--grad:linear-gradient(135deg,var(--a),var(--a2));
+ --radius:6px;--shadow:none;--border:1px solid rgba(200,245,66,.35);
+ --display:'IBM Plex Mono',ui-monospace,monospace;--body:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;
+ background:
+  radial-gradient(1000px 520px at 100% -10%, color-mix(in srgb, var(--a) 32%, transparent), transparent 62%),
+  radial-gradient(800px 480px at -10% 20%, color-mix(in srgb, var(--a2) 26%, transparent), transparent 60%),
+  var(--bg)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:.95}
+.scene .bg{fill:var(--bg)}
+.scene .bg2{fill:var(--bg-2)}
+.scene .surf{fill:var(--surface)}
+.scene .a{fill:var(--a);stroke:var(--a)}
+.scene .a2{fill:var(--a2);stroke:var(--a2)}
+.scene .ink{fill:var(--ink);stroke:var(--ink)}
+.scene .line,.scene .a[fill="none"],.scene .a2[fill="none"],.scene .ink[fill="none"]{fill:none}
+.scene{display:block}
+.gchar{background:
+  radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--a) 35%, var(--surface)), var(--surface));
+  border:var(--border);border-radius:var(--radius);box-shadow:var(--shadow);object-fit:contain}
+
+
+.top{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:18px;padding:12px 22px;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700}
+.brand img{width:40px;height:40px;border-radius:12px;object-fit:cover;background:var(--card);border:2px solid var(--line)}
+.brand em{font-style:normal;color:var(--a);font-size:.85rem}
+.navlinks{display:flex;gap:16px;margin-left:auto;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.top-actions{display:flex;align-items:center;gap:8px}
+.top-actions a[data-s]{width:40px;height:40px;display:grid;place-items:center;border-radius:999px;border:1px solid var(--line)}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);place-items:center;gap:4px}
+.burger i{display:block;width:16px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 16px;border-radius:var(--radius);border:var(--border);font-weight:800;background:transparent;color:inherit;white-space:nowrap}
+.btn-main{background:var(--a);color:var(--on);border-color:transparent}
+.btn-ghost{background:var(--card)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.kicker{color:var(--a);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;margin:0 0 8px}
+h2{font-size:clamp(2rem,4.6vw,3.8rem);margin:0 0 12px}
+h2 em{font-style:normal;color:var(--a)}
+.prose{color:var(--muted);max-width:62ch}
+.sec{padding:clamp(64px,8vw,110px) 0;position:relative}
+.wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+.mq{background:var(--a);color:var(--on);font-family:var(--display);font-weight:700;padding:12px 0;font-size:1.05rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.frame{background:var(--card);border:var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
+.frame img,.gchar{width:100%;height:auto;object-fit:contain}
+.facts{display:flex;gap:18px;list-style:none;padding:0;margin:18px 0 0}
+.facts b{display:block;font-family:var(--display);font-size:1.6rem}
+.facts span,.cards span,.bars span,.tickets span{color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height:1.02;margin:0 0 18px}
+.cols,.beats,.cards,.tickets,.steps,.stack,.stations,.chapters,.mosaic,.polaroids{display:grid;gap:14px}
+.cols{grid-template-columns:1fr 1fr}
+.beats{grid-template-columns:repeat(3,1fr);margin-top:22px}
+.beats article,.cards article,.tickets article,.steps li,.stack li,.chapters li{background:var(--card);border:var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+.beats strong,.step .n,.stack span,.chapters span,.stations span{font-family:var(--display);font-size:2rem;color:var(--a)}
+.cards,.tickets{grid-template-columns:repeat(4,1fr)}
+.cards b,.tickets b,.bars b{font-family:var(--display);font-size:clamp(1.6rem,3vw,2.4rem);display:block}
+.tok-bars .bars{display:grid;gap:10px}
+.tok-bars article{display:grid;grid-template-columns:160px 1fr;gap:8px 18px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);background:transparent;box-shadow:none;border-radius:0}
+.tok-bars article small{grid-column:2}
+.tickets article{border-style:dashed;position:relative}
+.tickets article:before,.tickets article:after{content:"";position:absolute;width:18px;height:18px;background:var(--bg);border-radius:50%;top:50%;margin-top:-9px}
+.tickets article:before{left:-9px}.tickets article:after{right:-9px}
+.donut-wrap{display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:center}
+.donut{width:240px;height:240px;border-radius:50%;background:conic-gradient(var(--a) 0 70%, var(--a2) 0 88%, var(--card) 0 100%);display:grid;place-items:center;position:relative}
+.donut i{position:absolute;inset:28px;background:var(--bg);border-radius:50%}
+.donut b{position:relative;font-family:var(--display)}
+.steps{grid-template-columns:repeat(4,1fr);list-style:none;padding:0}
+.steps p,.stack p,.chapters p,.stations p{color:var(--muted);margin:.3rem 0 0}
+.chartbox{margin-top:28px;border:var(--border);border-radius:var(--radius);overflow:hidden;background:var(--bg-2);box-shadow:var(--shadow)}
+.stack{grid-template-columns:repeat(4,1fr);list-style:none;padding:0}
+.stations{grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);overflow:auto;list-style:none;padding:18px 0 8px;scroll-snap-type:x mandatory}
+.stations li{scroll-snap-align:start;min-height:180px;background:var(--card);border:var(--border);border-radius:var(--radius);padding:16px;position:relative}
+.stations li:not(:last-child):after{content:"";position:absolute;right:-14px;top:28px;width:14px;height:3px;background:var(--a)}
+.chapters{list-style:none;padding:0;gap:0}
+.chapters li{display:grid;grid-template-columns:90px 1fr;gap:12px;border-radius:0;border-left:3px solid var(--a);box-shadow:none}
+.mosaic{grid-template-columns:2fr 1fr 1fr;grid-auto-rows:180px}
+.mosaic figure:first-child{grid-row:span 2}
+.mosaic figure,.polaroids figure,.gal-rail figure{margin:0;background:var(--card);border:var(--border);border-radius:var(--radius);overflow:hidden;position:relative}
+.mosaic img,.polaroids img,.gal-rail img{width:100%;height:100%;object-fit:cover;background:
+  radial-gradient(circle at 30% 30%, color-mix(in srgb,var(--a) 55%,#fff), transparent 55%),
+  var(--card)}
+.mosaic figcaption,.polaroids figcaption{position:absolute;left:8px;bottom:8px;background:var(--bg);padding:2px 6px;font-size:.72rem;border-radius:999px}
+.polaroids{grid-template-columns:repeat(4,1fr)}
+.polaroids figure{padding:10px 10px 28px;background:var(--surface);color:var(--ink);transform:rotate(var(--rot,-2deg));box-shadow:var(--shadow)}
+.polaroids figure:nth-child(2n){transform:rotate(2.5deg)}
+.polaroids figure:nth-child(3n){transform:rotate(-3deg)}
+.gal-rail .meme-rail{padding:10px 0 20px}
+.gal-rail figure{width:260px;height:260px}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:32px}
+.acc{border-bottom:1px solid var(--line)}
+.acc-q{width:100%;text-align:left;padding:16px 0;font-weight:800;font-size:1.05rem;display:flex;justify-content:space-between}
+.acc-q:after{content:"+";color:var(--a);font-size:1.3rem}
+.acc.open .acc-q:after{content:"–"}
+.acc-a p{margin:0 0 14px;color:var(--muted)}
+.cta-band{background:var(--grad);color:var(--on)}
+.statline{font-family:var(--display);font-size:clamp(1.4rem,3vw,2rem);margin:18px 0 0}
+.statline b{color:var(--a)}
+.cta-band .kicker,.cta-band h2,.cta-band .prose{color:inherit}
+.cta-band .btn-ghost{background:transparent;color:inherit;border-color:currentColor}
+.cta-ticket .ticket{display:flex;justify-content:space-between;gap:20px;align-items:center;border:var(--border);border-radius:var(--radius);padding:28px;background:var(--card);box-shadow:var(--shadow);background-image:radial-gradient(circle at left, transparent 12px, var(--card) 13px)}
+.market{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px;padding:14px 16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.market span{display:block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.sig-ol,.sig-man ol,.sig-slab ol{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+.sig-pr .sig-ol{grid-template-columns:repeat(3,1fr)}
+.sig-ol li,.sig-man li,.sig-slab li{display:flex;gap:12px;align-items:flex-start}
+.sig-slab{background:var(--ink);color:var(--bg)}
+.sig-slab .kicker,.sig-slab h2,.sig-slab p,.sig-slab li{color:inherit}
+.meters{display:grid;gap:14px;margin-top:16px}
+.meter i{display:block;height:14px;border-radius:99px;background:var(--line);position:relative;margin:6px 0}
+.meter i:after{content:"";position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--a);border-radius:inherit}
+.foot{padding:48px 0 28px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:18px}
+.foot a,.foot button{display:block;padding:4px 0;color:inherit;background:none;border:0;text-align:left}
+.legal{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:.8rem}
+.about-overlap .stage{display:grid;grid-template-columns:1.1fr .9fr;align-items:end}
+.about-overlap img{max-width:420px;margin-left:auto;filter:drop-shadow(0 24px 30px rgba(0,0,0,.25))}
+@media(max-width:900px){
+  .navlinks{display:none;position:absolute;left:12px;right:12px;top:70px;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px}
+  body.menu-open .navlinks{display:flex}
+  .burger{display:grid}
+  .split,.cols,.beats,.cards,.tickets,.steps,.stack,.faq-grid,.donut-wrap,.foot-grid,.about-overlap .stage,.sig-pr .sig-ol,.cta-ticket .ticket{grid-template-columns:1fr}
+  .tok-bars article{grid-template-columns:1fr}
+  .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+  .polaroids{grid-template-columns:1fr 1fr}
+  .cards,.tickets,.steps,.stack{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){.cards,.tickets,.steps,.stack,.mosaic,.polaroids{grid-template-columns:1fr}}
+
+
+.hero{min-height:100svh;background:var(--bg);position:relative;overflow:hidden;display:grid;align-items:end}
+.hero .scene{position:absolute;inset:0;width:100%;height:100%}
+.dock{position:relative;z-index:2;display:flex;justify-content:space-between;gap:20px;align-items:end;width:min(1180px,calc(100% - 36px));margin:0 auto 28px}
+.hero h1{font-size:clamp(2.8rem,6vw,5.4rem);margin:0;font-family:var(--display)}
+.hero .ticker{font-family:ui-monospace,monospace;background:color-mix(in srgb,var(--bg) 75%,transparent);border:1px solid var(--a);padding:12px 14px}
+.hero .ticker b{color:var(--a);font-size:1.4rem}
+.hero .mascot{width:min(300px,36vw)}
+.hero .mascot img{width:100%;background:var(--surface);border-radius:18px;border:2px solid var(--a)}
+.hero .lede{color:var(--muted)}
+@media(max-width:800px){.dock{flex-direction:column;align-items:flex-start}.hero .mascot{width:min(220px,60vw)}}
+
+.kicker{font-family:ui-monospace,monospace}
+@@BODY@@
+<body data-intro>
+
+<header class="top">
+  <a class="brand" href="#top"><img src="{{LOGO}}" alt="" width="64" height="64"><b>{{NAME}}</b><em>${{TICKER}}</em></a>
+  <nav class="navlinks">
+    <a href="#lore">Lore</a><a href="#token">Token</a><a href="#buy">Buy</a><a href="#road">Road</a><a href="#memes">Memes</a><a href="#faq">FAQ</a>
+  </nav>
+  <div class="top-actions">
+    [[SOCIALS]]
+    <a class="btn btn-main btn-shine" data-magnetic data-buy href="{{BUY_URL}}">[[BUY]] Buy</a>
+    <button class="burger" type="button" data-menu aria-label="Open menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<section class="hero"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><rect class="a2" x="30" y="640" width="18" height="48" opacity=".9"/><rect class="a" x="76" y="627" width="18" height="70" opacity=".9"/><rect class="a" x="122" y="614" width="18" height="92" opacity=".9"/><rect class="a2" x="168" y="601" width="18" height="114" opacity=".9"/><rect class="a" x="214" y="588" width="18" height="136" opacity=".9"/><rect class="a" x="260" y="575" width="18" height="48" opacity=".9"/><rect class="a2" x="306" y="562" width="18" height="70" opacity=".9"/><rect class="a" x="352" y="549" width="18" height="92" opacity=".9"/><rect class="a" x="398" y="536" width="18" height="114" opacity=".9"/><rect class="a2" x="444" y="523" width="18" height="136" opacity=".9"/><rect class="a" x="490" y="510" width="18" height="48" opacity=".9"/><rect class="a" x="536" y="497" width="18" height="70" opacity=".9"/><rect class="a2" x="582" y="484" width="18" height="92" opacity=".9"/><rect class="a" x="628" y="471" width="18" height="114" opacity=".9"/><rect class="a" x="674" y="458" width="18" height="136" opacity=".9"/><rect class="a2" x="720" y="445" width="18" height="48" opacity=".9"/><rect class="a" x="766" y="632" width="18" height="70" opacity=".9"/><rect class="a" x="812" y="619" width="18" height="92" opacity=".9"/><rect class="a2" x="858" y="606" width="18" height="114" opacity=".9"/><rect class="a" x="904" y="593" width="18" height="136" opacity=".9"/><rect class="a" x="950" y="580" width="18" height="48" opacity=".9"/><rect class="a2" x="996" y="567" width="18" height="70" opacity=".9"/><rect class="a" x="1042" y="554" width="18" height="92" opacity=".9"/><rect class="a" x="1088" y="541" width="18" height="114" opacity=".9"/><rect class="a2" x="1134" y="528" width="18" height="136" opacity=".9"/><rect class="a" x="1180" y="515" width="18" height="48" opacity=".9"/><rect class="a" x="1226" y="502" width="18" height="70" opacity=".9"/><rect class="a2" x="1272" y="489" width="18" height="92" opacity=".9"/><rect class="a" x="1318" y="476" width="18" height="114" opacity=".9"/><rect class="a" x="1364" y="463" width="18" height="136" opacity=".9"/></svg><div class="dock"><div><p class="kicker">Desk · {{CHAIN_NAME}}</p><h1>{{NAME}}</h1><p class="lede">{{TAGLINE}}</p>
+<div class="hero-actions">
+  <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a>
+  <a class="btn btn-ghost" href="{{DEXS_URL}}" target="_blank" rel="noopener">[[DEX]] Chart</a>
+  <button class="btn btn-ghost" type="button" data-copy>[[COPY]] <code>{{CA_SHORT}}</code></button>
+</div>
+</div><div class="ticker"><div>${{TICKER}}</div><b data-count="100" data-suf="%">100%</b><div>vibe / not advice</div></div><div class="mascot"><img class="gchar m-bob" data-tilt data-mouse="18" src="{{LOGO}}" alt="{{NAME}}" width="800" height="800"></div></div></section>
+<div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>${{TICKER}} ✦ {{NAME}} ✦ {{TAGLINE}} ✦ LP {{LP}} ✦ TAX {{TAX}} ✦ {{CHAIN_NAME}} ✦ {{CTA}} ✦ BUY ${{TICKER}} ✦ </span></div></div>
+<!--BANNER_SLOT-->
+<section class="sec sig sig-meter"><div class="wrap"><p class="kicker">Tape</p><h2>A desk, not a cinematic</h2><p class="prose">{{ABOUT}}</p><div class="meters rv"><div class="meter"><span>Candles</span><i style="--w:70%"><b data-count="70" data-suf="%"></b></i><small>The background is the chart joke.</small></div><div class="meter"><span>Mono</span><i style="--w:78%"><b data-count="78" data-suf="%"></b></i><small>Numbers in a terminal face.</small></div><div class="meter"><span>Swap</span><i style="--w:86%"><b data-count="86" data-suf="%"></b></i><small>{{DEX}} still, like everyone else.</small></div></div></div></section>
+
+<section class="sec about" id="lore">
+  <div class="wrap">
+    <p class="kicker">Lore</p>
+    <h2>{{NAME}} in three beats</h2>
+    <div class="beats rv-stagger">
+      <article><strong>01</strong><h3>A name</h3><p>{{TAGLINE}}</p></article>
+      <article><strong>02</strong><h3>A chain</h3><p>{{ABOUT}}</p></article>
+      <article><strong>03</strong><h3>A crowd</h3><p>{{CTA}}</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec tok tok-donut" id="token">
+  <div class="wrap donut-wrap">
+    <div class="donut rv-z" aria-hidden="true"><i></i><b>${{TICKER}}</b></div>
+    <div>
+      <p class="kicker">Tokenomics</p>
+      <h2>What you are actually buying</h2>
+      <div class="bars">
+<article><b>{{SUPPLY_SHORT}}</b><span>Supply</span><small>{{SUPPLY}} tokens. That is the whole pile.</small></article>
+<article><b>{{TAX}}</b><span>Tax</span><small>Buy / sell tax printed in the open.</small></article>
+<article><b>{{LP_SHORT}}</b><span>Liquidity</span><small>LP status: {{LP}}.</small></article>
+<article><b>{{CHAIN_NAME}}</b><span>Chain</span><small>Swap it on {{DEX}} with {{WALLET}}.</small></article>
+</div>
+      <p class="statline rv"><b data-count="100" data-suf="%">0%</b> crowd-owned joke. Supply {{SUPPLY_SHORT}}.</p>
+    </div>
+  </div>
+</section>
+<section class="sec road road-chapters" id="road"><div class="wrap"><p class="kicker">Roadmap</p><h2>Chapters of ${{TICKER}}</h2><ol class="chapters rv-stagger">
+<li><span>01</span><h3>Launch</h3><p>The site, the socials, and the first people who held ${{TICKER}} without being asked twice.</p></li>
+<li><span>02</span><h3>Culture</h3><p>Meme contests, sticker dumps, and a timeline that looks like {{NAME}} lives there.</p></li>
+<li><span>03</span><h3>Listings</h3><p>Trackers, a louder chart on {{DEX}}, and whoever wants the ticker in public.</p></li>
+<li><span>04</span><h3>The long game</h3><p>Merch, meetups, and ideas the community actually bothers to finish.</p></li>
+</ol></div></section>
+
+<section class="sec how" id="buy">
+  <div class="wrap">
+    <p class="kicker">How to buy</p>
+    <h2>Four steps on {{DEX}}</h2>
+    <ol class="steps rv-stagger">
+      <li class="step"><span class="n">01</span><h3>Get {{WALLET}}</h3><p>Install the wallet, write the seed down offline, and add the {{CHAIN_NAME}} network.</p></li>
+      <li class="step"><span class="n">02</span><h3>Fund {{NATIVE}}</h3><p>Buy or bridge a little {{NATIVE}} so you can pay for the swap and the fee.</p></li>
+      <li class="step"><span class="n">03</span><h3>Paste the CA</h3><p>Open {{DEX}}, paste <button type="button" data-copy><code>{{CA_SHORT}}</code></button>, and check the name is {{NAME}}.</p></li>
+      <li class="step"><span class="n">04</span><h3>Swap ${{TICKER}}</h3><p>Set slippage you can live with, confirm in {{WALLET}}, then go make a meme.</p></li>
+    </ol>
+    <div class="chartbox rv">
+      <div class="chart"><iframe title="{{NAME}} chart" src="{{CHART_URL}}" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec gal" id="memes">
+  <div class="wrap">
+    <p class="kicker">Memes</p><h2>The gallery</h2>
+    <div class="mosaic rv-stagger"><figure class="rv"><img class="gimg" src="{{LOGO}}" alt="{{NAME}} meme 1" width="800" height="800" loading="lazy"><figcaption>01</figcaption></figure>
+<figure class="rv"><img class="gimg" src="{{LOGO}}" alt="{{NAME}} meme 2" width="800" height="800" loading="lazy"><figcaption>02</figcaption></figure>
+<figure class="rv"><img class="gimg" src="{{LOGO}}" alt="{{NAME}} meme 3" width="800" height="800" loading="lazy"><figcaption>03</figcaption></figure>
+<figure class="rv"><img class="gimg" src="{{LOGO}}" alt="{{NAME}} meme 4" width="800" height="800" loading="lazy"><figcaption>04</figcaption></figure>
+<figure class="rv"><img class="gimg" src="{{LOGO}}" alt="{{NAME}} meme 5" width="800" height="800" loading="lazy"><figcaption>05</figcaption></figure>
+<figure class="rv"><img class="gimg" src="{{LOGO}}" alt="{{NAME}} meme 6" width="800" height="800" loading="lazy"><figcaption>06</figcaption></figure>
+<figure class="rv"><img class="gimg" src="{{LOGO}}" alt="{{NAME}} meme 7" width="800" height="800" loading="lazy"><figcaption>07</figcaption></figure>
+<figure class="rv"><img class="gimg" src="{{LOGO}}" alt="{{NAME}} meme 8" width="800" height="800" loading="lazy"><figcaption>08</figcaption></figure></div>
+  </div>
+</section>
+
+<section class="sec faq" id="faq">
+  <div class="wrap faq-grid">
+    <header><p class="kicker">FAQ</p><h2>Ask, then ape or don't.</h2><p class="prose">{{CTA}}</p></header>
+    <div data-acc>
+      <div class="acc open"><button class="acc-q" type="button" aria-expanded="true">What is {{NAME}}?</button><div class="acc-a"><p>{{ABOUT}}</p></div></div>
+      <div class="acc"><button class="acc-q" type="button" aria-expanded="false">Where is the contract?</button><div class="acc-a"><p class="ca-text">{{CA}}</p><p>Chain: {{CHAIN_NAME}}. DEX: {{DEX}}.</p></div></div>
+      <div class="acc"><button class="acc-q" type="button" aria-expanded="false">How do I buy?</button><div class="acc-a"><p>Install {{WALLET}}, get {{NATIVE}}, open {{DEX}}, paste the CA, swap for ${{TICKER}}.</p></div></div>
+      <div class="acc"><button class="acc-q" type="button" aria-expanded="false">Tax, supply, liquidity?</button><div class="acc-a"><p>Tax {{TAX}}. Supply {{SUPPLY}}. LP {{LP}}.</p></div></div>
+      <div class="acc"><button class="acc-q" type="button" aria-expanded="false">Is this financial advice?</button><div class="acc-a"><p>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. Not financial advice.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec cta cta-split" id="join">
+  <div class="wrap split">
+    <div>
+      <p class="kicker">Join</p>
+      <h2>Come for the ticker. Stay for the bit.</h2>
+      <p class="prose">{{CTA}}</p>
+      <div class="hero-actions">
+        <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a>
+        <a class="btn btn-ghost" data-s href="{{X_URL}}">[[X]] X</a>
+        <a class="btn btn-ghost" data-s href="{{TG_URL}}">[[TG]] Telegram</a>
+      </div>
+    </div>
+    <img class="gchar m-bob" data-tilt data-mouse="16" src="{{LOGO}}" alt="" width="640" height="640">
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="#top"><img src="{{LOGO}}" alt="" width="64" height="64"><b>{{NAME}}</b></a>
+      <p>{{TAGLINE}}</p>
+    </div>
+    <div><b>Explore</b><a href="#lore">Lore</a><a href="#token">Tokenomics</a><a href="#buy">How to buy</a><a href="#memes">Memes</a><a href="#faq">FAQ</a></div>
+    <div><b>Trade</b><a href="{{BUY_URL}}">{{DEX}}</a><a href="{{DEXS_URL}}">Dexscreener</a><button type="button" data-copy>Copy CA</button></div>
+    <div><b>Community</b><a data-s href="{{X_URL}}">X</a><a data-s href="{{TG_URL}}">Telegram</a>{{EXTRA_SOCIALS}}</div>
+  </div>
+  <div class="wrap legal"><p>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. Not financial advice. Art on this page is the token logo, banner, and uploaded memes.</p><p>© <span data-year>2026</span> ${{TICKER}}</p></div>
+</footer>
+
+</body>
+@@JS@@

@@ -1,0 +1,137 @@
+{
+  "slug": "bytedog",
+  "url": "https://bytedog.ai",
+  "status": "ok",
+  "reason": "",
+  "title": "Byte The Ai Dog",
+  "final_url": "https://bytedog.ai/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "font": "sans-serif",
+    "fonts": [
+      "sans-serif",
+      "Space Grotesk"
+    ],
+    "colors": [
+      "rgb(0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(255, 255, 255, 0.07)",
+      "rgba(255, 255, 255, 0.42)"
+    ],
+    "sections": [
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "byte-paper-layout",
+        "h": 9786
+      },
+      {
+        "tag": "SECTION",
+        "id": "introduction",
+        "cls": "",
+        "h": 600
+      },
+      {
+        "tag": "SECTION",
+        "id": "narrative",
+        "cls": "",
+        "h": 658
+      },
+      {
+        "tag": "SECTION",
+        "id": "tokenomics",
+        "cls": "",
+        "h": 614
+      },
+      {
+        "tag": "SECTION",
+        "id": "technology",
+        "cls": "",
+        "h": 443
+      },
+      {
+        "tag": "SECTION",
+        "id": "community",
+        "cls": "",
+        "h": 413
+      },
+      {
+        "tag": "SECTION",
+        "id": "ecosystem",
+        "cls": "",
+        "h": 946
+      },
+      {
+        "tag": "SECTION",
+        "id": "governance",
+        "cls": "",
+        "h": 365
+      },
+      {
+        "tag": "SECTION",
+        "id": "pulse",
+        "cls": "",
+        "h": 504
+      },
+      {
+        "tag": "SECTION",
+        "id": "app",
+        "cls": "",
+        "h": 499
+      },
+      {
+        "tag": "SECTION",
+        "id": "companion",
+        "cls": "",
+        "h": 578
+      },
+      {
+        "tag": "SECTION",
+        "id": "collectibles",
+        "cls": "",
+        "h": 365
+      },
+      {
+        "tag": "SECTION",
+        "id": "education",
+        "cls": "",
+        "h": 499
+      },
+      {
+        "tag": "SECTION",
+        "id": "development",
+        "cls": "",
+        "h": 535
+      },
+      {
+        "tag": "SECTION",
+        "id": "roadmap",
+        "cls": "",
+        "h": 1129
+      },
+      {
+        "tag": "SECTION",
+        "id": "official",
+        "cls": "",
+        "h": 796
+      },
+      {
+        "tag": "SECTION",
+        "id": "conclusion",
+        "cls": "",
+        "h": 841
+      }
+    ],
+    "imgCount": 0,
+    "imgs": [],
+    "hasSticky": true,
+    "hasMarquee": false,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 10766,
+    "title": "Byte The Ai Dog"
+  },
+  "css_urls": []
+}

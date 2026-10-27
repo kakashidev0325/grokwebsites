@@ -1,0 +1,102 @@
+@@FONTS@@ family=Teko:wght@500;700&family=Roboto+Condensed:wght@400;700
+@@CSS@@
+:root{--bg:#0b1d3a;--acc:#e31837;--acc2:#ffffff;--ink:#f2f2f2;--card:color-mix(in srgb,var(--bg) 70%,#fff 30%);--part:var(--acc)}
+body{font-family:'Roboto Condensed',system-ui,sans-serif;color:var(--ink);background:var(--bg);--part:var(--acc)}
+h1,h2,h3,.disp{font-family:'Teko',system-ui,sans-serif;font-weight:700;letter-spacing:.02em}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+nav.top{position:sticky;top:0;z-index:40;backdrop-filter:blur(10px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 15%,transparent)}
+nav.top .bar{display:flex;align-items:center;justify-content:space-between;max-width:1180px;margin:auto;padding:10px 20px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Teko';font-size:1.25rem}.brand img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--acc)}
+.links{display:flex;gap:18px;font-weight:700;font-size:.95rem}.links a:hover{color:var(--acc)}
+.soc{display:flex;gap:8px;align-items:center}.soc a{width:38px;height:38px;display:grid;place-items:center;border:2px solid var(--acc);border-radius:12px;background:color-mix(in srgb,var(--acc) 18%,transparent);transition:transform .15s}.soc a:hover{transform:scale(1.08) rotate(-6deg)}
+.burger{display:none;background:none;border:0;font-size:26px;color:var(--ink)}
+.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;padding:70px 20px 100px;overflow:hidden}
+.hero .logo{width:min(300px,68vw);aspect-ratio:1;object-fit:cover;border-radius:28px;border:4px solid var(--acc);box-shadow:0 0 0 8px color-mix(in srgb,var(--acc2) 35%,transparent),0 20px 50px rgba(0,0,0,.35);margin:0 auto 18px}
+.hero h1{font-size:clamp(3rem,11vw,7.5rem);line-height:.92;margin:.1em 0;color:var(--acc2);text-shadow:0 4px 0 color-mix(in srgb,var(--ink) 40%,transparent)}
+.hero .tag{display:inline-block;font-weight:800;padding:.45em 1em;border-radius:999px;background:var(--acc);color:var(--bg);transform:rotate(-1.5deg)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:.5em;font-weight:800;padding:.85em 1.35em;border-radius:14px;border:2px solid var(--ink);background:var(--acc2);color:var(--ink);box-shadow:0 5px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(-3px)}.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--acc)}
+.btn.soft{background:var(--acc);color:#fff;border-color:transparent;box-shadow:none}
+.ca{display:flex;align-items:center;gap:10px;max-width:640px;margin:22px auto 0;background:color-mix(in srgb,var(--bg) 55%,#000 45%);border:2px solid var(--acc);border-radius:16px;padding:8px 8px 8px 16px;text-align:left;color:#fff}
+.ca b{font-family:'Teko'}.ca code{flex:1;font-size:.88rem;opacity:.95}.ca button{border:0;background:var(--acc2);color:var(--ink);border-radius:10px;padding:10px 14px;font-weight:800}
+.tape{background:var(--acc);color:var(--bg);font-family:'Teko';font-size:1.35rem;padding:12px 0;position:relative;z-index:2}
+.tape span{display:inline-flex;gap:2.2rem;align-items:center}.tape img{width:30px;height:30px;border-radius:50%}
+section{padding:96px 0;position:relative;z-index:1}
+.sec-title{text-align:center;font-size:clamp(2.2rem,6vw,4rem);margin:0 0 36px;color:var(--acc2)}
+.card{background:color-mix(in srgb,var(--bg) 40%,#fff 12%);border:2px solid color-mix(in srgb,var(--acc) 55%,transparent);border-radius:22px;padding:28px;box-shadow:0 12px 40px rgba(0,0,0,.18);backdrop-filter:blur(6px)}
+.about .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:center}
+.about .pic img{border-radius:24px;border:3px solid var(--acc);width:100%}
+.tk{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.tk .card{text-align:center;transition:transform .2s}.tk .card:hover{transform:translateY(-6px) rotate(-1deg)}
+.tk .card .lk{font-size:1.8rem;display:block;margin:6px 0;font-family:'Teko';color:var(--acc2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.steps .card{position:relative;padding-top:48px}.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:20px;width:44px;height:44px;display:grid;place-items:center;font-family:'Teko';font-size:1.4rem;background:var(--acc);color:#fff;border-radius:50%}
+.chartbox{margin-top:42px;border:3px solid var(--acc);border-radius:22px;overflow:hidden;background:#111}
+.gal{columns:4 210px;column-gap:16px}.gal figure{break-inside:avoid;margin:0 0 16px;background:color-mix(in srgb,var(--bg) 50%,#000);border:2px solid var(--acc);border-radius:16px;padding:8px;transition:transform .2s}.gal figure:hover{transform:rotate(-2deg) scale(1.03)}
+.gal img{border-radius:10px;width:100%}.gal figcaption{text-align:center;font-weight:700;padding-top:6px;font-size:.9rem}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.phases li{list-style:none;margin:.35em 0;font-weight:600}.phases li::before{content:"◆ ";color:var(--acc)}
+.join{text-align:center}.join .big{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+footer{background:color-mix(in srgb,var(--bg) 70%,#000);color:color-mix(in srgb,var(--ink) 80%,#fff);text-align:center;padding:36px 20px;font-size:.9rem}
+footer p{max-width:760px;margin:10px auto;opacity:.75}
+@media(max-width:900px){.links{display:none}.about .grid,.phases{grid-template-columns:1fr}.tk,.steps{grid-template-columns:1fr 1fr}
+.menu-open .links{display:flex;position:absolute;top:60px;left:12px;right:12px;flex-direction:column;background:var(--bg);border:2px solid var(--acc);border-radius:16px;padding:16px}.burger{display:block}}
+@media(max-width:560px){.tk,.steps{grid-template-columns:1fr}.ca{flex-wrap:wrap}.ca code{flex-basis:100%;order:2}section{padding:72px 0}}
+/* archetype accent overlays */
+body.a-sports-jersey .hero::before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 20% 30%,color-mix(in srgb,var(--acc) 35%,transparent),transparent 45%),radial-gradient(circle at 80% 70%,color-mix(in srgb,var(--acc2) 30%,transparent),transparent 50%);pointer-events:none;animation:spin 40s linear infinite;opacity:.85}
+@@BODY@@
+<nav class="top"><div class="bar">
+ <a class="brand" href="#"><img src="{{LOGO}}" alt="">${{TICKER}}</a>
+ <div class="links"><a href="#about">About</a><a href="#tokenomics">Tokenomics</a><a href="#buy">How to Buy</a><a href="#memes">Memes</a><a href="#roadmap">Roadmap</a></div>
+ <div class="soc">[[SOCIALS]]<button class="burger" data-menu aria-label="menu">☰</button></div>
+</div></nav>
+<header class="hero" id="top">
+ <div style="position:relative;z-index:2">
+  <img class="logo floaty" data-parallax="0.15" src="{{LOGO}}" alt="{{NAME}} logo">
+  <h1 class="disp">{{NAME}}</h1>
+  <p class="tag">{{TAGLINE}}</p>
+  <div class="cta"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a><a class="btn ghost" data-s href="{{DEXS_URL}}">[[DEX]] Chart</a><a class="btn soft" data-s href="{{TG_URL}}">[[TG]] Join TG</a></div>
+  <div class="ca"><b>CA</b><code class="ca-text">{{CA}}</code><button data-copy>[[COPY]] Copy</button></div>
+ </div>
+</header>
+<div class="tape mq" style="--mq-speed:26s"><div class="mq-track"><span><img src="{{LOGO}}" alt=""> ${{TICKER}} · {{NAME}} · buy the dip · diamond hands · no roadmap just vibes · ${{TICKER}}</span></div></div>
+<section class="about rv" id="about"><div class="wrap"><h2 class="sec-title">About</h2>
+ <div class="grid"><div class="pic rv-l"><img class="tilt" src="{{LOGO}}" alt=""></div>
+ <div class="card rv-r"><p style="font-size:1.15rem;line-height:1.65;font-weight:600">{{ABOUT}}</p>
+ <p style="opacity:.85;margin-top:14px">Born on {{CHAIN_NAME}}. Community-owned. Memes first, questions later.</p></div></div></div></section>
+<section id="tokenomics" class="rv"><div class="wrap"><h2 class="sec-title">Tokenomics</h2>
+ <div class="tk"><div class="card tilt"><small>Supply</small><span class="lk">{{SUPPLY}}</span></div>
+ <div class="card tilt"><small>Tax</small><span class="lk">{{TAX}}</span></div>
+ <div class="card tilt"><small>LP</small><span class="lk">{{LP}}</span></div>
+ <div class="card tilt"><small>Chain</small><span class="lk">{{CHAIN_NAME}}</span></div></div></div></section>
+<section class="buy rv" id="buy"><div class="wrap"><h2 class="sec-title">How to buy</h2>
+ <div class="steps">
+  <div class="card rv-z"><h3>1. Wallet</h3><p>Install {{WALLET}} and fund it with {{NATIVE}}.</p></div>
+  <div class="card rv-z"><h3>2. Get {{NATIVE}}</h3><p>Bridge or buy {{NATIVE}} on an exchange.</p></div>
+  <div class="card rv-z"><h3>3. Open {{DEX}}</h3><p>Paste the CA and confirm the pair.</p></div>
+  <div class="card rv-z"><h3>4. Swap</h3><p>Swap {{NATIVE}} for ${{TICKER}}. Welcome aboard.</p></div>
+ </div>
+ <div class="chartbox chart"><iframe title="chart" src="{{CHART_URL}}" loading="lazy"></iframe></div>
+</div></section>
+<section class="road rv" id="roadmap"><div class="wrap"><h2 class="sec-title">Roadmap</h2>
+ <div class="phases">
+  <div class="card"><h3>Phase 1</h3><ul><li>Launch + site</li><li>Community ignition</li><li>First meme wave</li></ul></div>
+  <div class="card"><h3>Phase 2</h3><ul><li>Listings push</li><li>Collabs</li><li>Meme contests</li></ul></div>
+  <div class="card"><h3>Phase 3</h3><ul><li>Culture domination</li><li>Surprise utility</li><li>To the moon-ish</li></ul></div>
+ </div></div></section>
+<section class="memes rv" id="memes"><div class="wrap"><h2 class="sec-title">Memes</h2>
+ <div class="gal">
+  <figure><img class="gimg" src="{{LOGO}}" alt=""><figcaption>${{TICKER}} energy</figcaption></figure>
+  <figure><img class="gimg" src="{{LOGO}}" alt=""><figcaption>Certified meme</figcaption></figure>
+  <figure><img class="gimg" src="{{LOGO}}" alt=""><figcaption>WAGMI</figcaption></figure>
+  <figure><img class="gimg" src="{{LOGO}}" alt=""><figcaption>Send it</figcaption></figure>
+  <figure><img class="gimg" src="{{LOGO}}" alt=""><figcaption>No sell</figcaption></figure>
+  <figure><img class="gimg" src="{{LOGO}}" alt=""><figcaption>Community</figcaption></figure>
+ </div></div></section>
+<section class="join rv" id="community"><div class="wrap"><h2 class="sec-title">Join the cult</h2>
+ <p style="max-width:560px;margin:0 auto;font-weight:600">{{TAGLINE}}</p>
+ <div class="big"><a class="btn" data-s href="{{TG_URL}}">[[TG]] Telegram</a><a class="btn ghost" data-s href="{{X_URL}}">[[X]] Follow on X</a><a class="btn soft" data-s href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a></div>
+</div></section>
+<footer><p>{{NAME}} (${{TICKER}}) has no intrinsic value or expectation of financial return. Memes only. DYOR.</p><p>© <span data-year></span> {{NAME}} · {{CHAIN_NAME}}</p></footer>
+@@JS@@
+document.body.setAttribute('data-particles','1');

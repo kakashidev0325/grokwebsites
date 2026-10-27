@@ -1,0 +1,136 @@
+@@FONTS@@ family=Luckiest+Guy&family=Nunito:wght@400;700;900
+@@CSS@@
+:root{--sky:#8fd3ff;--sky2:#c9ecff;--ink:#1b1b1b;--sun:#ffd23f;--pink:#ff6fa8;--grass:#7bd88f;--cream:#fff8e7}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--sky)}
+h1,h2,h3,.lk{font-family:'Luckiest Guy',cursive;letter-spacing:.02em;font-weight:400}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:.5em;font-family:'Luckiest Guy';font-size:1.15rem;padding:.8em 1.4em .65em;border:4px solid var(--ink);border-radius:18px;background:var(--sun);box-shadow:0 6px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(-3px) rotate(-2deg)}.btn:active{transform:translateY(5px);box-shadow:0 1px 0 var(--ink)}
+.btn.pink{background:var(--pink);color:#fff}.btn.white{background:#fff}
+nav.top{position:sticky;top:12px;z-index:50;margin:12px auto 0;max-width:1180px;padding:0 20px}
+nav.top .bar{display:flex;align-items:center;justify-content:space-between;background:#fff;border:4px solid var(--ink);border-radius:22px;padding:8px 10px 8px 14px;box-shadow:0 6px 0 var(--ink)}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Luckiest Guy';font-size:1.4rem}.brand img{width:44px;height:44px;border-radius:50%;border:3px solid var(--ink);object-fit:cover}
+.links{display:flex;gap:22px;font-weight:900}.links a:hover{color:var(--pink)}
+.soc{display:flex;gap:8px}.soc a{width:42px;height:42px;display:grid;place-items:center;background:var(--sun);border:3px solid var(--ink);border-radius:12px;font-size:1.1rem;transition:transform .15s}.soc a:hover{transform:rotate(-10deg) scale(1.08)}
+.burger{display:none;background:none;border:0;font-size:28px}
+.hero{position:relative;min-height:calc(100vh - 80px);display:grid;place-items:center;text-align:center;padding:60px 20px 140px;overflow:hidden}
+.cloud{position:absolute;background:#fff;border-radius:999px;opacity:.95;animation:drift linear infinite}.cloud::before,.cloud::after{content:"";position:absolute;background:#fff;border-radius:50%}.cloud::before{width:55%;height:160%;left:15%;top:-70%}.cloud::after{width:40%;height:130%;right:12%;top:-50%}
+@keyframes drift{from{transform:translateX(-30vw)}to{transform:translateX(130vw)}}
+.hero h1{font-size:clamp(3.6rem,12vw,10rem);line-height:.9;margin:.1em 0;color:#fff;-webkit-text-stroke:5px var(--ink);paint-order:stroke fill;text-shadow:0 10px 0 var(--ink)}
+.hero .logo{width:min(360px,70vw);aspect-ratio:1;object-fit:cover;border-radius:50%;border:8px solid var(--ink);background:#fff;box-shadow:0 14px 0 var(--ink);animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-18px) rotate(3deg)}}
+.hero p.tag{font-size:clamp(1.1rem,2.4vw,1.5rem);font-weight:900;background:#fff;display:inline-block;padding:.4em 1em;border:4px solid var(--ink);border-radius:16px;transform:rotate(-1.5deg)}
+.cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:22px}
+.sticker{position:absolute;width:110px;border-radius:50%;border:5px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.25);animation:wob 4s ease-in-out infinite}.sticker:nth-of-type(odd){animation-delay:-2s}
+@keyframes wob{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg) translateY(-10px)}}
+.ground{position:absolute;bottom:-2px;left:0;right:0;height:120px}
+.ca{display:flex;align-items:center;gap:10px;max-width:640px;margin:22px auto 0;background:#fff;border:4px solid var(--ink);border-radius:18px;padding:8px 8px 8px 16px;box-shadow:0 6px 0 var(--ink);text-align:left}
+.ca b{font-family:'Luckiest Guy';font-size:1.1rem}.ca code{flex:1;font-size:.9rem}.ca button{border:3px solid var(--ink);background:var(--grass);border-radius:12px;padding:10px 14px;font-weight:900}
+.ca button.copied{background:var(--pink);color:#fff}
+.tape{background:var(--ink);color:var(--sun);font-family:'Luckiest Guy';font-size:1.6rem;padding:14px 0;transform:rotate(-2deg);margin:-10px -20px;position:relative;z-index:3;border-block:4px solid var(--sun)}
+.tape span{display:inline-flex;gap:2.5rem;align-items:center}.tape img{width:34px;height:34px;border-radius:50%}
+section{padding:110px 0;position:relative}
+.sec-title{text-align:center;font-size:clamp(2.6rem,7vw,5rem);margin:0 0 40px;color:#fff;-webkit-text-stroke:4px var(--ink);paint-order:stroke fill;text-shadow:0 7px 0 var(--ink)}
+.about{background:var(--grass)}.about .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:center}
+.card{background:var(--cream);border:5px solid var(--ink);border-radius:28px;padding:34px;box-shadow:10px 10px 0 var(--ink)}
+.about .card p{font-size:1.2rem;line-height:1.6;font-weight:700}
+.about .pic{position:relative}.about .pic img{border-radius:30px;border:6px solid var(--ink);transform:rotate(-4deg);box-shadow:12px 12px 0 var(--ink);background:#fff}
+.bubble{position:absolute;top:-30px;right:-10px;background:#fff;border:4px solid var(--ink);border-radius:24px;padding:12px 18px;font-family:'Luckiest Guy';font-size:1.3rem;transform:rotate(6deg)}.bubble::after{content:"";position:absolute;bottom:-18px;left:30px;border:12px solid transparent;border-top-color:var(--ink)}
+.toke{background:var(--pink)}
+.tk{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.tk .card{text-align:center;transition:transform .2s}.tk .card:hover{transform:rotate(-3deg) scale(1.03)}.tk .card:nth-child(even):hover{transform:rotate(3deg) scale(1.03)}
+.tk .card .lk{font-size:2.2rem;display:block;margin:6px 0}.tk .card small{font-weight:900;text-transform:uppercase;letter-spacing:.1em}
+.buy{background:var(--sun)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.steps .card{position:relative;padding-top:52px}.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:-28px;left:24px;width:58px;height:58px;display:grid;place-items:center;font-family:'Luckiest Guy';font-size:1.8rem;background:var(--pink);color:#fff;border:4px solid var(--ink);border-radius:50%}
+.steps h3{margin:0 0 8px;font-size:1.5rem}
+.chartbox{margin-top:50px;border:6px solid var(--ink);border-radius:26px;overflow:hidden;box-shadow:10px 10px 0 var(--ink);background:#111}
+.memes{background:var(--sky2)}
+.gal{columns:4 220px;column-gap:20px}.gal figure{break-inside:avoid;margin:0 0 20px;background:#fff;border:4px solid var(--ink);border-radius:20px;padding:10px;box-shadow:6px 6px 0 var(--ink);transition:transform .2s}.gal figure:hover{transform:rotate(-3deg) scale(1.04)}
+.gal img{border-radius:12px;width:100%}.gal figcaption{font-family:'Luckiest Guy';text-align:center;padding-top:8px}
+.road{background:var(--grass)}.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.phases li{list-style:none;margin:.4em 0;font-weight:700}.phases li::before{content:"★ ";color:var(--pink)}
+.join{background:var(--sky);text-align:center}.join .big{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+footer{background:var(--ink);color:#fff;text-align:center;padding:40px 20px;font-size:.9rem}footer p{max-width:780px;margin:10px auto;opacity:.75}
+.wave{display:block;width:100%;height:60px;position:absolute;top:-58px;left:0}
+@media(max-width:900px){.links{display:none}.about .grid,.phases{grid-template-columns:1fr}.tk,.steps{grid-template-columns:1fr 1fr}.sticker{width:70px}
+.menu-open .links{display:flex;position:absolute;top:70px;left:20px;right:20px;flex-direction:column;background:#fff;border:4px solid var(--ink);border-radius:18px;padding:18px}.burger{display:block}}
+@media(max-width:560px){.tk,.steps{grid-template-columns:1fr}.soc a{width:36px;height:36px}.ca{flex-wrap:wrap}.ca code{flex-basis:100%;order:2}.hero h1{-webkit-text-stroke:3px var(--ink)}section{padding:80px 0}.tape{font-size:1.2rem}}
+@@BODY@@
+<nav class="top"><div class="bar">
+ <a class="brand" href="#"><img src="{{LOGO}}" alt="">${{TICKER}}</a>
+ <div class="links"><a href="#about">About</a><a href="#tokenomics">Tokenomics</a><a href="#buy">How to Buy</a><a href="#memes">Memes</a><a href="#roadmap">Roadmap</a></div>
+ <div class="soc">[[SOCIALS]]<button class="burger" data-menu aria-label="menu">☰</button></div>
+</div></nav>
+<header class="hero" id="top">
+ <div class="cloud" style="width:180px;height:60px;top:12%;animation-duration:60s;animation-delay:-10s"></div>
+ <div class="cloud" style="width:260px;height:80px;top:30%;animation-duration:85s;animation-delay:-50s"></div>
+ <div class="cloud" style="width:140px;height:46px;top:58%;animation-duration:50s;animation-delay:-30s"></div>
+ <img class="sticker" src="{{LOGO}}" alt="" style="left:6%;top:18%">
+ <img class="sticker" src="{{LOGO}}" alt="" style="right:7%;top:22%;width:90px">
+ <img class="sticker" src="{{LOGO}}" alt="" style="left:12%;bottom:22%;width:80px">
+ <img class="sticker" src="{{LOGO}}" alt="" style="right:12%;bottom:26%">
+ <div style="position:relative;z-index:2">
+  <img class="logo floaty" data-parallax="0.12" src="{{LOGO}}" alt="{{NAME}} logo" style="margin:auto">
+  <h1>{{NAME}}</h1>
+  <p class="tag">{{TAGLINE}}</p>
+  <div class="cta"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a><a class="btn white" data-s href="{{DEXS_URL}}">[[DEX]] Chart</a><a class="btn pink" data-s href="{{TG_URL}}">[[TG]] Join TG</a></div>
+  <div class="ca"><b>CA</b><code class="ca-text">{{CA}}</code><button data-copy>[[COPY]] Copy</button></div>
+ </div>
+ <svg class="ground" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 Q 180 0 360 50 T 720 50 T 1080 40 T 1440 55 V120 H0Z" fill="#7bd88f" stroke="#1b1b1b" stroke-width="6"/></svg>
+</header>
+<div class="tape mq"><div class="mq-track"><span>${{TICKER}} <img src="{{LOGO}}" alt=""> {{NAME}} <img src="{{LOGO}}" alt=""> ON {{CHAIN_NAME}} <img src="{{LOGO}}" alt=""> ${{TICKER}} <img src="{{LOGO}}" alt=""> TO THE MOON <img src="{{LOGO}}" alt=""></span></div></div>
+<section class="about" id="about"><div class="wrap grid">
+ <div class="pic rv"><img src="{{LOGO}}" alt=""><div class="bubble">gm frens!</div></div>
+ <div class="rv"><h2 class="sec-title" style="text-align:left">Who is {{NAME}}?</h2><div class="card"><p>{{ABOUT}}</p><p>Born on {{CHAIN_NAME}}, raised by the timeline, powered by memes. ${{TICKER}} is for everyone who just wants to smile while the chart does its thing.</p></div></div>
+</div></section>
+<section class="toke" id="tokenomics"><svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60 C 240 0 480 0 720 30 S 1200 60 1440 10 V60Z" fill="#ff6fa8"/></svg><div class="wrap">
+ <h2 class="sec-title rv">Tokenomics</h2>
+ <div class="tk">
+  <div class="card rv"><small>Total Supply</small><span class="lk">{{SUPPLY}}</span>${{TICKER}}</div>
+  <div class="card rv"><small>Tax</small><span class="lk">{{TAX}}</span>buy / sell</div>
+  <div class="card rv"><small>Liquidity</small><span class="lk">{{LP}}</span>forever</div>
+  <div class="card rv"><small>Chain</small><span class="lk">{{CHAIN_NAME}}</span>fast & cheap</div>
+ </div>
+ <div class="card rv" style="margin-top:30px;display:flex;gap:14px;align-items:center;flex-wrap:wrap"><b class="lk" style="font-size:1.4rem">Contract:</b><code class="ca-text" style="flex:1">{{CA}}</code><button class="btn" data-copy>[[COPY]] Copy CA</button></div>
+</div></section>
+<section class="buy" id="buy"><div class="wrap">
+ <h2 class="sec-title rv">How to Buy</h2>
+ <div class="steps">
+  <div class="card rv"><h3>Get a Wallet</h3><p>Download {{WALLET}} from the app store or as a browser extension.</p></div>
+  <div class="card rv"><h3>Grab {{NATIVE}}</h3><p>Buy {{NATIVE}} on an exchange and send it to your wallet.</p></div>
+  <div class="card rv"><h3>Go to {{DEX}}</h3><p>Connect your wallet and paste the ${{TICKER}} contract address.</p></div>
+  <div class="card rv"><h3>Swap & Smile</h3><p>Swap {{NATIVE}} for ${{TICKER}}. Welcome to the family!</p></div>
+ </div>
+ <div style="text-align:center;margin-top:34px"><a class="btn pink" data-s href="{{BUY_URL}}">[[BUY]] Buy on {{DEX}}</a></div>
+ <div class="chartbox rv"><div class="chart"><iframe src="{{CHART_URL}}" title="{{TICKER}} chart" loading="lazy"></iframe></div></div>
+</div></section>
+<section class="memes" id="memes"><div class="wrap">
+ <h2 class="sec-title rv">Meme Wall</h2>
+ <div class="gal">
+  <figure class="rv"><img class="gimg" src="{{LOGO}}" alt=""><figcaption>gm</figcaption></figure>
+  <figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(90deg)"><figcaption>wen moon</figcaption></figure>
+  <figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="transform:scaleX(-1)"><figcaption>diamond paws</figcaption></figure>
+  <figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:saturate(2)"><figcaption>send it</figcaption></figure>
+  <figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(200deg)"><figcaption>ngmi without ${{TICKER}}</figcaption></figure>
+  <figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:grayscale(1)"><figcaption>bear market me</figcaption></figure>
+  <figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(300deg)"><figcaption>lfg</figcaption></figure>
+  <figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:invert(.1) contrast(1.3)"><figcaption>certified</figcaption></figure>
+ </div>
+</div></section>
+<section class="road" id="roadmap"><div class="wrap">
+ <h2 class="sec-title rv">Roadmap</h2>
+ <div class="phases">
+  <div class="card rv"><h3>Phase 1 · Hatch</h3><ul style="padding:0"><li>Fair launch</li><li>Socials live</li><li>Dexscreener updated</li><li>1,000 holders</li></ul></div>
+  <div class="card rv"><h3>Phase 2 · Waddle</h3><ul style="padding:0"><li>CoinGecko & CMC</li><li>Meme contests</li><li>Trending on X</li><li>5,000 holders</li></ul></div>
+  <div class="card rv"><h3>Phase 3 · Moon</h3><ul style="padding:0"><li>CEX listings</li><li>Merch drop</li><li>World domination</li><li>??? </li></ul></div>
+ </div>
+</div></section>
+<section class="join" id="join"><div class="wrap">
+ <h2 class="sec-title rv">Join the Crew</h2>
+ <p class="tag rv" style="font-weight:900;font-size:1.3rem">The ${{TICKER}} family is growing every day. Hop in!</p>
+ <div class="big rv"><a class="btn" data-s href="{{X_URL}}">[[X]] Follow on X</a><a class="btn pink" data-s href="{{TG_URL}}">[[TG]] Telegram</a><a class="btn white" data-s href="{{DEXS_URL}}">[[DEX]] Dexscreener</a></div>
+</div></section>
+<footer><div class="brand" style="justify-content:center"><img src="{{LOGO}}" alt="">{{NAME}}</div>
+<p>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. The coin is completely useless and for entertainment purposes only. Not financial advice. DYOR.</p><p>© <span data-year></span> {{NAME}}. All memes reserved.</p></footer>
+@@JS@@
+document.querySelectorAll('.btn').forEach(function(b){b.addEventListener('click',function(e){for(var i=0;i<14;i++){var s=document.createElement('span');s.textContent=['⭐','💛','✨','🎉'][i%4];s.style.cssText='position:fixed;left:'+e.clientX+'px;top:'+e.clientY+'px;pointer-events:none;font-size:22px;z-index:999;transition:transform .9s ease-out,opacity .9s';document.body.appendChild(s);(function(s){requestAnimationFrame(function(){s.style.transform='translate('+(Math.random()*240-120)+'px,'+(Math.random()*-220-40)+'px) rotate('+(Math.random()*360)+'deg)';s.style.opacity=0});setTimeout(function(){s.remove()},950)})(s)}})});

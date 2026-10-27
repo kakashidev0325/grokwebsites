@@ -1,0 +1,48 @@
+@@FONTS@@ family=Monoton&family=Audiowide&family=VT323
+@@CSS@@
+:root{--p:#ff71ce;--c:#01cdfe;--g:#05ffa1;--v:#b967ff;--y:#fffb96;--bg:#1a0933}
+body{background:#1a0933;color:#fff;font-family:VT323,monospace;font-size:22px}
+.au{font-family:Audiowide,sans-serif}
+.sun{position:absolute;left:50%;top:150px;width:min(520px,80vw);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:linear-gradient(180deg,var(--y),var(--p) 60%,var(--v));mask:linear-gradient(#000 0 50%,transparent 50% 54%,#000 54% 62%,transparent 62% 66%,#000 66% 72%,transparent 72% 77%,#000 77% 82%,transparent 82% 88%,#000 88% 91%,transparent 91%);opacity:.9;filter:drop-shadow(0 0 40px var(--p))}
+.floor{position:absolute;left:-50%;right:-50%;bottom:0;height:45%;background:linear-gradient(var(--c) 2px,transparent 2px) 0 0/100% 40px,linear-gradient(90deg,var(--c) 2px,transparent 2px) 0 0/60px 100%;transform:perspective(300px) rotateX(60deg);transform-origin:bottom;animation:fl 1.2s linear infinite;opacity:.7;mask:linear-gradient(transparent,#000 40%)}@keyframes fl{to{background-position:0 40px,0 0}}
+nav{position:relative;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:16px 26px;flex-wrap:wrap;gap:10px}
+nav .b{display:flex;gap:10px;align-items:center;font-family:Audiowide;font-size:1.3rem}nav .b img{width:40px;height:40px;border-radius:50%;border:2px solid var(--c)}
+nav .l{display:flex;gap:22px}nav .l a{color:var(--c)}nav .l a:hover{color:var(--y);text-shadow:0 0 10px var(--y)}
+.soc{display:flex;gap:10px}.soc a{width:40px;height:40px;display:grid;place-items:center;border:2px solid var(--p);border-radius:50%;color:var(--p);box-shadow:0 0 12px var(--p) inset}
+.hero{background:linear-gradient(180deg,#120428 0%,#2d0b59 55%,#ff71ce 100%);position:relative;height:calc(100vh - 72px);min-height:640px;overflow:hidden;text-align:center}
+.hero .in{position:relative;z-index:3;padding-top:60px}
+.hero img.logo{width:min(220px,50vw);margin:0 auto;border-radius:50%;box-shadow:0 0 0 6px var(--c),0 0 60px var(--p);animation:float 4s ease-in-out infinite}@keyframes float{50%{transform:translateY(-14px)}}
+h1.chrome{font-family:Monoton,cursive;font-weight:400;font-size:clamp(3.2rem,11vw,9rem);margin:20px 0 0;line-height:1;background:linear-gradient(180deg,#fff 0%,#c9f6ff 35%,#4a2c84 50%,#ff9de2 55%,#fff 80%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 var(--v)) drop-shadow(0 0 20px var(--p))}
+.jp{font-size:1.4rem;color:var(--y);letter-spacing:.5em;text-shadow:0 0 12px var(--y)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:Audiowide;padding:14px 26px;border-radius:999px;background:linear-gradient(90deg,var(--p),var(--v));color:#fff;box-shadow:0 0 24px rgba(255,113,206,.7);border:2px solid #fff;transition:.2s}.btn:hover{transform:scale(1.06);box-shadow:0 0 40px var(--c)}.btn.c{background:linear-gradient(90deg,var(--c),var(--g));color:#1a0933}
+.cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.ca{margin:22px auto 0;max-width:640px;display:flex;align-items:center;gap:10px;background:rgba(26,9,51,.7);border:2px solid var(--c);border-radius:14px;padding:8px 8px 8px 16px;backdrop-filter:blur(6px)}.ca .ca-text{flex:1;text-align:left;color:var(--c)}.ca button{font-family:Audiowide;border:0;border-radius:10px;padding:10px 16px;background:var(--y);color:#1a0933}
+.tape{background:#000;color:var(--g);border-block:2px solid var(--p);padding:10px 0;font-size:1.6rem}.tape span{display:inline-flex;gap:2.5rem}
+section{position:relative;padding:100px 20px;background:linear-gradient(180deg,#1a0933,#3b0f6e 60%,#1a0933)}section:nth-of-type(even){background:linear-gradient(180deg,#1a0933,#5a1270 50%,#1a0933)}.wrap{max-width:1100px;margin:auto}
+h2{font-family:Audiowide;font-size:clamp(2rem,5vw,3.6rem);text-align:center;margin:0 0 40px;color:#fff;text-shadow:3px 3px 0 var(--p),6px 6px 0 var(--c)}
+.glass{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);border-radius:22px;backdrop-filter:blur(12px);padding:28px;box-shadow:0 10px 40px rgba(0,0,0,.3)}
+.winbar{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(90deg,var(--p),var(--c));color:#1a0933;font-family:Audiowide;font-size:14px;padding:6px 12px;border-radius:12px 12px 0 0;margin:-28px -28px 20px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.bust{position:relative}.bust img{width:100%;border-radius:22px;filter:hue-rotate(-20deg) saturate(1.4);mix-blend-mode:screen}.bust::after{content:"";position:absolute;inset:0;border-radius:22px;background:linear-gradient(transparent 50%,rgba(1,205,254,.35));}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.stats .glass{text-align:center}.stats .v{font-family:Audiowide;font-size:1.6rem;color:var(--y);text-shadow:0 0 10px var(--y)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.steps .n{font-family:Monoton;font-size:3rem;color:var(--c)}
+.chartw{margin-top:40px;border-radius:22px;overflow:hidden;border:3px solid var(--c);box-shadow:0 0 50px var(--p)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;border:3px solid #fff;transition:.3s}.gal img:nth-child(odd){filter:hue-rotate(260deg) saturate(1.5)}.gal img:nth-child(even){filter:hue-rotate(140deg) saturate(1.5)}.gal img:hover{transform:rotate(-4deg) scale(1.05);box-shadow:0 0 30px var(--g)}
+.road{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+footer{text-align:center;padding:40px 20px;background:#0c0220;color:#c9a8ff;font-size:18px}
+@media(max-width:860px){nav .l{display:none}.two,.road{grid-template-columns:1fr}.stats,.steps{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr}}
+@@BODY@@
+<nav><a class="b" href="#"><img src="{{LOGO}}" alt="">{{NAME}}</a><div class="l"><a href="#about">ABOUT</a><a href="#stats">TOKENOMICS</a><a href="#buy">BUY</a><a href="#gallery">GALLERY</a></div><div class="soc">[[SOCIALS]]</div></nav>
+<header class="hero"><div class="sun"></div><div class="floor"></div><div class="in">
+ <img class="logo floaty" data-parallax="0.12" src="{{LOGO}}" alt="{{NAME}}"><h1 class="chrome">{{NAME}}</h1><div class="jp">ミーム ・ ${{TICKER}} ・ 永遠</div><p style="font-size:1.5rem;margin:10px 20px 0">{{TAGLINE}}</p>
+ <div class="cta"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] BUY ${{TICKER}}</a><a class="btn c" data-s href="{{DEXS_URL}}">[[DEX]] CHART</a></div>
+ <div class="ca"><span class="ca-text">{{CA}}</span><button data-copy>COPY</button></div></div></header>
+<div class="tape mq"><div class="mq-track"><span>▲ ${{TICKER}} ▲ AESTHETIC ▲ ウェーブ ▲ {{CHAIN_NAME}} ▲ 1999 FOREVER ▲ </span></div></div>
+<section id="about"><div class="wrap two"><div class="bust rv"><img src="{{LOGO}}" alt=""></div><div class="glass rv"><div class="winbar"><span>about_{{TICKER}}.txt</span><span>✕</span></div><p style="font-size:1.5rem;line-height:1.3">{{ABOUT}}</p><p style="color:var(--c)">Drifting through cyberspace on {{CHAIN_NAME}} since the beginning of time (and the end of the mall).</p></div></div></section>
+<section id="stats"><div class="wrap"><h2>TOKENOMICS</h2><div class="stats"><div class="glass rv"><div>SUPPLY</div><div class="v">{{SUPPLY}}</div></div><div class="glass rv"><div>TAX</div><div class="v">{{TAX}}</div></div><div class="glass rv"><div>LP</div><div class="v">{{LP}}</div></div><div class="glass rv"><div>CHAIN</div><div class="v">{{CHAIN_NAME}}</div></div></div></div></section>
+<section id="buy"><div class="wrap"><h2>HOW TO BUY</h2><div class="steps"><div class="glass rv"><div class="n">1</div><p>Download {{WALLET}}.</p></div><div class="glass rv"><div class="n">2</div><p>Load up on {{NATIVE}}.</p></div><div class="glass rv"><div class="n">3</div><p>Visit {{DEX}} & paste the CA.</p></div><div class="glass rv"><div class="n">4</div><p>Swap for ${{TICKER}}. Relax.</p></div></div><div class="chartw rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></div></section>
+<section><div class="wrap"><h2>ROADMAP.EXE</h2><div class="road"><div class="glass rv"><div class="winbar"><span>PHASE_01</span><span>✓</span></div><p>Launch · socials · first 1k</p></div><div class="glass rv"><div class="winbar"><span>PHASE_02</span><span>…</span></div><p>Listings · trending · collabs</p></div><div class="glass rv"><div class="winbar"><span>PHASE_03</span><span>?</span></div><p>CEX · merch · the eternal mall</p></div></div></div></section>
+<section id="gallery"><div class="wrap"><h2>GALLERY</h2><div class="gal"><img class="gimg rv" src="{{LOGO}}" alt=""><img class="gimg rv" src="{{LOGO}}" alt=""><img class="gimg rv" src="{{LOGO}}" alt=""><img class="gimg rv" src="{{LOGO}}" alt=""></div>
+ <div class="cta" style="margin-top:50px"><a class="btn" data-s href="{{X_URL}}">[[X]] FOLLOW ON X</a><a class="btn c" data-s href="{{TG_URL}}">[[TG]] TELEGRAM</a></div></div></section>
+<footer>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. Entertainment only. Not financial advice.<br>© <span data-year></span> {{NAME}} ・ ａｅｓｔｈｅｔｉｃ</footer>
+@@JS@@
