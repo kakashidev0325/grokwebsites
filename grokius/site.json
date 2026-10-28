@@ -1,0 +1,71 @@
+{
+  "format": "meme-site-studio/site@1",
+  "name": "Grokius Maximus",
+  "ticker": "GROKIUS",
+  "template": "ut-hmmmm",
+  "domain": "grokmax.lol",
+  "ca": "TBA",
+  "chain": "solana",
+  "theme_mode": "original",
+  "theme_preset": "",
+  "theme_primary": "#9945ff",
+  "theme_secondary": "#14f195",
+  "domain_status": "live",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "76.76.21.21",
+      "host": "grokmax.lol"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "cname.vercel-dns.com",
+      "host": "www.grokmax.lol"
+    }
+  ],
+  "tagline": "",
+  "about": "Grok is king of AI",
+  "x_url": "https://x.com/grokmaxonx",
+  "tg_url": "",
+  "ref_x_url": "https://x.com/elonmusk/status/1732769973142003888?s=20",
+  "socials": [],
+  "buy_url": "",
+  "dexs_url": "",
+  "supply": "",
+  "tax": "",
+  "lp": "",
+  "dex": "pumpfun",
+  "dex_auto": false,
+  "dex_name": "Pump.fun",
+  "native": "",
+  "wallet": "",
+  "vercel_a": "",
+  "vercel_cname": "",
+  "logo": "assets/logo.png",
+  "banner": "assets/banner.jpg",
+  "images": [
+    "assets/meme1.jpg",
+    "assets/meme2.jpg",
+    "assets/meme3.jpg",
+    "assets/meme4.jpg",
+    "assets/meme5.jpg",
+    "assets/meme6.jpg",
+    "assets/meme7.jpg",
+    "assets/meme8.png"
+  ],
+  "characters": [],
+  "resolved": {
+    "dex_name": "Pump.fun",
+    "dex_logo": "assets/dex.png",
+    "buy_url_source": "dex",
+    "buy_url": "https://pump.fun/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "Solana"
+  },
+  "site_slug": "grokius",
+  "project_id": "pmvscauqj6g4cr",
+  "exported_at": "2026-10-28T16:39:37.403Z"
+}
