@@ -2,14 +2,14 @@
   "format": "meme-site-studio/site@1",
   "name": "FLOATER",
   "ticker": "FLOATER",
-  "template": "bnb-1",
+  "template": "ut-swappymascot",
   "domain": "floater.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "original",
-  "theme_preset": "",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
+  "theme_mode": "preset",
+  "theme_preset": "base-blue",
+  "theme_primary": "#0052ff",
+  "theme_secondary": "#3b7cff",
   "domain_status": "live",
   "dns_records": [
     {
@@ -58,5 +58,5 @@
   },
   "site_slug": "floater",
   "project_id": "pmvsqao06rd1ki",
-  "exported_at": "2026-10-28T23:18:48.683Z"
+  "exported_at": "2026-10-28T23:37:04.995Z"
 }
