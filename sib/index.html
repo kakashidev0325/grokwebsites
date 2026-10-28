@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- archetype: ut-cow | placeholders: Super Intelligence Boobs SIB assets/logo.png TBA solana   https://pump.fun/ https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Super Intelligence Boobs on Solana. What could be better for the AgenC ecosystem than $SIB Super Intelligence Boobs? 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
+<!-- archetype: ut-cow | placeholders: Super Intelligence Boobs SIB assets/logo.png TBA solana https://x.com/siboobsol_x  https://pump.fun/ https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Super Intelligence Boobs on Solana. What could be better for the AgenC ecosystem than $SIB Super Intelligence Boobs? 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
 <title>Super Intelligence Boobs ($SIB) | The most memeable Super Intelligence Boobs on Solana.</title>
 <meta name="description" content="What could be better for the AgenC ecosystem than $SIB Super Intelligence Boobs?">
 <meta property="og:title" content="Super Intelligence Boobs ($SIB)"><meta property="og:description" content="The most memeable Super Intelligence Boobs on Solana."><meta property="og:image" content="assets/logo.png"><meta name="twitter:card" content="summary_large_image">
@@ -76,17 +76,16 @@
  [data-intro] .intro-logo,[data-intro] .intro-title .word>span,[data-intro] .intro-fade{opacity:1;transform:none;animation:none!important}
  .cursor-dot,.cursor-ring,.scroll-progress,.particles{display:none!important}
 }
-/* banner + extra links (shared) */
-.mbanner{display:block;margin-left:auto;margin-right:auto;width:100%;box-sizing:border-box}
-.mbanner img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;max-height:460px}
-[data-banner]:has(img[src=""]),[data-xlinks]:empty{display:none!important}
+/* extra links (shared) */
+[data-xlinks]:empty{display:none!important}
 .xlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:1100px;margin:0 auto;padding:30px 20px 10px;position:relative;z-index:2}
 .xlinks a{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:2px solid currentColor;border-radius:999px;font-weight:700;font-size:14px;line-height:1;opacity:.9;transition:transform .15s,opacity .15s;text-decoration:none;color:inherit}
 .xlinks a:hover{opacity:1;transform:translateY(-2px)}
-@media(max-width:700px){a.xs{display:none!important}.mbanner img{aspect-ratio:2/1}.particles i:nth-child(n+12){display:none}}
+@media(max-width:700px){a.xs{display:none!important}.particles i:nth-child(n+12){display:none}}
 /* DEX on buy buttons */
 .dexic{width:1.25em!important;height:1.25em!important;max-width:1.25em!important;max-height:1.25em!important;border-radius:50%;object-fit:cover;flex:none;vertical-align:-.25em;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.15);margin:0!important;padding:0!important;filter:none!important;display:inline-block!important}
 .dexon{font-size:.82em;opacity:.92;white-space:nowrap}
+
 
 /* Hero content above absolute decorative layers (gradients/blobs at z-index:0).
    Letter-split transforms create stacking contexts that would otherwise paint under those layers. */
@@ -213,6 +212,8 @@ h1,.disp,.hero h1,.sec-title{
 .intro-title .word>span{display:inline-block}
 
 h1.disp,h1.intro-title,.hero h1{overflow:visible}
+/* wave / glitch helpers used by user templates */
+.wave-text span{display:inline-block;animation:waveY 1.8s ease-in-out infinite}
 @keyframes waveY{0%,100%{transform:translateY(0)}50%{transform:translateY(-.22em)}}
 .glitch{position:relative;display:inline-block}
 .glitch::before,.glitch::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;overflow:hidden;pointer-events:none}
@@ -384,6 +385,7 @@ html.reduced-motion [data-intro] .intro-fade{
 .hero .breakout .gchar,.hero .phone .gchar,.hero img.gchar.hero-main{
   max-width:100%;max-height:100%;width:100%;height:auto;object-fit:contain;
 }
+
 
 /* ===== motion pack (auto-applied to every template by _motion.js) =====
    Everything here animates transform/opacity only and paints with theme tokens. */
@@ -586,7 +588,6 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 .hero .scene{position:absolute;inset:-12% -4% auto -4%;width:108%;height:130%;z-index:0;pointer-events:none}
 .hero .grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.22;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
 .hero .hero-mq{position:absolute;left:0;right:0;bottom:0;z-index:6}
-.hero .bubble{position:absolute;z-index:4;background:var(--surface);color:var(--ink);border:3px solid var(--ink);border-radius:18px 18px 18px 4px;padding:8px 12px;font-family:var(--display);font-weight:800;box-shadow:4px 4px 0 var(--a)}
 .hero .floater{position:absolute;z-index:3;width:min(120px,18vw);pointer-events:none}
 .hero .floater.tiny{width:min(72px,12vw)}
 .hero .hero-copy{position:relative;z-index:4}
@@ -614,8 +615,6 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 
 h1,h2{font-weight:560}
 
-/* banner */
-.mbanner{max-width:min(1100px,100% - 40px);margin:28px auto;padding:0}.mbanner img{width:100%;height:auto;max-height:220px;object-fit:cover;border-radius:16px;border:1px solid var(--line,rgba(255,255,255,.1));display:block}
 </style>
 <link rel="canonical" href="https://siboobs.lol/">
 <meta property="og:url" content="https://siboobs.lol/">
@@ -629,7 +628,7 @@ h1,h2{font-weight:560}
     <a href="#lore">Lore</a><a href="#token">Token</a><a href="#buy">Buy</a><a href="#road">Road</a><a href="#memes">Memes</a>
   </nav>
   <div class="top-actions">
-    <a data-s href="" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a>
+    <a data-s href="https://x.com/siboobsol_x" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a>
     <a class="btn btn-main btn-shine" data-magnetic data-buy href="https://pump.fun/"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy <span class="dexon">on Pump.fun</span></a>
     <button class="burger" type="button" data-menu aria-label="Open menu"><i></i><i></i><i></i></button>
   </div>
@@ -650,8 +649,6 @@ h1,h2{font-weight:560}
 <section class="ref-post rv" id="origin-post" aria-label="The post that started it all"><div class="ref-post-wrap"><div class="ref-post-head"><span class="ref-post-badge">✦ Origin</span><h2 class="ref-post-title">The post that started it all</h2></div><div class="ref-post-frame"><blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-conversation="none"><a href="https://x.com/BrimsTrade/status/2114809422723629336">View post on X</a></blockquote><div class="ref-post-fallback" role="complementary"><div class="ref-xmark" aria-hidden="true">𝕏</div><b>@BrimsTrade</b><p>The post that started it all</p><a class="ref-post-btn" href="https://x.com/BrimsTrade/status/2114809422723629336" target="_blank" rel="noopener">View post on X →</a></div></div></div></section><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>$SIB ✦ Super Intelligence Boobs ✦ The most memeable Super Intelligence Boobs on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Super Intelligence Boobs community. Buy $SIB. Make memes. Never sell. ✦ BUY $SIB ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>$SIB ✦ Super Intelligence Boobs ✦ The most memeable Super Intelligence Boobs on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Super Intelligence Boobs community. Buy $SIB. Make memes. Never sell. ✦ BUY $SIB ✦ </span></div></div>
-<figure class="mbanner" data-banner><img src="assets/banner.webp" alt="Super Intelligence Boobs banner"></figure>
-<!--BANNER_SLOT-->
 <section class="sec sig sig-pr"><div class="wrap"><p class="kicker">Pasture</p><h2>A clean product page</h2><p class="prose">The most memeable Super Intelligence Boobs on Solana.</p><ol class="sig-ol rv-stagger"><li><b>01</b><div><h3>Gold</h3><p>One metal, used sparingly.</p></div></li><li><b>02</b><div><h3>White</h3><p>Room for the character.</p></div></li><li><b>03</b><div><h3>Numbers</h3><p>1B supply, tax 0/0.</p></div></li></ol></div></section>
 
 <section class="sec about" id="lore">
@@ -730,12 +727,12 @@ h1,h2{font-weight:560}
     <div class="hero-actions">
       <a class="btn btn-main btn-shine" data-magnetic data-buy href="https://pump.fun/"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $SIB <span class="dexon">on Pump.fun</span></a>
       <a class="btn btn-ghost" data-s href=""><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Telegram</a>
-      <a class="btn btn-ghost" data-s href=""><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X</a>
+      <a class="btn btn-ghost" data-s href="https://x.com/siboobsol_x"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X</a>
     </div>
   </div>
 </section>
 
-<div class="xlinks" data-xlinks></div>
+<div class="xlinks" data-xlinks><a href="https://x.com/siboobsol_x" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a></div>
 <footer class="foot">
   <div class="wrap foot-grid">
     <div>
@@ -744,9 +741,9 @@ h1,h2{font-weight:560}
     </div>
     <div><b>Explore</b><a href="#lore">Lore</a><a href="#token">Tokenomics</a><a href="#buy">How to buy</a><a href="#memes">Memes</a></div>
     <div><b>Trade</b><a href="https://pump.fun/">Pump.fun</a><a href="https://dexscreener.com/solana">Dexscreener</a><button type="button" data-copy>Copy CA</button></div>
-    <div><b>Community</b><a data-s href="">X</a><a data-s href="">Telegram</a></div>
+    <div><b>Community</b><a data-s href="https://x.com/siboobsol_x">X</a><a data-s href="">Telegram</a></div>
   </div>
-  <div class="wrap legal"><p>$SIB is a meme coin with no intrinsic value or expectation of financial return. Not financial advice. Art on this page is the token logo, banner, and uploaded memes.</p><p>© <span data-year>2026</span> $SIB</p></div>
+  <div class="wrap legal"><p>$SIB is a meme coin with no intrinsic value or expectation of financial return. Not financial advice. Art on this page is the token logo and uploaded memes.</p><p>© <span data-year>2026</span> $SIB</p></div>
 </footer>
 
 
@@ -773,7 +770,6 @@ document.querySelectorAll('.mq').forEach(function(m){var t=m.querySelector('.mq-
 /* reveals */
 var revealSel='.rv,.rv-l,.rv-r,.rv-z,.rv-rot,.rv-blur,.rv-stagger';
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});document.querySelectorAll(revealSel).forEach(function(el){io.observe(el)})}else document.querySelectorAll(revealSel).forEach(function(el){el.classList.add('in')});
-document.querySelectorAll('[data-banner]').forEach(function(b){var i=b.querySelector('img');if(!i||!i.getAttribute('src')||i.getAttribute('src').indexOf('{{')===0)b.remove()});
 document.querySelectorAll('[data-xlinks]').forEach(function(x){if(!x.querySelector('a'))x.remove()});
 document.querySelectorAll('[data-year]').forEach(function(y){y.textContent=new Date().getFullYear()});
 document.querySelectorAll('[data-menu]').forEach(function(b){b.addEventListener('click',function(){document.body.classList.toggle('menu-open')})});
