@@ -2,9 +2,9 @@
   "format": "meme-site-studio/site@1",
   "name": "Grokius Maximus",
   "ticker": "GROKIUS",
-  "template": "ut-hmmmm",
-  "domain": "grokmax.lol",
-  "ca": "",
+  "template": "bnb-1",
+  "domain": "grokiusmax.lol",
+  "ca": "TBA",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
@@ -16,20 +16,20 @@
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "grokmax.lol"
+      "host": "grokiusmax.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.grokmax.lol"
+      "host": "www.grokiusmax.lol"
     }
   ],
   "tagline": "",
-  "about": "Grok is king of AI",
-  "x_url": "https://x.com/grokmaxonx",
+  "about": "Grokius Maximus Billboard spotted outside of SpaceX California HQ",
+  "x_url": "https://x.com/grokiusmax_x",
   "tg_url": "",
-  "ref_x_url": "https://x.com/elonmusk/status/1732769973142003888?s=20",
+  "ref_x_url": "https://x.com/alx/status/2026825426203718099",
   "socials": [],
   "buy_url": "",
   "dexs_url": "",
@@ -51,11 +51,14 @@
     "assets/meme3.jpg",
     "assets/meme4.jpg",
     "assets/meme5.jpg",
-    "assets/meme6.jpg",
-    "assets/meme7.jpg",
-    "assets/meme8.png"
+    "assets/meme6.jpg"
   ],
-  "characters": [],
+  "characters": [
+    "assets/char1.jpg",
+    "assets/char2.jpg",
+    "assets/char3.jpg",
+    "assets/char4.jpg"
+  ],
   "resolved": {
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
@@ -66,6 +69,6 @@
     "chain_name": "Solana"
   },
   "site_slug": "grokius",
-  "project_id": "pmvscauqj6g4cr",
-  "exported_at": "2026-10-28T20:26:37.485Z"
+  "project_id": "pmvsl9rjuy7ix2",
+  "exported_at": "2026-10-28T20:50:43.265Z"
 }
