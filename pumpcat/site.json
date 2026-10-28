@@ -2,15 +2,15 @@
   "format": "meme-site-studio/site@1",
   "name": "Pumpcat",
   "ticker": "PUMPCAT",
-  "template": "ut-bnbtiger",
+  "template": "ut-firstbroccoli",
   "domain": "pumpcatonsol.lol",
   "ca": "TBA",
   "chain": "solana",
   "theme_mode": "preset",
-  "theme_preset": "solana",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "theme_preset": "base-blue",
+  "theme_primary": "#0052ff",
+  "theme_secondary": "#3b7cff",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -66,5 +66,5 @@
   },
   "site_slug": "pumpcat",
   "project_id": "pmvsazjdf4q0y7",
-  "exported_at": "2026-10-28T16:02:49.834Z"
+  "exported_at": "2026-10-28T16:06:28.599Z"
 }
