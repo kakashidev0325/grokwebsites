@@ -1,0 +1,62 @@
+{
+  "format": "meme-site-studio/site@1",
+  "name": "Grokbot",
+  "ticker": "Grokbot",
+  "template": "bnb-1",
+  "domain": "grokboteth.lol",
+  "ca": "TBA",
+  "chain": "ethereum",
+  "theme_mode": "original",
+  "theme_preset": "",
+  "theme_primary": "#9945ff",
+  "theme_secondary": "#14f195",
+  "domain_status": "live",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "76.76.21.21",
+      "host": "grokboteth.lol"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "cname.vercel-dns.com",
+      "host": "www.grokboteth.lol"
+    }
+  ],
+  "tagline": "",
+  "about": "Grokbot is a 100M narrative Elon posts about it everyday yet we PVP ourselves to 0",
+  "x_url": "https://x.com/grokboteth_x",
+  "tg_url": "",
+  "ref_x_url": "https://x.com/TyrelleAB/status/2115329995631624255",
+  "socials": [],
+  "buy_url": "",
+  "dexs_url": "",
+  "supply": "",
+  "tax": "",
+  "lp": "",
+  "dex": "uniswap-v2",
+  "dex_auto": false,
+  "dex_name": "Uniswap V2",
+  "native": "",
+  "wallet": "",
+  "vercel_a": "",
+  "vercel_cname": "",
+  "logo": "assets/logo.png",
+  "banner": "assets/banner.png",
+  "images": [],
+  "characters": [],
+  "resolved": {
+    "dex_name": "Uniswap V2",
+    "dex_logo": "assets/dex.png",
+    "buy_url_source": "dex",
+    "buy_url": "https://app.uniswap.org/",
+    "chart_page": "https://dexscreener.com/ethereum",
+    "chart_embed": "https://dexscreener.com/ethereum?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "Ethereum"
+  },
+  "site_slug": "grokbot",
+  "project_id": "pmvs8zxyppnry2",
+  "exported_at": "2026-10-28T15:07:09.502Z"
+}
