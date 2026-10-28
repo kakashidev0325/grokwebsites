@@ -10,7 +10,7 @@
   "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -27,9 +27,9 @@
   ],
   "tagline": "",
   "about": "Float is a memecoin launchpad where every coin is paired with a real tokenized stock",
-  "x_url": "",
-  "tg_url": "",
-  "ref_x_url": "",
+  "x_url": "https://x.com/floateronx",
+  "tg_url": "https://t.me/floater_tg",
+  "ref_x_url": "https://x.com/inuwocklord/status/2115571516058591693",
   "socials": [],
   "buy_url": "",
   "dexs_url": "",
@@ -58,5 +58,5 @@
   },
   "site_slug": "floater",
   "project_id": "pmvsqao06rd1ki",
-  "exported_at": "2026-10-28T23:11:23.313Z"
+  "exported_at": "2026-10-28T23:18:48.683Z"
 }
