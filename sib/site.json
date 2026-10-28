@@ -2,12 +2,12 @@
   "format": "meme-site-studio/site@1",
   "name": "Super Intelligence Boobs",
   "ticker": "SIB",
-  "template": "ut-bnboo",
+  "template": "ut-cow",
   "domain": "siboobs.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
@@ -58,5 +58,5 @@
   },
   "site_slug": "sib",
   "project_id": "pmvs6b1isp7kn3",
-  "exported_at": "2026-10-28T13:51:48.434Z"
+  "exported_at": "2026-10-28T14:22:59.264Z"
 }

@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" data-theme-mode="original" data-theme-preset="" style="">
+<html lang="en" data-theme-mode="preset" data-theme-preset="solana" style="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- archetype: ut-bnboo | placeholders: Super Intelligence Boobs SIB assets/logo.png TBA solana   https://pump.fun/ https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Super Intelligence Boobs on Solana. What could be better for the AgenC ecosystem than $SIB Super Intelligence Boobs? 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
+<!-- archetype: ut-cow | placeholders: Super Intelligence Boobs SIB assets/logo.png TBA solana   https://pump.fun/ https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Super Intelligence Boobs on Solana. What could be better for the AgenC ecosystem than $SIB Super Intelligence Boobs? 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
 <title>Super Intelligence Boobs ($SIB) | The most memeable Super Intelligence Boobs on Solana.</title>
 <meta name="description" content="What could be better for the AgenC ecosystem than $SIB Super Intelligence Boobs?">
 <meta property="og:title" content="Super Intelligence Boobs ($SIB)"><meta property="og:description" content="The most memeable Super Intelligence Boobs on Solana."><meta property="og:image" content="assets/logo.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Figtree:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;overflow-x:hidden}html{overflow-x:hidden}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
 .ico{width:1.15em!important;height:1.15em!important;max-width:1.15em!important;max-height:1.15em!important;fill:currentColor;flex:none;vertical-align:-.18em}
@@ -454,15 +454,15 @@ html.reduced-motion [data-intro] .intro-fade{
 }
 @media(max-width:700px){.mx-fx .mx-hide-sm{display:none}}
 
-/* ===== ut-bnboo ===== */
+/* ===== ut-cow ===== */
 
 :root{
- --a:#2f6bff;--a2:#9db7ff;--on:#ffffff;--acc:var(--a);--part:var(--a);
- --bg:#f3f7ff;--bg-2:#e4edff;--surface:#ffffff;--card:var(--surface);
- --ink:#122033;--muted:#54657c;--line:rgba(18,32,51,.1);
- --glow:rgba(47,107,255,.3);--grad:linear-gradient(135deg,var(--a),var(--a2));
- --radius:32px;--shadow:0 20px 40px rgba(40,70,140,.12);--border:0px solid transparent;
- --display:Nunito,system-ui,sans-serif;--body:Quicksand,system-ui,sans-serif;
+ --a:#e6b325;--a2:#8d6a12;--on:#1a1404;--acc:var(--a);--part:var(--a);
+ --bg:#fffdf8;--bg-2:#fff4d6;--surface:#ffffff;--card:var(--surface);
+ --ink:#1a1208;--muted:#6b5c45;--line:rgba(26,18,8,.12);
+ --glow:rgba(230,179,37,.4);--grad:linear-gradient(135deg,var(--a),var(--a2));
+ --radius:24px;--shadow:0 24px 40px rgba(80,60,10,.1);--border:1px solid rgba(141,106,18,.25);
+ --display:Fraunces,Georgia,serif;--body:Figtree,system-ui,sans-serif;
 }
 *{box-sizing:border-box}
 html,body{overflow-x:clip}
@@ -616,17 +616,17 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   .hero h1{font-size:clamp(2.6rem,12vw,4.2rem)!important}
 }
 
-.hero{display:block;text-align:center}
-.hero h1{font-size:clamp(2.8rem,6vw,5rem)}
-.hero .parade{position:absolute;z-index:3;left:50%;top:16%;width:min(760px,92vw);height:min(380px,46vh);transform:translateX(-50%)}
-.hero .hero-copy{position:absolute;left:0;right:0;bottom:58px;z-index:5}
-.hero .parade .hero-main{position:absolute;left:30%;bottom:0;width:46%}
-.hero .parade .floater{width:22%}
-.hero .parade .f1{left:4%;bottom:10%}.hero .parade .f2{right:2%;bottom:18%;width:16%}
-.hero .moon{position:absolute;z-index:1;right:12%;top:14%;width:min(180px,24vw);height:auto;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 35%, var(--a2), var(--a))}
-.hero .hero-actions{justify-content:center}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;padding:90px 6vw 70px}
+.hero h1{font-size:clamp(3rem,6vw,5.6rem)}
+.hero .stage{position:relative;z-index:3;height:min(560px,70vh)}
+.hero .spot{position:absolute;left:10%;right:10%;top:0;bottom:18%;background:radial-gradient(circle at 50% 30%, color-mix(in srgb,var(--a) 55%,transparent), transparent 68%)}
+.hero .floor{position:absolute;left:8%;right:8%;bottom:8%;height:70px;border-radius:50%;background:color-mix(in srgb,var(--ink) 18%,transparent)}
+.hero .star{position:absolute;left:18%;right:18%;bottom:14%;width:auto}
+.hero .coin{position:absolute;width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 35%, var(--a2), var(--a));border:3px solid var(--ink)}
+.hero .coin.a{left:6%;bottom:20%}.hero .coin.b{right:8%;bottom:28%}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
 
-
+h1,h2{font-weight:560}
 
 /* banner */
 .mbanner{max-width:min(1100px,100% - 40px);margin:28px auto;padding:0}.mbanner img{width:100%;height:auto;max-height:220px;object-fit:cover;border-radius:16px;border:1px solid var(--line,rgba(255,255,255,.1));display:block}
@@ -634,7 +634,7 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 <link rel="canonical" href="https://siboobs.lol/">
 <meta property="og:url" content="https://siboobs.lol/">
 </head>
-<body class="a-ut-bnboo" data-intro>
+<body class="a-ut-cow" data-intro>
 
 
 <header class="top">
@@ -649,37 +649,35 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   </div>
 </header>
 
-<section class="hero"><div class="props" data-parallax="-0.08"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><ellipse class="surf" cx="280" cy="190" rx="190" ry="80"/><ellipse class="surf" cx="1120" cy="160" rx="230" ry="90"/><path class="surf" d="M500 760c40-90 90-90 130 0s90 90 130 0 80-90 130 0v140H500z"/><circle class="a" cx="200" cy="640" r="16" opacity=".7"/><circle class="a2" cx="1240" cy="600" r="22" opacity=".6"/></svg></div><div class="moon m-pulse"></div><div class="grain" aria-hidden="true"></div>
-<div class="parade">
-  <div class="floater f1 m-float"><img class="gchar floater" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div>
-  <div class="floater f2 m-bob"><img class="gchar floater tiny" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div>
-  <div data-mouse="12"><img class="gchar hero-main" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div>
-</div>
-<div class="bubble" style="left:18%;top:24%">boo</div>
-<div class="hero-copy"><p class="kicker">Solana</p><h1 data-letters>Super Intelligence Boobs</h1><p class="lede">The most memeable Super Intelligence Boobs on Solana.</p>
+<section class="hero"><div class="props" data-parallax="-0.05"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><ellipse class="a" cx="0" cy="0" rx="28" ry="16" opacity=".2"/><ellipse class="a" cx="173" cy="97" rx="42" ry="24" opacity=".2"/><ellipse class="a" cx="346" cy="194" rx="56" ry="32" opacity=".2"/><ellipse class="a" cx="519" cy="291" rx="70" ry="16" opacity=".2"/><ellipse class="a" cx="692" cy="388" rx="28" ry="24" opacity=".2"/><ellipse class="a" cx="865" cy="485" rx="42" ry="32" opacity=".2"/><ellipse class="a" cx="1038" cy="582" rx="56" ry="16" opacity=".2"/><ellipse class="a" cx="1211" cy="679" rx="70" ry="24" opacity=".2"/><ellipse class="a" cx="1384" cy="776" rx="28" ry="32" opacity=".2"/><ellipse class="a" cx="117" cy="873" rx="42" ry="16" opacity=".2"/><ellipse class="a" cx="290" cy="70" rx="56" ry="24" opacity=".2"/><ellipse class="a" cx="463" cy="167" rx="70" ry="32" opacity=".2"/><ellipse class="a" cx="636" cy="264" rx="28" ry="16" opacity=".2"/><ellipse class="a" cx="809" cy="361" rx="42" ry="24" opacity=".2"/><ellipse class="a" cx="982" cy="458" rx="56" ry="32" opacity=".2"/><ellipse class="a" cx="1155" cy="555" rx="70" ry="16" opacity=".2"/><circle class="a" cx="1180" cy="190" r="86" fill="none" stroke="currentColor" stroke-width="16"/></svg></div><div class="grain" aria-hidden="true"></div>
+<div class="hero-copy"><p class="kicker">Pump.fun</p><h1>Super Intelligence Boobs</h1><p class="lede">The most memeable Super Intelligence Boobs on Solana.</p>
 <div class="hero-actions">
   <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="https://pump.fun/"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $SIB <span class="dexon">on Pump.fun</span></a>
   <a class="btn btn-ghost" href="https://dexscreener.com/solana" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
   <button class="btn btn-ghost" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> <code>TBA</code></button>
 </div>
 </div>
+<div class="stage"><div class="spot"></div><div class="floor"></div>
+<div class="coin a m-bob"></div><div class="coin b m-float"></div>
+<div class="star m-bob" data-mouse="10"><img class="gchar hero-main" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div></div>
 <div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>$SIB ✦ Super Intelligence Boobs ✦ The most memeable Super Intelligence Boobs on Solana. ✦ Solana ✦ Pump.fun ✦ </span></div></div></section>
 <section class="ref-post rv" id="origin-post" aria-label="The post that started it all"><div class="ref-post-wrap"><div class="ref-post-head"><span class="ref-post-badge">✦ Origin</span><h2 class="ref-post-title">The post that started it all</h2></div><div class="ref-post-frame"><blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-conversation="none"><a href="https://x.com/BrimsTrade/status/2114809422723629336">View post on X</a></blockquote><div class="ref-post-fallback" role="complementary"><div class="ref-xmark" aria-hidden="true">𝕏</div><b>@BrimsTrade</b><p>The post that started it all</p><a class="ref-post-btn" href="https://x.com/BrimsTrade/status/2114809422723629336" target="_blank" rel="noopener">View post on X →</a></div></div></div></section><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>$SIB ✦ Super Intelligence Boobs ✦ The most memeable Super Intelligence Boobs on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Super Intelligence Boobs community. Buy $SIB. Make memes. Never sell. ✦ BUY $SIB ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>$SIB ✦ Super Intelligence Boobs ✦ The most memeable Super Intelligence Boobs on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Super Intelligence Boobs community. Buy $SIB. Make memes. Never sell. ✦ BUY $SIB ✦ </span></div></div>
 <figure class="mbanner" data-banner><img src="assets/banner.webp" alt="Super Intelligence Boobs banner"></figure>
 <!--BANNER_SLOT-->
-<section class="sec sig sig-pr"><div class="wrap"><p class="kicker">Soft</p><h2>A ghost with a ticker</h2><p class="prose">Join the Super Intelligence Boobs community. Buy $SIB. Make memes. Never sell.</p><ol class="sig-ol rv-stagger"><li><b>01</b><div><h3>Round</h3><p>Circles, not knives.</p></div></li><li><b>02</b><div><h3>Blue</h3><p>One cool color.</p></div></li><li><b>03</b><div><h3>Swap</h3><p>Phantom to Pump.fun.</p></div></li></ol></div></section>
+<section class="sec sig sig-pr"><div class="wrap"><p class="kicker">Pasture</p><h2>A clean product page</h2><p class="prose">The most memeable Super Intelligence Boobs on Solana.</p><ol class="sig-ol rv-stagger"><li><b>01</b><div><h3>Gold</h3><p>One metal, used sparingly.</p></div></li><li><b>02</b><div><h3>White</h3><p>Room for the character.</p></div></li><li><b>03</b><div><h3>Numbers</h3><p>1B supply, tax 0/0.</p></div></li></ol></div></section>
 
-<section class="sec about about-overlap" id="lore">
-  <div class="wrap stage">
-    <div class="rv">
+<section class="sec about" id="lore">
+  <div class="wrap split">
+    <figure class="frame rv-l"><img class="gchar" data-tilt src="assets/logo.png" alt="Super Intelligence Boobs" width="800" height="800"></figure>
+    <div class="rv-r">
       <p class="kicker">Lore</p>
-      <h2><em>Super Intelligence Boobs</em> showed up and stayed.</h2>
+      <h2>The story of <em>Super Intelligence Boobs</em></h2>
       <p class="prose">What could be better for the AgenC ecosystem than $SIB Super Intelligence Boobs?</p>
-      <p class="prose">The most memeable Super Intelligence Boobs on Solana. Join the Super Intelligence Boobs community. Buy $SIB. Make memes. Never sell.</p>
+      <p class="prose">Join the Super Intelligence Boobs community. Buy $SIB. Make memes. Never sell. Born on Solana, traded on Pump.fun, carried by whoever decides to make the next meme.</p>
+      <ul class="facts"><li><b>1B</b><span>Supply</span></li><li><b>0/0</b><span>Tax</span></li><li><b>Burned</b><span>LP</span></li></ul>
     </div>
-    <img class="gchar m-float" data-parallax="0.08" data-mouse="14" src="assets/logo.png" alt="Super Intelligence Boobs" width="800" height="800">
   </div>
 </section>
 
@@ -720,10 +718,10 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 </section>
 
 
-<section class="sec gal gal-polaroid" id="memes">
+<section class="sec gal" id="memes">
   <div class="wrap">
-    <p class="kicker">Memes</p><h2>A wall of {NAME}</h2>
-    <div class="polaroids rv-stagger"><figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Intelligence Boobs meme 1" width="800" height="800" loading="lazy"><figcaption>01</figcaption></figure>
+    <p class="kicker">Memes</p><h2>The gallery</h2>
+    <div class="mosaic rv-stagger"><figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Intelligence Boobs meme 1" width="800" height="800" loading="lazy"><figcaption>01</figcaption></figure>
 <figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Intelligence Boobs meme 2" width="800" height="800" loading="lazy"><figcaption>02</figcaption></figure>
 <figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Intelligence Boobs meme 3" width="800" height="800" loading="lazy"><figcaption>03</figcaption></figure>
 <figure class="rv"><img class="gimg" src="assets/logo.png" alt="Super Intelligence Boobs meme 4" width="800" height="800" loading="lazy"><figcaption>04</figcaption></figure>
