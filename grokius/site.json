@@ -2,14 +2,14 @@
   "format": "meme-site-studio/site@1",
   "name": "Grokius Maximus",
   "ticker": "GROKIUS",
-  "template": "bnb-1",
+  "template": "ut-bnbtiger",
   "domain": "grokiusmax.lol",
   "ca": "TBA",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
+  "theme_primary": "#f97316",
+  "theme_secondary": "#fbbf24",
   "domain_status": "live",
   "dns_records": [
     {
@@ -70,5 +70,5 @@
   },
   "site_slug": "grokius",
   "project_id": "pmvsl9rjuy7ix2",
-  "exported_at": "2026-10-28T20:55:04.001Z"
+  "exported_at": "2026-10-28T20:59:39.981Z"
 }
