@@ -214,7 +214,7 @@ h1,.disp,.hero h1,.sec-title{
 .intro-title .word>span{display:inline-block}
 
 h1.disp,h1.intro-title,.hero h1{overflow:visible}
-/* wave / glitch / faq helpers used by user templates */
+/* wave / glitch helpers used by user templates */
 .wave-text span{display:inline-block;animation:waveY 1.8s ease-in-out infinite}
 @keyframes waveY{0%,100%{transform:translateY(0)}50%{transform:translateY(-.22em)}}
 .glitch{position:relative;display:inline-block}
@@ -223,8 +223,6 @@ h1.disp,h1.intro-title,.hero h1{overflow:visible}
 .glitch::after{color:#f0f;transform:translate(-2px,1px);mix-blend-mode:screen;animation:g2 1.7s infinite linear}
 @keyframes g1{0%,88%,100%{clip-path:inset(0 0 80% 0)}40%{clip-path:inset(30% 0 40% 0)}60%{clip-path:inset(70% 0 5% 0)}}
 @keyframes g2{0%,100%{clip-path:inset(80% 0 0 0)}35%{clip-path:inset(10% 0 60% 0)}70%{clip-path:inset(50% 0 20% 0)}}
-.acc-a{display:none}
-.acc.open .acc-a{display:block}
 html[data-theme-mode="preset"] .kicker,html[data-theme-mode="custom"] .kicker{color:var(--theme-1)!important}
 html[data-theme-mode="preset"] .sig,html[data-theme-mode="custom"] .sig{box-shadow:inset 0 0 80px var(--theme-glow)}
 .hero-copy,.hero-inner,.hero-grid>div:first-child{min-width:0}
@@ -487,7 +485,6 @@ h1,h2,h3{font-family:var(--display);line-height:.95}
   radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--a) 35%, var(--surface)), var(--surface));
   border:var(--border);border-radius:var(--radius);box-shadow:var(--shadow);object-fit:contain}
 
-
 .top{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:18px;padding:12px 22px;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700}
 .brand img{width:40px;height:40px;border-radius:12px;object-fit:cover;background:var(--card);border:2px solid var(--line)}
@@ -554,12 +551,6 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 .polaroids figure:nth-child(3n){transform:rotate(-3deg)}
 .gal-rail .meme-rail{padding:10px 0 20px}
 .gal-rail figure{width:260px;height:260px}
-.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:32px}
-.acc{border-bottom:1px solid var(--line)}
-.acc-q{width:100%;text-align:left;padding:16px 0;font-weight:800;font-size:1.05rem;display:flex;justify-content:space-between}
-.acc-q:after{content:"+";color:var(--a);font-size:1.3rem}
-.acc.open .acc-q:after{content:"–"}
-.acc-a p{margin:0 0 14px;color:var(--muted)}
 .cta-band{background:var(--grad);color:var(--on)}
 .statline{font-family:var(--display);font-size:clamp(1.4rem,3vw,2rem);margin:18px 0 0}
 .statline b{color:var(--a)}
@@ -586,14 +577,13 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   .navlinks{display:none;position:absolute;left:12px;right:12px;top:70px;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px}
   body.menu-open .navlinks{display:flex}
   .burger{display:grid}
-  .split,.cols,.beats,.cards,.tickets,.steps,.stack,.faq-grid,.donut-wrap,.foot-grid,.about-overlap .stage,.sig-pr .sig-ol,.cta-ticket .ticket{grid-template-columns:1fr}
+  .split,.cols,.beats,.cards,.tickets,.steps,.stack,.donut-wrap,.foot-grid,.about-overlap .stage,.sig-pr .sig-ol,.cta-ticket .ticket{grid-template-columns:1fr}
   .tok-bars article{grid-template-columns:1fr}
   .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
   .polaroids{grid-template-columns:1fr 1fr}
   .cards,.tickets,.steps,.stack{grid-template-columns:1fr 1fr}
 }
 @media(max-width:560px){.cards,.tickets,.steps,.stack,.mosaic,.polaroids{grid-template-columns:1fr}}
-
 
 .hero{position:relative;isolation:isolate;overflow:hidden;min-height:100svh;background:var(--bg);color:var(--ink)}
 .hero .gchar{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 22px 16px color-mix(in srgb,#000 45%,transparent))}
@@ -636,7 +626,7 @@ h2{font-weight:500}p{font-size:1.05rem}
 <header class="top">
   <a class="brand" href="#top"><img src="assets/logo.png" alt="" width="64" height="64"><b>Grokbot</b><em>$Grokbot</em></a>
   <nav class="navlinks">
-    <a href="#lore">Lore</a><a href="#token">Token</a><a href="#buy">Buy</a><a href="#road">Road</a><a href="#memes">Memes</a><a href="#faq">FAQ</a>
+    <a href="#lore">Lore</a><a href="#token">Token</a><a href="#buy">Buy</a><a href="#road">Road</a><a href="#memes">Memes</a>
   </nav>
   <div class="top-actions">
     <a data-s href="https://x.com/grokbotoneth" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/ethereum/0x8faC47b781CAEa6E952b0d2ca781bdB3536B30ae" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a>
@@ -733,18 +723,6 @@ h2{font-weight:500}p{font-size:1.05rem}
 <li><span>04</span><h3>The long game</h3><p>Merch, meetups, and ideas the community actually bothers to finish.</p></li>
 </ol></div></section>
 
-<section class="sec faq" id="faq">
-  <div class="wrap faq-grid">
-    <header><p class="kicker">FAQ</p><h2>Ask, then ape or don't.</h2><p class="prose">Join the Grokbot community. Buy $Grokbot. Make memes. Never sell.</p></header>
-    <div data-acc>
-      <div class="acc open"><button class="acc-q" type="button" aria-expanded="true">What is Grokbot?</button><div class="acc-a"><p>Grokbot is a 100M narrative Elon posts about it everyday yet we PVP ourselves to 0</p></div></div>
-      <div class="acc"><button class="acc-q" type="button" aria-expanded="false">Where is the contract?</button><div class="acc-a"><p class="ca-text">0x8faC47b781CAEa6E952b0d2ca781bdB3536B30ae</p><p>Chain: Ethereum. DEX: Uniswap V2.</p></div></div>
-      <div class="acc"><button class="acc-q" type="button" aria-expanded="false">How do I buy?</button><div class="acc-a"><p>Install MetaMask, get ETH, open Uniswap V2, paste the CA, swap for $Grokbot.</p></div></div>
-      <div class="acc"><button class="acc-q" type="button" aria-expanded="false">Tax, supply, liquidity?</button><div class="acc-a"><p>Tax 0/0. Supply 1,000,000,000. LP Burned.</p></div></div>
-      <div class="acc"><button class="acc-q" type="button" aria-expanded="false">Is this financial advice?</button><div class="acc-a"><p>$Grokbot is a meme coin with no intrinsic value or expectation of financial return. Not financial advice.</p></div></div>
-    </div>
-  </div>
-</section>
 
 
 <section class="sec cta cta-ticket" id="join">
@@ -769,7 +747,7 @@ h2{font-weight:500}p{font-size:1.05rem}
       <a class="brand" href="#top"><img src="assets/logo.png" alt="" width="64" height="64"><b>Grokbot</b></a>
       <p>The most memeable Grokbot on Ethereum.</p>
     </div>
-    <div><b>Explore</b><a href="#lore">Lore</a><a href="#token">Tokenomics</a><a href="#buy">How to buy</a><a href="#memes">Memes</a><a href="#faq">FAQ</a></div>
+    <div><b>Explore</b><a href="#lore">Lore</a><a href="#token">Tokenomics</a><a href="#buy">How to buy</a><a href="#memes">Memes</a></div>
     <div><b>Trade</b><a href="https://app.uniswap.org/swap?chain=mainnet&amp;inputCurrency=NATIVE&amp;outputCurrency=0x8faC47b781CAEa6E952b0d2ca781bdB3536B30ae">Uniswap V2</a><a href="https://dexscreener.com/ethereum/0x8faC47b781CAEa6E952b0d2ca781bdB3536B30ae">Dexscreener</a><button type="button" data-copy>Copy CA</button></div>
     <div><b>Community</b><a data-s href="https://x.com/grokbotoneth">X</a><a data-s href="">Telegram</a></div>
   </div>
@@ -854,8 +832,7 @@ document.querySelectorAll('.meme-rail').forEach(function(rail){var track=rail.qu
  rail.addEventListener('pointerdown',function(e){down=true;rail.classList.add('is-drag');sx=e.clientX;sl=rail.scrollLeft||0;rail.setPointerCapture(e.pointerId)});
  rail.addEventListener('pointermove',function(e){if(!down)return;rail.scrollLeft=sl-(e.clientX-sx)});
  function up(){down=false;rail.classList.remove('is-drag')}rail.addEventListener('pointerup',up);rail.addEventListener('pointercancel',up)});
-/* faq accordion + wave letters */
-document.querySelectorAll('[data-acc] .acc-q').forEach(function(q){q.addEventListener('click',function(){var item=q.parentElement;var open=item.classList.toggle('open');q.setAttribute('aria-expanded',open?'true':'false')})});
+/* wave letters */
 document.querySelectorAll('[data-wave]').forEach(function(el){if(reduce)return;var txt=el.textContent;el.textContent='';el.classList.add('wave-text');for(var i=0;i<txt.length;i++){var s=document.createElement('span');s.textContent=txt[i]===' '?'\u00a0':txt[i];s.style.animationDelay=(i*0.045)+'s';el.appendChild(s)}});
 /* sticky header helper */
 document.querySelectorAll('[data-sticky-header]').forEach(function(h){var on=function(){h.classList.toggle('is-stuck',window.scrollY>40)};window.addEventListener('scroll',on,{passive:true});on()});
