@@ -4,7 +4,7 @@
   "ticker": "Grokbot",
   "template": "ut-bnbtiger",
   "domain": "grokboteth.lol",
-  "ca": "TBA",
+  "ca": "0x8faC47b781CAEa6E952b0d2ca781bdB3536B30ae",
   "chain": "ethereum",
   "theme_mode": "preset",
   "theme_preset": "solana",
@@ -51,12 +51,12 @@
     "dex_name": "Uniswap V2",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/",
-    "chart_page": "https://dexscreener.com/ethereum",
-    "chart_embed": "https://dexscreener.com/ethereum?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x8faC47b781CAEa6E952b0d2ca781bdB3536B30ae",
+    "chart_page": "https://dexscreener.com/ethereum/0x8faC47b781CAEa6E952b0d2ca781bdB3536B30ae",
+    "chart_embed": "https://dexscreener.com/ethereum/0x8faC47b781CAEa6E952b0d2ca781bdB3536B30ae?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Ethereum"
   },
   "site_slug": "grokbot",
   "project_id": "pmvs8zxyppnry2",
-  "exported_at": "2026-10-28T15:07:59.916Z"
+  "exported_at": "2026-10-28T15:17:30.065Z"
 }
