@@ -51,13 +51,22 @@
     "assets/meme3.jpg",
     "assets/meme4.jpg",
     "assets/meme5.jpg",
-    "assets/meme6.jpg"
+    "assets/meme6.jpg",
+    "assets/meme7.jpg",
+    "assets/meme8.jpg",
+    "assets/meme9.jpg"
   ],
   "characters": [
     "assets/char1.jpg",
     "assets/char2.jpg",
-    "assets/char3.jpg",
-    "assets/char4.jpg"
+    "assets/char3.png",
+    "assets/char4.jpg",
+    "assets/char5.jpg",
+    "assets/char6.jpg",
+    "assets/char7.jpg",
+    "assets/char8.jpg",
+    "assets/char9.jpg",
+    "assets/char10.jpg"
   ],
   "resolved": {
     "dex_name": "Pump.fun",
@@ -70,5 +79,5 @@
   },
   "site_slug": "grokius",
   "project_id": "pmvsl9rjuy7ix2",
-  "exported_at": "2026-10-28T20:59:39.981Z"
+  "exported_at": "2026-10-28T21:07:23.835Z"
 }
