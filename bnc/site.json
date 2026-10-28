@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "BNB Standard",
   "ticker": "BNC",
-  "template": "bnb-1",
+  "template": "ut-lmeow",
   "domain": "bnbstandard.lol",
   "ca": "TBA",
   "chain": "solana",
@@ -10,7 +10,7 @@
   "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "live",
+  "domain_status": "dns",
   "dns_records": [
     {
       "type": "A",
@@ -27,7 +27,7 @@
   ],
   "tagline": "",
   "about": "That which we call BNB would still moon.",
-  "x_url": "",
+  "x_url": "https://x.com/bnbstandard_x",
   "tg_url": "",
   "ref_x_url": "",
   "socials": [],
@@ -58,5 +58,5 @@
   },
   "site_slug": "bnc",
   "project_id": "pmvrcwab36iltg",
-  "exported_at": "2026-10-28T00:08:31.134Z"
+  "exported_at": "2026-10-28T00:17:24.768Z"
 }
