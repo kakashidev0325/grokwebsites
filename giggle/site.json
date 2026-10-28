@@ -1,0 +1,62 @@
+{
+  "format": "meme-site-studio/site@1",
+  "name": "Giggle Academy",
+  "ticker": "GIGGLE",
+  "template": "ut-bnboo",
+  "domain": "giggleacademy.lol",
+  "ca": "TBA",
+  "chain": "bsc",
+  "theme_mode": "original",
+  "theme_preset": "",
+  "theme_primary": "#9945ff",
+  "theme_secondary": "#14f195",
+  "domain_status": "live",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "76.76.21.21",
+      "host": "giggleacademy.lol"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "cname.vercel-dns.com",
+      "host": "www.giggleacademy.lol"
+    }
+  ],
+  "tagline": "",
+  "about": "We will all join hands with Giggle to do charity education together!",
+  "x_url": "",
+  "tg_url": "",
+  "ref_x_url": "",
+  "socials": [],
+  "buy_url": "",
+  "dexs_url": "",
+  "supply": "",
+  "tax": "",
+  "lp": "",
+  "dex": "pancakeswap-v3",
+  "dex_auto": false,
+  "dex_name": "PancakeSwap V3",
+  "native": "",
+  "wallet": "",
+  "vercel_a": "",
+  "vercel_cname": "",
+  "logo": "assets/logo.png",
+  "banner": "assets/banner.webp",
+  "images": [],
+  "characters": [],
+  "resolved": {
+    "dex_name": "PancakeSwap V3",
+    "dex_logo": "assets/dex.png",
+    "buy_url_source": "dex",
+    "buy_url": "https://pancakeswap.finance/",
+    "chart_page": "https://dexscreener.com/bsc",
+    "chart_embed": "https://dexscreener.com/bsc?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "BNB Chain"
+  },
+  "site_slug": "giggle",
+  "project_id": "pmvrdqt7i6fbym",
+  "exported_at": "2026-10-28T00:32:15.269Z"
+}
