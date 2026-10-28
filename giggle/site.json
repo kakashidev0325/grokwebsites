@@ -2,14 +2,14 @@
   "format": "meme-site-studio/site@1",
   "name": "Giggle Academy",
   "ticker": "GIGGLE",
-  "template": "ut-bnboo",
+  "template": "sticker-cartoon",
   "domain": "giggleacademy.lol",
-  "ca": "0xd3b8bd6b7fb81e0a875b47edbf6abfd03f7d8f1b",
+  "ca": "TBA",
   "chain": "bsc",
   "theme_mode": "original",
   "theme_preset": "",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
+  "theme_primary": "#f0b90b",
+  "theme_secondary": "#f8d12f",
   "domain_status": "live",
   "dns_records": [
     {
@@ -27,7 +27,7 @@
   ],
   "tagline": "",
   "about": "We will all join hands with Giggle to do charity education together!",
-  "x_url": "",
+  "x_url": "https://x.com/giggleacademy_x",
   "tg_url": "",
   "ref_x_url": "https://x.com/heidithewitch/status/2114737573461696677",
   "socials": [],
@@ -45,26 +45,18 @@
   "vercel_cname": "",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
-  "images": [
-    "assets/meme1.webp",
-    "assets/meme2.webp",
-    "assets/meme3.webp",
-    "assets/meme4.webp"
-  ],
-  "characters": [
-    "assets/char1.webp",
-    "assets/char2.webp"
-  ],
+  "images": [],
+  "characters": [],
   "resolved": {
     "dex_name": "PancakeSwap V3",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0xd3b8bd6b7fb81e0a875b47edbf6abfd03f7d8f1b",
-    "chart_page": "https://dexscreener.com/bsc/0xd3b8bd6b7fb81e0a875b47edbf6abfd03f7d8f1b",
-    "chart_embed": "https://dexscreener.com/bsc/0xd3b8bd6b7fb81e0a875b47edbf6abfd03f7d8f1b?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pancakeswap.finance/",
+    "chart_page": "https://dexscreener.com/bsc",
+    "chart_embed": "https://dexscreener.com/bsc?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "BNB Chain"
   },
   "site_slug": "giggle",
   "project_id": "pmvrdqt7i6fbym",
-  "exported_at": "2026-10-28T01:03:41.533Z"
+  "exported_at": "2026-10-28T03:04:40.669Z"
 }
