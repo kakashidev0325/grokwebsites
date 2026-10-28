@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- archetype: ut-hmmmm | placeholders: Grokius Maximus GROKIUS assets/logo.png TBA solana https://x.com/grokmaxonx  https://pump.fun/ https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Grokius Maximus on Solana. Grok is king of AI 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
+<!-- archetype: ut-hmmmm | placeholders: Grokius Maximus GROKIUS assets/logo.png 37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump solana https://x.com/grokmaxonx  https://pump.fun/coin/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump https://dexscreener.com/solana/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Grokius Maximus on Solana. Grok is king of AI 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
 <title>Grokius Maximus ($GROKIUS) | The most memeable Grokius Maximus on Solana.</title>
 <meta name="description" content="Grok is king of AI">
 <meta property="og:title" content="Grokius Maximus ($GROKIUS)"><meta property="og:description" content="The most memeable Grokius Maximus on Solana."><meta property="og:image" content="assets/logo.png"><meta name="twitter:card" content="summary_large_image">
@@ -76,14 +76,12 @@
  [data-intro] .intro-logo,[data-intro] .intro-title .word>span,[data-intro] .intro-fade{opacity:1;transform:none;animation:none!important}
  .cursor-dot,.cursor-ring,.scroll-progress,.particles{display:none!important}
 }
-/* banner + extra links (shared) */
-.mbanner{display:block;margin-left:auto;margin-right:auto;width:100%;box-sizing:border-box}
-.mbanner img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;max-height:460px}
-[data-banner]:has(img[src=""]),[data-xlinks]:empty{display:none!important}
+/* extra links (shared) */
+[data-xlinks]:empty{display:none!important}
 .xlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:1100px;margin:0 auto;padding:30px 20px 10px;position:relative;z-index:2}
 .xlinks a{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:2px solid currentColor;border-radius:999px;font-weight:700;font-size:14px;line-height:1;opacity:.9;transition:transform .15s,opacity .15s;text-decoration:none;color:inherit}
 .xlinks a:hover{opacity:1;transform:translateY(-2px)}
-@media(max-width:700px){a.xs{display:none!important}.mbanner img{aspect-ratio:2/1}.particles i:nth-child(n+12){display:none}}
+@media(max-width:700px){a.xs{display:none!important}.particles i:nth-child(n+12){display:none}}
 /* DEX on buy buttons */
 .dexic{width:1.25em!important;height:1.25em!important;max-width:1.25em!important;max-height:1.25em!important;border-radius:50%;object-fit:cover;flex:none;vertical-align:-.25em;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.15);margin:0!important;padding:0!important;filter:none!important;display:inline-block!important}
 .dexon{font-size:.82em;opacity:.92;white-space:nowrap}
@@ -590,7 +588,6 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 .hero .scene{position:absolute;inset:-12% -4% auto -4%;width:108%;height:130%;z-index:0;pointer-events:none}
 .hero .grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.22;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
 .hero .hero-mq{position:absolute;left:0;right:0;bottom:0;z-index:6}
-.hero .bubble{position:absolute;z-index:4;background:var(--surface);color:var(--ink);border:3px solid var(--ink);border-radius:18px 18px 18px 4px;padding:8px 12px;font-family:var(--display);font-weight:800;box-shadow:4px 4px 0 var(--a)}
 .hero .floater{position:absolute;z-index:3;width:min(120px,18vw);pointer-events:none}
 .hero .floater.tiny{width:min(72px,12vw)}
 .hero .hero-copy{position:relative;z-index:4}
@@ -610,13 +607,10 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 .hero h1{font-size:clamp(4rem,12vw,9rem);transform:rotate(-3deg);display:inline-block}
 .hero .peek{position:absolute;z-index:3;left:-4%;bottom:-6%;width:min(480px,52vw);transform:rotate(-8deg)}
 .hero .floater{right:10%;top:18%;transform:rotate(12deg)}
-.hero .bubble{right:22%;top:34%}
 .hero .hero-copy{position:relative;z-index:4;max-width:680px;margin-left:auto}
 
 h1,h2{letter-spacing:.01em}
 
-/* banner */
-.mbanner{max-width:min(1100px,100% - 40px);margin:28px auto;padding:0}.mbanner img{width:100%;height:auto;max-height:220px;object-fit:cover;border-radius:16px;border:1px solid var(--line,rgba(255,255,255,.1));display:block}
 </style>
 <link rel="canonical" href="https://grokmax.lol/">
 <meta property="og:url" content="https://grokmax.lol/">
@@ -630,8 +624,8 @@ h1,h2{letter-spacing:.01em}
     <a href="#lore">Lore</a><a href="#token">Token</a><a href="#buy">Buy</a><a href="#road">Road</a><a href="#memes">Memes</a>
   </nav>
   <div class="top-actions">
-    <a data-s href="https://x.com/grokmaxonx" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a>
-    <a class="btn btn-main btn-shine" data-magnetic data-buy href="https://pump.fun/"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy <span class="dexon">on Pump.fun</span></a>
+    <a data-s href="https://x.com/grokmaxonx" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a>
+    <a class="btn btn-main btn-shine" data-magnetic data-buy href="https://pump.fun/coin/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy <span class="dexon">on Pump.fun</span></a>
     <button class="burger" type="button" data-menu aria-label="Open menu"><i></i><i></i><i></i></button>
   </div>
 </header>
@@ -639,20 +633,17 @@ h1,h2{letter-spacing:.01em}
 <section class="hero"><div class="props" data-parallax="0.05"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><g class="ink" fill="none" stroke="currentColor" stroke-width="3"><circle cx="180" cy="150" r="70"/><circle cx="1220" cy="190" r="120"/><circle cx="300" cy="720" r="36"/><circle cx="1000" cy="680" r="84"/></g><path class="a" d="M180 420c90-90 180-10 250 20" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path class="a2" d="M1040 460c70 40 150 10 210-40" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><circle class="a" cx="948" cy="627" r="4" opacity="0.38"/><circle class="a" cx="381" cy="887" r="2" opacity="0.42"/><circle class="a" cx="949" cy="619" r="2" opacity="0.42"/><circle class="a" cx="1262" cy="716" r="2" opacity="0.61"/><circle class="a" cx="346" cy="720" r="5" opacity="0.73"/><circle class="a" cx="865" cy="160" r="3" opacity="0.37"/><circle class="a" cx="227" cy="135" r="6" opacity="0.69"/><circle class="a" cx="1209" cy="64" r="5" opacity="0.64"/><circle class="a" cx="208" cy="298" r="3" opacity="0.59"/><circle class="a" cx="863" cy="89" r="4" opacity="0.71"/><circle class="a" cx="812" cy="287" r="4" opacity="0.65"/><circle class="a" cx="408" cy="725" r="2" opacity="0.69"/><circle class="a" cx="112" cy="387" r="5" opacity="0.32"/><circle class="a" cx="484" cy="434" r="2" opacity="0.73"/><circle class="a" cx="7" cy="124" r="6" opacity="0.35"/><circle class="a" cx="415" cy="338" r="2" opacity="0.70"/><circle class="a" cx="272" cy="552" r="2" opacity="0.50"/><circle class="a" cx="1173" cy="508" r="6" opacity="0.71"/></svg></div><div class="grain" aria-hidden="true"></div>
 <div class="peek" data-mouse="20"><img class="gchar hero-main" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div>
 <img class="gchar floater m-spin" data-tilt src="assets/logo.png" alt="" width="800" height="800">
-<div class="bubble m-bob">say it</div>
 <div class="hero-copy"><p class="kicker">Out loud</p><h1 data-wave>Grokius Maximus</h1><p class="lede">The most memeable Grokius Maximus on Solana.</p>
 <div class="hero-actions">
-  <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="https://pump.fun/"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $GROKIUS <span class="dexon">on Pump.fun</span></a>
-  <a class="btn btn-ghost" href="https://dexscreener.com/solana" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
-  <button class="btn btn-ghost" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> <code>TBA</code></button>
+  <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="https://pump.fun/coin/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $GROKIUS <span class="dexon">on Pump.fun</span></a>
+  <a class="btn btn-ghost" href="https://dexscreener.com/solana/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
+  <button class="btn btn-ghost" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> <code>37yGBG…pump</code></button>
 </div>
 </div>
 <div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>$GROKIUS ✦ Grokius Maximus ✦ The most memeable Grokius Maximus on Solana. ✦ Solana ✦ Pump.fun ✦ </span></div></div></section>
 <section class="ref-post rv" id="origin-post" aria-label="The post that started it all"><div class="ref-post-wrap"><div class="ref-post-head"><span class="ref-post-badge">✦ Origin</span><h2 class="ref-post-title">The post that started it all</h2></div><div class="ref-post-frame"><blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-conversation="none"><a href="https://x.com/elonmusk/status/1732769973142003888">View post on X</a></blockquote><div class="ref-post-fallback" role="complementary"><div class="ref-xmark" aria-hidden="true">𝕏</div><b>@elonmusk</b><p>The post that started it all</p><a class="ref-post-btn" href="https://x.com/elonmusk/status/1732769973142003888" target="_blank" rel="noopener">View post on X →</a></div></div></div></section><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>$GROKIUS ✦ Grokius Maximus ✦ The most memeable Grokius Maximus on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Grokius Maximus community. Buy $GROKIUS. Make memes. Never sell. ✦ BUY $GROKIUS ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>$GROKIUS ✦ Grokius Maximus ✦ The most memeable Grokius Maximus on Solana. ✦ LP Burned ✦ TAX 0/0 ✦ Solana ✦ Join the Grokius Maximus community. Buy $GROKIUS. Make memes. Never sell. ✦ BUY $GROKIUS ✦ </span></div></div>
-<figure class="mbanner" data-banner><img src="assets/banner.jpg" alt="Grokius Maximus banner"></figure>
-<!--BANNER_SLOT-->
 
 <section class="sec about" id="lore">
   <div class="wrap">
@@ -688,11 +679,11 @@ h1,h2{letter-spacing:.01em}
     <ol class="steps rv-stagger">
       <li class="step"><span class="n">01</span><h3>Get Phantom</h3><p>Install the wallet, write the seed down offline, and add the Solana network.</p></li>
       <li class="step"><span class="n">02</span><h3>Fund SOL</h3><p>Buy or bridge a little SOL so you can pay for the swap and the fee.</p></li>
-      <li class="step"><span class="n">03</span><h3>Paste the CA</h3><p>Open Pump.fun, paste <button type="button" data-copy><code>TBA</code></button>, and check the name is Grokius Maximus.</p></li>
+      <li class="step"><span class="n">03</span><h3>Paste the CA</h3><p>Open Pump.fun, paste <button type="button" data-copy><code>37yGBG…pump</code></button>, and check the name is Grokius Maximus.</p></li>
       <li class="step"><span class="n">04</span><h3>Swap $GROKIUS</h3><p>Set slippage you can live with, confirm in Phantom, then go make a meme.</p></li>
     </ol>
     <div class="chartbox rv">
-      <div class="chart"><iframe title="Grokius Maximus chart" src="https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15" loading="lazy"></iframe></div>
+      <div class="chart"><iframe title="Grokius Maximus chart" src="https://dexscreener.com/solana/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15" loading="lazy"></iframe></div>
     </div>
   </div>
 </section>
@@ -726,10 +717,10 @@ h1,h2{letter-spacing:.01em}
     <h2 data-wave>Grokius Maximus</h2>
     <p class="prose">Join the Grokius Maximus community. Buy $GROKIUS. Make memes. Never sell.</p>
     <div class="hero-actions">
-      <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="https://pump.fun/"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $GROKIUS <span class="dexon">on Pump.fun</span></a>
+      <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="https://pump.fun/coin/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $GROKIUS <span class="dexon">on Pump.fun</span></a>
       <a class="btn btn-ghost" data-s href="https://x.com/grokmaxonx"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> Follow</a>
       <a class="btn btn-ghost" data-s href=""><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Chat</a>
-      <a class="btn btn-ghost" href="https://dexscreener.com/solana"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
+      <a class="btn btn-ghost" href="https://dexscreener.com/solana/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
     </div>
   </div>
 </section>
@@ -742,17 +733,17 @@ h1,h2{letter-spacing:.01em}
       <p>The most memeable Grokius Maximus on Solana.</p>
     </div>
     <div><b>Explore</b><a href="#lore">Lore</a><a href="#token">Tokenomics</a><a href="#buy">How to buy</a><a href="#memes">Memes</a></div>
-    <div><b>Trade</b><a href="https://pump.fun/">Pump.fun</a><a href="https://dexscreener.com/solana">Dexscreener</a><button type="button" data-copy>Copy CA</button></div>
+    <div><b>Trade</b><a href="https://pump.fun/coin/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump">Pump.fun</a><a href="https://dexscreener.com/solana/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump">Dexscreener</a><button type="button" data-copy>Copy CA</button></div>
     <div><b>Community</b><a data-s href="https://x.com/grokmaxonx">X</a><a data-s href="">Telegram</a></div>
   </div>
-  <div class="wrap legal"><p>$GROKIUS is a meme coin with no intrinsic value or expectation of financial return. Not financial advice. Art on this page is the token logo, banner, and uploaded memes.</p><p>© <span data-year>2026</span> $GROKIUS</p></div>
+  <div class="wrap legal"><p>$GROKIUS is a meme coin with no intrinsic value or expectation of financial return. Not financial advice. Art on this page is the token logo and uploaded memes.</p><p>© <span data-year>2026</span> $GROKIUS</p></div>
 </footer>
 
 
 <div id="toast" role="status" aria-live="polite"></div>
 <script>
 (function(){
-var CA="TBA";
+var CA="37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump";
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
 var mobile=/Mobi|Android/i.test(navigator.userAgent)||window.innerWidth<700;
@@ -766,13 +757,12 @@ function burst(x,y,n,cls){if(reduce)return;n=n||14;cls=cls||'sparkle-burst';
 function confetti(x,y){burst(x,y,mobile?12:28,'confetti-piece')}
 function copy(ev){var done=function(){toast('Contract address copied ✓');if(ev&&ev.clientX)confetti(ev.clientX,ev.clientY)};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(CA).then(done,fb)}else fb();function fb(){var ta=document.createElement('textarea');ta.value=CA;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();done()}}
 document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();copy(e);b.classList.add('copied');setTimeout(function(){b.classList.remove('copied')},1200)})});
-document.querySelectorAll('a[href="https://pump.fun/"],a.btn-pulse,[data-buy]').forEach(function(a){a.addEventListener('click',function(e){if(e.clientX)confetti(e.clientX,e.clientY)})});
+document.querySelectorAll('a[href="https://pump.fun/coin/37yGBGNuPn2rBYwJLp1Kampjjv1yEubzaTB1nbUtpump"],a.btn-pulse,[data-buy]').forEach(function(a){a.addEventListener('click',function(e){if(e.clientX)confetti(e.clientX,e.clientY)})});
 document.querySelectorAll('a[data-s]').forEach(function(a){var h=a.getAttribute('href');if(!h||h==='#'||h.indexOf('{{')===0){a.style.display='none'}else{a.target='_blank';a.rel='noopener'}});
 document.querySelectorAll('.mq').forEach(function(m){var t=m.querySelector('.mq-track');if(t){m.appendChild(t.cloneNode(true)).setAttribute('aria-hidden','true')}});
 /* reveals */
 var revealSel='.rv,.rv-l,.rv-r,.rv-z,.rv-rot,.rv-blur,.rv-stagger';
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});document.querySelectorAll(revealSel).forEach(function(el){io.observe(el)})}else document.querySelectorAll(revealSel).forEach(function(el){el.classList.add('in')});
-document.querySelectorAll('[data-banner]').forEach(function(b){var i=b.querySelector('img');if(!i||!i.getAttribute('src')||i.getAttribute('src').indexOf('{{')===0)b.remove()});
 document.querySelectorAll('[data-xlinks]').forEach(function(x){if(!x.querySelector('a'))x.remove()});
 document.querySelectorAll('[data-year]').forEach(function(y){y.textContent=new Date().getFullYear()});
 document.querySelectorAll('[data-menu]').forEach(function(b){b.addEventListener('click',function(){document.body.classList.toggle('menu-open')})});
