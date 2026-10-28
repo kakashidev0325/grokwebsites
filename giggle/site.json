@@ -4,7 +4,7 @@
   "ticker": "GIGGLE",
   "template": "sticker-cartoon",
   "domain": "giggleacademy.lol",
-  "ca": "TBA",
+  "ca": "0xf8f636eb3822585ebd747fa93847831ceb18c92e",
   "chain": "bsc",
   "theme_mode": "original",
   "theme_preset": "",
@@ -27,7 +27,7 @@
   ],
   "tagline": "",
   "about": "We will all join hands with Giggle to do charity education together!",
-  "x_url": "https://x.com/giggleacademy_x",
+  "x_url": "https://x.com/gigglebnb_x",
   "tg_url": "",
   "ref_x_url": "https://x.com/heidithewitch/status/2114737573461696677",
   "socials": [],
@@ -45,26 +45,18 @@
   "vercel_cname": "",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
-  "images": [
-    "assets/meme1.webp",
-    "assets/meme2.webp",
-    "assets/meme3.webp",
-    "assets/meme4.webp"
-  ],
-  "characters": [
-    "assets/char1.webp",
-    "assets/char2.webp"
-  ],
+  "images": [],
+  "characters": [],
   "resolved": {
     "dex_name": "PancakeSwap V3",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pancakeswap.finance/",
-    "chart_page": "https://dexscreener.com/bsc",
-    "chart_embed": "https://dexscreener.com/bsc?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0xf8f636eb3822585ebd747fa93847831ceb18c92e",
+    "chart_page": "https://dexscreener.com/bsc/0xf8f636eb3822585ebd747fa93847831ceb18c92e",
+    "chart_embed": "https://dexscreener.com/bsc/0xf8f636eb3822585ebd747fa93847831ceb18c92e?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "BNB Chain"
   },
   "site_slug": "giggle",
   "project_id": "pmvrdqt7i6fbym",
-  "exported_at": "2026-10-28T03:04:40.669Z"
+  "exported_at": "2026-10-28T05:39:01.155Z"
 }
