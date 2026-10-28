@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "BNB Standard",
   "ticker": "BNC",
-  "template": "ut-lmeow",
+  "template": "ut-bnbtiger",
   "domain": "bnbstandard.lol",
   "ca": "TBA",
   "chain": "bsc",
@@ -58,5 +58,5 @@
   },
   "site_slug": "bnc",
   "project_id": "pmvrcwab36iltg",
-  "exported_at": "2026-10-28T00:24:33.249Z"
+  "exported_at": "2026-10-28T00:25:18.801Z"
 }

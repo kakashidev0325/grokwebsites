@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- archetype: ut-lmeow | placeholders: BNB Standard BNC assets/logo.png TBA bsc https://x.com/bnbstandard_x  https://pancakeswap.finance/ https://dexscreener.com/bsc?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable BNB Standard on BNB Chain. That which we call BNB would still moon. 1,000,000,000 0/0 PancakeSwap V3 BNB MetaMask https://dexscreener.com/bsc BNB Chain <img class="dexic" src="assets/dex.png" alt="PancakeSwap V3">=raw html) -->
+<!-- archetype: ut-bnbtiger | placeholders: BNB Standard BNC assets/logo.png TBA bsc https://x.com/bnbstandard_x  https://pancakeswap.finance/ https://dexscreener.com/bsc?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable BNB Standard on BNB Chain. That which we call BNB would still moon. 1,000,000,000 0/0 PancakeSwap V3 BNB MetaMask https://dexscreener.com/bsc BNB Chain <img class="dexic" src="assets/dex.png" alt="PancakeSwap V3">=raw html) -->
 <title>BNB Standard ($BNC) | The most memeable BNB Standard on BNB Chain.</title>
 <meta name="description" content="That which we call BNB would still moon.">
 <meta property="og:title" content="BNB Standard ($BNC)"><meta property="og:description" content="The most memeable BNB Standard on BNB Chain."><meta property="og:image" content="assets/logo.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Nunito:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;overflow-x:hidden}html{overflow-x:hidden}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
 .ico{width:1.15em!important;height:1.15em!important;max-width:1.15em!important;max-height:1.15em!important;fill:currentColor;flex:none;vertical-align:-.18em}
@@ -454,15 +454,15 @@ html.reduced-motion [data-intro] .intro-fade{
 }
 @media(max-width:700px){.mx-fx .mx-hide-sm{display:none}}
 
-/* ===== ut-lmeow ===== */
+/* ===== ut-bnbtiger ===== */
 
 :root{
- --a:#ff7a59;--a2:#ffd166;--on:#2a120c;--acc:var(--a);--part:var(--a);
- --bg:#fff6ef;--bg-2:#ffe7da;--surface:#ffffff;--card:var(--surface);
- --ink:#241812;--muted:#6d584e;--line:rgba(36,24,18,.12);
- --glow:rgba(255,122,89,.35);--grad:linear-gradient(135deg,var(--a),var(--a2));
- --radius:28px;--shadow:0 24px 50px rgba(80,40,20,.12);--border:1px solid rgba(36,24,18,.08);
- --display:Fraunces,Georgia,serif;--body:Nunito,system-ui,sans-serif;
+ --a:#ffd000;--a2:#ff7a00;--on:#1a1400;--acc:var(--a);--part:var(--a);
+ --bg:#dff4ff;--bg-2:#bfe8ff;--surface:#ffffff;--card:var(--surface);
+ --ink:#102033;--muted:#3d5870;--line:rgba(16,32,51,.15);
+ --glow:rgba(255,208,0,.5);--grad:linear-gradient(135deg,var(--a),var(--a2));
+ --radius:22px;--shadow:0 16px 0 rgba(16,32,51,.08);--border:4px solid #102033;
+ --display:'Lilita One',system-ui,sans-serif;--body:Nunito,system-ui,sans-serif;
 }
 *{box-sizing:border-box}
 html,body{overflow-x:clip}
@@ -616,14 +616,19 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   .hero h1{font-size:clamp(2.6rem,12vw,4.2rem)!important}
 }
 
-.hero{display:block;text-align:center}
-.hero h1{font-size:clamp(3.6rem,9vw,7.2rem);text-transform:uppercase}
-.hero .hero-copy{position:absolute;left:0;right:0;top:12vh;z-index:5}
-.hero .bust{position:absolute;z-index:3;left:50%;bottom:-2vh;width:min(560px,68vw);transform:translateX(-50%)}
-.hero .floater.a{left:4%;bottom:18%;top:auto;width:min(88px,12vw)}.hero .floater.b{right:6%;top:14%;width:min(72px,10vw)}
+.hero{text-align:center;padding-top:90px}
+.hero h1{font-size:clamp(3.6rem,10vw,8rem);text-shadow:4px 4px 0 var(--a)}
+.hero .cloud{position:absolute;z-index:2;border-radius:50%;background:var(--surface);filter:blur(.2px)}
+.hero .cloud.c1{left:8%;top:22%;width:180px;height:70px}
+.hero .cloud.c2{right:10%;top:30%;width:220px;height:80px}
+.hero .cloud.c3{left:50%;bottom:16%;width:min(520px,70vw);height:90px;transform:translateX(-50%);background:color-mix(in srgb,var(--surface) 80%,var(--a))}
+.hero .rider{position:absolute;z-index:3;left:50%;bottom:18%;width:min(380px,54vw);transform:translateX(-50%)}
+.hero .pal{position:absolute;z-index:3;width:min(110px,16vw)}
+.hero .pal.p1{left:12%;top:14%}.hero .pal.p2{right:12%;top:20%}
+.hero .lede{color:var(--ink)}
 .hero .hero-actions{justify-content:center}
 
-.top{background:color-mix(in srgb,var(--bg) 80%,white)}h2{font-weight:560}
+h1,h2{letter-spacing:.02em}
 
 /* banner */
 .mbanner{max-width:min(1100px,100% - 40px);margin:28px auto;padding:0}.mbanner img{width:100%;height:auto;max-height:220px;object-fit:cover;border-radius:16px;border:1px solid var(--line,rgba(255,255,255,.1));display:block}
@@ -631,7 +636,7 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 <link rel="canonical" href="https://bnbstandard.lol/">
 <meta property="og:url" content="https://bnbstandard.lol/">
 </head>
-<body class="a-ut-lmeow" data-intro>
+<body class="a-ut-bnbtiger" data-particles data-intro>
 
 
 <header class="top">
@@ -646,8 +651,10 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   </div>
 </header>
 
-<section class="hero"><div class="props" data-parallax="-0.06"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><ellipse class="a2" cx="260" cy="180" rx="240" ry="140" opacity=".55"/><ellipse class="a" cx="1160" cy="200" rx="280" ry="160" opacity=".4"/><ellipse class="surf" cx="720" cy="820" rx="560" ry="200"/><circle class="a" cx="180" cy="680" r="70" opacity=".35"/></svg></div><div class="grain" aria-hidden="true"></div>
-<img class="gchar floater a m-float" data-tilt src="assets/logo.png" alt="" width="800" height="800"><img class="gchar floater tiny b m-bob" data-tilt src="assets/logo.png" alt="" width="800" height="800">
+<section class="hero"><div class="props" data-parallax="-0.15"><svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="bg" width="1440" height="900"/><g class="surf"><ellipse cx="220" cy="170" rx="130" ry="48"/><ellipse cx="300" cy="156" rx="80" ry="40"/><ellipse cx="1000" cy="140" rx="160" ry="52"/><ellipse cx="640" cy="210" rx="100" ry="36"/></g><circle class="a" cx="1180" cy="230" r="52"/><path class="a2" d="M0 690c140-80 240-20 360-54s240-8 340 46 250 16 380-36 230-30 360 16v238H0z" opacity=".85"/><path class="bg2" d="M0 780c200-40 320-8 480-34s280 14 430 18 260-24 530-8v144H0z"/></svg></div><div class="grain" aria-hidden="true"></div>
+<div class="cloud c1 m-float"></div><div class="cloud c2 m-bob"></div><div class="cloud c3"></div>
+<div class="pal p1 m-float"><img class="gchar floater" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div>
+<div class="pal p2 m-bob"><img class="gchar floater tiny" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div>
 <div class="hero-copy"><p class="kicker">BNB Chain</p><h1 data-letters>BNB Standard</h1><p class="lede">The most memeable BNB Standard on BNB Chain.</p>
 <div class="hero-actions">
   <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="https://pancakeswap.finance/"><img class="dexic" src="assets/dex.png" alt="PancakeSwap V3"> Buy $BNC <span class="dexon">on PancakeSwap V3</span></a>
@@ -655,10 +662,13 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   <button class="btn btn-ghost" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> <code>TBA</code></button>
 </div>
 </div>
-<div class="bust m-bob" data-mouse="12"><img class="gchar hero-main" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div><div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>$BNC ✦ BNB Standard ✦ The most memeable BNB Standard on BNB Chain. ✦ BNB Chain ✦ PancakeSwap V3 ✦ </span></div></div></section>
+<div class="rider" data-mouse="12"><img class="gchar hero-main" data-tilt src="assets/logo.png" alt="" width="800" height="800"></div>
+<div class="bubble" style="left:58%;bottom:42%">gm</div>
+<div class="mq hero-mq" style="--mq-speed:20s"><div class="mq-track"><span>$BNC ✦ BNB Standard ✦ The most memeable BNB Standard on BNB Chain. ✦ BNB Chain ✦ PancakeSwap V3 ✦ </span></div></div></section>
+<div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>$BNC ✦ BNB Standard ✦ The most memeable BNB Standard on BNB Chain. ✦ LP Burned ✦ TAX 0/0 ✦ BNB Chain ✦ Join the BNB Standard community. Buy $BNC. Make memes. Never sell. ✦ BUY $BNC ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>$BNC ✦ BNB Standard ✦ The most memeable BNB Standard on BNB Chain. ✦ LP Burned ✦ TAX 0/0 ✦ BNB Chain ✦ Join the BNB Standard community. Buy $BNC. Make memes. Never sell. ✦ BUY $BNC ✦ </span></div></div>
 <figure class="mbanner" data-banner><img src="assets/banner.webp" alt="BNB Standard banner"></figure>
 <!--BANNER_SLOT-->
-<div class="mq" style="--mq-speed:26s"><div class="mq-track"><span>$BNC ✦ BNB Standard ✦ The most memeable BNB Standard on BNB Chain. ✦ LP Burned ✦ TAX 0/0 ✦ BNB Chain ✦ Join the BNB Standard community. Buy $BNC. Make memes. Never sell. ✦ BUY $BNC ✦ </span></div></div><div class="mq rev" style="--mq-speed:34s"><div class="mq-track"><span>$BNC ✦ BNB Standard ✦ The most memeable BNB Standard on BNB Chain. ✦ LP Burned ✦ TAX 0/0 ✦ BNB Chain ✦ Join the BNB Standard community. Buy $BNC. Make memes. Never sell. ✦ BUY $BNC ✦ </span></div></div>
+<section class="sec sig sig-meter"><div class="wrap"><p class="kicker">Roar meter</p><h2>How loud is the jungle</h2><p class="prose">The most memeable BNB Standard on BNB Chain.</p><div class="meters rv"><div class="meter"><span>Paws</span><i style="--w:70%"><b data-count="70" data-suf="%"></b></i><small>First holders.</small></div><div class="meter"><span>Stripes</span><i style="--w:78%"><b data-count="78" data-suf="%"></b></i><small>Meme output.</small></div><div class="meter"><span>Moon</span><i style="--w:86%"><b data-count="86" data-suf="%"></b></i><small>A direction, not a date.</small></div></div></div></section>
 
 <section class="sec about about-overlap" id="lore">
   <div class="wrap stage">
@@ -672,11 +682,11 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
   </div>
 </section>
 
-<section class="sec tok tok-tickets" id="token">
+<section class="sec tok" id="token">
   <div class="wrap">
     <p class="kicker">Tokenomics</p>
-    <h2>Four tickets. No fine print.</h2>
-    <div class="tickets rv-stagger">
+    <h2>$BNC by the numbers</h2>
+    <div class="cards rv-stagger">
 <article><b>1B</b><span>Supply</span><small>1,000,000,000 tokens. That is the whole pile.</small></article>
 <article><b>0/0</b><span>Tax</span><small>Buy / sell tax printed in the open.</small></article>
 <article><b>Burned</b><span>Liquidity</span><small>LP status: Burned.</small></article>
@@ -685,7 +695,12 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
     <p class="statline rv"><b data-count="100" data-suf="%">0%</b> crowd-owned joke. Supply 1B.</p>
   </div>
 </section>
-<section class="sec sig sig-slab"><div class="wrap slab"><p class="kicker">Soft launch</p><h2>Come sit in the sun</h2><p>Join the BNB Standard community. Buy $BNC. Make memes. Never sell.</p><ol><li><b>01</b><div><h3>Wallet</h3><p>MetaMask and a little BNB.</p></div></li><li><b>02</b><div><h3>Swap</h3><p>PancakeSwap V3, paste the CA.</p></div></li><li><b>03</b><div><h3>Stay</h3><p>BNB Standard is a mood, not a promise.</p></div></li></ol></div></section>
+<section class="sec road" id="road"><div class="wrap"><p class="kicker">Roadmap</p><h2>Four phases</h2><ol class="stack rv-stagger">
+<li><span>01</span><h3>Launch</h3><p>The site, the socials, and the first people who held $BNC without being asked twice.</p></li>
+<li><span>02</span><h3>Culture</h3><p>Meme contests, sticker dumps, and a timeline that looks like BNB Standard lives there.</p></li>
+<li><span>03</span><h3>Listings</h3><p>Trackers, a louder chart on PancakeSwap V3, and whoever wants the ticker in public.</p></li>
+<li><span>04</span><h3>The long game</h3><p>Merch, meetups, and ideas the community actually bothers to finish.</p></li>
+</ol></div></section>
 
 <section class="sec how" id="buy">
   <div class="wrap">
@@ -717,12 +732,6 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 <figure class="rv"><img class="gimg" src="assets/logo.png" alt="BNB Standard meme 8" width="800" height="800" loading="lazy"><figcaption>08</figcaption></figure></div>
   </div>
 </section>
-<section class="sec road road-stations" id="road"><div class="wrap"><p class="kicker">Roadmap</p><h2>Stations, not promises</h2><ol class="stations rv-stagger">
-<li><span>01</span><h3>Launch</h3><p>The site, the socials, and the first people who held $BNC without being asked twice.</p></li>
-<li><span>02</span><h3>Culture</h3><p>Meme contests, sticker dumps, and a timeline that looks like BNB Standard lives there.</p></li>
-<li><span>03</span><h3>Listings</h3><p>Trackers, a louder chart on PancakeSwap V3, and whoever wants the ticker in public.</p></li>
-<li><span>04</span><h3>The long game</h3><p>Merch, meetups, and ideas the community actually bothers to finish.</p></li>
-</ol></div></section>
 
 <section class="sec faq" id="faq">
   <div class="wrap faq-grid">
@@ -738,17 +747,16 @@ blockquote{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height
 </section>
 
 
-<section class="sec cta cta-ticket" id="join">
-  <div class="wrap ticket rv-z">
-    <div>
-      <p class="kicker">Admit one</p>
-      <h2>$BNC</h2>
-      <p>The most memeable BNB Standard on BNB Chain.</p>
-    </div>
+<section class="sec cta cta-band m-grad" id="join">
+  <div class="wrap">
+    <p class="kicker">Community</p>
+    <h2 data-wave>BNB Standard</h2>
+    <p class="prose">Join the BNB Standard community. Buy $BNC. Make memes. Never sell.</p>
     <div class="hero-actions">
-      <a class="btn btn-main btn-shine" data-magnetic data-buy href="https://pancakeswap.finance/"><img class="dexic" src="assets/dex.png" alt="PancakeSwap V3"> Buy $BNC <span class="dexon">on PancakeSwap V3</span></a>
-      <a class="btn btn-ghost" data-s href=""><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Telegram</a>
-      <a class="btn btn-ghost" data-s href="https://x.com/bnbstandard_x"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X</a>
+      <a class="btn btn-main btn-shine btn-pulse" data-magnetic data-buy href="https://pancakeswap.finance/"><img class="dexic" src="assets/dex.png" alt="PancakeSwap V3"> Buy $BNC <span class="dexon">on PancakeSwap V3</span></a>
+      <a class="btn btn-ghost" data-s href="https://x.com/bnbstandard_x"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> Follow</a>
+      <a class="btn btn-ghost" data-s href=""><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Chat</a>
+      <a class="btn btn-ghost" href="https://dexscreener.com/bsc"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> Chart</a>
     </div>
   </div>
 </section>
