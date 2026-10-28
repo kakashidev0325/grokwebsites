@@ -2,12 +2,12 @@
   "format": "meme-site-studio/site@1",
   "name": "Grokbot",
   "ticker": "Grokbot",
-  "template": "bnb-1",
+  "template": "ut-bnbtiger",
   "domain": "grokboteth.lol",
   "ca": "TBA",
   "chain": "ethereum",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
@@ -58,5 +58,5 @@
   },
   "site_slug": "grokbot",
   "project_id": "pmvs8zxyppnry2",
-  "exported_at": "2026-10-28T15:07:09.502Z"
+  "exported_at": "2026-10-28T15:07:59.916Z"
 }
