@@ -2,12 +2,12 @@
   "format": "meme-site-studio/site@1",
   "name": "Gigantic Tits & Ass",
   "ticker": "GTA",
-  "template": "bnb-1",
+  "template": "ut-therobincoin",
   "domain": "gtameme.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "Welcome to Vice City, where everything is BIG.\nThe hottest meme party on Solana.",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/gtameme_x",
+  "tg_url": "https://t.me/gtasol_tg",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -58,5 +58,5 @@
   },
   "site_slug": "gta",
   "project_id": "pmvtp6wcix1dhy",
-  "exported_at": "2026-10-29T15:28:14.132Z"
+  "exported_at": "2026-10-29T15:39:48.428Z"
 }
