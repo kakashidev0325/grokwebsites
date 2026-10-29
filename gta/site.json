@@ -46,7 +46,10 @@
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [],
-  "characters": [],
+  "characters": [
+    "assets/char1.webp",
+    "assets/char2.webp"
+  ],
   "resolved": {
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
