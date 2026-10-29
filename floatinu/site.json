@@ -2,15 +2,15 @@
   "format": "meme-site-studio/site@1",
   "name": "Float Inu",
   "ticker": "FLOATINU",
-  "template": "bnb-1",
+  "template": "pastel-kawaii",
   "domain": "floatinu.lol",
   "ca": "TBA",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "theme_primary": "#f97316",
+  "theme_secondary": "#fbbf24",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -27,7 +27,7 @@
   ],
   "tagline": "",
   "about": "The trenches used to reward people for finding narratives early, having conviction, and building communities.",
-  "x_url": "",
+  "x_url": "https://x.com/floatinu_x",
   "tg_url": "",
   "ref_x_url": "",
   "socials": [],
@@ -45,16 +45,8 @@
   "vercel_cname": "",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
-  "images": [
-    "assets/meme1.webp",
-    "assets/meme2.webp",
-    "assets/meme3.webp",
-    "assets/meme4.webp"
-  ],
-  "characters": [
-    "assets/char1.webp",
-    "assets/char2.webp"
-  ],
+  "images": [],
+  "characters": [],
   "resolved": {
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
@@ -66,5 +58,5 @@
   },
   "site_slug": "floatinu",
   "project_id": "pmvssi17f80gml",
-  "exported_at": "2026-10-29T00:13:06.246Z"
+  "exported_at": "2026-10-29T00:30:07.451Z"
 }
