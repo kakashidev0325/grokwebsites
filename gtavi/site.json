@@ -46,14 +46,10 @@
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [
-    "assets/meme1.webp",
-    "assets/meme2.webp",
-    "assets/meme3.webp",
-    "assets/meme4.webp"
+    "assets/meme1.png"
   ],
   "characters": [
-    "assets/char1.webp",
-    "assets/char2.webp"
+    "assets/char1.png"
   ],
   "resolved": {
     "dex_name": "Pump.fun",
@@ -66,5 +62,5 @@
   },
   "site_slug": "gtavi",
   "project_id": "pmvtjp5n3auqu9",
-  "exported_at": "2026-10-29T14:56:41.341Z"
+  "exported_at": "2026-10-29T15:01:02.715Z"
 }
