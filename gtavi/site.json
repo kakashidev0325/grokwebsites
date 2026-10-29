@@ -2,31 +2,31 @@
   "format": "meme-site-studio/site@1",
   "name": "Grand Theft Auto VI",
   "ticker": "GTAVI",
-  "template": "bnb-1",
-  "domain": "gtavieth.lol",
+  "template": "ut-sarkieai",
+  "domain": "gtavisol.lol",
   "ca": "TBA",
-  "chain": "ethereum",
+  "chain": "solana",
   "theme_mode": "preset",
-  "theme_preset": "ethereum",
-  "theme_primary": "#627eea",
-  "theme_secondary": "#8fa4f3",
+  "theme_preset": "solana",
+  "theme_primary": "#9945ff",
+  "theme_secondary": "#14f195",
   "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "gtavieth.lol"
+      "host": "gtavisol.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.gtavieth.lol"
+      "host": "www.gtavisol.lol"
     }
   ],
   "tagline": "",
-  "about": "OG $GTAVI on UniswapV2 | Not affiliated with GTA or Rockstar Games",
+  "about": "OG $GTAVI on Pumpfun | Not affiliated with GTA or Rockstar Games",
   "x_url": "",
   "tg_url": "",
   "ref_x_url": "",
@@ -36,9 +36,9 @@
   "supply": "",
   "tax": "",
   "lp": "",
-  "dex": "uniswap-v2",
+  "dex": "pumpfun",
   "dex_auto": false,
-  "dex_name": "Uniswap V2",
+  "dex_name": "Pump.fun",
   "native": "",
   "wallet": "",
   "vercel_a": "",
@@ -48,15 +48,15 @@
   "images": [],
   "characters": [],
   "resolved": {
-    "dex_name": "Uniswap V2",
+    "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/",
-    "chart_page": "https://dexscreener.com/ethereum",
-    "chart_embed": "https://dexscreener.com/ethereum?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
-    "chain_name": "Ethereum"
+    "buy_url": "https://pump.fun/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "Solana"
   },
   "site_slug": "gtavi",
-  "project_id": "pmvtkbvinwn7jm",
-  "exported_at": "2026-10-29T13:30:59.460Z"
+  "project_id": "pmvtjp5n3auqu9",
+  "exported_at": "2026-10-29T14:25:17.047Z"
 }
