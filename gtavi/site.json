@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "Grand Theft Auto VI",
   "ticker": "GTAVI",
-  "template": "bnb-1",
+  "template": "ut-cow",
   "domain": "gtavisol.lol",
   "ca": "TBA",
   "chain": "solana",
@@ -58,5 +58,5 @@
   },
   "site_slug": "gtavi",
   "project_id": "pmvtjp5n3auqu9",
-  "exported_at": "2026-10-29T12:54:28.211Z"
+  "exported_at": "2026-10-29T12:55:18.648Z"
 }
