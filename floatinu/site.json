@@ -28,7 +28,7 @@
   "tagline": "",
   "about": "The trenches used to reward people for finding narratives early, having conviction, and building communities.",
   "x_url": "https://x.com/floatinu_x",
-  "tg_url": "",
+  "tg_url": "https://t.me/floatinu_tg",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -45,16 +45,8 @@
   "vercel_cname": "",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
-  "images": [
-    "assets/meme1.webp",
-    "assets/meme2.webp",
-    "assets/meme3.webp",
-    "assets/meme4.webp"
-  ],
-  "characters": [
-    "assets/char1.webp",
-    "assets/char2.webp"
-  ],
+  "images": [],
+  "characters": [],
   "resolved": {
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
@@ -66,5 +58,5 @@
   },
   "site_slug": "floatinu",
   "project_id": "pmvssi17f80gml",
-  "exported_at": "2026-10-29T00:30:07.451Z"
+  "exported_at": "2026-10-29T00:53:55.717Z"
 }
