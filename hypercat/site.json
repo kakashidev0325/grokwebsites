@@ -1,0 +1,62 @@
+{
+  "format": "meme-site-studio/site@1",
+  "name": "HYPERCAT",
+  "ticker": "HYPERCAT",
+  "template": "ut-buildon",
+  "domain": "hypercat.lol",
+  "ca": "TBA",
+  "chain": "solana",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
+  "theme_primary": "#9945ff",
+  "theme_secondary": "#14f195",
+  "domain_status": "live",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "76.76.21.21",
+      "host": "hypercat.lol"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "cname.vercel-dns.com",
+      "host": "www.hypercat.lol"
+    }
+  ],
+  "tagline": "",
+  "about": "the team rugged us from millions to zero.\nthe best revenge is sending $HYPERCAT to Valhalla 🚀",
+  "x_url": "",
+  "tg_url": "",
+  "ref_x_url": "",
+  "socials": [],
+  "buy_url": "",
+  "dexs_url": "",
+  "supply": "",
+  "tax": "",
+  "lp": "",
+  "dex": "jupiter",
+  "dex_auto": true,
+  "dex_name": "Jupiter",
+  "native": "",
+  "wallet": "",
+  "vercel_a": "",
+  "vercel_cname": "",
+  "logo": "assets/logo.png",
+  "banner": "assets/banner.webp",
+  "images": [],
+  "characters": [],
+  "resolved": {
+    "dex_name": "Jupiter",
+    "dex_logo": "assets/dex.png",
+    "buy_url_source": "dex",
+    "buy_url": "https://jup.ag/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "Solana"
+  },
+  "site_slug": "hypercat",
+  "project_id": "pmvtsacyu29w8o",
+  "exported_at": "2026-10-29T16:54:54.364Z"
+}
