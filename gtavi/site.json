@@ -4,7 +4,7 @@
   "ticker": "GTAVI",
   "template": "ut-sarkieai",
   "domain": "gtavisol.lol",
-  "ca": "TBA",
+  "ca": "CuFjT6SJQKUV4ApLPF8UKJQ7TA9sBzaw3rAFrkbRpump",
   "chain": "solana",
   "theme_mode": "preset",
   "theme_preset": "solana",
@@ -55,12 +55,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/",
-    "chart_page": "https://dexscreener.com/solana",
-    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/coin/CuFjT6SJQKUV4ApLPF8UKJQ7TA9sBzaw3rAFrkbRpump",
+    "chart_page": "https://dexscreener.com/solana/CuFjT6SJQKUV4ApLPF8UKJQ7TA9sBzaw3rAFrkbRpump",
+    "chart_embed": "https://dexscreener.com/solana/CuFjT6SJQKUV4ApLPF8UKJQ7TA9sBzaw3rAFrkbRpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "gtavi",
   "project_id": "pmvtjp5n3auqu9",
-  "exported_at": "2026-10-29T15:01:48.699Z"
+  "exported_at": "2026-10-29T15:02:53.341Z"
 }
