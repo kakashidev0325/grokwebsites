@@ -2,31 +2,31 @@
   "format": "meme-site-studio/site@1",
   "name": "Grand Theft Auto VI",
   "ticker": "GTAVI",
-  "template": "ut-sarkieai",
-  "domain": "gtavisol.lol",
+  "template": "ut-lmeow",
+  "domain": "gtavieth.lol",
   "ca": "TBA",
   "chain": "solana",
   "theme_mode": "preset",
-  "theme_preset": "solana",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
+  "theme_preset": "ethereum",
+  "theme_primary": "#627eea",
+  "theme_secondary": "#8fa4f3",
   "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "gtavisol.lol"
+      "host": "gtavieth.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.gtavisol.lol"
+      "host": "www.gtavieth.lol"
     }
   ],
   "tagline": "",
-  "about": "OG $GTAVI on Pumpfun | Not affiliated with GTA or Rockstar Games",
+  "about": "OG $GTAVI on UniswapV2 | Not affiliated with GTA or Rockstar Games",
   "x_url": "",
   "tg_url": "",
   "ref_x_url": "",
@@ -57,6 +57,6 @@
     "chain_name": "Solana"
   },
   "site_slug": "gtavi",
-  "project_id": "pmvtjp5n3auqu9",
-  "exported_at": "2026-10-29T13:00:19.977Z"
+  "project_id": "pmvtkbvinwn7jm",
+  "exported_at": "2026-10-29T13:12:08.145Z"
 }
