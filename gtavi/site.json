@@ -2,12 +2,12 @@
   "format": "meme-site-studio/site@1",
   "name": "Grand Theft Auto VI",
   "ticker": "GTAVI",
-  "template": "ut-cow",
+  "template": "ut-sarkieai",
   "domain": "gtavisol.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
@@ -58,5 +58,5 @@
   },
   "site_slug": "gtavi",
   "project_id": "pmvtjp5n3auqu9",
-  "exported_at": "2026-10-29T12:55:18.648Z"
+  "exported_at": "2026-10-29T13:00:19.977Z"
 }
