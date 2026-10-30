@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "Hyper-Chan",
   "ticker": "HYPERCHAN",
-  "template": "ut-tanukibnb",
+  "template": "ut-hyperinu",
   "domain": "hyperchan.lol",
   "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
   "chain": "solana",
@@ -66,5 +66,5 @@
   },
   "site_slug": "hyperchan",
   "project_id": "pmvu8x7v9xvo5q",
-  "exported_at": "2026-10-30T03:24:25.355Z"
+  "exported_at": "2026-10-30T07:25:35.947Z"
 }
