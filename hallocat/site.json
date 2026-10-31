@@ -3,7 +3,7 @@
   "name": "Halloween Cat",
   "ticker": "HALLOCAT",
   "template": "c42-legofrog",
-  "domain": "gtavirobin.fun",
+  "domain": "",
   "ca": "7sPbWf4X2FAKzHffSbfHoAaoHYonjzyAE8bmWYJ4pump",
   "chain": "solana",
   "theme_mode": "original",
@@ -11,20 +11,7 @@
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
-  "dns_records": [
-    {
-      "type": "A",
-      "name": "@",
-      "value": "76.76.21.21",
-      "host": "gtavirobin.fun"
-    },
-    {
-      "type": "CNAME",
-      "name": "www",
-      "value": "cname.vercel-dns.com",
-      "host": "www.gtavirobin.fun"
-    }
-  ],
+  "dns_records": [],
   "tagline": "",
   "about": "👻 Halloween Cat on Solana. Spooky season never dies. $CAT vibes only.",
   "x_url": "",
@@ -76,5 +63,5 @@
   },
   "site_slug": "hallocat",
   "project_id": "pmvwi4totygkqv",
-  "exported_at": "2026-10-31T17:56:22.801Z"
+  "exported_at": "2026-10-31T18:13:45.334Z"
 }
