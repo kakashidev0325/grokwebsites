@@ -4,13 +4,13 @@
   "ticker": "GTAVI",
   "template": "c14-thegme",
   "domain": "gtavirobin.fun",
-  "ca": "0x3c6afa6d9d18cf8bd495e48938d0d4f8a4966e3d",
+  "ca": "TBA",
   "chain": "robinhood",
   "theme_mode": "preset",
   "theme_preset": "cyber-lime",
   "theme_primary": "#c8ff00",
   "theme_secondary": "#7cff00",
-  "domain_status": "dns",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -73,12 +73,12 @@
     "dex_name": "Uniswap V4",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0x3c6afa6d9d18cf8bd495e48938d0d4f8a4966e3d",
-    "chart_page": "https://dexscreener.com/robinhood/0x3c6afa6d9d18cf8bd495e48938d0d4f8a4966e3d",
-    "chart_embed": "https://dexscreener.com/robinhood/0x3c6afa6d9d18cf8bd495e48938d0d4f8a4966e3d?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://app.uniswap.org/",
+    "chart_page": "https://dexscreener.com/robinhood",
+    "chart_embed": "https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Robinhood"
   },
   "site_slug": "gtavi",
   "project_id": "pmvwforv2m6k5f",
-  "exported_at": "2026-10-31T21:34:21.635Z"
+  "exported_at": "2026-10-31T22:31:46.601Z"
 }
