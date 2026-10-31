@@ -55,7 +55,11 @@
     "assets/char1.webp",
     "assets/char2.webp"
   ],
-  "backgrounds": [],
+  "backgrounds": [
+    "assets/gpt-bg1.webp",
+    "assets/gpt-bg2.webp",
+    "assets/gpt-bg3.webp"
+  ],
   "resolved": {
     "dex_name": "Uniswap V4",
     "dex_logo": "assets/dex.png",
