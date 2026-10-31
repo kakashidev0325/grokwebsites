@@ -1,0 +1,70 @@
+@@FONTS@@ family=Space+Grotesk:wght@400;500;700&family=Orbitron:wght@700;900&family=JetBrains+Mono:wght@500
+@@CSS@@
+:root{--bg:#050507;--card:#0d0f14;--line:#1c2230;--acid:#b6ff3b;--mag:#ff2bd6;--cy:#22e4ff;--t:#e8ecf5;--mut:#8a93a6}
+body{background:var(--bg);color:var(--t);font-family:'Space Grotesk',sans-serif}
+.gridbg{position:fixed;inset:0;z-index:-1;background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/60px 60px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/60px 60px;mask:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%)}
+.orb{position:fixed;width:520px;height:520px;border-radius:50%;filter:blur(120px);opacity:.35;z-index:-1;animation:orb 14s ease-in-out infinite alternate}@keyframes orb{to{transform:translate(120px,80px) scale(1.2)}}
+.wrap{max-width:1200px;margin:auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(14px);background:rgba(5,5,7,.6);border-bottom:1px solid var(--line)}nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;gap:10px;align-items:center;font-family:Orbitron;font-weight:900;letter-spacing:.08em}.brand img{width:36px;height:36px;border-radius:10px}
+.links{display:flex;gap:28px;color:var(--mut);font-size:14px}.links a:hover{color:var(--acid)}
+.soc{display:flex;gap:10px}.soc a{width:38px;height:38px;border:1px solid var(--line);border-radius:10px;display:grid;place-items:center;color:var(--mut);transition:.2s}.soc a:hover{color:var(--acid);border-color:var(--acid);box-shadow:0 0 18px rgba(182,255,59,.35)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:12px;font-weight:700;background:var(--acid);color:#000;box-shadow:0 0 0 0 rgba(182,255,59,.6);transition:.2s}.btn:hover{box-shadow:0 0 30px 4px rgba(182,255,59,.5);transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--t);border:1px solid var(--line)}.btn.ghost:hover{border-color:var(--mag);box-shadow:0 0 24px rgba(255,43,214,.4)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;min-height:calc(100vh - 68px);padding:40px 0}
+.chip{display:inline-flex;gap:8px;align-items:center;font:500 12px 'JetBrains Mono';color:var(--acid);border:1px solid rgba(182,255,59,.3);background:rgba(182,255,59,.06);padding:6px 12px;border-radius:999px;text-transform:uppercase;letter-spacing:.12em}.chip i{width:8px;height:8px;border-radius:50%;background:var(--acid);box-shadow:0 0 10px var(--acid);animation:pl 1.2s infinite}@keyframes pl{50%{opacity:.3}}
+h1{font-family:Orbitron;font-weight:900;font-size:clamp(3.2rem,8.5vw,7.5rem);line-height:.92;margin:22px 0;letter-spacing:-.01em;text-transform:uppercase}
+.glitch{position:relative;display:inline-block;color:var(--t)}.glitch::before,.glitch::after{content:attr(data-t);position:absolute;inset:0}.glitch::before{color:var(--mag);transform:translate(3px,0);clip-path:inset(0 0 55% 0);animation:g1 2.6s infinite steps(2)}.glitch::after{color:var(--cy);transform:translate(-3px,0);clip-path:inset(55% 0 0 0);animation:g2 3.1s infinite steps(2)}
+@keyframes g1{0%,90%{transform:translate(0)}92%{transform:translate(5px,-2px)}96%{transform:translate(-4px,1px)}}@keyframes g2{0%,88%{transform:translate(0)}91%{transform:translate(-6px,2px)}95%{transform:translate(3px,-1px)}}
+.hero p.lead{font-size:1.25rem;color:var(--mut);max-width:34ch}.acc{color:var(--acid)}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0}
+.ca{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 8px 8px 16px;font:500 13px 'JetBrains Mono';max-width:560px}.ca .ca-text{flex:1;color:var(--mut)}.ca button{border:0;background:#1a1f2b;color:var(--t);border-radius:10px;padding:10px 14px}.ca button.copied{background:var(--acid);color:#000}
+.art{position:relative;aspect-ratio:1;display:grid;place-items:center}.art::before{content:"";position:absolute;inset:6%;border-radius:50%;background:conic-gradient(from 0deg,var(--acid),var(--mag),var(--cy),var(--acid));animation:spin 8s linear infinite;filter:blur(2px)}.art::after{content:"";position:absolute;inset:8%;border-radius:50%;background:var(--bg)}@keyframes spin{to{transform:rotate(360deg)}}
+.art img{position:relative;z-index:2;width:78%;border-radius:50%;animation:fl 5s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-14px)}}
+.ring{position:absolute;inset:-4%;border:1px dashed rgba(34,228,255,.35);border-radius:50%;animation:spin 40s linear infinite reverse}
+.tick{border-block:1px solid var(--line);background:#07080b;padding:16px 0;font-family:Orbitron;font-weight:700;letter-spacing:.1em}.tick span{display:inline-flex;gap:2.5rem;align-items:center}.tick b{color:var(--acid)}
+section{padding:120px 0}
+.eyebrow{font:500 12px 'JetBrains Mono';color:var(--acid);letter-spacing:.2em;text-transform:uppercase}
+h2{font-family:Orbitron;font-size:clamp(2rem,5vw,3.6rem);margin:10px 0 40px;text-transform:uppercase}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(160px,auto);gap:16px}
+.card{background:linear-gradient(180deg,#0f121a,#0a0c11);border:1px solid var(--line);border-radius:20px;padding:26px;position:relative;overflow:hidden;transition:border-color .3s}.card:hover{border-color:rgba(182,255,59,.5)}
+.card::after{content:"";position:absolute;inset:0;background:radial-gradient(400px circle at var(--mx,50%) var(--my,50%),rgba(182,255,59,.10),transparent 40%);opacity:0;transition:.3s}.card:hover::after{opacity:1}
+.b1{grid-column:span 4;grid-row:span 2}.b2{grid-column:span 2}.b3{grid-column:span 2}.b4,.b5,.b6{grid-column:span 2}
+.big{font-family:Orbitron;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900}.mut{color:var(--mut)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.steps .n{font:500 12px 'JetBrains Mono';color:var(--mag)}.steps h3{margin:8px 0}
+.chartwrap{margin-top:30px;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 0 60px rgba(182,255,59,.08)}
+.tl{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tl .card.on{border-color:var(--acid);box-shadow:0 0 40px rgba(182,255,59,.12)}
+.gal{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;border:1px solid var(--line);transition:.3s}.gal img:hover{transform:scale(1.05) rotate(-2deg);border-color:var(--mag);box-shadow:0 0 30px rgba(255,43,214,.35)}
+.join{text-align:center;border:1px solid var(--line);border-radius:28px;padding:80px 20px;background:radial-gradient(ellipse at 50% 0,rgba(182,255,59,.15),transparent 60%),var(--card)}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mut);font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){.links{display:none}.hero{grid-template-columns:1fr;text-align:left}.art{max-width:380px;margin:auto;order:-1}.bento{grid-template-columns:1fr 1fr}.b1,.b2,.b3,.b4,.b5,.b6{grid-column:span 2}.steps,.tl{grid-template-columns:1fr 1fr}.gal{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.steps,.tl{grid-template-columns:1fr}section{padding:80px 0}.soc a{width:34px;height:34px}}
+@@BODY@@
+<div class="gridbg"></div><div class="orb" style="background:var(--acid);top:-120px;left:-120px"></div><div class="orb" style="background:var(--mag);bottom:-160px;right:-120px;animation-delay:-7s"></div>
+<nav><div class="wrap"><a class="brand" href="#"><img src="{{LOGO}}" alt="">${{TICKER}}</a><div class="links"><a href="#about">About</a><a href="#tokenomics">Tokenomics</a><a href="#buy">Buy</a><a href="#roadmap">Roadmap</a><a href="#memes">Memes</a></div><div class="soc">[[SOCIALS]]</div></div></nav>
+<header class="wrap hero">
+ <div><span class="chip"><i></i>Live on {{CHAIN_NAME}}</span><h1><span class="glitch" data-t="{{NAME}}">{{NAME}}</span></h1><p class="lead">{{TAGLINE}} <span class="acc">${{TICKER}}</span> is built for degens who don't blink.</p>
+ <div class="cta"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a><a class="btn ghost" data-s href="{{DEXS_URL}}">[[DEX]] Live Chart</a></div>
+ <div class="ca"><span class="ca-text">{{CA}}</span><button data-copy>[[COPY]] Copy</button></div></div>
+ <div class="art"><div class="ring"></div><img src="{{LOGO}}" alt="{{NAME}}"></div>
+</header>
+<div class="tick mq"><div class="mq-track"><span><b>◆</b> ${{TICKER}} <b>◆</b> NO TAX <b>◆</b> LP {{LP}} <b>◆</b> COMMUNITY OWNED <b>◆</b> {{CHAIN_NAME}} <b>◆</b> SEND IT</span></div></div>
+<section id="about"><div class="wrap"><div class="eyebrow">// 01 — lore</div><h2>What is ${{TICKER}}?</h2>
+ <div class="bento" id="tokenomics">
+  <div class="card b1 rv"><p style="font-size:1.35rem;line-height:1.6;max-width:46ch">{{ABOUT}}</p><p class="mut">Zero team allocation. Zero presale. Pure on-chain meme energy, distributed to the people who show up.</p><img src="{{LOGO}}" alt="" style="position:absolute;right:-40px;bottom:-40px;width:240px;opacity:.18;border-radius:50%"></div>
+  <div class="card b2 rv"><div class="mut">Total supply</div><div class="big">{{SUPPLY}}</div></div>
+  <div class="card b3 rv"><div class="mut">Buy / Sell tax</div><div class="big acc">{{TAX}}</div></div>
+  <div class="card b4 rv"><div class="mut">Liquidity</div><div class="big">{{LP}}</div></div>
+  <div class="card b5 rv"><div class="mut">Network</div><div class="big">{{CHAIN_NAME}}</div></div>
+  <div class="card b6 rv"><div class="mut">Mint authority</div><div class="big" style="color:var(--mag)">Revoked</div></div>
+ </div></div></section>
+<section id="buy"><div class="wrap"><div class="eyebrow">// 02 — acquire</div><h2>How to buy</h2>
+ <div class="steps"><div class="card rv"><div class="n">STEP_01</div><h3>Wallet</h3><p class="mut">Install {{WALLET}}.</p></div><div class="card rv"><div class="n">STEP_02</div><h3>Fund</h3><p class="mut">Top up with {{NATIVE}}.</p></div><div class="card rv"><div class="n">STEP_03</div><h3>Connect</h3><p class="mut">Open {{DEX}}, paste the CA.</p></div><div class="card rv"><div class="n">STEP_04</div><h3>Swap</h3><p class="mut">Ape into ${{TICKER}}.</p></div></div>
+ <div class="chartwrap rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></div></section>
+<section id="roadmap"><div class="wrap"><div class="eyebrow">// 03 — trajectory</div><h2>Roadmap</h2>
+ <div class="tl"><div class="card on rv"><div class="n eyebrow">Phase 01 · Live</div><h3>Ignition</h3><p class="mut">Fair launch · socials · Dexscreener · 1k holders</p></div><div class="card rv"><div class="n eyebrow" style="color:var(--cy)">Phase 02</div><h3>Velocity</h3><p class="mut">CG/CMC · KOL raids · trending · 10k holders</p></div><div class="card rv"><div class="n eyebrow" style="color:var(--mag)">Phase 03</div><h3>Escape</h3><p class="mut">CEX · partnerships · ecosystem tools</p></div></div></div></section>
+<section id="memes"><div class="wrap"><div class="eyebrow">// 04 — culture</div><h2>Meme vault</h2>
+ <div class="gal"><img class="gimg rv" src="{{LOGO}}" alt=""><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:hue-rotate(80deg)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:hue-rotate(160deg)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:hue-rotate(240deg)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:invert(1) hue-rotate(180deg)"></div></div></section>
+<section><div class="wrap"><div class="join rv"><div class="eyebrow">// 05 — signal</div><h2 style="margin-bottom:16px">Join the swarm</h2><p class="mut">Raids, alpha, memes. 24/7.</p><div class="cta" style="justify-content:center"><a class="btn" data-s href="{{TG_URL}}">[[TG]] Telegram</a><a class="btn ghost" data-s href="{{X_URL}}">[[X]] Follow on X</a></div></div></div></section>
+<footer><div class="wrap"><span>© <span data-year></span> {{NAME}} (${{TICKER}})</span><span style="max-width:640px">${{TICKER}} is a memecoin with no intrinsic value or expectation of financial return. Not financial advice.</span></div></footer>
+@@JS@@
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')})});

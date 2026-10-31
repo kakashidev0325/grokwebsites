@@ -1,0 +1,91 @@
+{
+  "slug": "pepeacc",
+  "url": "https://pepeacc.site",
+  "status": "ok",
+  "reason": "",
+  "title": "pepe Accelerationism",
+  "final_url": "https://pepeacc.site/",
+  "http": 200,
+  "style": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "font": "\"Arial Black\", Impact, Haettenschweiler, \"Arial Narrow Bold\", system-ui, sans-serif",
+    "fonts": [
+      "Arial Black",
+      "ui-monospace"
+    ],
+    "colors": [
+      "rgb(255, 255, 255)",
+      "rgb(3, 5, 13)",
+      "rgba(255, 255, 255, 0.48)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "hero-card",
+        "h": 846
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-frame",
+        "h": 674
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "hero-image",
+        "h": 684
+      }
+    ],
+    "imgCount": 6,
+    "imgs": [
+      {
+        "src": "https://pepeacc.site/assets/solana.svg",
+        "w": 192,
+        "h": 150,
+        "alt": "Solana"
+      },
+      {
+        "src": "https://pepeacc.site/assets/hero.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Pepe flying through an electric blue galaxy"
+      },
+      {
+        "src": "https://pepeacc.site/assets/pumpfun.svg",
+        "w": 150,
+        "h": 150,
+        "alt": ""
+      },
+      {
+        "src": "https://pepeacc.site/assets/dexscreener.svg",
+        "w": 150,
+        "h": 150,
+        "alt": ""
+      },
+      {
+        "src": "https://pepeacc.site/assets/fomo.svg",
+        "w": 150,
+        "h": 150,
+        "alt": ""
+      },
+      {
+        "src": "https://pepeacc.site/assets/twitter.svg",
+        "w": 150,
+        "h": 150,
+        "alt": ""
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": true,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 1035,
+    "title": "pepe Accelerationism"
+  },
+  "css_urls": [
+    "https://pepeacc.site/style.css"
+  ]
+}

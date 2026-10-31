@@ -1,0 +1,211 @@
+{
+  "slug": "mamesuke",
+  "url": "https://mamesuke.xyz",
+  "status": "ok",
+  "reason": "",
+  "title": "MAMESUKE \u8c46\u52a9 \u00b7 Small Dog. Big Meme Energy.",
+  "final_url": "https://mamesuke.xyz/",
+  "http": 200,
+  "style": {
+    "bg": "oklch(0.977 0.024 95.5)",
+    "color": "oklch(0.206 0.019 148.6)",
+    "font": "Nunito, ui-sans-serif, system-ui, sans-serif",
+    "fonts": [
+      "Nunito",
+      "Luckiest Guy"
+    ],
+    "colors": [
+      "oklch(0.977 0.024 95.5)",
+      "oklch(0.206 0.019 148.6)",
+      "oklab(0.977 -0.0023003 0.0238895 / 0.95)",
+      "oklch(0.936 0.216 124.6)",
+      "oklch(0.86 0.2 126)",
+      "oklch(0.415 0.093 156.2)",
+      "oklch(0.845 0.108 226.5)",
+      "oklch(0.32 0.075 156)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "top",
+        "cls": "relative overflow-hidden bg-lime pb-16 pt-10 sm:pb-24",
+        "h": 688
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "relative overflow-hidden border-y-4 border-ink py-3 bg-leaf text-cream",
+        "h": 64
+      },
+      {
+        "tag": "SECTION",
+        "id": "the-dog",
+        "cls": "relative overflow-hidden bg-cream py-16 sm:py-24",
+        "h": 1998
+      },
+      {
+        "tag": "SECTION",
+        "id": "memes",
+        "cls": "relative overflow-hidden bg-leaf py-16 sm:py-24",
+        "h": 750
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "relative overflow-hidden border-y-4 border-ink py-3 bg-lime text-ink",
+        "h": 64
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "relative overflow-hidden bg-sky py-16 sm:py-24",
+        "h": 686
+      },
+      {
+        "tag": "SECTION",
+        "id": "supply-burns",
+        "cls": "relative overflow-hidden bg-cream py-16 sm:py-24",
+        "h": 1026
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "relative overflow-hidden border-y-4 border-ink py-3 bg-sky text-ink",
+        "h": 64
+      },
+      {
+        "tag": "SECTION",
+        "id": "how-to-buy",
+        "cls": "relative overflow-hidden bg-lime py-16 sm:py-24",
+        "h": 1270
+      }
+    ],
+    "imgCount": 19,
+    "imgs": [
+      {
+        "src": "https://mamesuke.xyz/assets/logo-lime-CriaMvbY.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/hero-dog-BKLUJYP_.png",
+        "w": 1024,
+        "h": 1280,
+        "alt": "Illustrated Mamesuke, a fluffy Shiba puppy in a green swirl-"
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/dog-portrait-DCCrBitd.png",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated close-up of Mamesuke tilting his head, wearing h"
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-redcarpet-BhbbYMVm.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Paparazzi, please."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-computer-DYOFA_JP.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Just checking one thing."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-ramen-8ET2yg0v.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Research break."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-beach-DwOEtSc8.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Mentally here."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-bundle-BPCLsw85.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Packed and ready."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-confetti-DexsyJrA.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: The pack showed up."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-sleep-CQn7Tq9w.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Still online."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-redcarpet-BhbbYMVm.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Paparazzi, please."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-computer-DYOFA_JP.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Just checking one thing."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-ramen-8ET2yg0v.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Research break."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-beach-DwOEtSc8.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Mentally here."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-bundle-BPCLsw85.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Packed and ready."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-confetti-DexsyJrA.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: The pack showed up."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/scene-sleep-CQn7Tq9w.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke: Still online."
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/bundle-CPsUC_16.png",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated green cloth bundle with white swirls, tied to a "
+      },
+      {
+        "src": "https://mamesuke.xyz/assets/dog-wave-BuTrsuGs.png",
+        "w": 1024,
+        "h": 1024,
+        "alt": "Illustrated Mamesuke sitting and waving a paw goodbye"
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": true,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 7458,
+    "title": "MAMESUKE \u8c46\u52a9 \u00b7 Small Dog. Big Meme Energy."
+  },
+  "css_urls": [
+    "https://mamesuke.xyz/assets/styles-zKa_E3tY.css",
+    "https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:ital,wght@0,400..900;1,400..900&display=swap"
+  ]
+}

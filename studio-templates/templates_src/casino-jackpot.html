@@ -1,0 +1,59 @@
+@@FONTS@@ family=Bungee&family=Bungee+Shade&family=Rubik:wght@500;700;900
+@@CSS@@
+:root{--r:#c8102e;--dr:#6d0016;--gold:#ffcf3f;--gold2:#c9901a;--g:#0b6b3a;--k:#14040a;--cream:#fff4d6}
+body{background:var(--k) radial-gradient(ellipse at 50% 0,#5a0a1e,transparent 60%);color:var(--cream);font-family:Rubik,sans-serif}
+.bg{font-family:Bungee,sans-serif;font-weight:400}
+.felt{background:var(--g) radial-gradient(ellipse at center,#15924f,#063d21);}
+.wrap{max-width:1150px;margin:auto;padding:0 20px}
+.lights{height:16px;background:radial-gradient(circle,var(--gold) 4px,transparent 5px) 0 50%/26px 16px repeat-x;animation:lt .6s steps(2) infinite}@keyframes lt{50%{background-position:13px 50%;filter:brightness(1.5)}}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:70px}nav .b{display:flex;gap:10px;align-items:center;font-family:Bungee;font-size:1.3rem;color:var(--gold)}nav .b img{width:42px;height:42px;border-radius:50%;border:3px solid var(--gold)}
+nav .l{display:flex;gap:22px;font-weight:700}nav .l a:hover{color:var(--gold)}
+.soc{display:flex;gap:8px}.soc a{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;background:var(--r);border:2px solid var(--gold);color:var(--gold)}
+.chip3d{display:inline-flex;align-items:center;gap:10px;font-family:Bungee;padding:16px 26px;border-radius:999px;background:linear-gradient(180deg,#ffe27a,var(--gold) 45%,var(--gold2));color:var(--dr);border:3px solid #fff3b0;box-shadow:0 6px 0 #7a4f00,0 0 30px rgba(255,207,63,.45);text-shadow:0 1px 0 #fff3b0;transition:.12s}.chip3d:hover{transform:translateY(-3px) scale(1.03)}.chip3d:active{transform:translateY(4px);box-shadow:0 2px 0 #7a4f00}.chip3d.red{background:linear-gradient(180deg,#ff4d6a,var(--r) 50%,var(--dr));color:#fff;text-shadow:none;border-color:var(--gold)}
+.hero{text-align:center;padding:30px 0 70px}
+.marquee-sign{display:inline-block;padding:26px 40px;border:6px solid var(--gold);border-radius:24px;background:linear-gradient(180deg,#3a0712,#1c0308);box-shadow:0 0 0 6px var(--r),0 0 60px rgba(255,207,63,.4),inset 0 0 40px rgba(0,0,0,.6);position:relative}
+.marquee-sign::before{content:"";position:absolute;inset:-18px;border-radius:32px;background:radial-gradient(circle,#fff6c2 3px,transparent 4px) 0 0/22px 22px;mask:linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);-webkit-mask-composite:xor;mask-composite:exclude;padding:8px;animation:lt .5s steps(2) infinite}
+h1{font-family:'Bungee Shade',cursive;font-weight:400;font-size:clamp(3rem,10vw,8rem);margin:0;line-height:1;color:var(--gold);text-shadow:0 0 20px rgba(255,207,63,.7)}
+.hero .sub{font-family:Bungee;color:#fff;font-size:clamp(1rem,2.4vw,1.4rem);margin-top:12px}
+.slot{display:flex;justify-content:center;gap:14px;margin:40px auto 10px;padding:20px;background:linear-gradient(180deg,#d9d9d9,#8a8a8a);border-radius:22px;max-width:620px;border:5px solid var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.reel{width:30%;aspect-ratio:3/4;background:#fff;border-radius:12px;overflow:hidden;position:relative;box-shadow:inset 0 10px 20px rgba(0,0,0,.4),inset 0 -10px 20px rgba(0,0,0,.4)}
+.reel .strip{display:flex;flex-direction:column;transition:transform 2.2s cubic-bezier(.15,.9,.25,1)}.reel .strip div{height:100%;aspect-ratio:3/4;display:grid;place-items:center;font-size:3.6rem}.reel img{width:78%;border-radius:50%}
+.cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.ca{display:flex;align-items:center;gap:10px;max-width:640px;margin:24px auto 0;background:#000;border:2px solid var(--gold2);border-radius:14px;padding:8px 8px 8px 16px;font-family:ui-monospace,monospace}.ca .ca-text{flex:1;text-align:left;color:var(--gold)}.ca button{font-family:Bungee;background:var(--r);color:#fff;border:2px solid var(--gold);border-radius:10px;padding:8px 14px}
+.ticker{background:var(--gold);color:var(--dr);font-family:Bungee;font-size:1.5rem;padding:10px 0}.ticker span{display:inline-flex;gap:2.5rem}
+section{padding:90px 0}
+h2{font-family:Bungee;font-size:clamp(2rem,5vw,3.6rem);text-align:center;margin:0 0 40px;color:var(--gold);text-shadow:0 4px 0 var(--dr),0 0 30px rgba(255,207,63,.4)}
+.table{border-radius:200px/80px;padding:60px 60px;border:14px solid #5a2a0a;box-shadow:inset 0 0 60px rgba(0,0,0,.6),0 20px 50px rgba(0,0,0,.6)}
+.two{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center}.two img{border-radius:50%;border:8px solid var(--gold);box-shadow:0 0 0 8px var(--r),0 0 50px rgba(255,207,63,.4)}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.cchip{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;background:repeating-conic-gradient(var(--r) 0 15deg,#fff 15deg 30deg);padding:14%;box-shadow:0 10px 0 var(--dr),0 16px 30px rgba(0,0,0,.6);transition:transform .6s}.cchip:hover{transform:rotateY(180deg)}.cchip>div{width:100%;height:100%;border-radius:50%;background:var(--r);border:3px dashed #fff;display:grid;place-items:center;align-content:center}.cchip .v{font-family:Bungee;font-size:clamp(1rem,2vw,1.5rem);color:#fff}.cchip small{color:var(--gold);font-weight:700}
+.cchip:nth-child(2){background:repeating-conic-gradient(#111 0 15deg,#fff 15deg 30deg)}.cchip:nth-child(2)>div{background:#111}.cchip:nth-child(3){background:repeating-conic-gradient(#1e50ff 0 15deg,#fff 15deg 30deg)}.cchip:nth-child(3)>div{background:#1e50ff}.cchip:nth-child(4){background:repeating-conic-gradient(var(--g) 0 15deg,#fff 15deg 30deg)}.cchip:nth-child(4)>div{background:var(--g)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.pc{background:#fff;color:#111;border-radius:14px;padding:18px;position:relative;min-height:220px;box-shadow:0 10px 24px rgba(0,0,0,.5);transition:.2s}.pc:hover{transform:translateY(-10px) rotate(-3deg)}.pc .s{position:absolute;font-family:Bungee;font-size:1.4rem;color:var(--r)}.pc .s.t{top:10px;left:12px}.pc .s.b{bottom:10px;right:12px;transform:rotate(180deg)}.pc h3{font-family:Bungee;margin:40px 0 6px;font-size:1.2rem}
+.screen{margin-top:40px;border:8px solid var(--gold);border-radius:18px;overflow:hidden;box-shadow:0 0 0 6px var(--r),0 0 50px rgba(255,207,63,.3)}
+.jack{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.jk{border:3px solid var(--gold);border-radius:18px;padding:24px;background:linear-gradient(180deg,#3a0712,#1c0308);text-align:center}.jk .bg{color:var(--gold);font-size:1.6rem}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;border:4px solid var(--gold);transition:.2s}.gal img:hover{transform:scale(1.06);box-shadow:0 0 30px var(--gold)}
+footer{text-align:center;padding:40px 20px;color:#c9a9a0;font-size:.9rem}
+@media(max-width:860px){nav .l{display:none}.two,.jack{grid-template-columns:1fr}.chips,.cards,.gal{grid-template-columns:1fr 1fr}.table{border-radius:40px;padding:30px 20px}.marquee-sign{padding:18px 20px}}
+@@BODY@@
+<div class="lights"></div>
+<nav><div class="wrap"><a class="b" href="#"><img src="{{LOGO}}" alt="">${{TICKER}}</a><div class="l"><a href="#about">The House</a><a href="#chips">Chips</a><a href="#deal">How to Play</a><a href="#jackpot">Jackpots</a></div><div class="soc">[[SOCIALS]]</div></div></nav>
+<header class="wrap hero">
+ <div class="marquee-sign"><h1>{{NAME}}</h1><div class="sub">★ ${{TICKER}} · {{TAGLINE}} ★</div></div>
+ <div class="slot" id="slot"><div class="reel"><div class="strip"></div></div><div class="reel"><div class="strip"></div></div><div class="reel"><div class="strip"></div></div></div>
+ <div class="cta"><button class="chip3d red" id="spin">🎰 SPIN</button><a class="chip3d" data-s href="{{BUY_URL}}">[[BUY]] BUY ${{TICKER}}</a><a class="chip3d" data-s href="{{DEXS_URL}}">[[DEX]] ODDS (CHART)</a></div>
+ <div class="ca"><span class="ca-text">{{CA}}</span><button data-copy>COPY</button></div>
+</header>
+<div class="ticker mq"><div class="mq-track"><span>🍒 ${{TICKER}} 🍒 JACKPOT 💎 777 💎 THE HOUSE ALWAYS MEMES 🎲 {{NAME}} 🎲 ALL IN 🃏</span></div></div>
+<section id="about"><div class="wrap"><div class="table felt two rv"><img src="{{LOGO}}" alt=""><div><h2 style="text-align:left">Welcome to the House</h2><p style="font-size:1.2rem;line-height:1.6">{{ABOUT}}</p><p style="color:var(--gold);font-weight:700">Table limits: none. Dress code: diamond hands.</p></div></div></div></section>
+<section id="chips"><div class="wrap"><h2>Your Chips</h2><div class="chips"><div class="cchip rv"><div><small>SUPPLY</small><span class="v">{{SUPPLY}}</span></div></div><div class="cchip rv"><div><small>TAX</small><span class="v">{{TAX}}</span></div></div><div class="cchip rv"><div><small>LP</small><span class="v">{{LP}}</span></div></div><div class="cchip rv"><div><small>TABLE</small><span class="v">{{CHAIN_NAME}}</span></div></div></div></div></section>
+<section id="deal"><div class="wrap"><h2>How to Play</h2><div class="cards"><div class="pc rv"><span class="s t">A♠</span><h3>Get a wallet</h3><p>Install {{WALLET}}.</p><span class="s b">A♠</span></div><div class="pc rv"><span class="s t">K♥</span><h3>Buy {{NATIVE}}</h3><p>Stack your chips.</p><span class="s b">K♥</span></div><div class="pc rv"><span class="s t">Q♦</span><h3>Sit at {{DEX}}</h3><p>Paste the contract.</p><span class="s b">Q♦</span></div><div class="pc rv"><span class="s t">J♣</span><h3>Go all in</h3><p>Swap for ${{TICKER}}.</p><span class="s b">J♣</span></div></div>
+ <div class="screen rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></div></section>
+<section id="jackpot"><div class="wrap"><h2>Progressive Jackpots</h2><div class="jack"><div class="jk rv"><div class="bg">MINI</div><p>Launch · socials · first 1,000 players</p></div><div class="jk rv"><div class="bg">MAJOR</div><p>Listings · trending · high-roller collabs</p></div><div class="jk rv"><div class="bg">GRAND</div><p>CEX · merch · the moon suite</p></div></div></div></section>
+<section><div class="wrap"><h2>High Rollers Gallery</h2><div class="gal"><img class="gimg rv" src="{{LOGO}}" alt=""><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:hue-rotate(40deg)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:hue-rotate(300deg)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:sepia(1) saturate(3)"></div>
+ <div class="cta" style="margin-top:40px"><a class="chip3d red" data-s href="{{TG_URL}}">[[TG]] VIP LOUNGE</a><a class="chip3d" data-s href="{{X_URL}}">[[X]] FOLLOW</a></div></div></section>
+<div class="lights"></div>
+<footer>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. Not gambling advice, not financial advice. Play responsibly.<br>© <span data-year></span> {{NAME}} Casino &amp; Meme Resort</footer>
+@@JS@@
+(function(){var S=['🍒','💎','7️⃣','🔔','⭐','LOGO'],L=document.querySelector('nav img').src;var reels=[].slice.call(document.querySelectorAll('.reel .strip'));function cell(s){return '<div>'+(s==='LOGO'?'<img src="'+L+'" alt="">':s)+'</div>'}
+function fill(st,end){var h='';for(var i=0;i<24;i++)h+=cell(S[Math.random()*S.length|0]);h+=cell(end);st.style.transition='none';st.style.transform='translateY(0)';st.innerHTML=h}
+function spin(win){reels.forEach(function(st,i){fill(st,win?'LOGO':S[Math.random()*5|0]);st.offsetHeight;st.style.transition='transform '+(1.6+i*.5)+'s cubic-bezier(.15,.9,.25,1)';st.style.transform='translateY(-'+(24*100/25)+'%)'})}
+reels.forEach(function(st){st.innerHTML=cell('LOGO')});setTimeout(function(){spin(true)},600);document.getElementById('spin').addEventListener('click',function(){spin(Math.random()>.4);setTimeout(function(){window.memeToast&&memeToast('🎉 JACKPOT! Now go buy some ${{TICKER}}')},2700)})})();

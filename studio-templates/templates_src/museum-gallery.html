@@ -1,0 +1,51 @@
+@@FONTS@@ family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;500
+@@CSS@@
+:root{--wall:#ece4d6;--wall2:#e2d7c4;--ink:#231d16;--gold:#b58b3a;--gold2:#e8c877;--mut:#7b6d5b;--burg:#5b1a1a}
+body{background:var(--wall);color:var(--ink);font-family:'Cormorant Garamond',serif;font-size:19px}
+.jost{font-family:Jost,sans-serif;font-weight:300;letter-spacing:.24em;text-transform:uppercase;font-size:12px}
+.wrap{max-width:1180px;margin:auto;padding:0 26px}
+nav{border-bottom:1px solid rgba(35,29,22,.2)}nav .wrap{display:flex;justify-content:space-between;align-items:center;height:80px}
+.b{font-family:'Playfair Display';font-weight:900;font-size:1.4rem;letter-spacing:.04em}
+nav .l{display:flex;gap:30px}nav .l a:hover{color:var(--gold)}
+.soc{display:flex;gap:14px}.soc a{color:var(--ink)}.soc a:hover{color:var(--gold)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;padding:70px 0 90px;min-height:calc(100vh - 80px)}
+.frame{position:relative;padding:28px;background:linear-gradient(135deg,#7a5a1f,var(--gold2) 20%,#8a6420 40%,var(--gold2) 60%,#6b4e1a 80%,var(--gold2));box-shadow:0 30px 60px rgba(35,29,22,.35),inset 0 0 0 3px #5a4113,inset 0 0 0 10px rgba(255,255,255,.12)}
+.frame .mat{background:#f7f2e8;padding:30px;box-shadow:inset 0 4px 12px rgba(0,0,0,.25)}.frame img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#efe8dc}
+.spot{position:absolute;inset:-80px -60px auto;height:300px;background:radial-gradient(ellipse at 50% 0,rgba(255,240,200,.6),transparent 70%);pointer-events:none;z-index:2}
+.plaque{background:linear-gradient(135deg,#c9a24f,#f0d58a,#b08a3a);color:#2a1f0c;padding:14px 20px;max-width:340px;margin:28px auto 0;text-align:center;box-shadow:0 6px 14px rgba(0,0,0,.25)}.plaque b{font-family:'Playfair Display';display:block;font-size:1.15rem}.plaque i{font-size:15px}
+h1{font-family:'Playfair Display';font-weight:400;font-size:clamp(3.2rem,7.5vw,6.6rem);line-height:.98;margin:16px 0}h1 i{color:var(--gold)}
+.lead{font-size:1.45rem;font-style:italic;color:var(--mut);max-width:30ch}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;font-family:Jost;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:12px;background:var(--ink);color:var(--wall);transition:.25s}.btn:hover{background:var(--burg)}.btn.o{background:transparent;color:var(--ink);border:1px solid var(--ink)}.btn.o:hover{background:var(--ink);color:var(--wall)}
+.ca{margin-top:30px;border-top:1px solid rgba(35,29,22,.25);border-bottom:1px solid rgba(35,29,22,.25);padding:14px 0;display:flex;gap:16px;align-items:center}.ca .ca-text{flex:1;font-family:ui-monospace,monospace;font-size:13px;word-break:break-all}.ca button{background:none;border:1px solid var(--gold);color:var(--gold);padding:8px 14px;font-family:Jost;letter-spacing:.2em;font-size:11px}
+.rope{height:56px;position:relative;margin:0 0 20px}.rope::before{content:"";position:absolute;left:5%;right:5%;top:10px;height:30px;border-bottom:6px solid var(--burg);border-radius:0 0 50% 50%}.rope::after{content:"";position:absolute;left:calc(5% - 10px);right:calc(5% - 10px);top:0;height:56px;background:radial-gradient(circle at 10px 10px,var(--gold2) 8px,#7a5a1f 10px,transparent 11px) 0 0/100% 56px no-repeat,radial-gradient(circle at calc(100% - 10px) 10px,var(--gold2) 8px,#7a5a1f 10px,transparent 11px)}
+.hall{background:var(--wall2);padding:110px 0}
+h2{font-family:'Playfair Display';font-weight:400;font-size:clamp(2.4rem,5vw,4rem);margin:10px 0 40px;text-align:center}h2 i{color:var(--gold)}
+.center{text-align:center}
+.wing{display:grid;grid-template-columns:repeat(3,1fr);gap:50px;align-items:end}.piece{text-align:center}.piece .fr{padding:16px;background:linear-gradient(135deg,#3b2a12,#6b4e1a,#2b1d0a);box-shadow:0 20px 40px rgba(0,0,0,.3)}.piece .fr img{width:100%;aspect-ratio:1;object-fit:cover;border:10px solid #f7f2e8}
+.piece:nth-child(2) .fr{background:linear-gradient(135deg,#7a5a1f,var(--gold2),#7a5a1f)}.piece:nth-child(2) .fr img{aspect-ratio:3/4}
+.label{display:inline-block;text-align:left;background:#fff;padding:12px 16px;margin-top:20px;font-size:15px;box-shadow:0 2px 6px rgba(0,0,0,.1);min-width:70%}.label b{font-family:'Playfair Display';display:block}
+.catalog{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}.catalog>div{padding:28px 20px;border-right:1px solid rgba(35,29,22,.2)}.catalog>div:last-child{border:0}.catalog .v{font-family:'Playfair Display';font-size:clamp(1.6rem,3vw,2.4rem);margin-top:8px}
+.acq{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;counter-reset:a}.acq>div{border-top:2px solid var(--gold);padding-top:16px}.acq .n{font-family:'Playfair Display';font-style:italic;font-size:2.6rem;color:var(--gold)}
+.vit{margin-top:40px;padding:18px;background:#1b1612;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.timeline{max-width:760px;margin:auto}.timeline>div{display:grid;grid-template-columns:140px 1fr;gap:30px;padding:26px 0;border-bottom:1px solid rgba(35,29,22,.2)}.timeline .yr{font-family:'Playfair Display';font-size:1.8rem;color:var(--gold);font-style:italic}
+.dark{background:var(--ink);color:var(--wall);padding:110px 0;text-align:center}.dark h2{color:var(--wall)}.dark .btn{background:var(--gold);color:var(--ink)}.dark .btn.o{background:transparent;color:var(--wall);border-color:var(--wall)}
+footer{padding:30px 0;font-size:14px;color:var(--mut);text-align:center}
+@media(max-width:900px){nav .l{display:none}.hero{grid-template-columns:1fr;gap:30px;padding-top:40px}.wing,.acq{grid-template-columns:1fr}.catalog{grid-template-columns:1fr 1fr}.catalog>div{border-bottom:1px solid rgba(35,29,22,.2)}.timeline>div{grid-template-columns:1fr;gap:6px}.frame{padding:16px}.frame .mat{padding:16px}}
+@@BODY@@
+<nav><div class="wrap"><span class="b">MUSEUM OF {{TICKER}}</span><div class="l jost"><a href="#collection">Collection</a><a href="#catalog">Catalogue</a><a href="#acquire">Acquire</a><a href="#history">Provenance</a></div><div class="soc">[[SOCIALS]]</div></div></nav>
+<header class="wrap hero">
+ <div><div class="jost">Permanent exhibition · {{CHAIN_NAME}} wing</div><h1>{{NAME}}<br><i>a masterpiece</i></h1><p class="lead">"{{TAGLINE}}"</p>
+ <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:30px"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] Acquire ${{TICKER}}</a><a class="btn o" data-s href="{{DEXS_URL}}">[[DEX]] Valuation</a></div>
+ <div class="ca"><span class="jost" style="font-size:10px">Accession no.</span><span class="ca-text">{{CA}}</span><button data-copy>COPY</button></div></div>
+ <div style="position:relative"><div class="spot"></div><div class="frame rv"><div class="mat"><img src="{{LOGO}}" alt="{{NAME}}"></div></div><div class="plaque"><b>{{NAME}}</b><i>Anonymous, {{CHAIN_NAME}}, <span data-year></span>. Memes on blockchain.</i></div></div>
+</header>
+<section class="hall" id="collection"><div class="wrap"><div class="center jost">Gallery I</div><h2>The <i>Collection</i></h2><div class="rope"></div>
+ <div class="wing"><div class="piece rv"><div class="fr"><img class="gimg" src="{{LOGO}}" alt=""></div><div class="label"><b>Study in Green</b>Oil on chain, ca. day one</div></div><div class="piece rv"><div class="fr"><img class="gimg" src="{{LOGO}}" alt=""></div><div class="label"><b>${{TICKER}}, Portrait</b>The original. Priceless.</div></div><div class="piece rv"><div class="fr"><img class="gimg" src="{{LOGO}}" alt="" style="filter:sepia(.8)"></div><div class="label"><b>Diamond Hands</b>Mixed media, community</div></div></div>
+ <p class="center" style="max-width:62ch;margin:60px auto 0;font-size:1.3rem;line-height:1.7">{{ABOUT}}</p></div></section>
+<section style="padding:110px 0" id="catalog"><div class="wrap"><div class="center jost">Gallery II</div><h2>Exhibition <i>Catalogue</i></h2><div class="catalog"><div class="rv"><div class="jost">Edition</div><div class="v">{{SUPPLY}}</div></div><div class="rv"><div class="jost">Commission</div><div class="v">{{TAX}}</div></div><div class="rv"><div class="jost">Endowment</div><div class="v">{{LP}}</div></div><div class="rv"><div class="jost">Medium</div><div class="v">{{CHAIN_NAME}}</div></div></div></div></section>
+<section class="hall" id="acquire"><div class="wrap"><div class="center jost">Gallery III</div><h2>On <i>Acquisition</i></h2><div class="acq"><div class="rv"><div class="n">i.</div><p>Obtain a {{WALLET}} wallet.</p></div><div class="rv"><div class="n">ii.</div><p>Deposit {{NATIVE}}.</p></div><div class="rv"><div class="n">iii.</div><p>Visit {{DEX}} and present the accession number.</p></div><div class="rv"><div class="n">iv.</div><p>Complete the acquisition of ${{TICKER}}.</p></div></div><div class="vit rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></div></section>
+<section style="padding:110px 0" id="history"><div class="wrap"><div class="center jost">Gallery IV</div><h2>Provenance &amp; <i>Future Exhibitions</i></h2><div class="timeline"><div class="rv"><span class="yr">Chapter I</span><p>The unveiling. Fair launch; the first thousand patrons.</p></div><div class="rv"><span class="yr">Chapter II</span><p>Touring exhibition: listings, trending, distinguished collaborations.</p></div><div class="rv"><span class="yr">Chapter III</span><p>A permanent wing in every major exchange. Gift shop opens.</p></div></div></div></section>
+<section class="dark"><div class="wrap"><div class="jost">Become a patron</div><h2>Join the <i>Society</i></h2><div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn" data-s href="{{TG_URL}}">[[TG]] Telegram</a><a class="btn o" data-s href="{{X_URL}}">[[X]] X</a></div></div></section>
+<footer>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. Not financial advice. © <span data-year></span> Museum of {{TICKER}}</footer>
+@@JS@@
+document.querySelectorAll('.piece .fr').forEach(function(f){f.addEventListener('mousemove',function(e){var r=f.getBoundingClientRect();f.style.transform='perspective(800px) rotateY('+((e.clientX-r.left)/r.width-.5)*8+'deg) rotateX('+(-(e.clientY-r.top)/r.height+.5)*8+'deg)'});f.addEventListener('mouseleave',function(){f.style.transform=''})});

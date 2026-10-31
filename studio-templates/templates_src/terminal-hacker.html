@@ -1,0 +1,71 @@
+@@FONTS@@ family=JetBrains+Mono:wght@400;700;800&family=VT323
+@@CSS@@
+:root{--g:#33ff66;--g2:#0f8f3a;--dim:#1a3d24;--bg:#030a05;--a:#ffcc00;--r:#ff3355}
+body{background:var(--bg);color:var(--g);font-family:'JetBrains Mono',monospace;font-size:15px;line-height:1.6}
+#rain{position:fixed;inset:0;z-index:-1;opacity:.18}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 60%,rgba(0,0,0,.6)),repeating-linear-gradient(0deg,rgba(0,0,0,.25) 0 1px,transparent 1px 3px);z-index:50}
+.wrap{max-width:1000px;margin:auto;padding:0 16px}
+.glow{text-shadow:0 0 6px rgba(51,255,102,.8),0 0 18px rgba(51,255,102,.35)}
+.statusbar{position:sticky;top:0;z-index:40;background:#000;border-bottom:1px solid var(--g2);display:flex;justify-content:space-between;gap:12px;padding:8px 16px;font-size:12px;flex-wrap:wrap}
+.statusbar a:hover{background:var(--g);color:#000}.statusbar .l{display:flex;gap:16px}.statusbar .soc{display:flex;gap:12px}.statusbar .soc a{font-size:16px}
+.win{border:1px solid var(--g2);background:rgba(0,12,4,.86);margin:34px 0;box-shadow:0 0 0 1px #000,0 0 30px rgba(51,255,102,.08)}
+.win .tb{display:flex;align-items:center;gap:8px;padding:6px 12px;border-bottom:1px solid var(--g2);font-size:12px;color:var(--g2)}.win .tb i{width:11px;height:11px;border-radius:50%;background:var(--dim);display:inline-block}.win .tb i:nth-child(1){background:#ff5f56}.win .tb i:nth-child(2){background:#ffbd2e}.win .tb i:nth-child(3){background:#27c93f}
+.win .bd{padding:20px 22px}
+.cmd::before{content:"root@{{TICKER}}:~$ ";color:var(--a)}.cmd{color:#c8ffd6;margin:0 0 8px}
+.hero{padding-top:40px}
+.ascii{font-family:VT323,monospace;font-size:clamp(34px,9vw,110px);line-height:.9;margin:10px 0;color:var(--g);letter-spacing:.04em;word-break:break-all}
+.ascii .c{animation:flick 4s infinite}@keyframes flick{0%,96%,100%{opacity:1}97%{opacity:.3}98%{opacity:1}99%{opacity:.5}}
+.hero .row{display:grid;grid-template-columns:1fr 240px;gap:24px;align-items:center}
+.hero img{width:100%;filter:grayscale(1) sepia(1) hue-rotate(70deg) saturate(4) contrast(1.2);border:1px solid var(--g2);mix-blend-mode:screen}
+.typing{min-height:1.6em}.typing::after,.cursor::after{content:"█";animation:bk 1s steps(1) infinite}@keyframes bk{50%{opacity:0}}
+.btn{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--g);padding:10px 18px;margin:6px 10px 6px 0;color:var(--g);background:transparent;font-family:inherit;font-weight:700;text-transform:uppercase;letter-spacing:.06em;transition:.1s}.btn:hover{background:var(--g);color:#000;box-shadow:0 0 18px var(--g)}
+.btn.warn{border-color:var(--a);color:var(--a)}.btn.warn:hover{background:var(--a);color:#000}
+.ca{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border:1px dashed var(--g2);padding:10px 12px;margin-top:14px}.ca .ca-text{flex:1;color:#fff}
+pre.tbl{white-space:pre;overflow-x:auto;margin:0;color:#c8ffd6}
+.ok{color:var(--g)}.wn{color:var(--a)}.er{color:var(--r)}
+.steps li{margin:6px 0}.steps{list-style:none;padding:0}.steps li::before{content:"[ OK ] ";color:var(--g)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.grid img{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--g2);filter:grayscale(1) sepia(1) hue-rotate(70deg) saturate(3);transition:.2s}.grid img:hover{filter:none;transform:scale(1.04)}
+.tick{border-block:1px solid var(--g2);padding:6px 0;font-size:13px;color:var(--a)}.tick span{display:inline-flex;gap:2.5rem}
+.chart{border:1px solid var(--g2)}
+footer{font-size:12px;color:var(--g2);padding:30px 16px 60px;text-align:center}
+@media(max-width:700px){.hero .row{grid-template-columns:1fr}.hero img{max-width:200px}.grid{grid-template-columns:1fr 1fr}.statusbar .l{display:none}}
+@@BODY@@
+<canvas id="rain"></canvas>
+<div class="statusbar"><span class="glow">● {{TICKER}}.sh — connected to {{CHAIN_NAME}}</span><span class="l"><a href="#about">[about]</a><a href="#tokenomics">[tokenomics]</a><a href="#buy">[buy]</a><a href="#roadmap">[roadmap]</a><a href="#memes">[memes]</a></span><span class="soc">[[SOCIALS]]</span></div>
+<main class="wrap">
+<div class="win hero"><div class="tb"><i></i><i></i><i></i><span>~/{{TICKER}} — bash — 120×40</span></div><div class="bd">
+ <p class="cmd">./launch --token {{TICKER}} --chain {{CHAIN}}</p>
+ <div class="row"><div><h1 class="ascii glow" style="margin:0;font-weight:700"><span class="c">${{TICKER}}</span></h1><p style="font-size:18px;color:#fff">{{NAME}}</p><p class="typing glow" data-text="&gt; {{TAGLINE}}"></p>
+ <a class="btn" data-s href="{{BUY_URL}}">[[BUY]] ./buy.sh</a><a class="btn warn" data-s href="{{DEXS_URL}}">[[DEX]] tail -f chart</a>
+ <div class="ca"><span class="wn">CA=</span><span class="ca-text">{{CA}}</span><button class="btn" data-copy style="margin:0;padding:6px 12px">[[COPY]] pbcopy</button></div></div>
+ <img src="{{LOGO}}" alt="{{NAME}}"></div>
+</div></div>
+<div class="tick mq"><div class="mq-track"><span>&gt; ${{TICKER}} PUMP DETECTED &gt; MEMPOOL: BULLISH &gt; SELLERS: 0x0 &gt; DEV: ASLEEP &gt; COMMUNITY: ONLINE &gt; </span></div></div>
+<div class="win rv" id="about"><div class="tb"><i></i><i></i><i></i><span>about.txt</span></div><div class="bd"><p class="cmd">cat about.txt</p><p style="color:#fff">{{ABOUT}}</p><p class="cmd">whoami</p><p>{{TICKER}}_holder <span class="ok">(privileges: unlimited memes)</span></p></div></div>
+<div class="win rv" id="tokenomics"><div class="tb"><i></i><i></i><i></i><span>tokenomics.json</span></div><div class="bd"><p class="cmd">./tokenomics --show --pretty</p>
+<pre class="tbl">┌──────────────┬──────────────────────────────┐
+│ <span class="wn">name</span>         │ {{NAME}}
+│ <span class="wn">ticker</span>       │ ${{TICKER}}
+│ <span class="wn">chain</span>        │ {{CHAIN_NAME}}
+│ <span class="wn">supply</span>       │ {{SUPPLY}}
+│ <span class="wn">tax</span>          │ {{TAX}}
+│ <span class="wn">liquidity</span>    │ {{LP}}
+│ <span class="wn">mint_auth</span>    │ <span class="ok">revoked</span>
+│ <span class="wn">team_tokens</span>  │ <span class="ok">0</span>
+└──────────────┴──────────────────────────────┘</pre></div></div>
+<div class="win rv" id="buy"><div class="tb"><i></i><i></i><i></i><span>install.log</span></div><div class="bd"><p class="cmd">sudo apt install {{TICKER}}</p>
+<ol class="steps"><li>Installed wallet: {{WALLET}}</li><li>Funded wallet with {{NATIVE}}</li><li>Connected to {{DEX}} → pasted CA</li><li>Swapped {{NATIVE}} → ${{TICKER}}</li></ol><p class="ok">Setup complete. Welcome to the network.</p><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] execute swap on {{DEX}}</a>
+<p class="cmd" style="margin-top:18px">watch -n1 chart</p><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></div>
+<div class="win rv" id="roadmap"><div class="tb"><i></i><i></i><i></i><span>roadmap.md</span></div><div class="bd"><p class="cmd">git log --oneline roadmap</p>
+<pre class="tbl"><span class="wn">a1f9c2e</span> (HEAD) phase_1: fair launch, socials, 1k holders   <span class="ok">[merged]</span>
+<span class="wn">b72e0d1</span> phase_2: CG/CMC listing, raids, trending          <span class="wn">[in progress]</span>
+<span class="wn">c03ab88</span> phase_3: CEX, collabs, merch                       <span class="er">[pending]</span>
+<span class="wn">deadbee</span> phase_∞: moon                                        <span class="er">[classified]</span></pre></div></div>
+<div class="win rv" id="memes"><div class="tb"><i></i><i></i><i></i><span>~/memes/</span></div><div class="bd"><p class="cmd">ls ~/memes --images</p>
+<div class="grid"><img class="gimg" src="{{LOGO}}" alt=""><img class="gimg" src="{{LOGO}}" alt="" style="transform:scaleX(-1)"><img class="gimg" src="{{LOGO}}" alt=""><img class="gimg" src="{{LOGO}}" alt="" style="transform:rotate(8deg)"></div></div></div>
+<div class="win rv"><div class="tb"><i></i><i></i><i></i><span>connect.sh</span></div><div class="bd"><p class="cmd">ssh community@{{TICKER}}</p><p>Connection established. <span class="cursor"></span></p><a class="btn" data-s href="{{X_URL}}">[[X]] X</a><a class="btn" data-s href="{{TG_URL}}">[[TG]] telegram</a><a class="btn warn" data-s href="{{DEXS_URL}}">[[DEX]] dexscreener</a></div></div>
+</main>
+<footer>// ${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. Entertainment only. Not financial advice. DYOR.<br>© <span data-year></span> {{NAME}} — exit 0</footer>
+@@JS@@
+(function(){var c=document.getElementById('rain'),x=c.getContext('2d'),cols,drops;function rs(){c.width=innerWidth;c.height=innerHeight;cols=Math.floor(c.width/16);drops=Array(cols).fill(0).map(function(){return Math.random()*-50})}rs();addEventListener('resize',rs);var ch='{{TICKER}}01$アイウエオカキ'.split('');setInterval(function(){x.fillStyle='rgba(3,10,5,.12)';x.fillRect(0,0,c.width,c.height);x.fillStyle='#33ff66';x.font='15px JetBrains Mono';drops.forEach(function(d,i){x.fillText(ch[Math.random()*ch.length|0],i*16,d*16);drops[i]=d*16>c.height&&Math.random()>.975?0:d+1})},55)})();
+document.querySelectorAll('.typing').forEach(function(el){var t=el.getAttribute('data-text'),i=0;(function ty(){el.textContent=t.slice(0,++i);if(i<t.length)setTimeout(ty,35)})()});

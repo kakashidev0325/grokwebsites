@@ -1,0 +1,299 @@
+{
+  "slug": "buildon",
+  "url": "https://www.buildon.online",
+  "status": "ok",
+  "reason": "",
+  "title": "BUILDon | The BSC Mascot of Building",
+  "final_url": "https://www.buildon.online/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(3, 0, 21)",
+    "color": "rgba(255, 255, 255, 0.565)",
+    "font": "__Inter_854b98, __Inter_Fallback_854b98, -apple-system, \"Segoe UI\", Roboto, Ubuntu, \"Fira Sans\", Arial, sans-serif",
+    "fonts": [
+      "__Inter_854b98",
+      "__Montserrat_c0e2c4",
+      "__Poppins_495aae"
+    ],
+    "colors": [
+      "rgb(3, 0, 21)",
+      "rgba(255, 255, 255, 0.565)",
+      "rgb(177, 176, 182)",
+      "rgb(0, 255, 144)",
+      "rgb(255, 255, 255)",
+      "rgb(0, 0, 0)",
+      "rgb(24, 24, 24)",
+      "rgb(25, 27, 26)",
+      "rgb(48, 46, 63)",
+      "rgba(101, 255, 75, 0.063)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "banner bg-img",
+        "h": 1176
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "text-slider-wrapper",
+        "h": 163
+      },
+      {
+        "tag": "SECTION",
+        "id": "scrollPosition",
+        "cls": "section craft",
+        "h": 990
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "text-slider-large-wrapper ",
+        "h": 208
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section tools pb-0",
+        "h": 970
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section gen pb-0",
+        "h": 636
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "partner section ",
+        "h": 584
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "pin-spacer",
+        "h": 1741
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section h-empower fade-wrapper buildon",
+        "h": 1265
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section unlock pb-0",
+        "h": 690
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section overview pb-0 ",
+        "h": 619
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section gen-two pb-0",
+        "h": 658
+      }
+    ],
+    "imgCount": 72,
+    "imgs": [
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/logo-v2-white.42b3f16d.png",
+        "w": 1600,
+        "h": 266,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/logo.60987194.png",
+        "w": 126,
+        "h": 33,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/logo-line.91c2dec9.png",
+        "w": 200,
+        "h": 200,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/x.0c250faa.svg",
+        "w": 300,
+        "h": 300,
+        "alt": ""
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/telegram.5ed7cf0e.svg",
+        "w": 150,
+        "h": 150,
+        "alt": ""
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-1.9836fe53.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-2.eaf457ec.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-3.4d3fe3b3.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-4.929200cd.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-5.eeef1ffe.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-1.9836fe53.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-2.eaf457ec.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-3.4d3fe3b3.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-4.929200cd.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/1-5.eeef1ffe.jpg",
+        "w": 501,
+        "h": 351,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-5.0d053967.png",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-1.a9a092be.jpg",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-2.aa0e4d61.jpg",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-3.3b7f291b.jpg",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-4.508c3721.jpg",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-5.0d053967.png",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-1.a9a092be.jpg",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-2.aa0e4d61.jpg",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-3.3b7f291b.jpg",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/2-4.508c3721.jpg",
+        "w": 385,
+        "h": 240,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/logo-prev.e3e21409.png",
+        "w": 1038,
+        "h": 1039,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/frame-one.e74cb71e.svg",
+        "w": 150,
+        "h": 150,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/star.83fa1a19.png",
+        "w": 42,
+        "h": 41,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/star.83fa1a19.png",
+        "w": 42,
+        "h": 41,
+        "alt": "Image"
+      },
+      {
+        "src": "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/media/star.83fa1a19.png",
+        "w": 42,
+        "h": 41,
+        "alt": "Image"
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": false,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 10470,
+    "title": "BUILDon | The BSC Mascot of Building"
+  },
+  "css_urls": [
+    "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/css/95a99e5499edb3d0.css",
+    "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/css/de960f087e3556d3.css",
+    "https://d26o6c5uf5cl2w.cloudfront.net/_next/static/css/a89c90f2a4b6af8e.css"
+  ]
+}

@@ -1,0 +1,57 @@
+@@FONTS@@ family=Cinzel:wght@600;800&family=Libre+Caslon+Text:ital@0;1&family=Karla:wght@500;700
+@@CSS@@
+:root{--bg:#1e140d;--wood:#2b1d13;--parch:#efe0bf;--parch2:#e4cf9f;--ink:#3a2615;--gold:#e3a845;--ember:#e0662b;--dim:#a8906b}
+body{background:var(--bg) radial-gradient(ellipse at 50% -10%,#4a2e18,transparent 60%);color:var(--parch);font-family:'Libre Caslon Text',serif;font-size:18px;line-height:1.7}
+.cz{font-family:Cinzel,serif;letter-spacing:.06em}
+.wrap{max-width:1100px;margin:auto;padding:0 22px}
+nav{border-bottom:1px solid #4a3523;background:rgba(20,13,8,.9);position:sticky;top:0;z-index:20}nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+nav .b{display:flex;gap:10px;align-items:center;font-family:Cinzel;font-weight:800;color:var(--gold)}nav .b img{width:36px;height:36px;border-radius:50%;border:2px solid var(--gold)}
+nav .l{display:flex;gap:26px;font-family:Cinzel;font-size:.85rem;color:var(--dim)}nav .l a:hover{color:var(--gold)}
+.soc{display:flex;gap:10px}.soc a{color:var(--gold);width:36px;height:36px;display:grid;place-items:center;border:1px solid #6b4c2e;border-radius:6px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:Cinzel;font-weight:800;padding:14px 24px;background:linear-gradient(180deg,#f2be62,#c47f22);color:#2a1606;border:2px solid #f7d58c;border-radius:6px;box-shadow:0 4px 0 #6d3f0d,0 10px 24px rgba(0,0,0,.4);transition:.15s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.dk{background:transparent;color:var(--gold);border-color:#6b4c2e;box-shadow:none}
+.hero{padding:60px 0 40px}
+.book{background:var(--parch) radial-gradient(ellipse at center,var(--parch),var(--parch2));color:var(--ink);border-radius:10px;padding:40px;box-shadow:inset 0 0 60px rgba(110,70,20,.35),0 30px 60px rgba(0,0,0,.5);border:1px solid #b9965a;position:relative}
+.book::before{content:"";position:absolute;inset:10px;border:1.5px solid rgba(58,38,21,.35);border-radius:6px;pointer-events:none}
+.hero .book{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.crest{position:relative;display:grid;place-items:center}.crest img{width:82%;border-radius:50%;border:6px double var(--ink);box-shadow:0 0 0 10px var(--parch2),0 0 0 12px #b9965a;animation:breathe 5s ease-in-out infinite}@keyframes breathe{50%{transform:scale(1.03)}}
+.crest .rib{position:absolute;bottom:-6px;background:var(--ember);color:#fff4e0;font-family:Cinzel;font-weight:800;padding:6px 40px;clip-path:polygon(0 0,100% 0,94% 50%,100% 100%,0 100%,6% 50%)}
+.kicker{font-family:Cinzel;font-size:.85rem;color:var(--ember);letter-spacing:.2em}
+h1{font-family:Cinzel;font-weight:800;font-size:clamp(2.8rem,7vw,5.6rem);line-height:1;margin:10px 0 14px;color:var(--ink)}
+h1 em,h2 em{font-family:'Libre Caslon Text';font-style:italic;font-weight:400;color:var(--ember)}
+.ca{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:rgba(58,38,21,.08);border:1px dashed #8a6a3e;border-radius:6px;padding:10px 12px;margin-top:20px;font-family:Karla}.ca .ca-text{flex:1;font-size:.9rem}.ca button{font-family:Cinzel;font-weight:800;background:var(--ink);color:var(--parch);border:0;border-radius:4px;padding:8px 14px}
+.hp{display:flex;align-items:center;gap:14px;margin:18px 0 6px;font-family:Karla;font-weight:700;font-size:.9rem}.hp .b{flex:1;height:14px;background:#d3bd8c;border-radius:10px;overflow:hidden;border:1px solid #8a6a3e}.hp .b i{display:block;height:100%;width:72%;background:linear-gradient(90deg,var(--ember),var(--gold))}
+.run{margin:30px 0;font-family:Cinzel;color:var(--gold);font-size:1.2rem;border-block:1px solid #4a3523;padding:12px 0}.run span{display:inline-flex;gap:2.5rem}
+.chapter{padding:70px 0}.chapter .num{font-family:Cinzel;color:var(--gold);font-size:.9rem;letter-spacing:.3em;text-align:center}
+h2{font-family:Cinzel;font-weight:800;text-align:center;font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:8px 0 34px}
+.orn{display:block;text-align:center;color:var(--gold);letter-spacing:1em;margin:-20px 0 30px}
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
+.scene{border-radius:10px;overflow:hidden;border:2px solid #6b4c2e;box-shadow:0 20px 40px rgba(0,0,0,.5);background:#3b2716}.scene img{width:100%;aspect-ratio:4/3;object-fit:contain;padding:20px;filter:sepia(.25)}
+.dropcap::first-letter{font-family:Cinzel;font-weight:800;float:left;font-size:4.4rem;line-height:.8;padding:6px 10px 0 0;color:var(--ember)}
+.inv{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.item{background:linear-gradient(180deg,#3a2818,#24180f);border:2px solid #6b4c2e;border-radius:8px;padding:20px;text-align:center;transition:.2s}.item:hover{border-color:var(--gold);box-shadow:0 0 24px rgba(227,168,69,.3);transform:translateY(-4px)}.item .ic{font-size:2.2rem}.item .v{font-family:Cinzel;font-weight:800;color:var(--gold);font-size:1.4rem}.item small{color:var(--dim);font-family:Karla}
+.quest{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.quest .book{padding:28px 22px}.quest h3{font-family:Cinzel;margin:4px 0;font-size:1.15rem}.quest .q{font-family:Karla;font-weight:700;font-size:.8rem;color:var(--ember);letter-spacing:.15em}
+.mapf{margin-top:30px;border:6px solid #6b4c2e;border-radius:10px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.5)}
+.stages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.stage{border:2px solid #6b4c2e;border-radius:10px;overflow:hidden;background:#24180f}.stage img{width:100%;aspect-ratio:1;object-fit:cover;filter:sepia(.4)}.stage div{padding:14px 16px}.stage b{font-family:Cinzel;color:var(--gold)}.stage.lock img{filter:grayscale(1) brightness(.4)}.stage.lock div b::after{content:" 🔒"}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gal img{width:100%;aspect-ratio:1;object-fit:cover;border:2px solid #6b4c2e;border-radius:8px;filter:sepia(.3)}
+footer{text-align:center;padding:50px 20px;color:var(--dim);border-top:1px solid #4a3523;font-size:.95rem}
+@media(max-width:860px){nav .l{display:none}.hero .book,.two{grid-template-columns:1fr}.inv,.quest{grid-template-columns:1fr 1fr}.stages{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.book{padding:28px 20px}}
+@@BODY@@
+<nav><div class="wrap"><a class="b" href="#">{{NAME}}<img src="{{LOGO}}" alt=""></a><div class="l"><a href="#tale">The Tale</a><a href="#inventory">Inventory</a><a href="#quest">The Quest</a><a href="#stages">Stages</a></div><div class="soc">[[SOCIALS]]</div></div></nav>
+<header class="wrap hero"><div class="book">
+ <div><div class="kicker">A LEGEND OF {{CHAIN_NAME}} · ${{TICKER}}</div><h1>The Ballad of <em>{{NAME}}</em></h1><p style="font-style:italic;font-size:1.2rem">{{TAGLINE}}</p>
+ <div class="hp"><span>COURAGE</span><span class="b"><i></i></span><span>72/100</span></div>
+ <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] Begin the Quest</a><a class="btn dk" data-s href="{{DEXS_URL}}" style="color:var(--ink);border-color:#8a6a3e">[[DEX]] Scry the Chart</a></div>
+ <div class="ca"><b class="cz">Rune:</b><span class="ca-text">{{CA}}</span><button data-copy>Copy</button></div></div>
+ <div class="crest"><img src="{{LOGO}}" alt="{{NAME}}"><span class="rib">${{TICKER}}</span></div></div></header>
+<div class="run mq"><div class="mq-track"><span>✦ ${{TICKER}} ✦ Fortune favours the bold ✦ {{NAME}} ✦ A hero of {{CHAIN_NAME}} ✦ Hold fast ✦</span></div></div>
+<section class="chapter wrap" id="tale"><div class="num">CHAPTER I</div><h2>Every hero <em>starts small</em></h2><span class="orn">❧ ❧ ❧</span>
+ <div class="two"><div class="scene rv"><img src="{{LOGO}}" alt=""></div><div class="book rv"><p class="dropcap">{{ABOUT}}</p><p style="font-style:italic">And so the village gathered. Not for gold, not for glory — but because a legend is only as strong as those who tell it.</p></div></div></section>
+<section class="chapter wrap" id="inventory"><div class="num">CHAPTER II</div><h2>The <em>Inventory</em></h2><span class="orn">❧ ❧ ❧</span>
+ <div class="inv"><div class="item rv"><div class="ic">📜</div><div class="v">{{SUPPLY}}</div><small>Total supply</small></div><div class="item rv"><div class="ic">⚖️</div><div class="v">{{TAX}}</div><small>Tribute (tax)</small></div><div class="item rv"><div class="ic">🔥</div><div class="v">{{LP}}</div><small>Liquidity</small></div><div class="item rv"><div class="ic">🗺️</div><div class="v">{{CHAIN_NAME}}</div><small>Realm</small></div></div></section>
+<section class="chapter wrap" id="quest"><div class="num">CHAPTER III</div><h2>How to get <em>${{TICKER}}</em></h2><span class="orn">❧ ❧ ❧</span>
+ <div class="quest"><div class="book rv"><div class="q">QUEST 1</div><h3>Forge a Wallet</h3><p>Obtain {{WALLET}}.</p></div><div class="book rv"><div class="q">QUEST 2</div><h3>Gather {{NATIVE}}</h3><p>Fill thy purse.</p></div><div class="book rv"><div class="q">QUEST 3</div><h3>Travel to {{DEX}}</h3><p>Speak the rune (CA).</p></div><div class="book rv"><div class="q">QUEST 4</div><h3>Claim the Prize</h3><p>Swap for ${{TICKER}}.</p></div></div>
+ <div class="mapf rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></section>
+<section class="chapter wrap" id="stages"><div class="num">CHAPTER IV</div><h2>Bonus <em>Stages</em></h2><span class="orn">❧ ❧ ❧</span>
+ <div class="stages"><div class="stage rv"><img class="gimg" src="{{LOGO}}" alt=""><div><b>Stage I · The Gathering</b><p>Launch, the first thousand, songs in the tavern.</p></div></div><div class="stage rv"><img class="gimg" src="{{LOGO}}" alt=""><div><b>Stage II · The Crossing</b><p>Listings across the realms, banners on every chart.</p></div></div><div class="stage lock rv"><img class="gimg" src="{{LOGO}}" alt=""><div><b>Stage III · ???</b><p>Unlocks when the village is ready.</p></div></div></div>
+ <div style="text-align:center;margin-top:50px"><a class="btn" data-s href="{{TG_URL}}">[[TG]] Join the Tavern</a> <a class="btn dk" data-s href="{{X_URL}}">[[X]] Heed the Herald</a></div></section>
+<footer><p class="cz" style="color:var(--gold)">THANKS FOR PLAYING</p><p>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. A tale for entertainment only. Not financial advice.</p><p>© <span data-year></span> {{NAME}}</p></footer>
+@@JS@@

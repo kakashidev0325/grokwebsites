@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" data-theme-mode="original" data-theme-preset="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Theme selector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;560;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="templates_src/_core.css">
+<link rel="stylesheet" href="_motion.css">
+<style>
+:root{
+  --a:#ff7a2c;--a2:#ff2d95;--on:#1a0a08;--acc:var(--a);--part:var(--a);
+  --bg:#160c14;--bg-2:#26101c;--surface:#2c1422;--card:var(--surface);
+  --ink:#fff4ef;--muted:#efc8c4;--line:rgba(255,255,255,.16);
+  --glow:rgba(255,45,149,.45);--grad:linear-gradient(135deg,var(--a),var(--a2));
+  --radius:18px;--border:1px solid var(--line);
+  --shadow:0 18px 40px rgba(0,0,0,.28);
+}
+body{margin:0;color:var(--ink);font-family:Outfit,system-ui,sans-serif;background:
+  radial-gradient(900px 420px at 100% -10%, color-mix(in srgb,var(--a) 36%, transparent), transparent 60%),
+  radial-gradient(700px 380px at -10% 20%, color-mix(in srgb,var(--a2) 28%, transparent), transparent 62%),
+  var(--bg)}
+h1,h2{font-family:Syne,system-ui,sans-serif;letter-spacing:-.04em;margin:0}
+.page{width:min(1180px,calc(100% - 32px));margin:28px auto 64px}
+.lede{color:var(--muted);max-width:62ch}
+.row{display:flex;flex-wrap:wrap;gap:18px;align-items:end;margin:22px 0}
+label.field{display:flex;flex-direction:column;gap:6px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+select,input[type=text]{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:48px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+button.preset{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:14px 14px 16px;min-height:124px;border-radius:16px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;text-align:left}
+button.preset .sw{display:flex;gap:8px}
+button.preset .sw i{width:42px;height:42px;border-radius:12px;display:block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)}
+button.preset .name{font-weight:700;font-size:1rem;line-height:1.25}
+button.preset .hint{font-size:.78rem;color:var(--muted);font-weight:500}
+button.preset.on{outline:2px solid var(--a);outline-offset:2px}
+.custom{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:18px;background:color-mix(in srgb,var(--surface) 88%, transparent)}
+.picker{display:flex;gap:12px;align-items:center}
+input[type=color]{width:72px;height:72px;padding:0;border:0;background:transparent;cursor:pointer}
+input[type=color]::-webkit-color-swatch-wrapper{padding:0}
+input[type=color]::-webkit-color-swatch{border:2px solid var(--line);border-radius:16px}
+.hex{width:9ch;font-family:ui-monospace,monospace;letter-spacing:.04em}
+.preview{margin-top:28px;border:var(--border);border-radius:24px;overflow:hidden;background:var(--bg-2);box-shadow:var(--shadow)}
+.preview .mq{background:var(--a);color:var(--on)}
+.stage{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:28px}
+.stage img{width:min(280px,100%);margin-inline:auto;border-radius:28px;background:var(--surface);border:var(--border)}
+.kicker{color:var(--a);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem}
+.stage h2{font-size:clamp(2.4rem,6vw,4.4rem);line-height:.9}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--a);color:var(--on);font-weight:800;border:0}
+.cards{display:flex;gap:10px;margin-top:14px}
+.cards div{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px}
+.cards b{display:block;font-family:Syne,sans-serif;font-size:1.3rem}
+.cards span{color:var(--muted);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+.note{margin-top:10px;color:var(--muted);font-size:.9rem}
+@media(max-width:800px){.custom,.stage{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="page">
+  <p class="kicker">MemeSiteStudio</p>
+  <h1>Theme</h1>
+  <p class="lede">Original keeps the template palette. A preset or the two custom colors repaint the page: background, type, cards, marquee, and the button. The chain does not.</p>
+  <div class="row">
+    <label class="field">Chain
+      <select id="chain">
+        <option>Solana</option>
+        <option>Ethereum</option>
+        <option>Base</option>
+        <option>BNB Chain</option>
+      </select>
+    </label>
+    <p class="note" id="chain-note">Chain: Solana. Colors stay where you set them.</p>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="custom">
+    <label class="field">Primary
+      <span class="picker"><input id="c1" type="color" value="#ff7a2c"><input class="hex" id="h1" value="#ff7a2c" spellcheck="false" maxlength="7"></span>
+    </label>
+    <label class="field">Secondary
+      <span class="picker"><input id="c2" type="color" value="#14f195"><input class="hex" id="h2" value="#14f195" spellcheck="false" maxlength="7"></span>
+    </label>
+  </div>
+  <section class="preview" aria-label="Live preview">
+    <div class="mq" style="--mq-speed:18s"><div class="mq-track"><span id="mq">BONKLE ✦ the happiest little blob ✦ </span></div></div>
+    <div class="stage">
+      <div>
+        <p class="kicker" id="mode-label">Original</p>
+        <h2>Bonkle</h2>
+        <p class="lede">The happiest little blob on Solana. This preview uses the same tokens as a template.</p>
+        <p><button class="btn m-press" type="button">Buy BONKLE</button></p>
+        <div class="cards">
+          <div><b>1B</b><span>Supply</span></div>
+          <div><b id="chain-stat">Solana</b><span>Chain</span></div>
+        </div>
+      </div>
+      <img class="m-bob" src="sample/logo.png" alt="Sample logo">
+    </div>
+  </section>
+</main>
+<script src="_motion.js"></script>
+<script>
+(function(){
+  var PRESETS=[
+    {id:'', name:'Original', hint:'Template palette', c1:'#ff7a2c', c2:'#ff2d95'},
+    {id:'bnb-gold', name:'BNB Gold', hint:'Dark gold', c1:'#F0B90B', c2:'#F8D12F'},
+    {id:'solana', name:'Solana', hint:'Purple / green', c1:'#9945FF', c2:'#14F195'},
+    {id:'ethereum', name:'Ethereum', hint:'Indigo', c1:'#627EEA', c2:'#8FA4F3'},
+    {id:'base-blue', name:'Base Blue', hint:'Light canvas', c1:'#0052FF', c2:'#3B7CFF'},
+    {id:'neon-pink', name:'Neon Pink', hint:'Hot dark', c1:'#FF2D95', c2:'#FF8AC5'},
+    {id:'cyber-lime', name:'Cyber Lime', hint:'Acid', c1:'#C8FF00', c2:'#7CFF00'},
+    {id:'ocean-teal', name:'Ocean Teal', hint:'Deep water', c1:'#0D9488', c2:'#2DD4BF'},
+    {id:'sunset-orange', name:'Sunset', hint:'Warm dark', c1:'#F97316', c2:'#FBBF24'},
+    {id:'lava-red', name:'Lava', hint:'Red heat', c1:'#EF4444', c2:'#F97316'},
+    {id:'royal-purple', name:'Royal Purple', hint:'Violet', c1:'#7C3AED', c2:'#C084FC'},
+    {id:'mint-pastel', name:'Mint', hint:'Light canvas', c1:'#6EE7B7', c2:'#A7F3D0'},
+    {id:'monochrome', name:'Mono', hint:'Light ink', c1:'#111111', c2:'#6B7280'}
+  ];
+  var root=document.documentElement, grid=document.getElementById('grid');
+  var c1=document.getElementById('c1'), c2=document.getElementById('c2');
+  var h1=document.getElementById('h1'), h2=document.getElementById('h2');
+  PRESETS.forEach(function(p){
+    var b=document.createElement('button');
+    b.type='button'; b.className='preset'; b.dataset.id=p.id;
+    b.innerHTML='<span class="sw"><i style="background:'+p.c1+'"></i><i style="background:'+p.c2+'"></i></span><span class="name">'+p.name+'</span><span class="hint">'+p.hint+'</span>';
+    b.addEventListener('click', function(){ applyPreset(p); });
+    grid.appendChild(b);
+  });
+  function mark(id){
+    grid.querySelectorAll('.preset').forEach(function(b){ b.classList.toggle('on', b.dataset.id===id); });
+  }
+  function clearInline(){
+    ['--theme-1','--theme-2','--theme-glow','--theme-grad','--theme-ink','--theme-bg','--theme-bg-2','--theme-surface','--theme-text','--theme-muted'].forEach(function(k){ root.style.removeProperty(k); });
+  }
+  function applyPreset(p){
+    clearInline();
+    if(!p.id){
+      root.setAttribute('data-theme-mode','original');
+      root.setAttribute('data-theme-preset','');
+      document.getElementById('mode-label').textContent='Original';
+    }else{
+      root.setAttribute('data-theme-mode','preset');
+      root.setAttribute('data-theme-preset',p.id);
+      document.getElementById('mode-label').textContent=p.name;
+    }
+    mark(p.id);
+  }
+  function luma(hex){
+    hex=String(hex||'').replace('#','');
+    if(hex.length===3) hex=hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+    var n=parseInt(hex,16); if(!isFinite(n)) return 0.2;
+    function f(v){v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4)}
+    return 0.2126*f((n>>16)&255)+0.7152*f((n>>8)&255)+0.0722*f(n&255);
+  }
+  function mix(a,b,t){return {r:a.r+(b.r-a.r)*t,g:a.g+(b.g-a.g)*t,b:a.b+(b.b-a.b)*t}}
+  function parse(h){
+    h=String(h||'').replace('#',''); if(h.length===3)h=h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+    var n=parseInt(h,16)||0; return {r:(n>>16)&255,g:(n>>8)&255,b:n&255};
+  }
+  function hex(c){function h(v){return ('0'+Math.max(0,Math.min(255,Math.round(v))).toString(16)).slice(-2)}return '#'+h(c.r)+h(c.g)+h(c.b)}
+  function applyCustom(){
+    var A=c1.value, B=c2.value;
+    h1.value=A; h2.value=B;
+    var L=luma(A), L2=luma(B);
+    var light=(L<0.18 && L2<0.5) || (L>0.78 && L2>0.62);
+    var a=parse(A), b=parse(B);
+    var bg,bg2,surface,text,muted;
+    if(light){
+      bg=hex(mix(a,{r:247,g:246,b:242},0.9));
+      bg2=hex(mix(b,{r:255,g:255,b:255},0.78));
+      surface='#ffffff';
+      text=hex(mix(a,{r:16,g:16,b:16},0.78));
+      muted=hex(mix(a,{r:70,g:64,b:58},0.5));
+    }else{
+      bg=hex(mix(a,{r:9,g:10,b:14},0.84));
+      bg2=hex(mix(b,{r:16,g:18,b:24},0.78));
+      surface=hex(mix(a,{r:20,g:22,b:30},0.8));
+      text='#f4f6fb';
+      muted=hex(mix(b,{r:190,g:196,b:208},0.55));
+    }
+    var ink=L>0.45?'#0a0a0a':'#f6f7fb';
+    root.setAttribute('data-theme-mode','custom');
+    root.setAttribute('data-theme-preset','');
+    root.style.setProperty('--theme-1', A);
+    root.style.setProperty('--theme-2', B);
+    root.style.setProperty('--theme-glow', A);
+    root.style.setProperty('--theme-grad', 'linear-gradient(135deg,'+A+','+B+')');
+    root.style.setProperty('--theme-ink', ink);
+    root.style.setProperty('--theme-bg', bg);
+    root.style.setProperty('--theme-bg-2', bg2);
+    root.style.setProperty('--theme-surface', surface);
+    root.style.setProperty('--theme-text', text);
+    root.style.setProperty('--theme-muted', muted);
+    document.getElementById('mode-label').textContent='Custom';
+    mark('__custom');
+  }
+  function valid(v){return /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(v)}
+  c1.addEventListener('input', applyCustom);
+  c2.addEventListener('input', applyCustom);
+  h1.addEventListener('change', function(){ if(valid(h1.value)){ c1.value=h1.value; applyCustom(); }});
+  h2.addEventListener('change', function(){ if(valid(h2.value)){ c2.value=h2.value; applyCustom(); }});
+  document.getElementById('chain').addEventListener('change', function(e){
+    var name=e.target.value;
+    document.getElementById('chain-note').textContent='Chain: '+name+'. Colors stay where you set them.';
+    document.getElementById('chain-stat').textContent=name;
+    document.getElementById('mq').textContent='BONKLE ✦ '+name+' ✦ colors unchanged ✦ ';
+  });
+  var track=document.querySelector('.mq-track');
+  if(track) track.parentNode.appendChild(track.cloneNode(true)).setAttribute('aria-hidden','true');
+  applyPreset(PRESETS[0]);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+{
+  "slug": "kendu",
+  "url": "https://kendu.io",
+  "status": "ok",
+  "reason": "",
+  "title": "Kendu",
+  "final_url": "https://kendu.io/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(23, 22, 24)",
+    "color": "rgb(0, 0, 0)",
+    "font": "\"Uniform Pro\", Arial, sans-serif",
+    "fonts": [
+      "Uniform Pro",
+      "Moki",
+      "SA Triumph"
+    ],
+    "colors": [
+      "rgb(23, 22, 24)",
+      "rgb(0, 0, 0)",
+      "rgb(32, 30, 31)",
+      "rgb(232, 230, 238)",
+      "rgb(238, 106, 74)",
+      "rgb(255, 255, 255)",
+      "rgba(255, 255, 255, 0.12)",
+      "rgb(41, 41, 41)"
+    ],
+    "sections": [
+      {
+        "tag": "DIV",
+        "id": "about",
+        "cls": "relative mx-auto mt-10 flex max-w-lg items-center gap-[8.88rem] px-[9.38rem] max",
+        "h": 588
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "relative mx-auto mt-[11.7rem] box-border flex size-full max-w-[74.875rem] flex-c",
+        "h": 545
+      },
+      {
+        "tag": "DIV",
+        "id": "ecosystem",
+        "cls": "flexflex-col relative mx-auto mt-[11.13rem] items-center max-lg:mt-[8.75rem] max",
+        "h": 559
+      },
+      {
+        "tag": "SECTION",
+        "id": "audit",
+        "cls": "mx-auto mt-[9.38rem] flex w-full items-end justify-center gap-[2.25rem] px-[9.38",
+        "h": 608
+      },
+      {
+        "tag": "SECTION",
+        "id": "platforms",
+        "cls": "mx-auto mt-[11.25rem] w-full max-w-[78.75rem] max-lg:mt-[7.5rem] max-lg:px-10 ma",
+        "h": 495
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "mx-auto mt-[14.87rem] w-full max-w-[82.4375rem] max-lg:mt-[7.5rem] max-lg:px-[1.",
+        "h": 408
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "relative mx-auto mt-[16.87rem] flex w-full flex-col items-center max-lg:mt-[7.5r",
+        "h": 633
+      },
+      {
+        "tag": "SECTION",
+        "id": "questions",
+        "cls": "relative mt-[11.25rem] w-full max-lg:mt-[7.5rem] max-lg:px-10 max-md:mt-[5.5rem]",
+        "h": 390
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "relative mx-auto mt-[16.72rem] mb-[11.25rem] flex w-full flex-col items-center m",
+        "h": 444
+      }
+    ],
+    "imgCount": 130,
+    "imgs": [
+      {
+        "src": "https://kendu.io/icons/kendu-logo.svg",
+        "w": 300,
+        "h": 150,
+        "alt": "Kendu Mask Logo"
+      },
+      {
+        "src": "https://kendu.io/icons/telegram.svg",
+        "w": 150,
+        "h": 150,
+        "alt": "Telegram"
+      },
+      {
+        "src": "https://kendu.io/icons/x-logo.svg",
+        "w": 300,
+        "h": 150,
+        "alt": "X (Twitter)"
+      },
+      {
+        "src": "https://kendu.io/images/uniswap.png",
+        "w": 79,
+        "h": 91,
+        "alt": "Uniswap"
+      },
+      {
+        "src": "https://kendu.io/images/aerodrome.png",
+        "w": 55,
+        "h": 65,
+        "alt": "Aerodrome"
+      },
+      {
+        "src": "https://kendu.io/icons/coinbase-logo.svg",
+        "w": 300,
+        "h": 150,
+        "alt": "Coinbase"
+      },
+      {
+        "src": "https://kendu.io/icons/hero-frame.svg",
+        "w": 1002,
+        "h": 899,
+        "alt": "Hero frame"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/hero-bg-1.DBUexCWc.avif",
+        "w": 1440,
+        "h": 1028,
+        "alt": "Hero background 1"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/hero-bg-2.DwB_PVJQ.avif",
+        "w": 1440,
+        "h": 1932,
+        "alt": "Hero background 2"
+      },
+      {
+        "src": "https://kendu.io/images/hero/audio-player-border.png",
+        "w": 1408,
+        "h": 480,
+        "alt": ""
+      },
+      {
+        "src": "https://kendu.io/images/hero/audio-player-border-mobile.svg",
+        "w": 150,
+        "h": 150,
+        "alt": ""
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/album-art.Cblw6tzX.avif",
+        "w": 1440,
+        "h": 1440,
+        "alt": "Album art"
+      },
+      {
+        "src": "https://kendu.io/icons/play-button.svg",
+        "w": 300,
+        "h": 150,
+        "alt": "Play"
+      },
+      {
+        "src": "https://kendu.io/icons/telegram.svg",
+        "w": 150,
+        "h": 150,
+        "alt": "Telegram"
+      },
+      {
+        "src": "https://kendu.io/icons/x-logo.svg",
+        "w": 300,
+        "h": 150,
+        "alt": "X/Twitter"
+      },
+      {
+        "src": "https://kendu.io/icons/play-button.svg",
+        "w": 300,
+        "h": 150,
+        "alt": "Play button"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/your-idea.CGAs-P5p.avif",
+        "w": 1440,
+        "h": 479,
+        "alt": "Your future business"
+      },
+      {
+        "src": "https://kendu.io/images/gradient-btn-border.png",
+        "w": 182,
+        "h": 188,
+        "alt": ""
+      },
+      {
+        "src": "https://kendu.io/images/gradient-byn-border-tablet.png",
+        "w": 118,
+        "h": 112,
+        "alt": ""
+      },
+      {
+        "src": "https://kendu.io/icons/add-circle.svg",
+        "w": 300,
+        "h": 150,
+        "alt": "add"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/games.Dz_wpILg.avif",
+        "w": 1440,
+        "h": 1440,
+        "alt": "Kendu Games"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/energy.Vdi_s81p.avif",
+        "w": 1440,
+        "h": 1080,
+        "alt": "Kendu Energy"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/unleashed.BhrPtigY.avif",
+        "w": 1440,
+        "h": 1563,
+        "alt": "Kendu Unleashed"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/entertainment.aBLWcQZW.avif",
+        "w": 1440,
+        "h": 1440,
+        "alt": "Kendu Entertainment"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/street-team.CkLbmXXL.avif",
+        "w": 1440,
+        "h": 959,
+        "alt": "Kendu Street Team"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/coffee.BDlSEwDa.avif",
+        "w": 1440,
+        "h": 1440,
+        "alt": "Kendu Coffee"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/brilliance.DxGYNW-i.avif",
+        "w": 1440,
+        "h": 1440,
+        "alt": "Kendu Brilliance"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/merch.DvDLBJeE.avif",
+        "w": 1440,
+        "h": 1440,
+        "alt": "Kendu Merch"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/creator.Gk-UTgyK.avif",
+        "w": 1440,
+        "h": 1919,
+        "alt": "Kendu Creator"
+      },
+      {
+        "src": "https://kendu.io/_app/immutable/assets/unstitched.DNZ5t9nQ.avif",
+        "w": 1439,
+        "h": 1439,
+        "alt": "Kendu Unstitched"
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": false,
+    "hasChart": false,
+    "hasVideo": true,
+    "scrollH": 6689,
+    "title": "Kendu"
+  },
+  "css_urls": [
+    "https://kendu.io/_app/immutable/assets/0.BJnvx5Up.css",
+    "https://kendu.io/_app/immutable/assets/3.C7dBnXJE.css"
+  ]
+}
