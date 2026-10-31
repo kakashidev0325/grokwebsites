@@ -2,9 +2,9 @@
   "format": "meme-site-studio/site@1",
   "name": "DavidPizza",
   "ticker": "DavidPizza",
-  "template": "c22-godfather",
+  "template": "ut-hyperinu",
   "domain": "davidpizza.lol",
-  "ca": "9jktyPB8BSsmvhdypo8GSMRdZtQv4UFLWDGuHyrBpump",
+  "ca": "TBA",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
@@ -45,19 +45,37 @@
   "vercel_cname": "",
   "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
-  "images": [],
-  "characters": [],
+  "images": [
+    "assets/meme1.webp",
+    "assets/meme2.webp",
+    "assets/meme3.webp",
+    "assets/meme4.webp",
+    "assets/meme5.webp",
+    "assets/meme6.webp",
+    "assets/meme7.webp",
+    "assets/meme8.webp"
+  ],
+  "characters": [
+    "assets/char1.webp",
+    "assets/char2.webp",
+    "assets/char3.webp",
+    "assets/char4.webp",
+    "assets/char5.webp",
+    "assets/char6.webp",
+    "assets/char7.webp",
+    "assets/char8.webp"
+  ],
   "backgrounds": [],
   "resolved": {
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/coin/9jktyPB8BSsmvhdypo8GSMRdZtQv4UFLWDGuHyrBpump",
-    "chart_page": "https://dexscreener.com/solana/9jktyPB8BSsmvhdypo8GSMRdZtQv4UFLWDGuHyrBpump",
-    "chart_embed": "https://dexscreener.com/solana/9jktyPB8BSsmvhdypo8GSMRdZtQv4UFLWDGuHyrBpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "davidpizza",
   "project_id": "pmvwmnieukpze1",
-  "exported_at": "2026-10-31T16:50:58.055Z"
+  "exported_at": "2026-10-31T16:43:36.851Z"
 }
