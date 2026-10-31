@@ -2,12 +2,12 @@
   "format": "meme-site-studio/site@1",
   "name": "Ass And Pussy Licker",
   "ticker": "AAPL",
-  "template": "c33-cartoonmoney",
+  "template": "c46-wikicat",
   "domain": "aaplonsol.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "preset",
-  "theme_preset": "solana",
+  "theme_mode": "original",
+  "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
@@ -67,5 +67,5 @@
   },
   "site_slug": "aapl",
   "project_id": "pmvvp031sxosae",
-  "exported_at": "2026-10-31T01:08:09.399Z"
+  "exported_at": "2026-10-31T02:09:31.876Z"
 }
