@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "$AAPL (https://x.com/search?q=%24AAPL&src=cashtag_click) Silver hair. Chrome flair. Solana meme energy.",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/aaplonsol_x",
+  "tg_url": "https://t.me/aaplonsol_tg",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -67,5 +67,5 @@
   },
   "site_slug": "aapl",
   "project_id": "pmvvp031sxosae",
-  "exported_at": "2026-10-31T00:59:11.390Z"
+  "exported_at": "2026-10-31T01:08:09.399Z"
 }
