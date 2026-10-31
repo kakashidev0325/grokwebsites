@@ -2,8 +2,8 @@
   "format": "meme-site-studio/site@1",
   "name": "Halloween Cat",
   "ticker": "HALLOCAT",
-  "template": "c21-ninjacat",
-  "domain": "hallocatsol.lol",
+  "template": "c42-legofrog",
+  "domain": "gtavirobin.fun",
   "ca": "7sPbWf4X2FAKzHffSbfHoAaoHYonjzyAE8bmWYJ4pump",
   "chain": "solana",
   "theme_mode": "original",
@@ -16,13 +16,13 @@
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "hallocatsol.lol"
+      "host": "gtavirobin.fun"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.hallocatsol.lol"
+      "host": "www.gtavirobin.fun"
     }
   ],
   "tagline": "",
@@ -76,5 +76,5 @@
   },
   "site_slug": "hallocat",
   "project_id": "pmvwi4totygkqv",
-  "exported_at": "2026-10-31T15:58:38.551Z"
+  "exported_at": "2026-10-31T17:56:22.801Z"
 }
