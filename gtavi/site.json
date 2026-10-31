@@ -2,27 +2,27 @@
   "format": "meme-site-studio/site@1",
   "name": "Grand Theft Auto VI",
   "ticker": "GTAVI",
-  "template": "c43-azukianime",
-  "domain": "gtavioneth.lol",
+  "template": "c14-thegme",
+  "domain": "gtavirobin.lol",
   "ca": "TBA",
   "chain": "robinhood",
   "theme_mode": "preset",
-  "theme_preset": "solana",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
+  "theme_preset": "cyber-lime",
+  "theme_primary": "#c8ff00",
+  "theme_secondary": "#7cff00",
   "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "gtavioneth.lol"
+      "host": "gtavirobin.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.gtavioneth.lol"
+      "host": "www.gtavirobin.lol"
     }
   ],
   "tagline": "",
@@ -71,5 +71,5 @@
   },
   "site_slug": "gtavi",
   "project_id": "pmvwforv2m6k5f",
-  "exported_at": "2026-10-31T13:37:29.447Z"
+  "exported_at": "2026-10-31T13:42:58.422Z"
 }
