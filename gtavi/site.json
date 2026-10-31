@@ -6,8 +6,8 @@
   "domain": "gtavioneth.lol",
   "ca": "TBA",
   "chain": "robinhood",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "OG $GTAVI on Robinhood | Not affiliated with GTA or Rockstar Games",
-  "x_url": "https://x.com/gtavioneth_x",
-  "tg_url": "",
+  "x_url": "https://x.com/gtavionrobin_x",
+  "tg_url": "https://t.me/gtavirobin_tg",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -71,5 +71,5 @@
   },
   "site_slug": "gtavi",
   "project_id": "pmvwforv2m6k5f",
-  "exported_at": "2026-10-31T13:25:38.700Z"
+  "exported_at": "2026-10-31T13:37:29.447Z"
 }
