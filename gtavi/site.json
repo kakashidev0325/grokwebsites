@@ -62,7 +62,8 @@
   "characters": [
     "assets/char1.webp",
     "assets/char2.webp",
-    "assets/char3.webp"
+    "assets/char3.webp",
+    "assets/char4.webp"
   ],
   "backgrounds": [
     "assets/gpt-bg1.webp",
