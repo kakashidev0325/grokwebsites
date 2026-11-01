@@ -4,7 +4,7 @@
   "ticker": "ANT",
   "template": "c01-montyfathom",
   "domain": "anthropicrobin.lol",
-  "ca": "TBA",
+  "ca": "0xd95f9b2daeba5bbc388f2e1ab57eb8f995e6d47d",
   "chain": "robinhood",
   "theme_mode": "original",
   "theme_preset": "",
@@ -69,12 +69,12 @@
     "dex_name": "Uniswap V3",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/",
-    "chart_page": "https://dexscreener.com/robinhood",
-    "chart_embed": "https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xd95f9b2daeba5bbc388f2e1ab57eb8f995e6d47d",
+    "chart_page": "https://dexscreener.com/robinhood/0xd95f9b2daeba5bbc388f2e1ab57eb8f995e6d47d",
+    "chart_embed": "https://dexscreener.com/robinhood/0xd95f9b2daeba5bbc388f2e1ab57eb8f995e6d47d?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Robinhood"
   },
   "site_slug": "ant11",
   "project_id": "pmvx81p2rg0438",
-  "exported_at": "2026-11-01T03:08:16.713Z"
+  "exported_at": "2026-11-01T18:33:10.232Z"
 }
