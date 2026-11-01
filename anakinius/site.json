@@ -43,7 +43,7 @@
   "wallet": "",
   "vercel_a": "",
   "vercel_cname": "",
-  "logo": "assets/logo.png",
+  "logo": "assets/logo.webp",
   "banner": "assets/banner.webp",
   "images": [
     "assets/meme1.webp",
@@ -81,5 +81,5 @@
   },
   "site_slug": "anakinius",
   "project_id": "pmvybwe03aas2r",
-  "exported_at": "2026-11-01T22:01:38.248Z"
+  "exported_at": "2026-11-01T22:47:46.945Z"
 }
