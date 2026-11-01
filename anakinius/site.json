@@ -1,0 +1,63 @@
+{
+  "format": "meme-site-studio/site@1",
+  "name": "Anakinius Maximus",
+  "ticker": "Anakinius",
+  "template": "c08-hellcat",
+  "domain": "anakinmax.lol",
+  "ca": "TBA",
+  "chain": "solana",
+  "theme_mode": "original",
+  "theme_preset": "",
+  "theme_primary": "#0052ff",
+  "theme_secondary": "#3b7cff",
+  "domain_status": "not_connected",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "76.76.21.21",
+      "host": "anakinmax.lol"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "cname.vercel-dns.com",
+      "host": "www.anakinmax.lol"
+    }
+  ],
+  "tagline": "",
+  "about": "Jedi by birth. Gladiator by choice. ⚔️ $Anakinius on Solana.",
+  "x_url": "",
+  "tg_url": "",
+  "ref_x_url": "",
+  "socials": [],
+  "buy_url": "",
+  "dexs_url": "",
+  "supply": "",
+  "tax": "",
+  "lp": "",
+  "dex": "jupiter",
+  "dex_auto": true,
+  "dex_name": "Jupiter",
+  "native": "",
+  "wallet": "",
+  "vercel_a": "",
+  "vercel_cname": "",
+  "logo": "assets/logo.png",
+  "banner": "assets/banner.webp",
+  "images": [],
+  "characters": [],
+  "backgrounds": [],
+  "resolved": {
+    "dex_name": "Jupiter",
+    "dex_logo": "assets/dex.png",
+    "buy_url_source": "dex",
+    "buy_url": "https://jup.ag/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "Solana"
+  },
+  "site_slug": "anakinius",
+  "project_id": "pmvybwe03aas2r",
+  "exported_at": "2026-11-01T21:14:59.519Z"
+}
