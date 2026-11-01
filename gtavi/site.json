@@ -2,9 +2,9 @@
   "format": "meme-site-studio/site@1",
   "name": "Grand Theft Auto VI",
   "ticker": "GTAVI",
-  "template": "c14-thegme",
-  "domain": "gtavirobin.fun",
-  "ca": "0xf92f2ed3078453203d96d062fd91d3c74534be2b",
+  "template": "c18-insertcult",
+  "domain": "gtavionrobin.fun",
+  "ca": "TBA",
   "chain": "robinhood",
   "theme_mode": "preset",
   "theme_preset": "cyber-lime",
@@ -16,19 +16,19 @@
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "gtavirobin.fun"
+      "host": "gtavionrobin.fun"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.gtavirobin.fun"
+      "host": "www.gtavionrobin.fun"
     }
   ],
   "tagline": "",
-  "about": "Vice City nights. GTA VI forever. 🌴🚔",
-  "x_url": "https://x.com/gtavionrobin_x",
-  "tg_url": "https://t.me/gtavirobin_tg",
+  "about": "Vice City nights. GTA VI forever. 🌴🚔\n",
+  "x_url": "https://x.com/gtavirobinx",
+  "tg_url": "",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -73,12 +73,12 @@
     "dex_name": "Uniswap V3",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xf92f2ed3078453203d96d062fd91d3c74534be2b",
-    "chart_page": "https://dexscreener.com/robinhood/0xf92f2ed3078453203d96d062fd91d3c74534be2b",
-    "chart_embed": "https://dexscreener.com/robinhood/0xf92f2ed3078453203d96d062fd91d3c74534be2b?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://app.uniswap.org/",
+    "chart_page": "https://dexscreener.com/robinhood",
+    "chart_embed": "https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Robinhood"
   },
   "site_slug": "gtavi",
-  "project_id": "pmvwforv2m6k5f",
-  "exported_at": "2026-11-01T00:06:59.415Z"
+  "project_id": "pmvy0ob5vxvcsj",
+  "exported_at": "2026-11-01T16:00:56.283Z"
 }
