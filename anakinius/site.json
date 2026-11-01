@@ -4,7 +4,7 @@
   "ticker": "Anakinius",
   "template": "c08-hellcat",
   "domain": "anakinmax.lol",
-  "ca": "HyGJG54CJrKcXrnzgnbYYytSBTsQC7QbjpQ3v3nXpump",
+  "ca": "",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
@@ -43,7 +43,7 @@
   "wallet": "",
   "vercel_a": "",
   "vercel_cname": "",
-  "logo": "assets/logo.webp",
+  "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [
     "assets/meme1.webp",
@@ -74,12 +74,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/coin/HyGJG54CJrKcXrnzgnbYYytSBTsQC7QbjpQ3v3nXpump",
-    "chart_page": "https://dexscreener.com/solana/HyGJG54CJrKcXrnzgnbYYytSBTsQC7QbjpQ3v3nXpump",
-    "chart_embed": "https://dexscreener.com/solana/HyGJG54CJrKcXrnzgnbYYytSBTsQC7QbjpQ3v3nXpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "anakinius",
   "project_id": "pmvybwe03aas2r",
-  "exported_at": "2026-11-01T22:47:46.945Z"
+  "exported_at": "2026-11-01T22:53:19.986Z"
 }
