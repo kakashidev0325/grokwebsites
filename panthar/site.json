@@ -1,35 +1,35 @@
 {
   "format": "meme-site-studio/site@1",
-  "name": "Panthar",
-  "ticker": "Panthar",
+  "name": "CAPYUS",
+  "ticker": "CAPYUS",
   "template": "ut-hyperinu",
-  "domain": "panthar.lol",
+  "domain": "capyus.lol",
   "ca": "TBA",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "panthar.lol"
+      "host": "capyus.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.panthar.lol"
+      "host": "www.capyus.lol"
     }
   ],
   "tagline": "",
-  "about": "It features Marvel and Star Wars voice actors and over 140,000 hand-drawn animation frames",
+  "about": "To elevate the $CAPYUS community and keep all the homies updated!",
   "x_url": "",
   "tg_url": "",
-  "ref_x_url": "https://x.com/MarioPrezldente/status/2117357900633186593",
+  "ref_x_url": "",
   "socials": [],
   "buy_url": "",
   "dexs_url": "",
@@ -79,5 +79,5 @@
   },
   "site_slug": "panthar",
   "project_id": "pmvzv63elvmu8j",
-  "exported_at": "2026-11-02T23:02:11.248Z"
+  "exported_at": "2026-11-02T23:14:45.249Z"
 }
