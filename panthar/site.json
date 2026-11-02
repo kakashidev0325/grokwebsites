@@ -4,7 +4,7 @@
   "ticker": "CAPYUS",
   "template": "ut-hyperinu",
   "domain": "capyus.lol",
-  "ca": "BtrkGyJWdTeGe5EQhLuE8y9d3Xh2bUvzEjMkrU7xpump",
+  "ca": "TBA",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
@@ -72,12 +72,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/coin/BtrkGyJWdTeGe5EQhLuE8y9d3Xh2bUvzEjMkrU7xpump",
-    "chart_page": "https://dexscreener.com/solana/BtrkGyJWdTeGe5EQhLuE8y9d3Xh2bUvzEjMkrU7xpump",
-    "chart_embed": "https://dexscreener.com/solana/BtrkGyJWdTeGe5EQhLuE8y9d3Xh2bUvzEjMkrU7xpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "panthar",
   "project_id": "pmvzv63elvmu8j",
-  "exported_at": "2026-11-02T23:32:05.817Z"
+  "exported_at": "2026-11-02T23:38:18.384Z"
 }
