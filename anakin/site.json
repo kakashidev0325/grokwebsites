@@ -2,27 +2,27 @@
   "format": "meme-site-studio/site@1",
   "name": "Anakin Skywalker",
   "ticker": "Anakin",
-  "template": "c29-phenomenalcat",
-  "domain": "anakin.lol",
+  "template": "c08-hellcat",
+  "domain": "anakinrobin.lol",
   "ca": "TBA",
   "chain": "robinhood",
   "theme_mode": "preset",
-  "theme_preset": "solana",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
+  "theme_preset": "cyber-lime",
+  "theme_primary": "#c8ff00",
+  "theme_secondary": "#7cff00",
   "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "anakin.lol"
+      "host": "anakinrobin.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.anakin.lol"
+      "host": "www.anakinrobin.lol"
     }
   ],
   "tagline": "",
@@ -79,5 +79,5 @@
   },
   "site_slug": "anakin",
   "project_id": "pmvybgm629isdk",
-  "exported_at": "2026-11-02T06:41:31.643Z"
+  "exported_at": "2026-11-02T06:45:00.242Z"
 }
