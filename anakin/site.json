@@ -4,7 +4,7 @@
   "ticker": "Anakin",
   "template": "c08-hellcat",
   "domain": "anakinrobin.lol",
-  "ca": "TBA",
+  "ca": "0x717e7ee3df84f5013af3e113a51c96305cc8d690",
   "chain": "robinhood",
   "theme_mode": "preset",
   "theme_preset": "cyber-lime",
@@ -27,9 +27,9 @@
   ],
   "tagline": "",
   "about": "We are Anakin posting until morale improves",
-  "x_url": "https://x.com/Cmnd_V/status/2116763342899400848",
+  "x_url": "https://x.com/anakinonrobin",
   "tg_url": "",
-  "ref_x_url": "",
+  "ref_x_url": "https://x.com/Cmnd_V/status/2116763342899400848",
   "socials": [],
   "buy_url": "",
   "dexs_url": "",
@@ -73,12 +73,12 @@
     "dex_name": "Uniswap V3",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/",
-    "chart_page": "https://dexscreener.com/robinhood",
-    "chart_embed": "https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0x717e7ee3df84f5013af3e113a51c96305cc8d690",
+    "chart_page": "https://dexscreener.com/robinhood/0x717e7ee3df84f5013af3e113a51c96305cc8d690",
+    "chart_embed": "https://dexscreener.com/robinhood/0x717e7ee3df84f5013af3e113a51c96305cc8d690?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Robinhood"
   },
   "site_slug": "anakin",
   "project_id": "pmvybgm629isdk",
-  "exported_at": "2026-11-02T06:45:57.346Z"
+  "exported_at": "2026-11-02T07:50:22.980Z"
 }
