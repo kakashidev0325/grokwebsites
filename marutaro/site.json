@@ -2,12 +2,12 @@
   "format": "meme-site-studio/site@1",
   "name": "Marutaro",
   "ticker": "Marutaro",
-  "template": "ut-hyperinu",
+  "template": "c40-jupcat",
   "domain": "marutaro.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "The happiest $Marutaro on the internet is now on Solana.",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/marutaroonx",
+  "tg_url": "https://t.me/marutarosol_tg",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -77,5 +77,5 @@
   },
   "site_slug": "marutaro",
   "project_id": "pmvzbdnn7649ho",
-  "exported_at": "2026-11-02T13:48:11.747Z"
+  "exported_at": "2026-11-02T13:55:44.879Z"
 }
