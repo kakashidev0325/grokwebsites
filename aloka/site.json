@@ -10,7 +10,7 @@
   "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "live",
+  "domain_status": "dns",
   "dns_records": [
     {
       "type": "A",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "While others chase pumps, Aloka chases peace. 💚",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/alokameme_x",
+  "tg_url": "https://t.me/aloka_tg",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -74,5 +74,5 @@
   },
   "site_slug": "aloka",
   "project_id": "pmvzehfhfm0fa0",
-  "exported_at": "2026-11-02T15:15:06.634Z"
+  "exported_at": "2026-11-02T15:31:04.307Z"
 }
