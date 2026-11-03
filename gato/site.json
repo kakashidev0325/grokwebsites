@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "GTA6CAT",
   "ticker": "GATO",
-  "template": "c43-azukianime",
+  "template": "c33-cartoonmoney",
   "domain": "gatorobin.lol",
   "ca": "0x436b01e41314d4b010edd24cf7c997a7d111c0ab",
   "chain": "robinhood",
@@ -10,7 +10,7 @@
   "theme_preset": "",
   "theme_primary": "#0d9488",
   "theme_secondary": "#2dd4bf",
-  "domain_status": "dns",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -90,5 +90,5 @@
   },
   "site_slug": "gato",
   "project_id": "pmw0ori9zn0fde",
-  "exported_at": "2026-11-03T16:57:15.221Z"
+  "exported_at": "2026-11-03T17:14:21.636Z"
 }
