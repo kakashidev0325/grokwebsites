@@ -1,7 +1,7 @@
 {
   "format": "meme-site-studio/site@1",
-  "name": "A Meme Cat",
-  "ticker": "AMC",
+  "name": "A Meme Doge",
+  "ticker": "AMD",
   "template": "c14-thegme",
   "domain": "amemecat.lol",
   "ca": "TBA",
@@ -26,10 +26,10 @@
     }
   ],
   "tagline": "",
-  "about": "Cats ALWAYS flip dogs\n",
-  "x_url": "https://x.com/amemecat_x",
-  "tg_url": "https://t.me/amemecat_tg",
-  "ref_x_url": "https://x.com/akywacky/status/2097097942066950470",
+  "about": "DogeALWAYS flip dogs\n",
+  "x_url": "https://x.com/amemedoge_x",
+  "tg_url": "https://t.me/amemedoge_tg",
+  "ref_x_url": "https://x.com/Orbofi/status/2095920379390726622",
   "socials": [],
   "buy_url": "",
   "dexs_url": "",
@@ -43,8 +43,8 @@
   "wallet": "",
   "vercel_a": "",
   "vercel_cname": "",
-  "logo": "assets/logo.png",
-  "banner": "assets/banner.webp",
+  "logo": "assets/logo.webp",
+  "banner": "assets/banner.png",
   "images": [
     "assets/meme1.webp",
     "assets/meme2.webp",
@@ -80,5 +80,5 @@
   },
   "site_slug": "amcsol11",
   "project_id": "pmw18mek85ddpl",
-  "exported_at": "2026-11-03T22:17:02.844Z"
+  "exported_at": "2026-11-03T22:44:04.147Z"
 }
