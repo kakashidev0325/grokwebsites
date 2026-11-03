@@ -4,7 +4,7 @@
   "ticker": "AMC",
   "template": "ut-hyperinu",
   "domain": "amemecat.lol",
-  "ca": "TBA",
+  "ca": "YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
@@ -70,12 +70,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/",
-    "chart_page": "https://dexscreener.com/solana",
-    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/coin/YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump",
+    "chart_page": "https://dexscreener.com/solana/YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump",
+    "chart_embed": "https://dexscreener.com/solana/YUduqrb8kK4p9VfV2JXyHnV4yCXBiUoKgH7znLNpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "amc19",
   "project_id": "pmw1c1z796yg9s",
-  "exported_at": "2026-11-03T23:50:19.339Z"
+  "exported_at": "2026-11-03T23:55:45.845Z"
 }
