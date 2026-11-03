@@ -1,0 +1,63 @@
+{
+  "format": "meme-site-studio/site@1",
+  "name": "A Meme Dog",
+  "ticker": "AMD",
+  "template": "c19-floki",
+  "domain": "memedog.lol",
+  "ca": "TBA",
+  "chain": "robinhood",
+  "theme_mode": "original",
+  "theme_preset": "",
+  "theme_primary": "#9945ff",
+  "theme_secondary": "#14f195",
+  "domain_status": "live",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "76.76.21.21",
+      "host": "memedog.lol"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "cname.vercel-dns.com",
+      "host": "www.memedog.lol"
+    }
+  ],
+  "tagline": "",
+  "about": "AMD just beat earnings by an INSANE amount!\n",
+  "x_url": "",
+  "tg_url": "",
+  "ref_x_url": "https://x.com/SKupeal1973/status/2117728954882678804",
+  "socials": [],
+  "buy_url": "",
+  "dexs_url": "",
+  "supply": "",
+  "tax": "",
+  "lp": "",
+  "dex": "uniswap-v3",
+  "dex_auto": false,
+  "dex_name": "Uniswap V3",
+  "native": "",
+  "wallet": "",
+  "vercel_a": "",
+  "vercel_cname": "",
+  "logo": "assets/logo.png",
+  "banner": "assets/banner.webp",
+  "images": [],
+  "characters": [],
+  "backgrounds": [],
+  "resolved": {
+    "dex_name": "Uniswap V3",
+    "dex_logo": "assets/dex.png",
+    "buy_url_source": "dex",
+    "buy_url": "https://app.uniswap.org/",
+    "chart_page": "https://dexscreener.com/robinhood",
+    "chart_embed": "https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "Robinhood"
+  },
+  "site_slug": "amd",
+  "project_id": "pmw17xf45ce22s",
+  "exported_at": "2026-11-03T21:47:07.775Z"
+}
