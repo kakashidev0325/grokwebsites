@@ -53,7 +53,15 @@
     "assets/meme5.webp",
     "assets/meme6.webp",
     "assets/meme7.webp",
-    "assets/meme8.webp"
+    "assets/meme8.webp",
+    "assets/meme9.webp",
+    "assets/meme10.webp",
+    "assets/meme11.webp",
+    "assets/meme12.webp",
+    "assets/meme13.webp",
+    "assets/meme14.webp",
+    "assets/meme15.webp",
+    "assets/meme16.webp"
   ],
   "characters": [
     "assets/char1.webp",
@@ -63,9 +71,14 @@
     "assets/char5.webp",
     "assets/char6.webp",
     "assets/char7.webp",
-    "assets/char8.webp"
+    "assets/char8.webp",
+    "assets/char9.webp"
   ],
-  "backgrounds": [],
+  "backgrounds": [
+    "assets/gpt-bg1.webp",
+    "assets/gpt-bg2.webp",
+    "assets/gpt-bg3.webp"
+  ],
   "resolved": {
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
