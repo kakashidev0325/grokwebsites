@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "CAPYUS",
   "ticker": "CAPYUS",
-  "template": "ut-hyperinu",
+  "template": "c46-wikicat",
   "domain": "capyus.lol",
   "ca": "TBA",
   "chain": "solana",
@@ -79,5 +79,5 @@
   },
   "site_slug": "panthar",
   "project_id": "pmvzv63elvmu8j",
-  "exported_at": "2026-11-03T00:32:54.630Z"
+  "exported_at": "2026-11-03T00:34:00.566Z"
 }
