@@ -4,7 +4,7 @@
   "ticker": "STONKCAT",
   "template": "c40-jupcat",
   "domain": "stonkcatsol.lol",
-  "ca": "TBA",
+  "ca": "7135AgJW8Qqh8sDveTGdVZhjSAjeBsbw8tpeVb38pump",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
@@ -70,12 +70,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/",
-    "chart_page": "https://dexscreener.com/solana",
-    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/coin/7135AgJW8Qqh8sDveTGdVZhjSAjeBsbw8tpeVb38pump",
+    "chart_page": "https://dexscreener.com/solana/7135AgJW8Qqh8sDveTGdVZhjSAjeBsbw8tpeVb38pump",
+    "chart_embed": "https://dexscreener.com/solana/7135AgJW8Qqh8sDveTGdVZhjSAjeBsbw8tpeVb38pump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "stonkcat",
   "project_id": "pmw15e995lrmxj",
-  "exported_at": "2026-11-03T20:44:49.408Z"
+  "exported_at": "2026-11-03T21:02:47.987Z"
 }
