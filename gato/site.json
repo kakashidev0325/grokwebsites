@@ -2,12 +2,12 @@
   "format": "meme-site-studio/site@1",
   "name": "GTA6CAT",
   "ticker": "GATO",
-  "template": "c50-maxbnb",
+  "template": "c22-godfather",
   "domain": "gatosol.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
   "domain_status": "live",
@@ -81,5 +81,5 @@
   },
   "site_slug": "gato",
   "project_id": "pmw0ori9zn0fde",
-  "exported_at": "2026-11-03T12:50:39.119Z"
+  "exported_at": "2026-11-03T13:10:10.709Z"
 }
