@@ -2,12 +2,12 @@
   "format": "meme-site-studio/site@1",
   "name": "GTA6CAT",
   "ticker": "GATO",
-  "template": "c42-legofrog",
+  "template": "c40-jupcat",
   "domain": "gatorobin.lol",
   "ca": "TBA",
   "chain": "robinhood",
-  "theme_mode": "preset",
-  "theme_preset": "ocean-teal",
+  "theme_mode": "original",
+  "theme_preset": "",
   "theme_primary": "#0d9488",
   "theme_secondary": "#2dd4bf",
   "domain_status": "live",
@@ -85,5 +85,5 @@
   },
   "site_slug": "gato",
   "project_id": "pmw0ori9zn0fde",
-  "exported_at": "2026-11-03T13:13:42.488Z"
+  "exported_at": "2026-11-03T13:17:07.870Z"
 }
