@@ -1,11 +1,11 @@
 {
   "format": "meme-site-studio/site@1",
-  "name": "A Meme Dog",
+  "name": "A Meme Donkey",
   "ticker": "AMD",
-  "template": "c19-floki",
-  "domain": "memedog.lol",
+  "template": "ut-hyperinu",
+  "domain": "amemedonkey.lol",
   "ca": "TBA",
-  "chain": "robinhood",
+  "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
   "theme_primary": "#9945ff",
@@ -16,29 +16,29 @@
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "memedog.lol"
+      "host": "amemedonkey.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.memedog.lol"
+      "host": "www.amemedonkey.lol"
     }
   ],
   "tagline": "",
-  "about": "AMD just beat earnings by an INSANE amount!\n",
+  "about": "AMD so far so good...moving up tech nicely",
   "x_url": "",
   "tg_url": "",
-  "ref_x_url": "https://x.com/SKupeal1973/status/2117728954882678804",
+  "ref_x_url": "",
   "socials": [],
   "buy_url": "",
   "dexs_url": "",
   "supply": "",
   "tax": "",
   "lp": "",
-  "dex": "uniswap-v3",
+  "dex": "pumpfun",
   "dex_auto": false,
-  "dex_name": "Uniswap V3",
+  "dex_name": "Pump.fun",
   "native": "",
   "wallet": "",
   "vercel_a": "",
@@ -73,15 +73,15 @@
     "assets/gpt-bg3.webp"
   ],
   "resolved": {
-    "dex_name": "Uniswap V3",
+    "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/",
-    "chart_page": "https://dexscreener.com/robinhood",
-    "chart_embed": "https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
-    "chain_name": "Robinhood"
+    "buy_url": "https://pump.fun/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "Solana"
   },
   "site_slug": "amd",
-  "project_id": "pmw17xf45ce22s",
-  "exported_at": "2026-11-03T21:47:07.775Z"
+  "project_id": "pmw2a0m0pzbcjs",
+  "exported_at": "2026-11-04T15:33:44.541Z"
 }
