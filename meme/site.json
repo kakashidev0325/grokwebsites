@@ -1,7 +1,7 @@
 {
   "format": "meme-site-studio/site@1",
   "name": "A Meme Coin",
-  "ticker": "MEME",
+  "ticker": "AMC",
   "template": "c23-nyanmaru",
   "domain": "amemecoinsol.lol",
   "ca": "TBA",
@@ -10,7 +10,7 @@
   "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -81,5 +81,5 @@
   },
   "site_slug": "meme",
   "project_id": "pmw1jqbvlo1brp",
-  "exported_at": "2026-11-04T03:17:32.303Z"
+  "exported_at": "2026-11-04T03:38:25.755Z"
 }
