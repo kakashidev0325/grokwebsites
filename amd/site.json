@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "A Meme Donkey",
   "ticker": "AMD",
-  "template": "c07-agentcity",
+  "template": "c38-ocicat",
   "domain": "amemedonkey.lol",
   "ca": "6K4E5iCNikDcjAnMQYDxLnqEEixRdfoGe8oFUvkjpump",
   "chain": "solana",
@@ -81,5 +81,5 @@
   },
   "site_slug": "amd",
   "project_id": "pmw2a0m0pzbcjs",
-  "exported_at": "2026-11-04T15:46:15.778Z"
+  "exported_at": "2026-11-04T15:49:33.600Z"
 }
