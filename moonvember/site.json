@@ -4,7 +4,7 @@
   "ticker": "MOONVEMBER",
   "template": "ut-hyperinu",
   "domain": "moonvember.lol",
-  "ca": "TBA",
+  "ca": "2CZ5sX3MZnwVXGUDLt2o6mBbrgKBey7tkhcXjUhTpump",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
@@ -70,12 +70,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/",
-    "chart_page": "https://dexscreener.com/solana",
-    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/coin/2CZ5sX3MZnwVXGUDLt2o6mBbrgKBey7tkhcXjUhTpump",
+    "chart_page": "https://dexscreener.com/solana/2CZ5sX3MZnwVXGUDLt2o6mBbrgKBey7tkhcXjUhTpump",
+    "chart_embed": "https://dexscreener.com/solana/2CZ5sX3MZnwVXGUDLt2o6mBbrgKBey7tkhcXjUhTpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "moonvember",
   "project_id": "pmw3sl87gmjzc6",
-  "exported_at": "2026-11-05T17:01:03.196Z"
+  "exported_at": "2026-11-05T17:21:51.475Z"
 }
