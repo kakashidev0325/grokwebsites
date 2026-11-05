@@ -1,0 +1,63 @@
+{
+  "format": "meme-site-studio/site@1",
+  "name": "Chu-chan",
+  "ticker": "Chewchan",
+  "template": "c11-starship",
+  "domain": "chuchan.lol",
+  "ca": "TBA",
+  "chain": "solana",
+  "theme_mode": "original",
+  "theme_preset": "",
+  "theme_primary": "#9945ff",
+  "theme_secondary": "#14f195",
+  "domain_status": "not_connected",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "76.76.21.21",
+      "host": "chuchan.lol"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "cname.vercel-dns.com",
+      "host": "www.chuchan.lol"
+    }
+  ],
+  "tagline": "",
+  "about": "the owner has another dog named Chewchan which is just as popular\n",
+  "x_url": "",
+  "tg_url": "",
+  "ref_x_url": "https://x.com/QuantsDev1223/status/2118393442543788178",
+  "socials": [],
+  "buy_url": "",
+  "dexs_url": "",
+  "supply": "",
+  "tax": "",
+  "lp": "",
+  "dex": "pumpfun",
+  "dex_auto": false,
+  "dex_name": "Pump.fun",
+  "native": "",
+  "wallet": "",
+  "vercel_a": "",
+  "vercel_cname": "",
+  "logo": "assets/logo.png",
+  "banner": "assets/banner.webp",
+  "images": [],
+  "characters": [],
+  "backgrounds": [],
+  "resolved": {
+    "dex_name": "Pump.fun",
+    "dex_logo": "assets/dex.png",
+    "buy_url_source": "dex",
+    "buy_url": "https://pump.fun/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "chain_name": "Solana"
+  },
+  "site_slug": "chewchan",
+  "project_id": "pmw3v2g67j8zgy",
+  "exported_at": "2026-11-05T18:10:25.883Z"
+}
