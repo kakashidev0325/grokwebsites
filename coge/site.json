@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "Cougar Of Great Excitement",
   "ticker": "COGE",
-  "template": "c47-thatdancingdog",
+  "template": "c16-wowforever",
   "domain": "cougarsol.lol",
   "ca": "ES9FintJPSGcoVuJhkLAsfSoug6B69bDoeTb3hJYpump",
   "chain": "solana",
@@ -81,5 +81,5 @@
   },
   "site_slug": "coge",
   "project_id": "pmw42hsfvdsrt4",
-  "exported_at": "2026-11-05T21:52:48.261Z"
+  "exported_at": "2026-11-05T23:37:45.834Z"
 }
