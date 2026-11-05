@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- archetype: c18-insertcult | placeholders: Big Testicle Coin BTC assets/logo.png TBA solana   https://pump.fun/ https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Big Testicle Coin on Solana. Hold $BTC. Receive BTC from trading fees. Paid in WBTC. 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
+<!-- archetype: c18-insertcult | placeholders: Big Testicle Coin BTC assets/logo.png?v=fc348929 GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump solana https://x.com/btcsol_x https://t.me/btcsol_tg https://pump.fun/coin/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump https://dexscreener.com/solana/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable Big Testicle Coin on Solana. Hold $BTC. Receive BTC from trading fees. Paid in WBTC. 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump Solana <img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun">=raw html) -->
 <title>Big Testicle Coin ($BTC) | The most memeable Big Testicle Coin on Solana.</title>
 <meta name="description" content="Hold $BTC. Receive BTC from trading fees. Paid in WBTC.">
-<meta property="og:title" content="Big Testicle Coin ($BTC)"><meta property="og:description" content="The most memeable Big Testicle Coin on Solana."><meta property="og:image" content="assets/logo.png"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/logo.png">
+<meta property="og:title" content="Big Testicle Coin ($BTC)"><meta property="og:description" content="The most memeable Big Testicle Coin on Solana."><meta property="og:image" content="assets/logo.png?v=fc348929"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.png?v=fc348929">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,500&display=swap" rel="stylesheet">
 <style>
@@ -476,10 +476,28 @@ img.mx-cut.mx-var3{transform:rotate(-2deg) scale(.9)!important}img.mx-cut.mx-var
 /* wash layer must never take a grid/flex slot, even when a template styles "section>div" */
 .mx-bgw{position:absolute!important;inset:0!important;margin:0!important;grid-area:auto!important;border-radius:inherit}
 
+/* ===== mx-gl3d: themed 3D canvas + CSS depth (see _gl3d.js) ===== */
+canvas.mx-gl{position:absolute!important;left:0!important;top:0!important;right:auto!important;bottom:auto!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;transform:none!important;pointer-events:none!important;z-index:1;opacity:.92}
+canvas.mx-gl.mx-gl-tall{height:min(100%,120vh)!important}
+.mx-gl-dark{mix-blend-mode:screen}
+.mx-gl-light{mix-blend-mode:normal;opacity:.9}
+.mx-gl-orbs,.mx-gl-coins{mix-blend-mode:normal;opacity:1}
+.mx3d-tilt{transform-style:preserve-3d;transition:transform var(--dur-fast,160ms) var(--ease-out,cubic-bezier(.16,1,.3,1));will-change:auto}
+.mx3d-tilt.mx3d-hot{will-change:transform}
+.mx3d-mascot{transition:transform .6s var(--ease-out,cubic-bezier(.16,1,.3,1))}
+.mx3d-glare{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;opacity:0;
+  background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.28),rgba(255,255,255,0) 55%);transition:opacity var(--dur-fast,160ms)}
+.mx3d-hot>.mx3d-glare{opacity:1}
+.mx3d-extrude{text-shadow:1px 1px 0 color-mix(in srgb,var(--a2,var(--a)) 80%,#000),2px 2px 0 color-mix(in srgb,var(--a2,var(--a)) 70%,#000),3px 3px 0 color-mix(in srgb,var(--a2,var(--a)) 60%,#000),4px 4px 0 color-mix(in srgb,var(--a2,var(--a)) 50%,#000),5px 5px 0 color-mix(in srgb,var(--a2,var(--a)) 40%,#000),6px 6px 0 color-mix(in srgb,var(--a2,var(--a)) 30%,#000),10px 14px 18px rgba(0,0,0,.35)}
+.mx3d-chroma{text-shadow:-.04em 0 0 color-mix(in srgb,var(--a) 85%,transparent),.04em 0 0 color-mix(in srgb,var(--a2,var(--a)) 85%,transparent),0 .06em .12em rgba(0,0,0,.35)}
+@media(prefers-reduced-motion:reduce){.mx3d-tilt,.mx3d-mascot{transition:none;transform:none!important}.mx3d-glare{display:none}}
+html.reduced-motion .mx3d-tilt{transform:none!important}
+@media(max-width:700px){.mx-gl{opacity:.75}.mx3d-extrude{text-shadow:1px 1px 0 color-mix(in srgb,var(--a2,var(--a)) 70%,#000),2px 2px 0 color-mix(in srgb,var(--a2,var(--a)) 55%,#000),3px 3px 0 color-mix(in srgb,var(--a2,var(--a)) 40%,#000)}}
+
 /* ===== c18-insertcult ===== */
 
 /* ===== clone kit (shared lower sections; tokens set per site) ===== */
-:root{--bg1:url(assets/tpl/bg1.webp);--bg2:url(assets/tpl/bg2.webp);--bg3:url(assets/tpl/bg3.webp)}
+:root{--bg1:url(assets/gpt-bg1.webp?v=e110faf3);--bg2:url(assets/gpt-bg2.webp?v=39ba8d81);--bg3:url(assets/gpt-bg3.webp?v=e7a30977)}
 html{scroll-behavior:smooth;background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--fb);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -683,69 +701,69 @@ html[data-theme-mode="preset"],html[data-theme-mode="custom"]{--acc:var(--theme-
 <link rel="canonical" href="https://btconsol.lol/">
 <meta property="og:url" content="https://btconsol.lol/">
 </head>
-<body class="a-c18-insertcult" data-ca="TBA" class="">
+<body class="a-c18-insertcult" data-ca="GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" class="" data-mx-gl="crystal@center" data-mx-gl-tone="dark" data-mx-3d="cards mascot rise chroma">
 
 
-<header class="ic-head"><a class="ic-word" href="#top"><img src="assets/logo.png" alt="" width="34" height="34">Big Testicle Coin</a>
-<nav aria-label="Primary"><span class="soc"><a data-s href="" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a></span><a class="btn btn-main sm ic-btn" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $BTC <span class="dexon">on Pump.fun</span></a></nav></header>
+<header class="ic-head"><a class="ic-word" href="#top"><img src="assets/logo.png?v=fc348929" alt="" width="34" height="34">Big Testicle Coin</a>
+<nav aria-label="Primary"><span class="soc"><a data-s href="https://x.com/btcsol_x" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="https://t.me/btcsol_tg" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a></span><a class="btn btn-main sm ic-btn" data-buy href="https://pump.fun/coin/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy $BTC <span class="dexon">on Pump.fun</span></a></nav></header>
 <main id="top">
 <section class="hero ic-stage" aria-label="Big Testicle Coin">
  <div class="ic-bg" data-bg="1" aria-hidden="true"></div>
  <div class="ic-ring r1" aria-hidden="true"></div><div class="ic-ring r2" aria-hidden="true"></div><div class="ic-ring r3" aria-hidden="true"></div>
- <div class="ic-mark" aria-hidden="true"><img src="assets/logo.png" alt=""><img src="assets/logo.png" alt=""></div>
+ <div class="ic-mark" aria-hidden="true"><img src="assets/logo.png?v=fc348929" alt=""><img src="assets/logo.png?v=fc348929" alt=""></div>
  <div class="ic-glow" aria-hidden="true"></div><div class="ic-confetti" aria-hidden="true"><i style="left:0%;top:0%;color:#a855f7;animation-delay:-0s"></i><i style="left:29%;top:47%;color:#4ade80;animation-delay:-3s"></i><i style="left:58%;top:10%;color:#f0c060;animation-delay:-6s"></i><i style="left:87%;top:57%;color:#22d3ee;animation-delay:-2s"></i><i style="left:20%;top:20%;color:#a855f7;animation-delay:-5s"></i><i style="left:49%;top:67%;color:#4ade80;animation-delay:-1s"></i><i style="left:78%;top:30%;color:#f0c060;animation-delay:-4s"></i><i style="left:11%;top:77%;color:#22d3ee;animation-delay:-0s"></i><i style="left:40%;top:40%;color:#a855f7;animation-delay:-3s"></i><i style="left:69%;top:3%;color:#4ade80;animation-delay:-6s"></i><i style="left:2%;top:50%;color:#f0c060;animation-delay:-2s"></i><i style="left:31%;top:13%;color:#22d3ee;animation-delay:-5s"></i><i style="left:60%;top:60%;color:#a855f7;animation-delay:-1s"></i><i style="left:89%;top:23%;color:#4ade80;animation-delay:-4s"></i><i style="left:22%;top:70%;color:#f0c060;animation-delay:-0s"></i><i style="left:51%;top:33%;color:#22d3ee;animation-delay:-3s"></i><i style="left:80%;top:80%;color:#a855f7;animation-delay:-6s"></i><i style="left:13%;top:43%;color:#4ade80;animation-delay:-2s"></i></div><div class="scanlines" style="position:absolute;inset:0;pointer-events:none" aria-hidden="true"></div>
  <div class="ic-floor" aria-hidden="true"><div class="f1"></div><div class="f2"></div><div class="f3"></div><div class="f4"></div></div>
  <p class="ic-press" aria-hidden="true">Press start · insert $BTC</p>
  <div class="ic-car" id="icCar">
-  <div class="ic-cart c0" data-pos="0" data-t="Big Testicle Coin"><div class="in cart-rise"><div class="win w0"><img class="gchar" src="assets/char1.webp" alt=""><div><div class="pt">Big Testicle Coin</div><div class="ps">The most memeable Big Testicle Coin on Solana.</div><div class="icons"><img class="gimg" src="assets/meme1.webp" alt=""><img class="gimg" src="assets/meme2.webp" alt=""><img class="gimg" src="assets/meme3.webp" alt=""></div></div></div><img class="shell" src="assets/tpl/cart-ravenkeep.webp" alt="" draggable="false"></div></div>
-  <div class="ic-cart c1" data-pos="1" data-t="$BTC"><div class="in cart-rise" style="animation-delay:60ms"><div class="win w1"><img class="gimg" src="assets/meme4.webp" alt="Big Testicle Coin cartridge art"><span class="plq">$BTC</span></div><img class="shell" src="assets/tpl/cart-freeside.webp" alt="" draggable="false"></div></div>
-  <div class="ic-cart c2" data-pos="2" data-t="Solana"><div class="in cart-rise" style="animation-delay:120ms"><div class="win w2"><div class="t">Big Testicle Coin<br>on Solana</div><div class="s">A high yield meme venture</div><img class="gchar" src="assets/char2.webp" alt=""><div class="ft"><span>$BTC world order</span><span>Supply 1B</span></div></div><img class="shell" src="assets/tpl/cart-stonks.webp" alt="" draggable="false"></div></div>
+  <div class="ic-cart c0" data-pos="0" data-t="Big Testicle Coin"><div class="in cart-rise"><div class="win w0"><img class="gchar" src="assets/char1.webp?v=a96b9000" alt=""><div><div class="pt">Big Testicle Coin</div><div class="ps">The most memeable Big Testicle Coin on Solana.</div><div class="icons"><img class="gimg" src="assets/meme1.webp?v=afe6b9ed" alt=""><img class="gimg" src="assets/meme2.webp?v=3907f05e" alt=""><img class="gimg" src="assets/meme3.webp?v=6e02f632" alt=""></div></div></div><img class="shell" src="assets/tpl/cart-ravenkeep.webp?v=c7787c8a" alt="" draggable="false"></div></div>
+  <div class="ic-cart c1" data-pos="1" data-t="$BTC"><div class="in cart-rise" style="animation-delay:60ms"><div class="win w1"><img class="gimg" src="assets/meme4.webp?v=3078febf" alt="Big Testicle Coin cartridge art"><span class="plq">$BTC</span></div><img class="shell" src="assets/tpl/cart-freeside.webp?v=0e965df4" alt="" draggable="false"></div></div>
+  <div class="ic-cart c2" data-pos="2" data-t="Solana"><div class="in cart-rise" style="animation-delay:120ms"><div class="win w2"><div class="t">Big Testicle Coin<br>on Solana</div><div class="s">A high yield meme venture</div><img class="gchar" src="assets/char2.webp?v=6be481b3" alt=""><div class="ft"><span>$BTC world order</span><span>Supply 1B</span></div></div><img class="shell" src="assets/tpl/cart-stonks.webp?v=8f6c5a32" alt="" draggable="false"></div></div>
  </div>
  <button class="ic-arrow p" type="button" aria-label="Previous cartridge">‹</button><button class="ic-arrow n" type="button" aria-label="Next cartridge">›</button>
- <div class="ic-labels"><button class="side l" type="button" data-go="2">Solana</button><div><h1>Big Testicle Coin</h1><a class="btn now" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Now at $BTC <span class="dexon">on Pump.fun</span></a></div><button class="side r" type="button" data-go="1">$BTC</button></div>
- <div class="ic-ca"><span>CA</span><code class="ca-text">TBA</code><button type="button" data-copy aria-label="Copy contract address">Copy</button></div>
+ <div class="ic-labels"><button class="side l" type="button" data-go="2">Solana</button><div><h1>Big Testicle Coin</h1><a class="btn now" data-buy href="https://pump.fun/coin/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Now at $BTC <span class="dexon">on Pump.fun</span></a></div><button class="side r" type="button" data-go="1">$BTC</button></div>
+ <div class="ic-ca"><span>CA</span><code class="ca-text">GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump</code><button type="button" data-copy aria-label="Copy contract address">Copy</button></div>
 </section>
 <div class="ic-band" aria-hidden="true"><div><span>Insert $BTC</span><span>Press start</span><span>Big Testicle Coin</span><span>1 credit = 1 meme</span><span>Now on Solana</span><span>Continue? 9…8…7…</span><span>Insert $BTC</span><span>Press start</span><span>Big Testicle Coin</span><span>1 credit = 1 meme</span><span>Now on Solana</span><span>Continue? 9…8…7…</span><span>Insert $BTC</span><span>Press start</span><span>Big Testicle Coin</span><span>1 credit = 1 meme</span><span>Now on Solana</span><span>Continue? 9…8…7…</span><span>Insert $BTC</span><span>Press start</span><span>Big Testicle Coin</span><span>1 credit = 1 meme</span><span>Now on Solana</span><span>Continue? 9…8…7…</span></div></div>
 <section id="memes" class="ck-sec ck-memes "><div class="ck-w">
 <p class="ck-kick rv">Cartridge library</p><h2 class="ck-h2 rv">The <em>collection</em></h2>
-<div class="ck-gal rv-stagger"><button class="ck-card" type="button" data-i="0"><img class="gimg" src="assets/meme5.webp" alt="Big Testicle Coin meme 1" loading="lazy" width="480" height="480"><span>#01 level 1</span></button><button class="ck-card" type="button" data-i="1"><img class="gimg" src="assets/meme6.webp" alt="Big Testicle Coin meme 2" loading="lazy" width="480" height="480"><span>#02 boss fight</span></button><button class="ck-card" type="button" data-i="2"><img class="gimg" src="assets/meme7.webp" alt="Big Testicle Coin meme 3" loading="lazy" width="480" height="480"><span>#03 bonus stage</span></button><button class="ck-card" type="button" data-i="3"><img class="gimg" src="assets/meme8.webp" alt="Big Testicle Coin meme 4" loading="lazy" width="480" height="480"><span>#04 secret room</span></button><button class="ck-card" type="button" data-i="4"><img class="gimg" src="assets/meme9.webp" alt="Big Testicle Coin meme 5" loading="lazy" width="480" height="480"><span>#05 high score</span></button><button class="ck-card" type="button" data-i="5"><img class="gimg" src="assets/meme10.webp" alt="Big Testicle Coin meme 6" loading="lazy" width="480" height="480"><span>#06 continue?</span></button><button class="ck-card" type="button" data-i="6"><img class="gimg" src="assets/meme11.webp" alt="Big Testicle Coin meme 7" loading="lazy" width="480" height="480"><span>#07 player two</span></button><button class="ck-card" type="button" data-i="7"><img class="gimg" src="assets/meme12.webp" alt="Big Testicle Coin meme 8" loading="lazy" width="480" height="480"><span>#08 game over? no</span></button></div></div></section>
+<div class="ck-gal rv-stagger"><button class="ck-card" type="button" data-i="0"><img class="gimg" src="assets/meme5.webp?v=bb9f7e2a" alt="Big Testicle Coin meme 1" loading="lazy" width="480" height="480"><span>#01 level 1</span></button><button class="ck-card" type="button" data-i="1"><img class="gimg" src="assets/meme6.webp?v=ecfe30ec" alt="Big Testicle Coin meme 2" loading="lazy" width="480" height="480"><span>#02 boss fight</span></button><button class="ck-card" type="button" data-i="2"><img class="gimg" src="assets/meme7.webp?v=bc152bd0" alt="Big Testicle Coin meme 3" loading="lazy" width="480" height="480"><span>#03 bonus stage</span></button><button class="ck-card" type="button" data-i="3"><img class="gimg" src="assets/meme8.webp?v=02251b39" alt="Big Testicle Coin meme 4" loading="lazy" width="480" height="480"><span>#04 secret room</span></button><button class="ck-card" type="button" data-i="4"><img class="gimg" src="assets/meme9.webp?v=a46e9c51" alt="Big Testicle Coin meme 5" loading="lazy" width="480" height="480"><span>#05 high score</span></button><button class="ck-card" type="button" data-i="5"><img class="gimg" src="assets/meme10.webp?v=51830bca" alt="Big Testicle Coin meme 6" loading="lazy" width="480" height="480"><span>#06 continue?</span></button><button class="ck-card" type="button" data-i="6"><img class="gimg" src="assets/meme11.webp?v=5370d06e" alt="Big Testicle Coin meme 7" loading="lazy" width="480" height="480"><span>#07 player two</span></button><button class="ck-card" type="button" data-i="7"><img class="gimg" src="assets/meme12.webp?v=1f6906a8" alt="Big Testicle Coin meme 8" loading="lazy" width="480" height="480"><span>#08 game over? no</span></button></div></div></section>
 <section id="buy" class="ck-sec ck-how "><div class="ck-w">
 <p class="ck-kick rv">How to play</p><h2 class="ck-h2 rv">Insert <em>$BTC</em></h2>
 <ol class="ck-steps rv-stagger">
 <li class="ck-step"><span class="n">01</span><h3>Get a wallet</h3><p>Install Phantom or any Solana wallet. Keep your seed phrase offline.</p></li>
 <li class="ck-step"><span class="n">02</span><h3>Load SOL</h3><p>Buy SOL on an exchange and send it to your wallet.</p></li>
 <li class="ck-step"><span class="n">03</span><h3>Copy the CA</h3><p>Use only the official contract address posted here.</p><button class="copy-btn" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> Copy CA</button></li>
-<li class="ck-step"><span class="n">04</span><h3>Swap on Pump.fun</h3><p>Paste the CA, pick an amount, confirm. Welcome in.</p><a class="btn btn-main sm" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $BTC <span class="dexon">on Pump.fun</span></a></li>
+<li class="ck-step"><span class="n">04</span><h3>Swap on Pump.fun</h3><p>Paste the CA, pick an amount, confirm. Welcome in.</p><a class="btn btn-main sm" data-buy href="https://pump.fun/coin/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy $BTC <span class="dexon">on Pump.fun</span></a></li>
 </ol></div></section>
 <section id="tokenomics" class="ck-sec ck-tok "><div class="ck-w ck-tk">
-<div class="ck-tk-art rv-l"><img src="assets/logo.png" alt="Big Testicle Coin logo" loading="lazy" width="420" height="420"></div>
+<div class="ck-tk-art rv-l"><img src="assets/logo.png?v=fc348929" alt="Big Testicle Coin logo" loading="lazy" width="420" height="420"></div>
 <div class="rv-r" style="min-width:0"><p class="ck-kick">Spec sheet</p><h2 class="ck-h2">Game <em>stats</em></h2>
 <div class="ck-pills"><div class="ck-pill"><small>Name</small><b>Big Testicle Coin</b></div><div class="ck-pill"><small>Ticker</small><b>$BTC</b></div><div class="ck-pill"><small>Chain</small><b>Solana</b></div><div class="ck-pill"><small>Supply</small><b>1B</b></div><div class="ck-pill"><small>Tax</small><b>0/0</b></div><div class="ck-pill"><small>LP</small><b>Burned</b></div></div>
-<div class="ca-box"><span class="lbl">CA</span><code class="ca-text">TBA</code><button class="copy-btn" type="button" data-copy aria-label="Copy contract address"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> Copy</button></div>
+<div class="ca-box"><span class="lbl">CA</span><code class="ca-text">GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump</code><button class="copy-btn" type="button" data-copy aria-label="Copy contract address"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> Copy</button></div>
 <p class="ck-note">Only trust the CA posted here and on official $BTC channels.</p></div></div></section>
 <section class="ic-score" id="scores"><h2>High <em>scores</em></h2><ol class="ic-board">
 <li><b>1ST</b><span>Big Testicle Coin holders</span><span>999,999</span></li><li><b>2ND</b><span>Diamond hands</span><span>777,777</span></li><li><b>3RD</b><span>$BTC early cult</span><span>420,690</span></li><li><b>4TH</b><span>Paper hands</span><span>000,001</span></li></ol></section>
 
 <section id="chart" class="ck-sec ck-chartsec "><div class="ck-w">
 <p class="ck-kick rv">Live feed</p><h2 class="ck-h2 rv">The <em>chart</em></h2>
-<div class="ck-chart rv"><iframe id="ckFrame" title="Big Testicle Coin chart" loading="lazy" data-src="https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15"></iframe><div class="ov" id="ckOv"><img src="assets/logo.png" alt="" loading="lazy"><p>CHART ACTIVATES AT LAUNCH</p><a class="btn btn-ghost sm" href="https://dexscreener.com/solana" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> DexScreener</a></div></div></div></section>
+<div class="ck-chart rv"><iframe id="ckFrame" title="Big Testicle Coin chart" loading="lazy" data-src="https://dexscreener.com/solana/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15"></iframe><div class="ov" id="ckOv"><img src="assets/logo.png?v=fc348929" alt="" loading="lazy"><p>CHART ACTIVATES AT LAUNCH</p><a class="btn btn-ghost sm" href="https://dexscreener.com/solana/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> DexScreener</a></div></div></div></section>
 <section id="community" class="ck-sec ck-commsec "><div class="ck-w ck-comm">
-<div class="ck-comm-art rv-l"><img class="gchar" src="assets/char3.webp" alt="Big Testicle Coin" loading="lazy"></div>
+<div class="ck-comm-art rv-l"><img class="gchar" src="assets/char3.webp?v=d3bf245c" alt="Big Testicle Coin" loading="lazy"></div>
 <div class="rv-r"><p class="ck-kick">Multiplayer</p><h2 class="ck-h2">Join the <em>cult</em></h2><p class="ck-lead">Join the Big Testicle Coin community. Buy $BTC. Make memes. Never sell.</p>
-<div class="cta-row"><a class="btn btn-ghost" data-s href=""><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X</a><a class="btn btn-ghost" data-s href=""><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Telegram</a><a class="btn btn-main" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $BTC <span class="dexon">on Pump.fun</span></a></div></div></div></section>
-<section class="ic-coin" data-bg="3"><img class="gchar" src="assets/char4.webp" alt="Big Testicle Coin" loading="lazy"><h2>Insert coin</h2><p>Join the Big Testicle Coin community. Buy $BTC. Make memes. Never sell.</p><a class="btn btn-main ic-btn" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $BTC <span class="dexon">on Pump.fun</span></a></section>
+<div class="cta-row"><a class="btn btn-ghost" data-s href="https://x.com/btcsol_x"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X</a><a class="btn btn-ghost" data-s href="https://t.me/btcsol_tg"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Telegram</a><a class="btn btn-main" data-buy href="https://pump.fun/coin/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy $BTC <span class="dexon">on Pump.fun</span></a></div></div></div></section>
+<section class="ic-coin" data-bg="3"><img class="gchar" src="assets/char4.webp?v=df7bec67" alt="Big Testicle Coin" loading="lazy"><h2>Insert coin</h2><p>Join the Big Testicle Coin community. Buy $BTC. Make memes. Never sell.</p><a class="btn btn-main ic-btn" data-buy href="https://pump.fun/coin/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy $BTC <span class="dexon">on Pump.fun</span></a></section>
 
 
-<div class="xlinks" data-xlinks></div>
-<footer class="ic-foot"><a class="ic-word" href="#top"><img src="assets/logo.png" alt="" width="34" height="34">Big Testicle Coin</a><p>Big Testicle Coin ($BTC) is a meme coin with no intrinsic value or expectation of financial return. Not financial advice. Thanks for playing.</p><span class="soc"><a data-s href="" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a></span></footer>
+<div class="xlinks" data-xlinks><a href="https://x.com/btcsol_x" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a href="https://t.me/btcsol_tg" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg><span>Telegram</span></a></div>
+<footer class="ic-foot"><a class="ic-word" href="#top"><img src="assets/logo.png?v=fc348929" alt="" width="34" height="34">Big Testicle Coin</a><p>Big Testicle Coin ($BTC) is a meme coin with no intrinsic value or expectation of financial return. Not financial advice. Thanks for playing.</p><span class="soc"><a data-s href="https://x.com/btcsol_x" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="https://t.me/btcsol_tg" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a></span></footer>
 </main>
-<div class="mbar"><a class="btn btn-main sm" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy <span class="dexon">on Pump.fun</span></a><a class="btn btn-ghost sm" href="https://dexscreener.com/solana" target="_blank" rel="noopener">Chart</a><button class="copy-btn" type="button" data-copy aria-label="Copy contract address">Copy CA</button></div>
+<div class="mbar"><a class="btn btn-main sm" data-buy href="https://pump.fun/coin/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy <span class="dexon">on Pump.fun</span></a><a class="btn btn-ghost sm" href="https://dexscreener.com/solana/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump" target="_blank" rel="noopener">Chart</a><button class="copy-btn" type="button" data-copy aria-label="Copy contract address">Copy CA</button></div>
 <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Meme viewer" hidden><button class="lb-close" type="button" aria-label="Close">&times;</button><button class="lb-nav prev" type="button" aria-label="Previous">&lsaquo;</button><img id="lbImg" alt=""><button class="lb-nav next" type="button" aria-label="Next">&rsaquo;</button></div>
 
 <div id="toast" role="status" aria-live="polite"></div>
 <script>
 (function(){
-var CA="TBA";
+var CA="GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump";
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
 var mobile=/Mobi|Android/i.test(navigator.userAgent)||window.innerWidth<700;
@@ -759,7 +777,7 @@ function burst(x,y,n,cls){if(reduce)return;n=n||14;cls=cls||'sparkle-burst';
 function confetti(x,y){burst(x,y,mobile?12:28,'confetti-piece')}
 function copy(ev){var done=function(){toast('Contract address copied ✓');if(ev&&ev.clientX)confetti(ev.clientX,ev.clientY)};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(CA).then(done,fb)}else fb();function fb(){var ta=document.createElement('textarea');ta.value=CA;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();done()}}
 document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();copy(e);b.classList.add('copied');setTimeout(function(){b.classList.remove('copied')},1200)})});
-document.querySelectorAll('a[href="https://pump.fun/"],a.btn-pulse,[data-buy]').forEach(function(a){a.addEventListener('click',function(e){if(e.clientX)confetti(e.clientX,e.clientY)})});
+document.querySelectorAll('a[href="https://pump.fun/coin/GMXYEB8JfRRPxxLCBxWWxFePjMfSfdQUVmd8YHsupump"],a.btn-pulse,[data-buy]').forEach(function(a){a.addEventListener('click',function(e){if(e.clientX)confetti(e.clientX,e.clientY)})});
 document.querySelectorAll('a[data-s]').forEach(function(a){var h=a.getAttribute('href');if(!h||h==='#'||h.indexOf('{{')===0){a.style.display='none'}else{a.target='_blank';a.rel='noopener'}});
 document.querySelectorAll('.mq').forEach(function(m){var t=m.querySelector('.mq-track');if(t){m.appendChild(t.cloneNode(true)).setAttribute('aria-hidden','true')}});
 /* reveals */
@@ -956,7 +974,7 @@ setTimeout(function(){
 })();
 
 /* ===== mx-art (POLISH phase 1): logo cutout, varied placement, no repeated-image grids =====
-   Runs in every generated site. HTML keeps src="assets/logo.png" so redeploy/char wiring is untouched;
+   Runs in every generated site. HTML keeps src="assets/logo.png?v=fc348929" so redeploy/char wiring is untouched;
    everything here is a runtime treatment of whatever image ended up in a slot. */
 (function(){
   var D = document, H = D.documentElement;
@@ -1026,55 +1044,28 @@ setTimeout(function(){
   var rots = [-5, 3.5, -2.5, 6, -4, 2], scs = [1, .94, 1.04, .9, 1.02, .96], vi = 0;
   slots.forEach(function(i){ if (!isLogo(i) || i.closest('.mx-hide') || i.classList.contains('mx-var')) return;
     i.style.setProperty('--mx-rot', rots[vi % rots.length] + 'deg'); i.style.setProperty('--mx-sc', scs[vi % scs.length]); i.classList.add('mx-logo'); vi++; });
-  /* 3. cut the logo out of its background (flood fill from the border); fall back to a round glowing badge */
-  if (!LOGO) return;
-  var targets = slots.filter(function(i){ return isLogo(i) && !i.closest('.mx-hide'); });
-  if (!targets.length) return;
-  function done(url){ targets.forEach(function(i){ if (url) { i.src = url; i.classList.add('mx-cut'); } else i.classList.add('mx-round'); }); H.setAttribute('data-mx-logo', url ? 'cut' : 'round'); }
-  if (/\.svg(\?|$)|^data:image\/svg/i.test(LOGO)) { H.setAttribute('data-mx-logo', 'svg'); targets.forEach(function(i){ i.classList.add('mx-cut'); }); return; }
-  var im = new Image(); im.decoding = 'async';
-  im.onerror = function(){ done(''); };
-  im.onload = function(){
-    try {
-      var M = 640, w = im.naturalWidth, h = im.naturalHeight, s = Math.min(1, M / Math.max(w, h)); w = Math.max(1, Math.round(w * s)); h = Math.max(1, Math.round(h * s));
-      var c = D.createElement('canvas'); c.width = w; c.height = h; var x = c.getContext('2d'); x.drawImage(im, 0, 0, w, h);
-      var d = x.getImageData(0, 0, w, h), a = d.data, N = w * h, k, i;
-      /* border statistics */
-      var bord = [], trans = 0;
-      for (k = 0; k < w; k++) { bord.push(k, (h - 1) * w + k); } for (k = 1; k < h - 1; k++) { bord.push(k * w, k * w + w - 1); }
-      bord.forEach(function(p){ if (a[p * 4 + 3] < 24) trans++; });
-      if (trans / bord.length > .6) { done(trim(c, x, a, w, h)); return; }     /* already transparent */
-      var rs = [], gs = [], bs = []; bord.forEach(function(p){ rs.push(a[p * 4]); gs.push(a[p * 4 + 1]); bs.push(a[p * 4 + 2]); });
-      function med(v){ v.sort(function(p, q){ return p - q; }); return v[v.length >> 1]; }
-      var R = med(rs), G = med(gs), B = med(bs), T = 46;
-      function dist(p){ var dr = a[p * 4] - R, dg = a[p * 4 + 1] - G, db = a[p * 4 + 2] - B; return Math.sqrt(dr * dr + dg * dg + db * db); }
-      var uni = bord.filter(function(p){ return dist(p) < T; }).length / bord.length;
-      if (uni < .5) { done(""); return; }
-      var mark = new Uint8Array(N), st = []; bord.forEach(function(p){ if (dist(p) < T) { mark[p] = 1; st.push(p); } });
-      while (st.length) { var p = st.pop(), px = p % w, py = (p - px) / w;
-        var nb = [px > 0 ? p - 1 : -1, px < w - 1 ? p + 1 : -1, py > 0 ? p - w : -1, py < h - 1 ? p + w : -1];
-        for (k = 0; k < 4; k++) { var q = nb[k]; if (q >= 0 && !mark[q] && dist(q) < T) { mark[q] = 1; st.push(q); } } }
-      var cut = 0; for (i = 0; i < N; i++) if (mark[i]) cut++;
-      var f = cut / N; if (f < .06 || f > .88) { done(''); return; }
-      /* soft edge: background pixels -> 0, pixels touching background -> partial by colour distance */
-      for (i = 0; i < N; i++) {
-        if (mark[i]) { a[i * 4 + 3] = 0; continue; }
-        var ix = i % w, iy = (i - ix) / w, edge = (ix > 0 && mark[i - 1]) || (ix < w - 1 && mark[i + 1]) || (iy > 0 && mark[i - w]) || (iy < h - 1 && mark[i + w]);
-        if (edge) a[i * 4 + 3] = Math.min(a[i * 4 + 3], Math.round(255 * Math.min(1, Math.max(.25, (dist(i) - T * .5) / (T * 1.5)))));
-      }
-      x.putImageData(d, 0, 0); done(trim(c, x, a, w, h));
-    } catch (e) { done(''); }   /* tainted canvas (file://) etc. */
-  };
-  function trim(c, x, a, w, h){
-    var x0 = w, y0 = h, x1 = -1, y1 = -1;
-    for (var yy = 0; yy < h; yy++) for (var xx = 0; xx < w; xx++) if (a[(yy * w + xx) * 4 + 3] > 20) { if (xx < x0) x0 = xx; if (xx > x1) x1 = xx; if (yy < y0) y0 = yy; if (yy > y1) y1 = yy; }
-    if (x1 < 0) return '';
-    var pad = Math.round(Math.max(x1 - x0, y1 - y0) * .03), o = D.createElement('canvas');
-    x0 = Math.max(0, x0 - pad); y0 = Math.max(0, y0 - pad); x1 = Math.min(w - 1, x1 + pad); y1 = Math.min(h - 1, y1 + pad);
-    o.width = x1 - x0 + 1; o.height = y1 - y0 + 1; o.getContext('2d').drawImage(c, x0, y0, o.width, o.height, 0, 0, o.width, o.height);
-    var u = o.toDataURL('image/webp', .92); return u.indexOf('data:image/webp') === 0 ? u : o.toDataURL('image/png');
+  /* 3. the uploaded logo is always shown exactly as uploaded: no cutout, recolor, blend or colour filter.
+     Template colour filters (sepia/grayscale/saturate/brightness/hue-rotate/invert/contrast/url()) and
+     mix-blend-mode are stripped from every logo <img> and from wrappers that hold only the logo;
+     drop-shadow/blur are kept. Faint ghost/shadow copies (opacity <= .5) stay as the template made them. */
+  var COLF = /(grayscale|sepia|saturate|hue-rotate|invert|brightness|contrast|url)\(/i;
+  function keepFx(f){ var out = [], re = /(drop-shadow|blur)\((?:[^()]|\([^()]*\))*\)/gi, mm; while ((mm = re.exec(f))) out.push(mm[0]); return out.length ? out.join(' ') : 'none'; }
+  function clean(el){ var cs = getComputedStyle(el);
+    if (cs.filter && cs.filter !== 'none' && COLF.test(cs.filter)) el.style.setProperty('filter', keepFx(cs.filter), 'important');
+    if (cs.mixBlendMode && cs.mixBlendMode !== 'normal') el.style.setProperty('mix-blend-mode', 'normal', 'important'); }
+  function onlyLogo(el){ var a = el.querySelectorAll('img,video,canvas,svg,picture'); for (var k = 0; k < a.length; k++) if (a[k].tagName !== 'IMG' || !isLogo(a[k])) return false; return a.length > 0; }
+  function origLogo(){
+    Array.prototype.forEach.call(D.querySelectorAll('img'), function(i){
+      if (!isLogo(i)) return;
+      var op = parseFloat(getComputedStyle(i).opacity); if (op > 0 && op <= .5 && !i.classList.contains('mx-orig')) return;   /* ghost / silhouette copy */
+      i.classList.add('mx-orig'); clean(i);
+      for (var p = i.parentElement, k = 0; p && p !== D.body && k < 4; p = p.parentElement, k++) { if (!onlyLogo(p)) break; clean(p); }
+    });
   }
-  im.src = LOGO;
+  if (LOGO) H.setAttribute('data-mx-logo', 'original');
+  origLogo(); window.addEventListener('load', origLogo); setTimeout(origLogo, 1200); setTimeout(origLogo, 3500);
+  var olT = 0; window.addEventListener('scroll', function(){ if (olT) return; olT = setTimeout(function(){ olT = 0; origLogo(); }, 700); }, {passive: true});
+  D.addEventListener('mouseover', function(e){ var t = e.target; if (t && t.tagName === 'IMG' && t.classList.contains('mx-orig')) { t.style.removeProperty('filter'); clean(t); } }, true);
 })();
 
 /* ===== motion pack: auto-applied effects for every template =====
@@ -1280,6 +1271,309 @@ setTimeout(function(){
   H.setAttribute('data-mx-list', FX.list.join(' '));
   H.setAttribute('data-mx-effects', FX.count);
 }, 0);
+
+/* ===== mx-gl3d: shared themed 3D layer (no libraries, Canvas2D projection + CSS 3D) =====
+   Opt-in per template via body attributes (assemble.py injects them from 3d-upgrade/modes.json):
+     data-mx-gl="mode[:variant][@at]; selector|mode@at"   modes: network globe crystal orbs field helix rings warp coins embers
+       at = mascot | right | left | center | top | bottom | full
+     data-mx-gl-tone="dark|light"   dark = additive glow (screen), light = solid ink-tinted strokes
+     data-mx-3d="cards mascot rise extrude chroma"   CSS 3D depth treatments
+   Colors come from CSS tokens (--a --a2 --part --ink) and are re-read when the theme changes.
+   Reduced motion (or the studio preview) renders one still frame; hidden/off-screen canvases pause. */
+(function(){
+  var D = document, H = D.documentElement, B = D.body; if (!B) return;
+  var spec = (B.getAttribute('data-mx-gl') || '').trim(), fx3 = ' ' + (B.getAttribute('data-mx-3d') || '') + ' ';
+  var mm = function(q){ return window.matchMedia && window.matchMedia(q).matches; };
+  var reduce = mm('(prefers-reduced-motion: reduce)') || H.classList.contains('reduced-motion');
+  var fine = mm('(pointer:fine)'), small = window.innerWidth < 700;
+  var tone = B.getAttribute('data-mx-gl-tone') || 'dark';
+  var h1 = D.querySelector('h1');
+  var hero = D.querySelector('.hero') || (h1 && h1.closest('section,header,[class*="hero"],[class*="mast"],[class*="splash"]')) || D.querySelector('section');
+  var ic = D.querySelector('link[rel="icon"]'), LOGO = ic ? ic.getAttribute('href') || '' : '';
+  var TK = ((D.title.match(/\(\$([^)]+)\)/) || [])[1] || '$').replace(/[{}]/g, '');
+  var M = { x: 0, y: 0, tx: 0, ty: 0, sx: -1e4, sy: -1e4 };
+  var list = [];
+  function rnd(a, b){ return a + Math.random() * (b - a); }
+  function el(t, c, p){ var e = D.createElement(t); if (c) e.className = c; if (p) p.appendChild(e); return e; }
+  function positioned(x){ if (getComputedStyle(x).position === 'static') x.style.position = 'relative'; }
+
+  /* ---------- palette from tokens ---------- */
+  function parseCol(s){
+    var m = s.match(/color\(srgb\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)/); if (m) return [m[1] * 255, m[2] * 255, m[3] * 255].map(Math.round);
+    m = s.match(/rgba?\(\s*([\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]+)/); return m ? [+m[1], +m[2], +m[3]] : null;
+  }
+  function palette(host){
+    var p = el('i', '', host), out = {}; p.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden;visibility:hidden';
+    [['a', 'var(--a,#ffcc33)'], ['a2', 'var(--a2,var(--a,#ff6699))'], ['part', 'var(--part,var(--a2,var(--a,#fff)))'], ['ink', 'var(--ink,#ffffff)']].forEach(function(k){
+      p.style.color = '#fff'; p.style.color = k[1]; out[k[0]] = parseCol(getComputedStyle(p).color) || [255, 255, 255];
+    });
+    p.remove(); return out;
+  }
+  function css(c, a){ return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + (a == null ? 1 : a) + ')'; }
+  function mix(c, d, t){ return [0, 1, 2].map(function(i){ return Math.round(c[i] + (d[i] - c[i]) * t); }); }
+  function sprite(c, light){
+    var s = D.createElement('canvas'); s.width = s.height = 64; var x = s.getContext('2d'), g = x.createRadialGradient(32, 32, 0, 32, 32, 32);
+    if (light) { g.addColorStop(0, css(c, 1)); g.addColorStop(.35, css(c, .85)); g.addColorStop(1, css(c, 0)); }
+    else { g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(.22, css(mix(c, [255, 255, 255], .45), .9)); g.addColorStop(.5, css(c, .35)); g.addColorStop(1, css(c, 0)); }
+    x.fillStyle = g; x.fillRect(0, 0, 64, 64); return s;
+  }
+
+  /* ---------- math ---------- */
+  function rot(p, ax, ay){ var cy = Math.cos(ay), sy = Math.sin(ay), cx = Math.cos(ax), sx = Math.sin(ax);
+    var x = p[0] * cy + p[2] * sy, z = -p[0] * sy + p[2] * cy, y = p[1] * cx - z * sx; z = p[1] * sx + z * cx; return [x, y, z]; }
+  function fib(n){ var o = [], g = Math.PI * (3 - Math.sqrt(5)); for (var i = 0; i < n; i++) { var y = 1 - (i / (n - 1)) * 2, r = Math.sqrt(1 - y * y), t = g * i; o.push([Math.cos(t) * r, y, Math.sin(t) * r]); } return o; }
+  var ICO = (function(){ var t = (1 + Math.sqrt(5)) / 2, v = [[-1, t, 0], [1, t, 0], [-1, -t, 0], [1, -t, 0], [0, -1, t], [0, 1, t], [0, -1, -t], [0, 1, -t], [t, 0, -1], [t, 0, 1], [-t, 0, -1], [-t, 0, 1]];
+    var n = Math.hypot(1, t); v = v.map(function(p){ return [p[0] / n, p[1] / n, p[2] / n]; }); var e = [];
+    for (var i = 0; i < 12; i++) for (var j = i + 1; j < 12; j++) { var d = Math.hypot(v[i][0] - v[j][0], v[i][1] - v[j][1], v[i][2] - v[j][2]); if (d < 1.1) e.push([i, j]); } return { v: v, e: e }; })();
+  var OCT = { v: [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]], e: [[0, 2], [0, 3], [0, 4], [0, 5], [1, 2], [1, 3], [1, 4], [1, 5], [2, 4], [2, 5], [3, 4], [3, 5]] };
+  var CUBE = (function(){ var v = [], e = []; for (var i = 0; i < 8; i++) v.push([(i & 1 ? 1 : -1) * .62, (i & 2 ? 1 : -1) * .62, (i & 4 ? 1 : -1) * .62]);
+    for (i = 0; i < 8; i++) for (var b = 1; b < 8; b <<= 1) if (!(i & b)) e.push([i, i | b]); return { v: v, e: e }; })();
+
+  /* ---------- modes: each returns {draw(ctx,t,S)} where S = {cx,cy,R,w,h,form,proj,spr,P,light} ---------- */
+  var MODES = {
+    network: function(S){
+      var N = small ? 110 : 240, home = [], start = [], pos = [], sz = [], hot = [], ed = [];
+      for (var i = 0; i < N; i++) { var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = i < N * .15 ? Math.random() * .55 : .85 + Math.random() * .2 + (Math.random() < .06 ? .55 : 0);
+        home.push([Math.sin(v) * Math.cos(u) * r * 1.2, Math.cos(v) * r, Math.sin(v) * Math.sin(u) * r * .95]); start.push([rnd(-4, 4), rnd(-3, 3), rnd(-3, 2)]); pos.push(start[i].slice()); hot.push(Math.random() < .22); sz.push(hot[i] ? rnd(5, 8) : rnd(3, 5)); }
+      for (i = 0; i < N; i++) { var d = []; for (var j = 0; j < N; j++) if (j !== i) { var a = home[i], b = home[j]; d.push([(a[0] - b[0]) * (a[0] - b[0]) + (a[1] - b[1]) * (a[1] - b[1]) + (a[2] - b[2]) * (a[2] - b[2]), j]); }
+        d.sort(function(p, q){ return p[0] - q[0]; }); for (var k = 0; k < 3; k++) if (d[k][0] < .1 && d[k][1] > i) ed.push([i, d[k][1]]); }
+      for (i = 0; i < N; i++) { var L = Math.hypot(home[i][0], home[i][1], home[i][2]); if (L > 1.25) ed.push([-1, i]); }
+      var pulses = []; for (i = 0; i < (small ? 24 : 60); i++) pulses.push({ e: (Math.random() * ed.length) | 0, t: Math.random(), s: rnd(.4, 1.2) });
+      var scr = [];
+      return { draw: function(x, t, dt){
+        var br = 1 + Math.sin(t * 1.2) * .03, ay = t * .08 + M.x * .5, ax = -M.y * .3;
+        for (var i = 0; i < N; i++) { var h = home[i], f = S.form, q = [h[0] * br + Math.sin(t * .7 + i) * .02, h[1] * br + Math.cos(t * .6 + i * 1.3) * .02, h[2] * br];
+          q = [start[i][0] + (q[0] - start[i][0]) * f, start[i][1] + (q[1] - start[i][1]) * f, start[i][2] + (q[2] - start[i][2]) * f];
+          var p = pos[i]; p[0] += (q[0] - p[0]) * .08; p[1] += (q[1] - p[1]) * .08; p[2] += (q[2] - p[2]) * .08;
+          var s = S.proj(rot(p, ax, ay)); var dx = s[0] - M.sx, dy = s[1] - M.sy, dd = dx * dx + dy * dy, rr = S.R * S.R * .12;
+          if (dd < rr) { var k = (1 - dd / rr) * 26; s[0] += dx / Math.sqrt(dd + 1) * k; s[1] += dy / Math.sqrt(dd + 1) * k; } scr[i] = s; }
+        var hub = S.proj(rot([0, 0, 0], ax, ay));
+        x.lineWidth = S.light ? 1.3 : 1; x.strokeStyle = css(S.light ? mix(S.P.a2, [0, 0, 0], .35) : mix(S.P.ink, S.P.a2, .4), (S.light ? .55 : .2) * S.form); x.beginPath();
+        ed.forEach(function(e){ var A = e[0] < 0 ? hub : scr[e[0]], C = scr[e[1]]; if (e[0] >= 0) { x.moveTo(A[0], A[1]); x.lineTo(C[0], C[1]); } }); x.stroke();
+        x.strokeStyle = css(S.P.a, (S.light ? .6 : .32) * S.form); x.beginPath(); ed.forEach(function(e){ if (e[0] < 0) { x.moveTo(hub[0], hub[1]); x.lineTo(scr[e[1]][0], scr[e[1]][1]); } }); x.stroke();
+        for (i = 0; i < N; i++) { var s2 = scr[i], z = s2[3], r = sz[i] * z * (1 + .25 * Math.sin(t * 2 + i)) * S.k; x.globalAlpha = Math.min(1, .35 + z * .6); x.drawImage(hot[i] ? S.spr.a : S.spr.ink, s2[0] - r * 2, s2[1] - r * 2, r * 4, r * 4); }
+        var hr = 26 * S.k * S.form; x.globalAlpha = 1; x.drawImage(S.spr.a, hub[0] - hr * 2, hub[1] - hr * 2, hr * 4, hr * 4);
+        pulses.forEach(function(p){ p.t += dt * p.s; if (p.t > 1) { p.t = 0; p.e = (Math.random() * ed.length) | 0; } var e = ed[p.e], A = e[0] < 0 ? hub : scr[e[0]], C = scr[e[1]];
+          var px = A[0] + (C[0] - A[0]) * p.t, py = A[1] + (C[1] - A[1]) * p.t, r = 7 * S.k; x.globalAlpha = S.form; x.drawImage(S.spr.part, px - r * 2, py - r * 2, r * 4, r * 4); });
+        x.globalAlpha = 1; } };
+    },
+    globe: function(S){
+      var pts = fib(small ? 320 : 680), sat = []; for (var i = 0; i < 5; i++) sat.push({ r: rnd(1.25, 1.6), s: rnd(.3, .7) * (i % 2 ? 1 : -1), tilt: rnd(-.9, .9), o: rnd(0, 6.3) });
+      return { draw: function(x, t){
+        var ay = t * .12 + M.x * .6, ax = .35 - M.y * .3, f = S.form;
+        for (var i = 0; i < pts.length; i++) { var p = pts[i], q = rot([p[0] * f, p[1] * f, p[2] * f], ax, ay), s = S.proj(q), front = q[2] < 0, r = (front ? 2.4 : 1.4) * s[3] * S.k;
+          x.globalAlpha = front ? .95 : .28; x.drawImage(i % 9 ? S.spr.ink : S.spr.a, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); }
+        x.globalAlpha = .5; x.strokeStyle = css(S.P.a2, .5); x.lineWidth = 1.2; x.beginPath();
+        for (var k = 0; k <= 96; k++) { var a = k / 96 * Math.PI * 2, s2 = S.proj(rot([Math.cos(a) * 1.35, 0, Math.sin(a) * 1.35], ax + .25, ay * .3)); k ? x.lineTo(s2[0], s2[1]) : x.moveTo(s2[0], s2[1]); } x.stroke();
+        sat.forEach(function(o, j){ var a = o.o + t * o.s, s3 = S.proj(rot([Math.cos(a) * o.r, Math.sin(a) * o.r * o.tilt * .5, Math.sin(a) * o.r], ax, ay * .2)), r = 9 * s3[3] * S.k; x.globalAlpha = 1; x.drawImage(j % 2 ? S.spr.a : S.spr.part, s3[0] - r * 2, s3[1] - r * 2, r * 4, r * 4); });
+        x.globalAlpha = 1; } };
+    },
+    crystal: function(S, variant){
+      var G = variant === 'cube' ? CUBE : variant === 'oct' ? OCT : ICO, IN = variant === 'cube' ? OCT : variant === 'oct' ? CUBE : OCT, dust = [];
+      for (var i = 0; i < (small ? 60 : 140); i++) dust.push([rnd(-2.4, 2.4), rnd(-1.6, 1.6), rnd(-1.5, 1.5)]);
+      function wire(g, sc, ax, ay, col, w){ var s = g.v.map(function(v){ return S.proj(rot([v[0] * sc, v[1] * sc, v[2] * sc], ax, ay)); });
+        x0.lineWidth = w; x0.strokeStyle = col; x0.beginPath(); g.e.forEach(function(e){ x0.moveTo(s[e[0]][0], s[e[0]][1]); x0.lineTo(s[e[1]][0], s[e[1]][1]); }); x0.stroke(); return s; }
+      var x0;
+      return { draw: function(x, t){
+        x0 = x; var ay = t * .25 + M.x * .8, ax = t * .13 - M.y * .5, f = S.form, b = 1 + Math.sin(t * 1.4) * .04;
+        dust.forEach(function(d, i){ var s = S.proj(rot(d, ax * .2, ay * .2)), r = 1.6 * s[3] * S.k; x.globalAlpha = .55; x.drawImage(S.spr.part, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); });
+        x.globalAlpha = 1;
+        var vs = wire(G, 1.05 * f * b, ax, ay, css(S.P.a, .85), 1.6 * S.k + .4);
+        wire(G, 1.12 * f * b, ax, ay, css(S.P.a2, .25), 5 * S.k);
+        wire(IN, .5 * f, -ax * 1.3, -ay * 1.6, css(S.P.a2, .75), 1.2);
+        vs.forEach(function(s, i){ var r = 7 * s[3] * S.k * (1 + .3 * Math.sin(t * 3 + i)); x.drawImage(i % 3 ? S.spr.ink : S.spr.a, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); });
+        var c = S.proj([0, 0, 0]), cr = 40 * S.k * f; x.globalAlpha = .55; x.drawImage(S.spr.a2, c[0] - cr * 2, c[1] - cr * 2, cr * 4, cr * 4); x.globalAlpha = 1; } };
+    },
+    orbs: function(S){
+      var O = []; for (var i = 0; i < (small ? 9 : 16); i++) O.push({ p: [rnd(-2.6, 2.6), rnd(-1.6, 1.6), rnd(-1.2, 2)], r: rnd(.08, .26), c: i % 3, ph: rnd(0, 6.3), sp: rnd(.2, .5) });
+      return { draw: function(x, t){
+        var q = O.map(function(o){ var p = [o.p[0] + Math.sin(t * o.sp + o.ph) * .18, o.p[1] + Math.cos(t * o.sp * .8 + o.ph) * .22, o.p[2]]; p[0] += M.x * (1.4 - p[2] * .4) * .3; p[1] += M.y * (1.4 - p[2] * .4) * .2; return { o: o, s: S.proj(p) }; })
+          .sort(function(a, b){ return a.s[2] - b.s[2]; });
+        q.forEach(function(e){ var o = e.o, s = e.s, R = o.r * S.R * s[3] * S.form, c = o.c === 0 ? S.P.a : o.c === 1 ? S.P.a2 : S.P.part; if (R < 1) return;
+          var g = x.createRadialGradient(s[0] - R * .35, s[1] - R * .4, R * .05, s[0], s[1], R);
+          g.addColorStop(0, css(mix(c, [255, 255, 255], .75), .95)); g.addColorStop(.45, css(c, .85)); g.addColorStop(1, css(mix(c, [0, 0, 0], .55), .9));
+          x.globalAlpha = Math.max(.25, Math.min(1, s[3] * .9)); x.fillStyle = g; x.beginPath(); x.arc(s[0], s[1], R, 0, 6.2832); x.fill();
+          x.globalAlpha *= .5; x.strokeStyle = css(mix(c, [255, 255, 255], .5), .6); x.lineWidth = Math.max(1, R * .04); x.beginPath(); x.arc(s[0], s[1], R * .96, -2.4, -.9); x.stroke();
+          x.globalAlpha = .9; x.fillStyle = 'rgba(255,255,255,.75)'; x.beginPath(); x.ellipse(s[0] - R * .38, s[1] - R * .45, R * .16, R * .09, -.6, 0, 6.2832); x.fill(); });
+        x.globalAlpha = 1; } };
+    },
+    field: function(S){
+      var cols = small ? 34 : 58, rows = small ? 18 : 28;
+      return { draw: function(x, t){
+        var f = S.form, cam = 2.2;
+        for (var j = rows - 1; j >= 0; j--) { var z = j / rows * 6 + .4, prev = null; x.beginPath();
+          for (var i = 0; i < cols; i++) { var u = (i / (cols - 1) - .5) * 9, y = .9 + Math.sin(u * .9 + t * 1.1 + z * .6) * .16 * f + Math.cos(z * 1.3 - t * .8) * .12 * f - M.y * .2;
+            var sc = cam / (cam + z), px = S.w / 2 + (u + M.x * .6 * z * .2) * sc * S.w * .14, py = S.h * .42 + y * sc * S.h * .5;
+            i ? x.lineTo(px, py) : x.moveTo(px, py);
+            if (i % 2 === 0) { var r = 2.2 * sc * S.k * 1.6; x.globalAlpha = Math.min(1, sc * 1.4); x.drawImage(j % 4 ? S.spr.part : S.spr.a, px - r * 2, py - r * 2, r * 4, r * 4); } }
+          x.globalAlpha = Math.min(S.light ? .85 : .6, (S.light ? .3 : .12) + (cam / (cam + z)) * .6); x.strokeStyle = css(mix(S.P.a, S.P.a2, j / rows), .7); x.lineWidth = 1; x.stroke(); }
+        x.globalAlpha = 1; } };
+    },
+    helix: function(S){
+      var n = small ? 46 : 80;
+      return { draw: function(x, t){
+        var ay = t * .6 + M.x * .8, ax = -M.y * .25 + .15, f = S.form, A = [], Bp = [];
+        for (var i = 0; i < n; i++) { var v = i / (n - 1), y = (v - .5) * 3.2, a = v * Math.PI * 4.2, r = .62 * f;
+          A.push(S.proj(rot([Math.cos(a) * r, y, Math.sin(a) * r], ax, ay))); Bp.push(S.proj(rot([Math.cos(a + Math.PI) * r, y, Math.sin(a + Math.PI) * r], ax, ay))); }
+        x.lineWidth = 1; for (i = 0; i < n; i += 3) { x.strokeStyle = css(S.light ? mix(S.P.a2, [0, 0, 0], .3) : S.P.ink, (S.light ? .4 : .16) + .2 * ((A[i][3] + Bp[i][3]) / 2 - .6)); x.beginPath(); x.moveTo(A[i][0], A[i][1]); x.lineTo(Bp[i][0], Bp[i][1]); x.stroke(); }
+        [[A, S.spr.a], [Bp, S.spr.a2]].forEach(function(st){ st[0].forEach(function(s, i){ var r = (3 + 2.5 * Math.sin(t * 2 - i * .3)) * s[3] * S.k + 1.5; x.globalAlpha = Math.min(1, s[3] * .8); x.drawImage(st[1], s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); }); });
+        x.globalAlpha = 1; } };
+    },
+    rings: function(S){
+      var R = [{ r: .92, tx: 1.2, tz: .2, s: .5, n: 5 }, { r: 1.12, tx: 1.32, tz: -.5, s: -.35, n: 4 }, { r: 1.34, tx: 1.05, tz: .75, s: .25, n: 3 }];
+      return { draw: function(x, t){
+        var f = S.form; R.forEach(function(g, gi){ var ax = g.tx - M.y * .3, ay = g.tz + M.x * .4 + t * .05, pts = [];
+          for (var k = 0; k <= 120; k++) { var a = k / 120 * Math.PI * 2; pts.push(S.proj(rot([Math.cos(a) * g.r * f, 0, Math.sin(a) * g.r * f], ax, ay))); }
+          for (k = 0; k < 120; k++) { var p = pts[k], q = pts[k + 1]; x.globalAlpha = (S.light ? .55 : .35) + .6 * Math.max(0, p[3] - .7); x.strokeStyle = css(gi % 2 ? S.P.a2 : S.P.a, 1); x.lineWidth = (gi === 0 ? 3 : 2) * p[3] * Math.max(1, S.k); x.beginPath(); x.moveTo(p[0], p[1]); x.lineTo(q[0], q[1]); x.stroke(); }
+          for (var m = 0; m < g.n; m++) { var a2 = t * g.s + m / g.n * Math.PI * 2, s = S.proj(rot([Math.cos(a2) * g.r * f, 0, Math.sin(a2) * g.r * f], ax, ay)), r = (m ? 6 : 10) * s[3] * S.k; x.globalAlpha = 1; x.drawImage(m % 2 ? S.spr.part : S.spr.a, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); } });
+        x.globalAlpha = 1; } };
+    },
+    warp: function(S){
+      var st = []; for (var i = 0; i < (small ? 160 : 380); i++) st.push({ a: rnd(0, 6.283), r: rnd(.15, 1), z: rnd(.05, 1), c: i % 5 });
+      return { draw: function(x, t, dt){
+        var sp = reduce ? 0 : dt * .22, cx = S.cx + M.x * 40, cy = S.cy + M.y * 30, D2 = Math.hypot(S.w, S.h) * .6 * S.form;
+        x.lineCap = 'round';
+        st.forEach(function(s){ var z0 = s.z; s.z -= sp; if (s.z <= .02) { s.z = 1; s.a = rnd(0, 6.283); z0 = 1; }
+          var k1 = s.r / s.z, k0 = s.r / Math.min(1, z0 + .035), ca = Math.cos(s.a), sa = Math.sin(s.a);
+          var x1 = cx + ca * k1 * D2 * .25, y1 = cy + sa * k1 * D2 * .25, x0 = cx + ca * k0 * D2 * .25, y0 = cy + sa * k0 * D2 * .25;
+          x.globalAlpha = Math.min(1, (1 - s.z) * 1.4); x.strokeStyle = css(s.c ? (s.c % 2 ? S.P.a : S.P.ink) : S.P.a2, 1); x.lineWidth = (1 - s.z) * 3.4 * S.k + .6; x.beginPath(); x.moveTo(x0, y0); x.lineTo(x1, y1); x.stroke(); });
+        x.globalAlpha = .9; var r = S.R * .55; x.drawImage(S.spr.a2, cx - r, cy - r, r * 2, r * 2); x.globalAlpha = 1; } };
+    },
+    coins: function(S){
+      var C = []; for (var i = 0; i < (small ? 7 : 13); i++) C.push({ p: [rnd(-2.6, 2.6), rnd(-1.7, 1.7), rnd(-1, 1.8)], r: rnd(.13, .24), sp: rnd(.8, 1.8) * (i % 2 ? 1 : -1), ph: rnd(0, 6.3), fall: rnd(.04, .12) });
+      return { draw: function(x, t){
+        var q = C.map(function(c){ var y = ((c.p[1] + t * c.fall + 1.7) % 3.4) - 1.7; var p = [c.p[0] + M.x * .3 * (1.5 - c.p[2] * .4), y + M.y * .2, c.p[2]]; return { c: c, s: S.proj(p) }; }).sort(function(a, b){ return a.s[2] - b.s[2]; });
+        q.forEach(function(e){ var c = e.c, s = e.s, R = c.r * S.R * s[3] * S.form, a = t * c.sp + c.ph, w = Math.cos(a), aw = Math.abs(w), th = R * .16; if (R < 2) return;
+          var gold = S.P.a, dark = mix(gold, [0, 0, 0], .45), lite = mix(gold, [255, 255, 255], .55);
+          x.globalAlpha = Math.max(.35, Math.min(1, s[3]));
+          x.fillStyle = css(dark, 1); x.beginPath(); x.ellipse(s[0] + (w < 0 ? -1 : 1) * th * Math.sqrt(1 - aw * aw), s[1], Math.max(R * aw, 1.5), R, 0, 0, 6.2832); x.fill();
+          var g = x.createLinearGradient(s[0] - R, s[1] - R, s[0] + R, s[1] + R); g.addColorStop(0, css(lite, 1)); g.addColorStop(.5, css(gold, 1)); g.addColorStop(1, css(dark, 1));
+          x.fillStyle = g; x.beginPath(); x.ellipse(s[0], s[1], Math.max(R * aw, 1), R, 0, 0, 6.2832); x.fill();
+          x.strokeStyle = css(lite, .8); x.lineWidth = Math.max(1, R * .07); x.beginPath(); x.ellipse(s[0], s[1], Math.max(R * aw * .78, .5), R * .78, 0, 0, 6.2832); x.stroke();
+          if (aw > .25) { x.save(); x.translate(s[0], s[1]); x.scale(aw * (w < 0 ? -1 : 1), 1); x.fillStyle = css(dark, .9); x.font = '900 ' + Math.round(R * (TK.length > 3 ? .5 : .9)) + 'px system-ui,sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(TK.length > 4 ? '$' : (TK.length > 1 ? TK.slice(0, 3) : '$'), 0, R * .04); x.restore(); }
+          x.globalAlpha *= .8; x.fillStyle = 'rgba(255,255,255,.7)'; x.beginPath(); x.ellipse(s[0] - R * aw * .35, s[1] - R * .45, R * aw * .18 + .5, R * .1, -.5, 0, 6.2832); x.fill(); });
+        x.globalAlpha = 1; } };
+    },
+    embers: function(S){
+      var E = []; for (var i = 0; i < (small ? 90 : 220); i++) E.push({ p: [rnd(-3, 3), rnd(-2, 2), rnd(-1.5, 2.2)], v: rnd(.08, .28), ph: rnd(0, 6.3), c: i % 4 });
+      return { draw: function(x, t, dt){
+        E.forEach(function(e){ if (!reduce) e.p[1] -= dt * e.v; if (e.p[1] < -2.1) { e.p[1] = 2.1; e.p[0] = rnd(-3, 3); }
+          var p = [e.p[0] + Math.sin(t * .7 + e.ph) * .15 + M.x * (1.4 - e.p[2] * .4) * .35, e.p[1] + M.y * .2, e.p[2]], s = S.proj(p), r = (4 + 2.5 * Math.sin(t * 3 + e.ph)) * s[3] * S.k + 1.5;
+          x.globalAlpha = Math.max(.15, Math.min(1, s[3] * .9)) * S.form; x.drawImage(e.c ? (e.c % 2 ? S.spr.part : S.spr.a) : S.spr.a2, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); });
+        x.globalAlpha = 1; } };
+    }
+  };
+
+  /* ---------- anchor: where the object sits inside its host ---------- */
+  function mascotOf(host){
+    var c = Array.prototype.slice.call(host.querySelectorAll('img.gchar,img,[class*="mascot"]')).filter(function(m){ return !m.closest('nav,.top,a,button,.mx-gal,.mq,.mx-fx') && m.offsetWidth >= 90 && m.offsetHeight >= 90; });
+    c.sort(function(a, b){ return b.offsetWidth * b.offsetHeight - a.offsetWidth * a.offsetHeight; }); return c[0] || null;
+  }
+  function place(L){
+    var hr = L.cv.getBoundingClientRect(), w = L.cv.clientWidth || hr.width, h = L.cv.clientHeight || hr.height, at = L.at, cx = w / 2, cy = h / 2, R = Math.min(w, h) * .36;
+    if (at === 'mascot') { var m = mascotOf(L.host); if (m) { var r = m.getBoundingClientRect(); cx = r.left - hr.left + r.width / 2; cy = r.top - hr.top + r.height / 2; R = Math.max(Math.max(r.width, r.height) * .62, Math.min(w, h) * .3); } else at = 'right'; }
+    if (at === 'right') { cx = w > 760 ? w * .72 : w * .5; cy = w > 760 ? h * .48 : h * .3; R = Math.min(w * .26, h * .38); }
+    if (at === 'left') { cx = w > 760 ? w * .26 : w * .5; cy = w > 760 ? h * .5 : h * .3; R = Math.min(w * .26, h * .38); }
+    if (at === 'top') { cy = h * .3; R = Math.min(w, h) * .3; }
+    if (at === 'bottom') { cy = h * .72; R = Math.min(w * .4, h * .36); }
+    if (at === 'full') R = Math.min(w, h) * .5;
+    R = Math.max(80, Math.min(R, Math.max(w, h) * .45));
+    /* the object sits BEHIND the mascot: feathered cut-out over the mascot box */
+    var mk = mascotOf(L.host); L.cut = null;
+    if (mk && !B.hasAttribute('data-mx-gl-nocut')) { var q = mk.getBoundingClientRect(); if (q.width * q.height < w * h * .5 && q.width > 0) { var cc = [q.left - hr.left + q.width / 2, q.top - hr.top + q.height / 2, q.width * .56, q.height * .56], dx = (cx - cc[0]) / cc[2], dy = (cy - cc[1]) / cc[3];
+        /* only cut if the object stays readable: it sits outside the mascot, or wraps well beyond it */
+        if (at === 'full' || dx * dx + dy * dy > 1.2 || R > Math.max(cc[2], cc[3]) * 1.5) L.cut = cc; } }
+    L.S.cx = cx; L.S.cy = cy; L.S.R = R; L.S.w = w; L.S.h = h; L.S.k = Math.max(.6, Math.min(1.5, R / 260));
+  }
+
+  var dpr = Math.min(window.devicePixelRatio || 1, small ? 1.25 : 1.6);
+  function mount(host, mode, variant, at, idx){
+    if (!MODES[mode] || !host) return;
+    positioned(host);
+    var cv = el('canvas', 'mx-gl mx-gl-' + mode + ' mx-gl-at-' + at); cv.setAttribute('aria-hidden', 'true'); cv.setAttribute('data-mx-gl-mode', mode);
+    cv.classList.add(tone === 'light' ? 'mx-gl-light' : 'mx-gl-dark');
+    /* layer placement: just above the last full-cover background layer of the host, so the scene art stays under it and the copy stays over it */
+    var hr0 = host.getBoundingClientRect(), bgl = null, zf = B.getAttribute('data-mx-gl-z');
+    Array.prototype.forEach.call(host.children, function(k){ if (k === cv || k.classList.contains('mx-fx') || /^(SCRIPT|STYLE)$/.test(k.tagName)) return; var st = getComputedStyle(k), r = k.getBoundingClientRect();
+      if ((st.position === 'absolute' || st.position === 'fixed') && r.width * r.height >= hr0.width * Math.min(hr0.height, window.innerHeight * 1.2) * .6 && !k.querySelector('h1,a[href],button')) bgl = k; });
+    if (zf) { host.appendChild(cv); cv.style.zIndex = zf; }
+    else if (bgl) { host.insertBefore(cv, bgl.nextSibling); var zz = getComputedStyle(bgl).zIndex; cv.style.zIndex = zz === 'auto' ? 'auto' : zz; }
+    else { var fxl = host.querySelector(':scope > .mx-fx'); if (fxl) host.insertBefore(cv, fxl.nextSibling); else host.insertBefore(cv, host.firstChild); }
+    if (host.offsetHeight > window.innerHeight * 1.4) cv.classList.add('mx-gl-tall');
+    var x = cv.getContext('2d'); if (!x) { cv.remove(); return; }
+    var S = { form: reduce ? 1 : 0, light: tone === 'light' };
+    S.proj = function(p){ var f = 3.2, s = f / (f + p[2]); return [S.cx + p[0] * S.R * s, S.cy + p[1] * S.R * s, p[2], s]; };
+    var L = { host: host, cv: cv, x: x, S: S, at: at, mode: mode, vis: true, t0: performance.now(), last: performance.now(), t: rnd(0, 20) };
+    function theme(){ var P = palette(host); if (S.light) { P.ink = mix(P.ink, [0, 0, 0], .1); ['a', 'a2', 'part'].forEach(function(k){ var c = P[k], L = (c[0] * .299 + c[1] * .587 + c[2] * .114) / 255; if (L > .55) P[k] = mix(c, [0, 0, 0], Math.min(.5, (L - .45) * 1.2)); }); } S.P = P; S.spr = { a: sprite(P.a, S.light), a2: sprite(P.a2, S.light), part: sprite(P.part, S.light), ink: sprite(S.light ? P.ink : mix(P.ink, [255, 255, 255], .4), S.light) }; }
+    function size(){ var w = cv.clientWidth, h = cv.clientHeight; cv.width = Math.max(1, Math.round(w * dpr)); cv.height = Math.max(1, Math.round(h * dpr)); x.setTransform(dpr, 0, 0, dpr, 0, 0); place(L); }
+    theme(); size(); L.inst = MODES[mode](S, variant); L.theme = theme; L.size = size;
+    L.frame = function(now){ var dt = Math.min((now - L.last) / 1000, .05); L.last = now; if (!reduce) L.t += dt;
+      if (!reduce && S.form < 1) S.form = Math.min(1, 1 - Math.pow(1 - Math.min(1, (now - L.t0) / 2400), 3));
+      x.clearRect(0, 0, S.w, S.h); x.globalCompositeOperation = S.light ? 'source-over' : 'lighter'; L.inst.draw(x, L.t, dt);
+      if (L.cut) { var c = L.cut; x.globalCompositeOperation = 'destination-out'; x.save(); x.translate(c[0], c[1]); x.scale(c[2], c[3]); var g = x.createRadialGradient(0, 0, 0, 0, 0, 1); g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(.82, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)'); x.fillStyle = g; x.beginPath(); x.arc(0, 0, 1, 0, 6.2832); x.fill(); x.restore(); }
+      x.globalCompositeOperation = 'source-over'; };
+    if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ L.vis = es[0].isIntersecting; }).observe(cv);
+    if ('ResizeObserver' in window) new ResizeObserver(function(){ size(); if (reduce) L.frame(performance.now()); }).observe(cv);
+    if (reduce) setTimeout(function(){ size(); L.frame(performance.now()); }, 600);
+    list.push(L);
+  }
+
+  /* ---------- parse spec + mount ---------- */
+  if (spec) spec.split(';').forEach(function(part, i){
+    part = part.trim(); if (!part) return; var host = hero, sel = null;
+    if (part.indexOf('|') >= 0) { sel = part.split('|')[0].trim(); part = part.split('|')[1].trim(); try { host = D.querySelector(sel); } catch(e){ host = null; } }
+    var m = part.match(/^(\w+)(?::(\w+))?(?:@(\w+))?$/); if (!m) return;
+    if (small && i > 0 && !sel) return;
+    mount(host, m[1], m[2] || '', m[3] || (sel ? 'center' : 'mascot'), i);
+  });
+  if (list.length) {
+    H.setAttribute('data-mx-gl-on', list.map(function(l){ return l.mode; }).join(' '));
+    if (fine && !reduce) window.addEventListener('pointermove', function(e){
+      M.tx = e.clientX / window.innerWidth * 2 - 1; M.ty = e.clientY / window.innerHeight * 2 - 1;
+      var r = list[0].cv.getBoundingClientRect(); M.sx = e.clientX - r.left; M.sy = e.clientY - r.top; }, { passive: true });
+    new MutationObserver(function(){ list.forEach(function(l){ l.theme(); if (reduce) l.frame(performance.now()); }); }).observe(H, { attributes: true, attributeFilter: ['style', 'data-theme-mode', 'data-theme-preset', 'class'] });
+    if (reduce) list.forEach(function(l){ l.frame(performance.now()); });
+    else (function loop(now){ requestAnimationFrame(loop); if (D.hidden) return; M.x += (M.tx - M.x) * .05; M.y += (M.ty - M.y) * .05;
+      list.forEach(function(l){ if (l.vis) l.frame(now); else l.last = now; }); })(performance.now());
+    window.addEventListener('load', function(){ list.forEach(function(l){ l.size(); if (reduce) l.frame(performance.now()); }); });
+  }
+
+  /* ---------- CSS 3D depth treatments ---------- */
+  var tilts = [];
+  function freeT(n){ return n && n !== D.body && !n.hasAttribute('data-tilt') && !n.classList.contains('tilt-3d') && !n.classList.contains('mx3d-tilt') && getComputedStyle(n).position !== 'fixed'; }
+  function baseT(n){ var t = getComputedStyle(n).transform; return t && t !== 'none' && t !== 'matrix(1, 0, 0, 1, 0, 0)' ? ' ' + t : ''; }
+  function addTilt(n, amt, glare){ if (!freeT(n)) return false; n.classList.add('mx3d-tilt'); if (glare && !n.querySelector(':scope > .mx3d-glare') && !/^(IMG|svg|CANVAS|VIDEO)$/i.test(n.tagName)) { positioned(n); var g = el('span', 'mx3d-glare', n); g.setAttribute('aria-hidden', 'true'); } tilts.push({ n: n, a: amt, b: '' }); return true; }
+  function cardList(){ var o = [], seen = [];
+    function push(c){ if (o.length >= 40 || seen.indexOf(c) >= 0 || c.closest('.mx-hide,nav,.mq,.mx-band,.mx-fx,[aria-hidden="true"]') || (hero && (c === hero || c.contains(hero)))) return; var w = c.offsetWidth, h = c.offsetHeight; if (w < 110 || h < 80 || w > Math.min(760, window.innerWidth * .62) || h > 720) return; if (o.some(function(x){ return x.contains(c) || c.contains(x); })) return; seen.push(c); o.push(c); }
+    D.querySelectorAll('.mx-card').forEach(push);
+    if (o.length < 6) D.querySelectorAll('section [class*="card"],section [class*="tile"],section li[class],footer [class*="card"]').forEach(push);
+    return o; }
+  var got3 = [];
+  var CARDS = cardList();
+  if (fx3.indexOf(' cards ') >= 0) { var nc = 0; CARDS.forEach(function(c){ if (addTilt(c, 9, true)) nc++; }); if (nc) got3.push('cards'); }
+  if (fx3.indexOf(' mascot ') >= 0 && hero) { var mc = mascotOf(hero); if (mc) { var tgt = freeT(mc) ? mc : null; if (tgt && addTilt(tgt, 14, false)) { tgt.classList.add('mx3d-mascot'); tilts[tilts.length - 1].b = baseT(tgt); got3.push('mascot'); } } }
+  if (fx3.indexOf(' extrude ') >= 0 || fx3.indexOf(' chroma ') >= 0) { var hh = D.querySelector('h1'); if (hh) { var cs = getComputedStyle(hh), fill = cs.webkitTextFillColor || cs.color;
+    if (!/transparent|rgba\([^)]*,\s*0\)/.test(fill) && cs.backgroundClip !== 'text' && cs.webkitBackgroundClip !== 'text') { hh.classList.add(fx3.indexOf(' chroma ') >= 0 ? 'mx3d-chroma' : 'mx3d-extrude'); got3.push('type'); } } }
+  if (fx3.indexOf(' rise ') >= 0 && !reduce && 'IntersectionObserver' in window) {
+    var rq = CARDS.filter(function(c){ return !c.classList.contains('mx-gal') && !c.querySelector('.mx-gal'); });
+    rq.forEach(function(c){ if (c.parentElement && getComputedStyle(c.parentElement).perspective === 'none') c.parentElement.style.perspective = '1100px'; });
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (!e.isIntersecting) return; io.unobserve(e.target); try { e.target.animate([{ rotate: '1 0 0 22deg', opacity: .001 }, { rotate: '1 0 0 0deg', opacity: 1 }], { duration: 900, easing: 'cubic-bezier(.16,1,.3,1)', delay: (Array.prototype.indexOf.call(e.target.parentElement.children, e.target) % 6) * 70 }); } catch(_){} }); }, { threshold: .12 });
+    rq.forEach(function(c){ if (c.getBoundingClientRect().top > window.innerHeight) io.observe(c); }); if (rq.length) got3.push('rise');
+  }
+  if (tilts.length && fine && !reduce) {
+    var cur = null;
+    D.addEventListener('pointermove', function(e){
+      var hit = null; for (var i = 0; i < tilts.length; i++) { var n = tilts[i].n; if (n.classList.contains('mx3d-mascot')) continue; if (n.contains(e.target)) { hit = tilts[i]; break; } }
+      if (cur && cur !== hit) { cur.n.style.transform = ''; cur.n.classList.remove('mx3d-hot'); }
+      if (hit && hit !== cur) hit.b = baseT(hit.n);
+      cur = hit; if (hit) { var r = hit.n.getBoundingClientRect(), px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+        hit.n.classList.add('mx3d-hot'); hit.n.style.transform = 'perspective(900px) rotateX(' + ((.5 - py) * hit.a).toFixed(2) + 'deg) rotateY(' + ((px - .5) * hit.a).toFixed(2) + 'deg)' + hit.b;
+        hit.n.style.setProperty('--gx', (px * 100).toFixed(1) + '%'); hit.n.style.setProperty('--gy', (py * 100).toFixed(1) + '%'); }
+      tilts.forEach(function(t){ if (t.n.classList.contains('mx3d-mascot')) t.n.style.transform = 'perspective(1000px) rotateX(' + (-(e.clientY / window.innerHeight - .5) * t.a).toFixed(2) + 'deg) rotateY(' + ((e.clientX / window.innerWidth - .5) * t.a).toFixed(2) + 'deg)' + t.b; });
+    }, { passive: true });
+  }
+  if (got3.length) H.setAttribute('data-mx-3d-on', got3.join(' '));
+})();
 
 </script>
 <script>
