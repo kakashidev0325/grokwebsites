@@ -3,26 +3,26 @@
   "name": "Macca The Gator",
   "ticker": "MACCA",
   "template": "c40-jupcat",
-  "domain": "maccaonsol.fun",
+  "domain": "maccaonrobin.fun",
   "ca": "TBA",
   "chain": "robinhood",
   "theme_mode": "preset",
   "theme_preset": "cyber-lime",
   "theme_primary": "#c8ff00",
   "theme_secondary": "#7cff00",
-  "domain_status": "live",
+  "domain_status": "dns",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "maccaonsol.fun"
+      "host": "maccaonrobin.fun"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.maccaonsol.fun"
+      "host": "www.maccaonrobin.fun"
     }
   ],
   "tagline": "",
@@ -90,5 +90,5 @@
   },
   "site_slug": "macca",
   "project_id": "pmw4xfp3g4kmtj",
-  "exported_at": "2026-11-06T13:14:07.239Z"
+  "exported_at": "2026-11-06T13:20:05.220Z"
 }
