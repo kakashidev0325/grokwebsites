@@ -4,7 +4,7 @@
   "ticker": "MACCA",
   "template": "c40-jupcat",
   "domain": "maccaonrobin.fun",
-  "ca": "TBA",
+  "ca": "0xc0ed0b505d6c18437ebf19a9e091a52e105d4fca",
   "chain": "robinhood",
   "theme_mode": "preset",
   "theme_preset": "cyber-lime",
@@ -83,12 +83,12 @@
     "dex_name": "Uniswap V4",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/",
-    "chart_page": "https://dexscreener.com/robinhood",
-    "chart_embed": "https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xc0ed0b505d6c18437ebf19a9e091a52e105d4fca",
+    "chart_page": "https://dexscreener.com/robinhood/0xc0ed0b505d6c18437ebf19a9e091a52e105d4fca",
+    "chart_embed": "https://dexscreener.com/robinhood/0xc0ed0b505d6c18437ebf19a9e091a52e105d4fca?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Robinhood"
   },
   "site_slug": "macca",
   "project_id": "pmw4xfp3g4kmtj",
-  "exported_at": "2026-11-06T13:20:05.220Z"
+  "exported_at": "2026-11-06T13:56:59.299Z"
 }
