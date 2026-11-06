@@ -4,13 +4,13 @@
   "ticker": "DCAT",
   "template": "c09-manifesting",
   "domain": "diamondcat.lol",
-  "ca": "TBA",
+  "ca": "5pdu9jrUf9ryLzCsv3S92ikoBiK3n2zA9tMN9Rr7pump",
   "chain": "solana",
   "theme_mode": "preset",
   "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -65,12 +65,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/",
-    "chart_page": "https://dexscreener.com/solana",
-    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/coin/5pdu9jrUf9ryLzCsv3S92ikoBiK3n2zA9tMN9Rr7pump",
+    "chart_page": "https://dexscreener.com/solana/5pdu9jrUf9ryLzCsv3S92ikoBiK3n2zA9tMN9Rr7pump",
+    "chart_embed": "https://dexscreener.com/solana/5pdu9jrUf9ryLzCsv3S92ikoBiK3n2zA9tMN9Rr7pump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "dcat",
   "project_id": "pmw5jhak2wuu4z",
-  "exported_at": "2026-11-06T22:21:35.399Z"
+  "exported_at": "2026-11-06T22:50:50.516Z"
 }
