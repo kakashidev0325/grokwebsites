@@ -1,0 +1,155 @@
+@@FONTS@@ family=Cormorant+Garamond:wght@600;700&family=Inter:wght@600;700
+@@CSS@@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font,system-ui,sans-serif);overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
+.wrap{width:min(1120px,100% - 36px);margin-inline:auto}
+nav{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;backdrop-filter:blur(12px)}
+nav .brand{display:flex;align-items:center;gap:8px;font-weight:800}
+nav .brand img{width:36px;height:36px;object-fit:contain;border-radius:50%}
+nav .links{display:flex;gap:4px;flex-wrap:wrap}nav .links a{padding:8px 12px;border-radius:999px;font-size:.8rem;font-weight:700;color:var(--mute)}
+.btn{height:44px;padding:0 18px;border-radius:999px;font-weight:800;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;border:2px solid transparent;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn-main{background:var(--a);color:var(--btnink,#000)}.btn-ghost{background:transparent;border-color:var(--line);color:inherit}
+.burger{display:none}@media(max-width:800px){nav .links{display:none}.burger{display:block}}
+.hero{position:relative;min-height:min(90vh,840px);padding:48px 0 64px;overflow:hidden;isolation:isolate}
+.hero-inner{position:relative;z-index:2}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+
+.sec{padding:72px 0}.sec-title{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;text-align:center;margin:0 0 28px}
+.tok-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}@media(max-width:800px){.tok-grid{grid-template-columns:1fr 1fr}}
+.tok-grid article{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px;text-align:center}
+.tok-grid span{display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+.tok-grid b{font-size:1.2rem}
+.ggrid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}@media(max-width:800px){.ggrid{grid-template-columns:repeat(3,1fr)}}
+.sticker{margin:0;aspect-ratio:1;background:var(--card);border:2px solid var(--line);border-radius:16px;display:grid;place-items:center;padding:10px;transition:transform .2s}
+.sticker:hover{transform:scale(1.05) rotate(-2deg)}.sticker img{width:100%;height:100%;object-fit:contain}
+.market{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 16px;border-radius:16px;background:var(--card);border:2px solid var(--line);margin-bottom:24px}
+.market .id{display:flex;align-items:center;gap:10px;font-weight:800}
+.market .id img{width:34px;height:34px;object-fit:contain;border-radius:50%}
+.market small{display:block;font-size:.72rem;color:var(--mute)}
+.cells{display:flex;gap:14px;flex-wrap:wrap}.cells span{display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);font-weight:700}
+.ca-pill{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 12px;border-radius:999px;border:2px solid var(--line);background:var(--card);font-size:.78rem;font-weight:700}
+.ca-pill code{font-family:ui-monospace,monospace}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}@media(max-width:800px){.steps{grid-template-columns:1fr 1fr}}
+.step{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:16px}.step .n{color:var(--a);font-size:1.4rem;font-weight:900}
+.roadmap{display:grid;gap:12px;max-width:720px;margin:0 auto}
+.roadmap article{display:grid;grid-template-columns:48px 1fr;gap:14px;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:16px}
+.roadmap .dot{width:40px;height:40px;border-radius:50%;background:var(--a);color:#fff;display:grid;place-items:center;font-weight:900}
+.faq details{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+.faq summary{font-weight:800;cursor:pointer}.faq p{color:var(--mute);margin:8px 0 0;line-height:1.55}
+.join{text-align:center;padding:88px 0}
+.join img{width:120px;height:120px;object-fit:contain;margin:0 auto 14px}
+.join h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin:0 0 18px}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+footer{padding:32px 0 56px;border-top:2px solid var(--line);color:var(--mute);font-size:.88rem;text-align:center}
+.marquee{overflow:hidden;border-block:2px solid var(--line);background:var(--a);color:#000;padding:10px 0;font-weight:800;white-space:nowrap}
+.marquee span{display:inline-block;padding-right:48px;animation:marq 22s linear infinite}
+@keyframes marq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}}
+
+:root{--acc:var(--a,#888);--bg:#faf7f2;--ink:#2c1810;--mute:#7a5c50;--a:#e8a0bf;--a2:#c9a86c;--card:#fff;--line:#2c1810;--font:Inter,system-ui;--btnink:#2c1810;--part:var(--a)}
+nav{background:rgba(250,247,242,.95);border-bottom:1px solid rgba(44,24,16,.1)}
+.garden{position:absolute;inset:0;background:linear-gradient(180deg,#fdf8f4 0%,#f5e6d8 50%,#edd5c0 100%);z-index:0}
+.petals span{position:absolute;width:18px;height:18px;background:var(--a);border-radius:50% 0;opacity:.5;animation:fall 14s linear infinite;z-index:1}
+@keyframes fall{0%{top:-5%;transform:rotate(0) translateX(0)}100%{top:105%;transform:rotate(360deg) translateX(60px)}}
+.petals span:nth-child(1){left:15%;animation-delay:0s}.petals span:nth-child(2){left:40%;animation-delay:3s;background:var(--a2)}
+.petals span:nth-child(3){left:65%;animation-delay:6s}.petals span:nth-child(4){left:85%;animation-delay:2s;background:#f0abfc}
+.bloom{position:absolute;bottom:0;left:0;right:0;height:30%;background:radial-gradient(ellipse at 50% 100%,rgba(232,160,191,.3),transparent 70%);z-index:0}
+.hero-inner{text-align:center}
+.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(3rem,9vw,5.5rem);font-weight:700;margin:0 0 12px;letter-spacing:-.01em;color:var(--ink)}
+.hero .tag{color:var(--mute);font-size:1.1rem;margin:0 0 20px;font-style:italic}
+.hero img.mascot{width:min(280px,60vw);max-height:340px;object-fit:contain;margin:0 auto 18px;border-radius:50%;border:3px solid var(--line);background:linear-gradient(135deg,#fce7f3,#fef3c7);padding:16px}
+.hero-ctas{justify-content:center}
+.btn{border-radius:999px}.btn-main{background:linear-gradient(135deg,var(--a),#f0abfc);border:2px solid var(--line)}.btn-ghost{border:2px solid var(--line);background:#fff}
+.marquee{background:var(--a);color:#fff;border:0}
+.roadmap .dot{background:linear-gradient(135deg,var(--a),var(--a2))}
+@@BODY@@
+<body data-particles data-intro data-cursor>
+<header aria-hidden="true" style="height:0;overflow:hidden"></header>
+<nav>
+<a class="brand intro-logo" href="#top"><img class="gchar" src="{{LOGO}}" alt="" width="72" height="72">{{NAME}}</a>
+<div class="links" id="menu"><a href="#about">About</a><a href="#tok">Tokenomics</a><a href="#memes">Memes</a><a href="#buy">Buy</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a></div>
+<a class="btn btn-main btn-shine" data-magnetic data-buy href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a>
+<button class="burger" data-menu aria-label="Menu">☰</button>
+</nav>
+<main id="top">
+<section class="hero">
+<div class="garden"></div><div class="bloom" aria-hidden="true"></div>
+<div class="petals" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+<div class="wrap hero-inner">
+<img class="mascot gchar breath intro-logo" data-tilt src="{{LOGO}}" alt="{{NAME}}" width="400" height="400">
+<h1 class="disp" data-letters>{{NAME}}</h1>
+<p class="tag intro-fade">{{TAGLINE}} — bloom at the margin</p>
+<div class="hero-ctas intro-fade">
+<a class="btn btn-main btn-pulse" data-magnetic data-buy href="{{BUY_URL}}">[[BUY]] Buy now</a>
+<a class="btn btn-ghost" href="{{DEXS_URL}}" target="_blank" rel="noopener">Chart</a>
+<a class="btn btn-ghost" href="{{TG_URL}}" data-s>[[TG]]</a>
+</div>
+<button class="ca-pill intro-fade" type="button" data-copy><code data-ca-short>{{CA_SHORT}}</code> · copy</button>
+</div>
+</section>
+<div class="marquee" aria-hidden="true"><span>BLOOM · {{TAGLINE}} · MARGIN · BLOOM · {{TAGLINE}} · </span></div>
+<section class="sec" id="about"><div class="wrap">
+<h2 class="sec-title rv-z">The garden</h2>
+<p class="rv" style="text-align:center;max-width:640px;margin:0 auto;color:var(--mute);line-height:1.65">{{ABOUT}}</p>
+<p class="rv" style="text-align:center;max-width:640px;margin:12px auto 0;color:var(--mute)">{{CTA}}</p>
+</div></section>
+
+<section class="sec" id="tok"><div class="wrap">
+<h2 class="sec-title">Tokenomics</h2>
+<div class="tok-grid rv-stagger">
+<article><span>Supply</span><b>{{SUPPLY}}</b></article>
+<article><span>Tax</span><b>{{TAX}}</b></article>
+<article><span>Chain</span><b>{{CHAIN_NAME}}</b></article>
+<article><span>Ticker</span><b>${{TICKER}}</b></article>
+</div></div></section>
+
+<section class="sec memes" id="memes"><div class="wrap">
+<h2 class="sec-title rv-z">Memes</h2>
+<div class="ggrid rv-stagger">
+<figure class="sticker"><img class="gimg" src="{{LOGO}}" alt="" loading="lazy"></figure>
+<figure class="sticker"><img class="gimg" src="{{LOGO}}" alt="" loading="lazy"></figure>
+<figure class="sticker"><img class="gimg" src="{{LOGO}}" alt="" loading="lazy"></figure>
+<figure class="sticker"><img class="gimg" src="{{LOGO}}" alt="" loading="lazy"></figure>
+<figure class="sticker"><img class="gimg" src="{{LOGO}}" alt="" loading="lazy"></figure>
+<figure class="sticker"><img class="gimg" src="{{LOGO}}" alt="" loading="lazy"></figure>
+</div></div></section>
+<section class="sec" id="buy" data-dexs-live data-chain="{{CHAIN}}"><div class="wrap">
+<div class="market">
+<div class="id"><img class="gchar" src="{{LOGO}}" alt=""><div><b>${{TICKER}}</b><small>{{CHAIN_NAME}}</small></div></div>
+<div class="cells"><div><span>Price</span><b data-price>—</b></div><div><span>Mcap</span><b data-mcap>—</b></div><div><span>Vol</span><b data-vol>—</b></div><div><span>Liq</span><b data-liq>—</b></div></div>
+<button class="ca-pill" type="button" data-copy><code data-ca-short>{{CA_SHORT}}</code></button>
+<a class="btn btn-main" data-buy href="{{BUY_URL}}">[[BUY]] Buy</a>
+</div>
+<h2 class="sec-title">How to buy</h2>
+<div class="steps rv-stagger">
+<div class="step"><div class="n">01</div><b>Get {{WALLET}}</b></div>
+<div class="step"><div class="n">02</div><b>Fund {{NATIVE}}</b></div>
+<div class="step"><div class="n">03</div><b>Open {{DEX}}</b></div>
+<div class="step"><div class="n">04</div><b>Swap ${{TICKER}}</b></div>
+</div></div></section>
+<section class="sec" id="roadmap"><div class="wrap">
+<h2 class="sec-title">Roadmap</h2>
+<div class="roadmap rv-stagger">
+<article><div class="dot">1</div><div><b>Launch</b><p style="margin:4px 0 0;color:var(--mute)">Fair drop · community first</p></div></article>
+<article><div class="dot">2</div><div><b>Growth</b><p style="margin:4px 0 0;color:var(--mute)">Listings · partnerships · lore</p></div></article>
+<article><div class="dot">3</div><div><b>Dominance</b><p style="margin:4px 0 0;color:var(--mute)">Utilities · merch · bigger scenes</p></div></article>
+</div></div></section>
+<section class="sec faq" id="faq"><div class="wrap" style="max-width:720px">
+<h2 class="sec-title">FAQ</h2>
+<details class="rv"><summary>What is {{NAME}}?</summary><p>{{ABOUT}}</p></details>
+<details class="rv"><summary>How do I buy?</summary><p>Get {{WALLET}}, fund {{NATIVE}}, open {{DEX}}, paste CA and swap.</p></details>
+<details class="rv"><summary>Chain?</summary><p>{{CHAIN_NAME}}. Tax {{TAX}}. Supply {{SUPPLY}}.</p></details>
+</div></section>
+<!--BANNER_SLOT-->
+<section class="join" id="join">
+<img class="gchar breath" data-tilt src="{{LOGO}}" alt="" width="240" height="240">
+<h2>Join {{NAME}}</h2>
+<div class="cta-row">
+<a class="btn btn-main btn-shine" data-magnetic data-buy href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a>
+<a class="btn btn-ghost" href="{{X_URL}}" data-s>[[X]]</a>
+<a class="btn btn-ghost" href="{{TG_URL}}" data-s>[[TG]]</a>
+{{EXTRA_SOCIALS}}
+</div></section>
+</main>
+<footer><div class="wrap">© <span data-year></span> {{NAME}} (${{TICKER}}) · {{TAGLINE}} · Not financial advice.</div></footer>
+</body>

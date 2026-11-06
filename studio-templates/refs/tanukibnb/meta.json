@@ -1,0 +1,208 @@
+{
+  "slug": "tanukibnb",
+  "url": "https://www.tanukibnb.com",
+  "status": "ok",
+  "reason": "",
+  "title": "Tanuki \u2014 Luck. Fortune. Tanuki.",
+  "final_url": "https://www.tanukibnb.com/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(244, 234, 212)",
+    "color": "rgb(29, 23, 18)",
+    "font": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "fonts": [
+      "Inter"
+    ],
+    "colors": [
+      "rgb(244, 234, 212)",
+      "rgb(29, 23, 18)",
+      "rgba(250, 246, 238, 0.97)",
+      "rgb(42, 31, 18)",
+      "rgb(255, 255, 255)",
+      "rgba(255, 255, 255, 0.96)",
+      "rgb(14, 15, 17)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "hero",
+        "cls": "hero wrap",
+        "h": 909
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-copy reveal show",
+        "h": 887
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "cls": "hero-sub",
+        "h": 177
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-actions",
+        "h": 142
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-contract",
+        "h": 70
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-art reveal show",
+        "h": 760
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-card",
+        "h": 760
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "hero-mascot",
+        "h": 302
+      },
+      {
+        "tag": "SECTION",
+        "id": "essence",
+        "cls": "wrap section narrative-section",
+        "h": 579
+      },
+      {
+        "tag": "SECTION",
+        "id": "tokenomics",
+        "cls": "wrap section",
+        "h": 426
+      },
+      {
+        "tag": "SECTION",
+        "id": "memes",
+        "cls": "wrap section memes-section",
+        "h": 1071
+      },
+      {
+        "tag": "SECTION",
+        "id": "buy",
+        "cls": "wrap section",
+        "h": 889
+      },
+      {
+        "tag": "SECTION",
+        "id": "roadmap",
+        "cls": "wrap section",
+        "h": 1354
+      },
+      {
+        "tag": "SECTION",
+        "id": "story",
+        "cls": "wrap section lower-grid",
+        "h": 883
+      }
+    ],
+    "imgCount": 14,
+    "imgs": [
+      {
+        "src": "https://www.tanukibnb.com/assets/mascot.jpg",
+        "w": 640,
+        "h": 640,
+        "alt": "Tanuki mascot"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/hero.png",
+        "w": 640,
+        "h": 640,
+        "alt": "Tanuki hero mascot"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/tokenomics-supply.png",
+        "w": 1536,
+        "h": 1536,
+        "alt": "Total Supply icon"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/tokenomics-circulating.png",
+        "w": 1536,
+        "h": 1536,
+        "alt": "Circulating Supply icon"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/tokenomics-burn.png",
+        "w": 1536,
+        "h": 1536,
+        "alt": "Burn icon"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/tokenomics-liquidity.png",
+        "w": 1536,
+        "h": 1536,
+        "alt": "Liquidity icon"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/tokenomics-tax.png",
+        "w": 1536,
+        "h": 1536,
+        "alt": "Tax icon"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/meme1.png",
+        "w": 1200,
+        "h": 1200,
+        "alt": "Tanuki meme 1"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/meme2.png",
+        "w": 1200,
+        "h": 1200,
+        "alt": "Tanuki meme 2"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/meme3.png",
+        "w": 1200,
+        "h": 1200,
+        "alt": "Tanuki meme 3"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/meme4.png",
+        "w": 1200,
+        "h": 1200,
+        "alt": "Tanuki meme 4"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/meme5.png",
+        "w": 1200,
+        "h": 1200,
+        "alt": "Tanuki meme 5"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/meme6.png",
+        "w": 1200,
+        "h": 1200,
+        "alt": "Tanuki meme 6"
+      },
+      {
+        "src": "https://www.tanukibnb.com/assets/mascot.jpg",
+        "w": 640,
+        "h": 640,
+        "alt": "Tanuki mascot"
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": false,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 6311,
+    "title": "Tanuki \u2014 Luck. Fortune. Tanuki."
+  },
+  "css_urls": [
+    "https://www.tanukibnb.com/styles.css?v=34"
+  ]
+}

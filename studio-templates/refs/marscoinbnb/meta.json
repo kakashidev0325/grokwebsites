@@ -1,0 +1,190 @@
+{
+  "slug": "marscoinbnb",
+  "url": "https://www.marscoinbnb.com",
+  "status": "ok",
+  "reason": "",
+  "title": "Marscoin, the stock coin on bnb",
+  "final_url": "https://www.marscoinbnb.com/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(3, 3, 4)",
+    "color": "rgb(244, 239, 230)",
+    "font": "system-ui, -apple-system, \"Helvetica Neue\", sans-serif",
+    "fonts": [
+      "system-ui",
+      "ui-monospace",
+      "Arial",
+      "DINC"
+    ],
+    "colors": [
+      "rgb(3, 3, 4)",
+      "rgb(244, 239, 230)",
+      "rgba(3, 3, 4, 0.28)",
+      "rgb(107, 107, 107)",
+      "rgb(255, 255, 255)",
+      "rgb(255, 106, 21)",
+      "rgb(18, 4, 0)",
+      "rgb(0, 0, 0)",
+      "rgba(6, 5, 5, 0.42)",
+      "rgb(133, 122, 112)"
+    ],
+    "sections": [
+      {
+        "tag": "HEADER",
+        "id": "top",
+        "cls": "hero",
+        "h": 900
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "cls": "sub hero-sub",
+        "h": 79
+      },
+      {
+        "tag": "SECTION",
+        "id": "market",
+        "cls": "mkt",
+        "h": 887
+      },
+      {
+        "tag": "SECTION",
+        "id": "lore",
+        "cls": "lore",
+        "h": 954
+      },
+      {
+        "tag": "SECTION",
+        "id": "backed",
+        "cls": "backing",
+        "h": 3780
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "plate-sec landing",
+        "h": 900
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "trio",
+        "h": 282
+      },
+      {
+        "tag": "SECTION",
+        "id": "payouts",
+        "cls": "payouts",
+        "h": 900
+      },
+      {
+        "tag": "SECTION",
+        "id": "rewards",
+        "cls": "plate-sec",
+        "h": 900
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "plate-sec",
+        "h": 900
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "cta",
+        "h": 803
+      }
+    ],
+    "imgCount": 16,
+    "imgs": [
+      {
+        "src": "https://www.marscoinbnb.com/assets/logotext.webp",
+        "w": 380,
+        "h": 378,
+        "alt": "MarsCoin"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/pair.jpg",
+        "w": 2200,
+        "h": 1227,
+        "alt": "MarsCoin and SPCXB minted tokens on Martian ground"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/pairmob.jpg",
+        "w": 1100,
+        "h": 1970,
+        "alt": "MarsCoin and SPCXB minted tokens on Martian ground"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/dexicon.png",
+        "w": 64,
+        "h": 64,
+        "alt": ""
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/eclipse.jpg",
+        "w": 1900,
+        "h": 1068,
+        "alt": "MarsCoin eclipsing the sun over a Martian ridge"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/tweet.jpg",
+        "w": 880,
+        "h": 714,
+        "alt": "CZ and Elon Musk discussing MarsCoin in February 2021"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/landing.jpg",
+        "w": 1900,
+        "h": 1068,
+        "alt": "MarsCoin standing on Martian ground"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/vault.jpg",
+        "w": 1900,
+        "h": 1068,
+        "alt": "The vault door, ajar, coins streaming out"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/mint.jpg",
+        "w": 1800,
+        "h": 1012,
+        "alt": "A colossal press striking the MarsCoin"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/array.jpg",
+        "w": 1800,
+        "h": 1004,
+        "alt": "Rows of minted coins in a vault rack"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/gateway.jpg",
+        "w": 1900,
+        "h": 1060,
+        "alt": "Two coin monuments forming a gateway on Mars"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/logotext.webp",
+        "w": 380,
+        "h": 378,
+        "alt": "MarsCoin"
+      },
+      {
+        "src": "https://www.marscoinbnb.com/assets/dexicon.png",
+        "w": 64,
+        "h": 64,
+        "alt": ""
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": false,
+    "hasChart": false,
+    "hasVideo": true,
+    "scrollH": 11503,
+    "title": "Marscoin, the stock coin on bnb"
+  },
+  "css_urls": [
+    "https://www.marscoinbnb.com/_next/static/chunks/2vlbxlr14ni51.css?dpl=dpl_FNwd4Hqva177aMLrspYgTvGG4m47"
+  ]
+}

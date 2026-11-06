@@ -1,0 +1,94 @@
+@@FONTS@@ family=Bangers&family=Comic+Neue:wght@400;700
+@@CSS@@
+:root{--y:#ffe14d;--r:#ff3b30;--b:#1e6bff;--k:#111;--p:#fffdf3}
+body{font-family:'Comic Neue',cursive;background:var(--y);color:var(--k);font-weight:700}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(circle,rgba(0,0,0,.13) 1.4px,transparent 1.6px) 0 0/14px 14px;pointer-events:none;z-index:0}
+h1,h2,h3,.bg{font-family:Bangers,cursive;font-weight:400;letter-spacing:.04em}
+main,header,nav,footer{position:relative;z-index:1}
+.page{max-width:1200px;margin:auto;padding:0 18px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;max-width:1200px;margin:auto}
+nav .logo{display:flex;gap:10px;align-items:center;font-family:Bangers;font-size:2rem}nav .logo img{width:50px;height:50px;border:4px solid var(--k);border-radius:50%;object-fit:cover}
+nav .links{display:flex;gap:6px}nav .links a{font-family:Bangers;font-size:1.3rem;padding:6px 14px;background:#fff;border:3px solid var(--k);transform:skew(-8deg)}nav .links a:hover{background:var(--r);color:#fff}
+.soc{display:flex;gap:8px}.soc a{width:44px;height:44px;display:grid;place-items:center;background:var(--b);color:#fff;border:3px solid var(--k);box-shadow:4px 4px 0 var(--k);font-size:1.2rem}
+.burger{display:none}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin:10px 0 30px}
+.panel{position:relative;background:var(--p);border:5px solid var(--k);box-shadow:8px 8px 0 var(--k);padding:24px;overflow:hidden;transition:transform .15s}
+.panel:hover{animation:shake .35s}@keyframes shake{25%{transform:rotate(-1deg)}75%{transform:rotate(1deg)}}
+.hero-a{grid-column:span 4;grid-row:span 2;background:var(--b);color:#fff;display:flex;flex-direction:column;justify-content:center;min-height:560px;background-image:repeating-conic-gradient(from 0deg at 70% 50%,rgba(255,255,255,.12) 0 8deg,transparent 8deg 16deg)}
+.hero-a h1{font-size:clamp(4rem,11vw,9.5rem);line-height:.85;margin:0;color:var(--y);-webkit-text-stroke:4px var(--k);paint-order:stroke fill;text-shadow:8px 8px 0 var(--k);transform:rotate(-3deg)}
+.hero-a .sub{font-size:1.5rem;max-width:30ch;background:#fff;color:var(--k);padding:10px 16px;border:4px solid var(--k);margin-top:22px}
+.hero-b{grid-column:span 2;background:var(--r);display:grid;place-items:center;min-height:270px}
+.burst{position:absolute;width:150%;aspect-ratio:1;background:var(--y);clip-path:polygon(50% 0,58% 30%,85% 10%,70% 38%,100% 40%,72% 55%,95% 80%,64% 68%,55% 100%,46% 70%,20% 92%,32% 62%,0 58%,28% 44%,8% 18%,40% 30%);animation:spin 30s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.hero-b img{position:relative;width:78%;border:5px solid var(--k);border-radius:50%;background:#fff;animation:pop 2.4s ease-in-out infinite}@keyframes pop{50%{transform:scale(1.06) rotate(-4deg)}}
+.hero-c{grid-column:span 2;background:#fff}
+.bubble{position:relative;background:#fff;border:4px solid var(--k);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;padding:22px 26px;font-size:1.25rem;text-align:center}.bubble::after{content:"";position:absolute;bottom:-26px;left:28%;border:16px solid transparent;border-top:22px solid var(--k);transform:skew(25deg)}
+.btn{display:inline-flex;gap:8px;align-items:center;font-family:Bangers;font-size:1.6rem;letter-spacing:.05em;padding:10px 22px;background:var(--y);border:4px solid var(--k);box-shadow:6px 6px 0 var(--k);transform:rotate(-2deg);transition:.12s}.btn:hover{transform:rotate(2deg) scale(1.06);background:var(--r);color:#fff}
+.btns{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px}
+.ca{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:20px;background:var(--k);color:var(--y);padding:12px 14px;border:4px solid #fff;font-family:monospace;font-size:.95rem}.ca button{font-family:Bangers;font-size:1.2rem;background:var(--y);border:3px solid #fff;padding:4px 12px}
+.sfx{position:absolute;font-family:Bangers;font-size:3rem;color:var(--r);-webkit-text-stroke:2px var(--k);transform:rotate(-12deg);pointer-events:none}
+.strip{background:var(--k);color:var(--y);font-family:Bangers;font-size:2.2rem;padding:10px 0;border-block:5px solid var(--k);transform:rotate(1.5deg);margin:30px -30px}
+.strip span{display:inline-flex;gap:2.5rem}
+h2.cap{display:inline-block;font-size:clamp(2.5rem,6vw,4.4rem);margin:50px 0 18px;background:var(--r);color:#fff;padding:4px 20px;border:5px solid var(--k);box-shadow:8px 8px 0 var(--k);transform:rotate(-2deg)}
+.caption{position:absolute;top:0;left:0;background:var(--y);border-right:4px solid var(--k);border-bottom:4px solid var(--k);padding:4px 12px;font-family:Bangers;font-size:1.2rem}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:14px}.about .panel p{font-size:1.3rem;line-height:1.5}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tcard{background:linear-gradient(160deg,#fff 0 55%,var(--y) 55%);border:5px solid var(--k);border-radius:14px;box-shadow:6px 6px 0 var(--k);padding:16px;text-align:center;transition:transform .3s}.tcard:hover{transform:rotateY(12deg) rotate(-2deg) scale(1.04)}
+.tcard .v{font-family:Bangers;font-size:2.4rem;color:var(--b);-webkit-text-stroke:1px var(--k)}.tcard .l{font-family:Bangers;font-size:1.3rem;background:var(--k);color:#fff;display:inline-block;padding:2px 10px}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.four .panel{min-height:250px;padding-top:44px}.four h3{font-size:2rem;margin:.2em 0}
+.four .panel:nth-child(2){background:#dff1ff}.four .panel:nth-child(3){background:#ffe0e0}.four .panel:nth-child(4){background:#e5ffd8}
+.issues{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.issue{border:5px solid var(--k);box-shadow:8px 8px 0 var(--k);background:var(--b);color:#fff;padding:0 0 20px;transform:rotate(-1.5deg)}.issue:nth-child(2){transform:rotate(1.5deg);background:var(--r)}.issue:nth-child(3){background:#7a2cff}
+.issue .top{display:flex;justify-content:space-between;background:#fff;color:var(--k);font-family:Bangers;font-size:1.4rem;padding:6px 12px;border-bottom:5px solid var(--k)}
+.issue h3{font-size:2.4rem;margin:14px 16px 6px;color:var(--y);-webkit-text-stroke:1.5px var(--k)}.issue ul{margin:0 16px;padding-left:20px;font-size:1.1rem}
+.memes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.memes .panel{padding:10px}.memes .panel:nth-child(3n){transform:rotate(1.5deg)}.memes .panel:nth-child(3n+1){transform:rotate(-1.2deg)}
+.memes img{width:100%;aspect-ratio:1;object-fit:cover;border:3px solid var(--k)}.memes p{font-family:Bangers;font-size:1.4rem;text-align:center;margin:8px 0 0}
+.chartp{padding:0;margin-top:14px}
+.end{text-align:center;padding:60px 20px}.end h2{font-size:clamp(3rem,9vw,7rem);margin:0;color:var(--r);-webkit-text-stroke:3px var(--k);text-shadow:6px 6px 0 var(--k)}
+footer{background:var(--k);color:#fff;text-align:center;padding:30px 20px;font-weight:400}footer p{max-width:760px;margin:8px auto;opacity:.8}
+@media(max-width:900px){nav .links{display:none}.grid{grid-template-columns:1fr 1fr}.hero-a{grid-column:span 2;min-height:440px}.hero-b,.hero-c{grid-column:span 1}.about,.issues{grid-template-columns:1fr}.cards,.four,.memes{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero-a,.hero-b,.hero-c{grid-column:span 1}.cards,.four{grid-template-columns:1fr}.hero-a h1{-webkit-text-stroke:3px var(--k)}nav .logo{font-size:1.5rem}.soc a{width:38px;height:38px}}
+@@BODY@@
+<nav><a class="logo floaty" data-parallax="0.12" href="#"><img src="{{LOGO}}" alt="">${{TICKER}}</a><div class="links"><a href="#origin">Origin</a><a href="#stats">Stats</a><a href="#buy">Buy</a><a href="#issues">Roadmap</a><a href="#memes">Memes</a></div><div class="soc">[[SOCIALS]]</div></nav>
+<header class="page"><div class="grid">
+ <div class="panel hero-a"><span class="caption">ISSUE #1 · {{CHAIN_NAME}} COMICS</span><h1>{{NAME}}</h1><div class="sub">{{TAGLINE}}</div>
+  <div class="btns"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] BUY ${{TICKER}}!</a><a class="btn" data-s href="{{DEXS_URL}}" style="background:#fff">[[DEX]] CHART</a></div>
+  <div class="ca"><span>CA:</span><span class="ca-text" style="flex:1">{{CA}}</span><button data-copy>COPY!</button></div></div>
+ <div class="panel hero-b"><div class="burst"></div><img src="{{LOGO}}" alt="{{NAME}}"><span class="sfx" style="top:12px;left:10px">POW!</span></div>
+ <div class="panel hero-c"><div class="bubble">"Wait... I can just BUY ${{TICKER}}??"</div><p style="margin-top:40px;font-size:1.1rem">— every degen, moments before greatness</p><span class="sfx" style="bottom:6px;right:12px;font-size:2.4rem;color:var(--b)">ZOOM!</span></div>
+</div></header>
+<div class="strip mq"><div class="mq-track"><span>★ ${{TICKER}} ★ KAPOW ★ {{NAME}} ★ BAM ★ ON {{CHAIN_NAME}} ★ WHAM ★ HOLD THE LINE ★</span></div></div>
+<main class="page">
+ <h2 class="cap rv" id="origin">The Origin Story</h2>
+ <div class="about"><div class="panel rv"><span class="caption">CHAPTER 1</span><p style="margin-top:30px">{{ABOUT}}</p><p>One meme. One chain. One legendary community. This is how the hero rose.</p></div>
+ <div class="panel rv" style="background:var(--r);display:grid;place-items:center"><img src="{{LOGO}}" alt="" style="width:70%;border:5px solid var(--k);border-radius:50%;background:#fff"><span class="sfx" style="top:16px;right:16px;color:var(--y)">BOOM!</span></div></div>
+ <h2 class="cap rv" id="stats" style="background:var(--b)">Hero Stats</h2>
+ <div class="cards">
+  <div class="tcard rv"><div class="l">SUPPLY</div><div class="v">{{SUPPLY}}</div><small>total ${{TICKER}}</small></div>
+  <div class="tcard rv"><div class="l">TAX</div><div class="v">{{TAX}}</div><small>no villain fees</small></div>
+  <div class="tcard rv"><div class="l">LIQUIDITY</div><div class="v">{{LP}}</div><small>sealed in the vault</small></div>
+  <div class="tcard rv"><div class="l">POWER</div><div class="v">∞</div><small>meme energy</small></div>
+ </div>
+ <h2 class="cap rv" id="buy">How to Buy (in 4 panels)</h2>
+ <div class="four">
+  <div class="panel rv"><span class="caption">1.</span><h3>Suit Up</h3><p>Get {{WALLET}} and secure your seed phrase like a secret identity.</p></div>
+  <div class="panel rv"><span class="caption">2.</span><h3>Fuel Up</h3><p>Load your wallet with {{NATIVE}}.</p></div>
+  <div class="panel rv"><span class="caption">3.</span><h3>Head to {{DEX}}</h3><p>Paste the contract address. Double-check it!</p></div>
+  <div class="panel rv"><span class="caption">4.</span><h3>KA-SWAP!</h3><p>Swap for ${{TICKER}} and join the league.</p></div>
+ </div>
+ <div class="panel chartp rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div>
+ <h2 class="cap rv" id="issues" style="background:#7a2cff">Upcoming Issues</h2>
+ <div class="issues">
+  <div class="issue rv"><div class="top"><span>#1</span><span>OUT NOW</span></div><h3>Genesis</h3><ul><li>Fair launch</li><li>Socials assemble</li><li>First 1k holders</li></ul></div>
+  <div class="issue rv"><div class="top"><span>#2</span><span>COMING</span></div><h3>Rise of the Holders</h3><ul><li>CG / CMC listing</li><li>Meme wars</li><li>Trending everywhere</li></ul></div>
+  <div class="issue rv"><div class="top"><span>#3</span><span>SOON™</span></div><h3>Multiverse</h3><ul><li>CEX arcs</li><li>Merch & collabs</li><li>The final boss: the moon</li></ul></div>
+ </div>
+ <h2 class="cap rv" id="memes">Fan Art</h2>
+ <div class="memes">
+  <div class="panel rv"><img class="gimg" src="{{LOGO}}" alt=""><p>WHAM!</p></div><div class="panel rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(120deg)"><p>BLAM!</p></div>
+  <div class="panel rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(220deg)"><p>ZAP!</p></div><div class="panel rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:grayscale(1) contrast(1.4)"><p>NOIR</p></div>
+ </div>
+ <div class="end rv"><h2>TO BE CONTINUED...</h2><div class="btns" style="justify-content:center"><a class="btn" data-s href="{{X_URL}}">[[X]] FOLLOW</a><a class="btn" data-s href="{{TG_URL}}" style="background:var(--b);color:#fff">[[TG]] JOIN THE LEAGUE</a></div></div>
+</main>
+<footer><p style="font-family:Bangers;font-size:1.6rem;opacity:1">{{NAME}} · ${{TICKER}}</p><p>${{TICKER}} is a meme coin for entertainment only. No intrinsic value, no promises, no financial advice. Any resemblance to actual superheroes is purely coincidental.</p><p>© <span data-year></span></p></footer>
+@@JS@@
+var W=['POW!','BAM!','ZAP!','WHAM!','KAPOW!','BOOM!'];document.addEventListener('click',function(e){if(e.target.closest('a,button'))return;var s=document.createElement('div');s.className='sfx';s.textContent=W[Math.random()*W.length|0];s.style.cssText+='position:fixed;left:'+(e.clientX-40)+'px;top:'+(e.clientY-30)+'px;z-index:99;transition:.6s;';document.body.appendChild(s);requestAnimationFrame(function(){s.style.transform='rotate(-12deg) scale(1.6)';s.style.opacity=0});setTimeout(function(){s.remove()},650)});

@@ -1,0 +1,71 @@
+@@FONTS@@ family=Press+Start+2P&family=VT323
+@@CSS@@
+:root{--bg:#0f0e2a;--bg2:#1b1950;--g:#3dff7a;--y:#ffd400;--p:#ff4fd8;--c:#38e1ff;--w:#f4f4ff}
+body{background:var(--bg);color:var(--w);font-family:VT323,monospace;font-size:22px;line-height:1.35;image-rendering:pixelated}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px);z-index:100}
+h1,h2,h3,.px{font-family:'Press Start 2P',monospace;font-weight:400;line-height:1.3}
+.stars{position:fixed;inset:0;z-index:-1;background:radial-gradient(2px 2px at 20% 30%,#fff 50%,transparent 51%),radial-gradient(2px 2px at 70% 80%,#fff 50%,transparent 51%),radial-gradient(2px 2px at 40% 60%,#aaf 50%,transparent 51%),radial-gradient(3px 3px at 85% 20%,#ff0 50%,transparent 51%),radial-gradient(2px 2px at 10% 85%,#fff 50%,transparent 51%);background-size:300px 300px;animation:tw 3s steps(2) infinite}@keyframes tw{50%{opacity:.5}}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}
+.pbox{background:var(--bg2);border:4px solid var(--w);box-shadow:0 0 0 4px var(--bg),0 0 0 8px var(--c),8px 8px 0 8px #000;padding:24px;position:relative}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px;max-width:1100px;margin:auto;gap:10px;flex-wrap:wrap}
+nav .b{display:flex;align-items:center;gap:12px;font-family:'Press Start 2P';font-size:14px;color:var(--y)}nav .b img{width:40px;height:40px;image-rendering:pixelated}
+nav .l{display:flex;gap:18px;font-family:'Press Start 2P';font-size:10px}nav .l a:hover{color:var(--g)}nav .l a:hover::before{content:"▶ "}
+.soc{display:flex;gap:10px}.soc a{width:44px;height:44px;display:grid;place-items:center;background:var(--p);border:4px solid var(--w);box-shadow:4px 4px 0 #000;font-size:20px}.soc a:active{transform:translate(4px,4px);box-shadow:none}
+.hero{text-align:center;padding:50px 0 80px}
+.hero h1{font-size:clamp(28px,7vw,76px);color:var(--y);text-shadow:4px 4px 0 var(--p),8px 8px 0 #000;margin:28px 0 12px}
+.hero .logo{width:min(260px,60vw);margin:auto;image-rendering:pixelated;filter:drop-shadow(8px 8px 0 #000);animation:hop 1s steps(2) infinite}@keyframes hop{50%{transform:translateY(-12px)}}
+.press{font-family:'Press Start 2P';color:var(--g);font-size:clamp(12px,2vw,18px);animation:bl 1s steps(1) infinite;margin:26px 0}@keyframes bl{50%{opacity:0}}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:'Press Start 2P';font-size:13px;padding:16px 20px;background:var(--g);color:#000;border:4px solid var(--w);box-shadow:6px 6px 0 #000;text-transform:uppercase}.btn:hover{background:var(--y)}.btn:active{transform:translate(6px,6px);box-shadow:none}.btn.alt{background:var(--c)}
+.btns{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.ca{margin:30px auto 0;max-width:720px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;text-align:left}.ca .ca-text{flex:1;color:var(--c);font-size:22px}
+.hud{display:flex;justify-content:center;gap:40px;font-family:'Press Start 2P';font-size:11px;color:var(--w);margin-top:22px;flex-wrap:wrap}.hud b{color:var(--y)}
+.coinbar{background:#000;border-block:4px solid var(--y);padding:12px 0;font-family:'Press Start 2P';font-size:14px;color:var(--y)}.coinbar span{display:inline-flex;gap:2rem}
+section{padding:80px 0}
+h2{font-size:clamp(18px,3.4vw,32px);color:var(--c);text-align:center;margin:0 0 40px;text-shadow:4px 4px 0 #000}h2::before,h2::after{content:" ★ ";color:var(--p)}
+.dialog{display:grid;grid-template-columns:200px 1fr;gap:26px;align-items:center}.dialog img{image-rendering:pixelated;border:4px solid var(--w);background:#000}
+.typed{min-height:5em}.typed::after{content:"▌";animation:bl .7s steps(1) infinite;color:var(--g)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.bar{height:24px;background:#000;border:3px solid var(--w);margin:8px 0 18px;position:relative}.bar i{position:absolute;inset:0;background:repeating-linear-gradient(90deg,var(--g) 0 14px,#2bc95c 14px 16px);width:0;transition:width 1.6s steps(20)}.in .bar i{width:var(--w2)}
+.bar.r i{background:repeating-linear-gradient(90deg,var(--p) 0 14px,#c03aa4 14px 16px)}.bar.y i{background:repeating-linear-gradient(90deg,var(--y) 0 14px,#c9a700 14px 16px)}
+.lbl{display:flex;justify-content:space-between;font-family:'Press Start 2P';font-size:11px}
+.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.lvl{text-align:center}.lvl .n{font-family:'Press Start 2P';font-size:12px;background:var(--p);display:inline-block;padding:8px;margin-bottom:12px;border:3px solid var(--w)}.lvl .ic{font-size:46px;display:block}
+.lvl.done .n{background:var(--g);color:#000}
+.cab{border:10px solid #333;border-top-width:40px;background:#000;box-shadow:0 0 0 4px var(--p),12px 12px 0 #000;position:relative;margin-top:40px}.cab::before{content:"INSERT COIN";position:absolute;top:-32px;left:0;right:0;text-align:center;font-family:'Press Start 2P';font-size:12px;color:var(--y)}
+.inv{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.slot{background:#000;border:4px solid #555;aspect-ratio:1;padding:8px;position:relative;transition:border-color .1s}.slot:hover{border-color:var(--y)}.slot img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.slot span{position:absolute;right:4px;bottom:0;font-family:'Press Start 2P';font-size:9px;color:var(--y)}
+.map{display:flex;justify-content:space-between;position:relative;gap:10px;flex-wrap:wrap}.map::before{content:"";position:absolute;left:5%;right:5%;top:46px;border-top:6px dashed var(--y)}.node{position:relative;text-align:center;flex:1;min-width:150px}.node .dot{width:90px;height:90px;margin:0 auto 14px;display:grid;place-items:center;font-family:'Press Start 2P';font-size:20px;background:var(--bg2);border:4px solid var(--w);box-shadow:4px 4px 0 #000}.node.cur .dot{background:var(--g);color:#000;animation:hop 1s steps(2) infinite}
+footer{text-align:center;padding:40px 18px 60px;font-size:18px;color:#aab}footer .px{color:var(--y);font-size:12px}
+@media(max-width:800px){nav .l{display:none}.dialog,.stats{grid-template-columns:1fr}.dialog img{width:160px;margin:auto}.levels{grid-template-columns:1fr 1fr}.inv{grid-template-columns:repeat(3,1fr)}.map::before{display:none}}
+@@BODY@@
+<div class="stars"></div>
+<nav><a class="b" href="#"><img src="{{LOGO}}" alt="">${{TICKER}}</a><div class="l"><a href="#story">STORY</a><a href="#stats">STATS</a><a href="#play">HOW TO PLAY</a><a href="#items">ITEMS</a><a href="#map">MAP</a></div><div class="soc">[[SOCIALS]]</div></nav>
+<header class="hero wrap">
+ <img class="logo floaty" data-parallax="0.12" src="{{LOGO}}" alt="{{NAME}}">
+ <h1>{{NAME}}</h1>
+ <div class="px" style="font-size:12px;color:var(--c)">{{TAGLINE}}</div>
+ <div class="press">PRESS START TO BUY</div>
+ <div class="btns"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] START</a><a class="btn alt" data-s href="{{DEXS_URL}}">[[DEX]] HI-SCORES</a></div>
+ <div class="pbox ca"><span class="px" style="font-size:11px;color:var(--y)">CA&gt;</span><span class="ca-text">{{CA}}</span><button class="btn" data-copy style="padding:10px 14px;font-size:11px">COPY</button></div>
+ <div class="hud"><span>1UP <b>${{TICKER}}</b></span><span>WORLD <b>{{CHAIN_NAME}}</b></span><span>LIVES <b>∞</b></span></div>
+</header>
+<div class="coinbar mq"><div class="mq-track"><span>● ${{TICKER}} ● 1UP ● {{NAME}} ● HIGH SCORE ● +1000 ● GG ● NO RUG ● </span></div></div>
+<section id="story"><div class="wrap"><h2>STORY MODE</h2>
+ <div class="pbox dialog rv"><img src="{{LOGO}}" alt=""><div><div class="px" style="font-size:12px;color:var(--y);margin-bottom:12px">{{NAME}}:</div><p class="typed" data-text="{{ABOUT}}"></p><div style="text-align:right;color:var(--g);animation:bl 1s steps(1) infinite">▼</div></div></div>
+</div></section>
+<section id="stats"><div class="wrap"><h2>CHARACTER STATS</h2>
+ <div class="stats"><div class="pbox rv"><div class="lbl"><span>SUPPLY</span><span>{{SUPPLY}}</span></div><div class="bar"><i style="--w2:100%"></i></div><div class="lbl"><span>LIQUIDITY</span><span>{{LP}}</span></div><div class="bar y"><i style="--w2:100%"></i></div><div class="lbl"><span>TAX</span><span>{{TAX}}</span></div><div class="bar r"><i style="--w2:4%"></i></div></div>
+ <div class="pbox rv"><div class="lbl"><span>MEME POWER</span><span>MAX</span></div><div class="bar r"><i style="--w2:96%"></i></div><div class="lbl"><span>COMMUNITY</span><span>LV 99</span></div><div class="bar"><i style="--w2:88%"></i></div><div class="lbl"><span>CHAIN</span><span>{{CHAIN_NAME}}</span></div><div class="bar y"><i style="--w2:75%"></i></div></div></div>
+</div></section>
+<section id="play"><div class="wrap"><h2>HOW TO PLAY</h2>
+ <div class="levels"><div class="pbox lvl rv done"><span class="n">1-1</span><span class="ic">👛</span><p>Download {{WALLET}}.</p></div><div class="pbox lvl rv"><span class="n">1-2</span><span class="ic">🪙</span><p>Collect {{NATIVE}} coins.</p></div><div class="pbox lvl rv"><span class="n">1-3</span><span class="ic">🏰</span><p>Enter {{DEX}} & paste CA.</p></div><div class="pbox lvl rv"><span class="n">BOSS</span><span class="ic">⭐</span><p>Swap for ${{TICKER}}. You win!</p></div></div>
+ <div class="cab rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div>
+</div></section>
+<section id="items"><div class="wrap"><h2>INVENTORY</h2>
+ <div class="inv"><div class="slot rv"><img class="gimg" src="{{LOGO}}" alt=""><span>x99</span></div><div class="slot rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(90deg)"><span>x12</span></div><div class="slot rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(180deg)"><span>x7</span></div><div class="slot rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:invert(1)"><span>x1</span></div><div class="slot rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(270deg)"><span>x42</span></div><div class="slot rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:grayscale(1)"><span>x3</span></div></div>
+</div></section>
+<section id="map"><div class="wrap"><h2>WORLD MAP</h2>
+ <div class="map"><div class="node cur rv"><div class="dot">W1</div><b class="px" style="font-size:11px">LAUNCH</b><p>Fair launch · socials · 1k holders</p></div><div class="node rv"><div class="dot">W2</div><b class="px" style="font-size:11px">LISTINGS</b><p>CMC · CoinGecko · trending</p></div><div class="node rv"><div class="dot">W3</div><b class="px" style="font-size:11px">EXPANSION</b><p>Collabs · merch · CEX</p></div><div class="node rv"><div class="dot">🌙</div><b class="px" style="font-size:11px">FINAL BOSS</b><p>The Moon</p></div></div>
+ <div class="btns" style="margin-top:50px"><a class="btn" data-s href="{{X_URL}}">[[X]] FOLLOW</a><a class="btn alt" data-s href="{{TG_URL}}">[[TG]] MULTIPLAYER</a></div>
+</div></section>
+<footer><div class="px">GAME OVER? NEVER.</div><p>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. For entertainment only. Not financial advice.</p><p>© <span data-year></span> {{NAME}} · ALL RIGHTS RESERVED · CONTINUE? 9..8..7..</p></footer>
+@@JS@@
+document.querySelectorAll('.typed').forEach(function(el){var t=el.getAttribute('data-text'),i=0,st=false;var io=new IntersectionObserver(function(e){if(e[0].isIntersecting&&!st){st=true;(function ty(){el.textContent=t.slice(0,++i);if(i<t.length)setTimeout(ty,22)})()}});io.observe(el);if(navigator.webdriver)el.textContent=t});

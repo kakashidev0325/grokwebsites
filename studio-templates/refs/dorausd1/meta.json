@@ -1,0 +1,110 @@
+{
+  "slug": "dorausd1",
+  "url": "https://www.dorausd1.com",
+  "status": "ok",
+  "reason": "",
+  "title": "DORA - micro vote for women 's power- women's foundation",
+  "final_url": "https://www.dorausd1.com/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(31, 18, 13)",
+    "color": "rgb(0, 0, 0)",
+    "font": "\"Times New Roman\"",
+    "fonts": [],
+    "colors": [
+      "rgb(31, 18, 13)",
+      "rgb(0, 0, 0)"
+    ],
+    "sections": [],
+    "imgCount": 13,
+    "imgs": [
+      {
+        "src": "https://www.dorausd1.com/image/CA.png",
+        "w": 935,
+        "h": 185,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/connect.png",
+        "w": 382,
+        "h": 138,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/index01.jpg",
+        "w": 3840,
+        "h": 2268,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/wen-1.png",
+        "w": 778,
+        "h": 553,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/next.png",
+        "w": 132,
+        "h": 131,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/next.png",
+        "w": 132,
+        "h": 131,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/index02.jpg",
+        "w": 3840,
+        "h": 1851,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/index03.jpg",
+        "w": 3840,
+        "h": 1725,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/index05.jpg",
+        "w": 3840,
+        "h": 2507,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/big_wen01.png",
+        "w": 1005,
+        "h": 667,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/index06.jpg",
+        "w": 3840,
+        "h": 3038,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/index07.jpg",
+        "w": 3840,
+        "h": 2258,
+        "alt": ""
+      },
+      {
+        "src": "https://www.dorausd1.com/image/play.png",
+        "w": 182,
+        "h": 182,
+        "alt": ""
+      }
+    ],
+    "hasSticky": false,
+    "hasMarquee": false,
+    "hasChart": false,
+    "hasVideo": true,
+    "scrollH": 5118,
+    "title": "DORA - micro vote for women 's power- women's foundation"
+  },
+  "css_urls": [
+    "https://www.dorausd1.com/style/style_v-4.css"
+  ]
+}

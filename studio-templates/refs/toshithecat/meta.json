@@ -1,0 +1,296 @@
+{
+  "slug": "toshithecat",
+  "url": "https://www.toshithecat.com",
+  "status": "ok",
+  "reason": "",
+  "title": "Toshi | Face of Base",
+  "final_url": "https://www.toshithecat.com/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "font": "\"Inter Tight\", Arial, sans-serif",
+    "fonts": [
+      "Inter Tight"
+    ],
+    "colors": [
+      "rgb(255, 255, 255)",
+      "rgb(0, 0, 0)",
+      "rgb(0, 82, 255)",
+      "rgb(23, 26, 34)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section_header26",
+        "h": 906
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section_links",
+        "h": 108
+      },
+      {
+        "tag": "SECTION",
+        "id": "how-to",
+        "cls": "marquee_section",
+        "h": 62
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section_layout204",
+        "h": 1728
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "marquee_section",
+        "h": 62
+      },
+      {
+        "tag": "SECTION",
+        "id": "NFToshis",
+        "cls": "section_claim",
+        "h": 808
+      },
+      {
+        "tag": "SECTION",
+        "id": "NFToshis",
+        "cls": "section_nft",
+        "h": 813
+      },
+      {
+        "tag": "SECTION",
+        "id": "merch",
+        "cls": "section_merch",
+        "h": 739
+      },
+      {
+        "tag": "SECTION",
+        "id": "art",
+        "cls": "section_meme",
+        "h": 1999
+      },
+      {
+        "tag": "SECTION",
+        "id": "media",
+        "cls": "section_media",
+        "h": 420
+      },
+      {
+        "tag": "SECTION",
+        "id": "MeowDAO",
+        "cls": "section_intro",
+        "h": 799
+      },
+      {
+        "tag": "SECTION",
+        "id": "mart",
+        "cls": "section_tools-mart",
+        "h": 583
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "section_faq4",
+        "h": 1119
+      }
+    ],
+    "imgCount": 80,
+    "imgs": [
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace6e8_668fb6d8916b6cd3309a9b4a_Toshi-wink-transparent-ezgif.com-optimize%20(1).gif",
+        "w": 550,
+        "h": 622,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace639_x-twitter.png",
+        "w": 96,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace63a_farcaster.png",
+        "w": 97,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace641_telegram.png",
+        "w": 97,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace63c_medium.png",
+        "w": 97,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace63f_coingecko.png",
+        "w": 97,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace63e_coinmarketcap.png",
+        "w": 97,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace640_dexscreener.png",
+        "w": 97,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace691_Graphic_Elements.png",
+        "w": 96,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace690_Group%20878.png",
+        "w": 96,
+        "h": 96,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace69d_Group%20886.png",
+        "w": 73,
+        "h": 72,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace6f5_Group.png",
+        "w": 145,
+        "h": 145,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace711_Group%201016.png",
+        "w": 144,
+        "h": 144,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace740_Group.png",
+        "w": 144,
+        "h": 144,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace739_Frame%201597883836.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace72f_Frame%201597883838.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace731_Frame%201597883839.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace73f_Frame%2044094.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace72d_Frame%201597883843.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace736_Frame%25201597883842-p-500.png",
+        "w": 126,
+        "h": 38,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace733_Frame%201597883841.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace732_Frame%201597883840.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace734_Frame%201597883837.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace72e_Frame%201597883848.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace735_Frame%25201597883845-p-500.png",
+        "w": 126,
+        "h": 38,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace738_Frame%201597883846.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace73d_Frame%201597883844.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace73b_Frame%201597883851.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace73a_Frame%201597883850.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/6a394cad5cbc0053a4ace737_Frame%201597883849.png",
+        "w": 574,
+        "h": 174,
+        "alt": ""
+      }
+    ],
+    "hasSticky": false,
+    "hasMarquee": true,
+    "hasChart": false,
+    "hasVideo": true,
+    "scrollH": 10866,
+    "title": "Toshi | Face of Base"
+  },
+  "css_urls": [
+    "https://cdn.prod.website-files.com/6a394cad5cbc0053a4ace5fc/css/toshi-2024-3134de1a2f8226ab03fd4b474698.webflow.shared.c4c9a7285.css",
+    "https://fonts.googleapis.com/css?family=Inconsolata:400,700"
+  ]
+}
