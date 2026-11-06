@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" data-theme-mode="preset" data-theme-preset="solana" style="">
+<html lang="en" data-theme-mode="original" data-theme-preset="" style="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- archetype: c38-ocicat | placeholders: A Meme Donkey AMD assets/logo.png 9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump solana https://x.com/amemedonkey_x https://t.me/amemedonkey_tg https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable A Meme Donkey on Solana. AMD so far so good...moving up tech nicely 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump Solana <img class="dexic" src="assets/dex.png" alt="Pump.fun">=raw html) -->
-<title>A Meme Donkey ($AMD) | The most memeable A Meme Donkey on Solana.</title>
-<meta name="description" content="AMD so far so good...moving up tech nicely">
-<meta property="og:title" content="A Meme Donkey ($AMD)"><meta property="og:description" content="The most memeable A Meme Donkey on Solana."><meta property="og:image" content="assets/logo.png"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/logo.png">
+<!-- archetype: c14-thegme | placeholders: A Meme Dacity AMD assets/logo.png?v=b6816503 TBA solana https://x.com/amemedacity_x https://t.me/amemedacity_tg https://pump.fun/ https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15 (+ optional The most memeable A Meme Dacity on Solana. THE SKYLINE HAS A MAIN CHARACTER. 1,000,000,000 0/0 Pump.fun SOL Phantom https://dexscreener.com/solana Solana <img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun">=raw html) -->
+<title>A Meme Dacity ($AMD) | The most memeable A Meme Dacity on Solana.</title>
+<meta name="description" content="THE SKYLINE HAS A MAIN CHARACTER.">
+<meta property="og:title" content="A Meme Dacity ($AMD)"><meta property="og:description" content="The most memeable A Meme Dacity on Solana."><meta property="og:image" content="assets/logo.png?v=b6816503"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.png?v=b6816503">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@500;600;700&family=Nunito:wght@600;700;800;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;overflow-x:hidden}html{overflow-x:hidden}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
 .ico{width:1.15em!important;height:1.15em!important;max-width:1.15em!important;max-height:1.15em!important;fill:currentColor;flex:none;vertical-align:-.18em}
@@ -476,10 +476,28 @@ img.mx-cut.mx-var3{transform:rotate(-2deg) scale(.9)!important}img.mx-cut.mx-var
 /* wash layer must never take a grid/flex slot, even when a template styles "section>div" */
 .mx-bgw{position:absolute!important;inset:0!important;margin:0!important;grid-area:auto!important;border-radius:inherit}
 
-/* ===== c38-ocicat ===== */
+/* ===== mx-gl3d: themed 3D canvas + CSS depth (see _gl3d.js) ===== */
+canvas.mx-gl{position:absolute!important;left:0!important;top:0!important;right:auto!important;bottom:auto!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;transform:none!important;pointer-events:none!important;z-index:1;opacity:.92}
+canvas.mx-gl.mx-gl-tall{height:min(100%,120vh)!important}
+.mx-gl-dark{mix-blend-mode:screen}
+.mx-gl-light{mix-blend-mode:normal;opacity:.9}
+.mx-gl-orbs,.mx-gl-coins{mix-blend-mode:normal;opacity:1}
+.mx3d-tilt{transform-style:preserve-3d;transition:transform var(--dur-fast,160ms) var(--ease-out,cubic-bezier(.16,1,.3,1));will-change:auto}
+.mx3d-tilt.mx3d-hot{will-change:transform}
+.mx3d-mascot{transition:transform .6s var(--ease-out,cubic-bezier(.16,1,.3,1))}
+.mx3d-glare{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;opacity:0;
+  background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.28),rgba(255,255,255,0) 55%);transition:opacity var(--dur-fast,160ms)}
+.mx3d-hot>.mx3d-glare{opacity:1}
+.mx3d-extrude{text-shadow:1px 1px 0 color-mix(in srgb,var(--a2,var(--a)) 80%,#000),2px 2px 0 color-mix(in srgb,var(--a2,var(--a)) 70%,#000),3px 3px 0 color-mix(in srgb,var(--a2,var(--a)) 60%,#000),4px 4px 0 color-mix(in srgb,var(--a2,var(--a)) 50%,#000),5px 5px 0 color-mix(in srgb,var(--a2,var(--a)) 40%,#000),6px 6px 0 color-mix(in srgb,var(--a2,var(--a)) 30%,#000),10px 14px 18px rgba(0,0,0,.35)}
+.mx3d-chroma{text-shadow:-.04em 0 0 color-mix(in srgb,var(--a) 85%,transparent),.04em 0 0 color-mix(in srgb,var(--a2,var(--a)) 85%,transparent),0 .06em .12em rgba(0,0,0,.35)}
+@media(prefers-reduced-motion:reduce){.mx3d-tilt,.mx3d-mascot{transition:none;transform:none!important}.mx3d-glare{display:none}}
+html.reduced-motion .mx3d-tilt{transform:none!important}
+@media(max-width:700px){.mx-gl{opacity:.75}.mx3d-extrude{text-shadow:1px 1px 0 color-mix(in srgb,var(--a2,var(--a)) 70%,#000),2px 2px 0 color-mix(in srgb,var(--a2,var(--a)) 55%,#000),3px 3px 0 color-mix(in srgb,var(--a2,var(--a)) 40%,#000)}}
+
+/* ===== c14-thegme ===== */
 
 /* ===== clone kit (shared lower sections; tokens set per site) ===== */
-:root{--bg1:url(assets/gpt-bg1.webp);--bg2:url(assets/gpt-bg2.webp);--bg3:url(assets/gpt-bg3.webp)}
+:root{--bg1:url(assets/gpt-bg1.webp?v=958296f0);--bg2:url(assets/gpt-bg2.webp?v=bd7c591a);--bg3:url(assets/gpt-bg3.webp?v=d85a34de)}
 html{scroll-behavior:smooth;background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--fb);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -568,210 +586,421 @@ a .dexic,button .dexic{width:1.35em;height:1.35em;flex:none;display:inline-block
  .mbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:90;gap:8px;padding:8px;border-radius:18px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border:1px solid var(--line)}
  .mbar>*{flex:1;justify-content:center}.ca-box{max-width:100%}}
 
-/* ===== c38-ocicat (cloned from ocicat.club) ===== */
-:root{--bg:#000013;--fg:#e5e5e5;--mut:#b8b8c4;--acc:#c02a34;--acc2:#e5e5e5;--card:#07071f;--line:rgba(192,42,52,.6);--fd:"Bebas Neue",sans-serif;--fb:Montserrat,sans-serif;--fm:Montserrat,monospace;--btnfg:#fff;--r:10px;--br:8px;--fbtn:"Bebas Neue",sans-serif;--h2w:400}
-:root{--ocr:#c02a34}
+/* ===== c14-thegme (cloned from thegme.fun) ===== */
+:root{--bg:#0b0405;--fg:#f6ecd9;--mut:#bfa9a0;--acc:#d3142b;--acc2:#e8b547;--card:#1d080b;--line:#3a1218;--fd:Rye,Georgia,serif;--fb:Nunito,system-ui,sans-serif;--fm:"Space Mono",monospace;--btnfg:#fff;--r:14px;--br:999px;--fbtn:Oswald,sans-serif;--h2w:400}
 
-.ck-foot{display:none}
-body{background:#000013;color:#e5e5e5;font-family:Montserrat,sans-serif}
-.oc-nav{position:fixed;inset:0 0 auto;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:16px 64px;background:#000013;transition:box-shadow .3s}
-.oc-nav.sc{box-shadow:0 10px 30px rgba(0,0,0,.6)}
-.oc-logo img{width:80px;height:80px;border-radius:50%;object-fit:cover;animation:ocSpinIn 1s cubic-bezier(.2,1.4,.3,1) both}
-@keyframes ocSpinIn{from{transform:rotate(-200deg) scale(.3);opacity:0}}
-.oc-links{display:flex;gap:16px}
-.oc-b{display:inline-flex;align-items:center;gap:8px;background:color-mix(in srgb,var(--ocr) 80%,transparent);color:#e5e5e5;border:2px solid #000;border-radius:8px;padding:12px 16px;font:400 20px/1 'Bebas Neue',sans-serif;text-transform:uppercase;text-decoration:none;box-shadow:2px 2px 1px 1px #000;transition:background .2s,transform .2s,box-shadow .2s}
-.oc-b:hover{background:rgba(255,255,255,.3);transform:translate(-2px,-2px);box-shadow:5px 5px 0 1px #000}
-.oc-b .ico,.oc-b .dexic{width:20px;height:20px}
-.oc-mbuy{display:none}
-.oc-hero{position:relative;height:580px;margin-top:112px;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
-.oc-hbg{position:absolute;inset:0;background:var(--bg1) center/cover;animation:ocKB 22s ease-in-out infinite alternate;z-index:0}
-@keyframes ocKB{to{transform:scale(1.08) translateX(-1.5%)}}
-.oc-las{position:absolute;left:0;top:0;width:52%;height:100%;z-index:1;mix-blend-mode:screen;opacity:.75}
-.oc-las path{fill:none;stroke:#ff6a78;stroke-width:1.2;stroke-dasharray:900;stroke-dashoffset:900;animation:ocLas 7s ease-in-out infinite;animation-delay:var(--d);filter:drop-shadow(0 0 4px #ff2a40)}
-@keyframes ocLas{0%{stroke-dashoffset:900;opacity:0}20%{opacity:1}60%{stroke-dashoffset:0;opacity:.9}100%{stroke-dashoffset:-900;opacity:0}}
-.oc-glow{position:absolute;left:8%;top:-10%;width:40%;height:120%;background:radial-gradient(closest-side,rgba(220,30,50,.45),transparent);z-index:1;animation:ocPulse 4s ease-in-out infinite;mix-blend-mode:screen}
-@keyframes ocPulse{50%{opacity:.45;transform:scale(1.1)}}
-.oc-stage{position:relative;z-index:2;width:500px;height:500px;display:flex;align-items:flex-end;justify-content:center}
-.oc-rays{position:absolute;left:50%;bottom:120px;width:0;height:0}
-.oc-rays i{position:absolute;left:-5px;bottom:0;width:10px;height:300px;background:linear-gradient(#fff,#f2efe6);border-radius:5px;transform-origin:50% 100%;transform:rotate(var(--r)) translateY(-60px) scaleY(.2);opacity:0;animation:ocRay 3.6s cubic-bezier(.2,.9,.3,1) infinite;animation-delay:var(--d);box-shadow:0 0 18px rgba(255,255,255,.6)}
-@keyframes ocRay{0%{transform:rotate(var(--r)) translateY(-40px) scaleY(.1);opacity:0}25%{opacity:1}55%{transform:rotate(var(--r)) translateY(-90px) scaleY(1);opacity:.95}100%{transform:rotate(var(--r)) translateY(-130px) scaleY(.6);opacity:0}}
-.oc-hchar{position:relative;width:370px!important;height:370px!important;object-fit:cover;border-radius:50% 50% 0 0;box-shadow:0 0 0 6px rgba(255,255,255,.08),0 -10px 80px rgba(220,30,50,.45);animation:ocBob 4s ease-in-out infinite;transform-origin:50% 100%}
-@keyframes ocBob{0%,100%{transform:translateY(8px) rotate(-1deg)}50%{transform:translateY(-4px) rotate(1deg)}}
-.oc-mq{background:color-mix(in srgb,var(--ocr) 80%,transparent);overflow:hidden;padding:30px 0;position:relative;z-index:3}
-.oc-mqt{display:flex;width:max-content;animation:ocMq 22s linear infinite}
-.oc-mqt span{font:400 36px/1 'Bebas Neue',sans-serif;color:#000013;margin:0 16px;font-weight:600}
-.oc-mqt span:nth-child(3n){animation:ocBlink 2.4s steps(2) infinite}
-@keyframes ocBlink{50%{color:#e5e5e5}}
-@keyframes ocMq{to{transform:translateX(-50%)}}
-.oc-what{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;background:#000013}
-.oc-wt{padding:96px 16px 96px 16px}
-.oc-h1{font:600 128px/.95 'Bebas Neue',sans-serif;margin:0;color:#e5e5e5}
-.oc-h1 span,.oc-h2 span{color:color-mix(in srgb,var(--ocr) 95%,transparent)}
-.oc-p{opacity:.75;font-size:20px;line-height:1.4;margin:10px 0 0}
-.oc-soc{width:70%;display:flex;justify-content:space-around;gap:16px;margin-top:20px;padding:24px 16px;background:color-mix(in srgb,var(--ocr) 80%,transparent);border:2px solid #000;border-radius:8px;box-shadow:2px 2px 1px 1px #000}
-.oc-soc a{width:64px;height:64px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--ocr) 80%,transparent);color:#000013;border:2px solid #000;border-radius:8px;box-shadow:2px 2px 1px 1px #000;transform:rotate(var(--t));transition:transform .3s cubic-bezier(.2,1.6,.3,1),background .2s;animation:ocWig 3s ease-in-out infinite}
-.oc-soc a:nth-child(2){animation-delay:.4s}.oc-soc a:nth-child(3){animation-delay:.8s}.oc-soc a:nth-child(4){animation-delay:1.2s}
-@keyframes ocWig{50%{translate:0 -6px}}
-.oc-soc a:hover{background:rgba(255,255,255,.3);transform:rotate(0) scale(1.15)}
-.oc-soc .ico,.oc-soc .dexic{width:28px;height:28px}
-.oc-pres{position:relative;height:724px;overflow:hidden}
-.oc-cur{position:absolute;inset:0;background:var(--bg2) center/cover;animation:ocSway 9s ease-in-out infinite alternate}
-@keyframes ocSway{to{background-position:54% 50%;transform:scale(1.03)}}
-.oc-spot{position:absolute;left:50%;top:-20%;width:90%;height:140%;translate:-50% 0;background:radial-gradient(ellipse at 50% 60%,rgba(255,240,210,.28),transparent 60%);animation:ocSpot 6s ease-in-out infinite}
-@keyframes ocSpot{50%{transform:translateX(8%)}}
-.oc-screen{position:absolute;left:30%;top:12%;width:64%;height:64%;background:linear-gradient(135deg,#e9f1fb,#b9cde4);border:6px solid #1a1f2c;box-shadow:0 20px 60px rgba(0,0,0,.6);transform:perspective(900px) rotateY(-8deg);overflow:hidden}
-.oc-screen::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%);animation:ocSheen 5s ease-in-out infinite}
-@keyframes ocSheen{from{transform:translateX(-120%)}to{transform:translateX(120%)}}
-.oc-sbar{margin:8% 0 0 30%;width:60%;background:#1a6fbd;color:#fff;font:600 22px Montserrat,sans-serif;padding:8px 14px}
-.oc-slines{margin:6% 0 0 32%;display:grid;gap:12px}
-.oc-slines i{display:block;height:8px;background:#1a6fbd;opacity:.55;border-radius:4px;width:0;animation:ocType 6s ease infinite}
-.oc-slines i:nth-child(2){animation-delay:.3s}.oc-slines i:nth-child(3){animation-delay:.6s}.oc-slines i:nth-child(4){animation-delay:.9s}.oc-slines i:nth-child(5){animation-delay:1.2s}.oc-slines i:nth-child(6){animation-delay:1.5s}
-@keyframes ocType{0%{width:0}30%,90%{width:var(--w,55%)}100%{width:0}}
-.oc-slines i:nth-child(odd){--w:42%}
-.oc-pchar{position:absolute!important;left:18%;bottom:0;width:58%!important;height:auto!important;aspect-ratio:1;object-fit:cover;border-radius:44% 44% 0 0;box-shadow:0 0 60px rgba(0,0,0,.5);animation:ocPoint 3.2s ease-in-out infinite;transform-origin:50% 100%}
-@keyframes ocPoint{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2.5deg) translateY(-8px)}}
-.oc-fade{position:absolute;inset:0;background:linear-gradient(to left,transparent 55%,#000013)}
-.oc-eco{padding:64px 0;background:rgba(0,0,19,.1)}
-.oc-h2{font:600 128px/1 'Bebas Neue',sans-serif;text-align:center;margin:40px 0}
-.oc-ecow{display:flex;align-items:center;justify-content:center;padding:0 40px;max-width:1300px;margin:0 auto}
-.oc-ecoart{width:40%;position:relative;left:-30px}
-.oc-ecoart img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:24px;animation:ocHammer 2.4s ease-in-out infinite;transform-origin:30% 100%;filter:drop-shadow(0 20px 40px color-mix(in srgb,var(--ocr) 35%,transparent))}
-@keyframes ocHammer{0%,100%{transform:rotate(0)}15%{transform:rotate(-4deg)}30%{transform:rotate(2deg)}}
-.oc-cards{width:60%;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-left:-60px;position:relative;z-index:2}
-.oc-card{background:#000013;padding:16px;border-radius:12px;border:4px solid color-mix(in srgb,var(--ocr) 70%,transparent);transition:transform .3s,box-shadow .3s,border-color .3s}
-.oc-card:hover{transform:translateY(-6px) rotate(-.6deg);border-color:#e5e5e5;box-shadow:0 18px 40px -10px color-mix(in srgb,var(--ocr) 70%,transparent)}
-.oc-card header{display:flex;align-items:center}.oc-ic{font-size:18px;animation:ocWig 2.6s ease-in-out infinite}
-.oc-card h3{font:400 20px 'Bebas Neue',sans-serif;text-align:center;width:100%;margin:0}
-.oc-card p{font-size:14px;line-height:1.45;padding-top:16px;margin:0}
-.oc-cbtn{display:flex;align-items:center;gap:6px;width:fit-content;margin:12px auto 0;padding:4px 40px;border-radius:999px;background:color-mix(in srgb,var(--ocr) 70%,transparent);color:#e5e5e5;font-size:14px;text-decoration:none;transition:gap .2s,background .2s}
-.oc-cbtn:hover{gap:14px;background:color-mix(in srgb,var(--ocr) 100%,transparent)}
-.oc-jour{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;max-width:1300px;margin:0 auto;padding:60px 40px}
-.oc-jart{position:relative;width:80%;aspect-ratio:1;justify-self:center;overflow:hidden;border-radius:6px;background:#000}
-.oc-stars{position:absolute;inset:0;background-image:radial-gradient(1px 1px at 10% 20%,#fff,transparent),radial-gradient(1px 1px at 70% 30%,#fff,transparent),radial-gradient(1.5px 1.5px at 40% 80%,#fff,transparent),radial-gradient(1px 1px at 85% 75%,#fff,transparent),radial-gradient(1px 1px at 25% 55%,#fff,transparent),radial-gradient(1.2px 1.2px at 55% 12%,#fff,transparent);background-size:220px 220px;animation:ocStar 18s linear infinite}
-@keyframes ocStar{to{background-position:220px 440px}}
-.oc-jart img{position:relative;width:86%;margin:7% auto 0;aspect-ratio:1;object-fit:cover;border-radius:50% 50% 8px 8px;animation:ocBob 5s ease-in-out infinite}
-.oc-jour{border-image:radial-gradient(circle at 25% 50%,#d43a43,#b3232c 45%,#7d141b) fill 0//0 100vw;position:relative}
-.oc-jour::after{content:"";position:absolute;inset:0 calc(50% - 50vw);pointer-events:none;background-image:radial-gradient(rgba(0,0,0,.18) 1.2px,transparent 1.6px);background-size:14px 14px;-webkit-mask:linear-gradient(90deg,#000,transparent 60%);mask:linear-gradient(90deg,#000,transparent 60%)}
-.oc-jour .oc-jart{background:transparent;overflow:visible}.oc-jour .oc-stars{opacity:.35}.oc-jour .oc-jart img{border-radius:0;object-fit:contain;filter:drop-shadow(0 26px 30px rgba(0,0,0,.45))}
-.oc-jour .oc-jh span{color:#fff}.oc-jour .oc-p{color:#fff}.oc-jour .oc-jt{position:relative;z-index:1}
-.oc-jh{font:400 64px/1 'Bebas Neue',sans-serif;text-align:center;margin:0 0 14px}.oc-jh span{color:#e5e5e5}
-.oc-jt .oc-p{font-size:16px}
-.oc-jb{display:flex;justify-content:space-between;margin-top:22px}
-.oc-tok{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;max-width:1240px;margin:0 auto;padding:60px 40px}
-.oc-tbox{background:#2a0a14;border:3px solid #000;border-radius:10px;box-shadow:6px 6px 0 #000;padding:24px}
-.oc-tt{display:inline-block;font:400 72px/1 'Bebas Neue',sans-serif;margin:0 0 16px;padding:6px 18px;border:3px solid #e5e5e5;border-radius:8px;background:#3a0d1a}
-.oc-tl{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:4px}
-.oc-tl li{background:color-mix(in srgb,var(--ocr) 25%,transparent);border-left:3px solid color-mix(in srgb,var(--ocr) 90%,transparent);padding:4px 12px;width:fit-content;font-size:15px;animation:ocSlide .6s both}
-.oc-ca{display:flex;align-items:center;gap:8px;background:#000013;border:2px solid color-mix(in srgb,var(--ocr) 80%,transparent);border-radius:8px;padding:8px 8px 8px 14px}
-.oc-ca code{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}
-.oc-copy{background:color-mix(in srgb,var(--ocr) 80%,transparent);color:#fff;border:2px solid #000;border-radius:6px;padding:6px 10px;cursor:pointer;display:flex}
-.oc-tg{display:flex;gap:12px;margin-top:14px}.oc-tg div{background:#000013;border:2px solid color-mix(in srgb,var(--ocr) 60%,transparent);border-radius:8px;padding:8px 14px;min-width:0}
-.oc-tg small{display:block;font:400 14px 'Bebas Neue';opacity:.7}.oc-tg b{font:400 22px 'Bebas Neue';overflow-wrap:anywhere}
-.oc-pie img{width:100%;max-width:400px;margin:0 auto;animation:ocPie 6s ease-in-out infinite;filter:drop-shadow(0 30px 40px color-mix(in srgb,var(--ocr) 35%,transparent))}
-@keyframes ocPie{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-16px) rotate(3deg)}}
-.oc-road{position:relative;padding:60px 0;overflow:hidden}
-.oc-rbg{position:absolute;inset:0;background:var(--bg3) center/cover;opacity:.9;animation:ocKB 26s ease-in-out infinite alternate}
-.oc-rbox{position:relative;width:min(1152px,92vw);margin:0 auto;background:#4a1220;border:3px solid #000;border-radius:6px;padding:40px 30px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.oc-rt{font:800 56px/1 Montserrat,sans-serif;color:#fff;text-align:center;margin:0 0 34px}
-.oc-chevs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
-.oc-chev{position:relative;background:var(--c);clip-path:polygon(0 0,85% 0,100% 50%,85% 100%,0 100%,15% 50%);padding:36px 18% 26px 22%;min-height:210px;color:#1a0a0e;animation:ocChev 3s ease-in-out infinite;animation-delay:calc(var(--i)*.35s)}
-@keyframes ocChev{0%,100%{filter:brightness(1)}50%{filter:brightness(1.18);transform:translateX(6px)}}
-.oc-chev b{position:absolute;left:50%;top:6px;translate:-50% 0;background:#000;color:#fff;border-radius:50%;width:38px;height:38px;display:grid;place-items:center;font:700 16px Montserrat}
-.oc-chev ul{margin:12px 0 0;padding-left:14px;font-size:13px;line-height:1.35}
-.oc-phs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0}
-.oc-ph{border:2px solid #fff;background:color-mix(in srgb,var(--c) 70%,#000);color:#fff;text-align:center;padding:8px;font:600 14px Montserrat}
-.oc-dao{display:flex;align-items:center;gap:28px;justify-content:center;flex-wrap:wrap}.oc-dao b{font:900 28px/1 Montserrat;color:#fff}
-.oc-dao span{background:var(--c);border:2px solid #fff;padding:22px 34px;font-weight:600;color:#fff;animation:ocWig 3s ease-in-out infinite}
-.oc-part{background:#000013;border-block:1px solid color-mix(in srgb,var(--ocr) 50%,transparent);overflow:hidden;padding:12px 0}
-.oc-ptt{display:flex;width:max-content;gap:60px;animation:ocMq 30s linear infinite}
-.oc-pt{font:400 26px 'Bebas Neue';color:#e5e5e5;opacity:.85;white-space:nowrap}.oc-pt::before{content:"◆ ";color:color-mix(in srgb,var(--ocr) 90%,transparent)}
-.ck-sec{background:#000013}.ck-h2{font-family:'Bebas Neue',sans-serif;font-weight:400}.ck-h2 em{color:color-mix(in srgb,var(--ocr) 95%,transparent)}
-.ck-step,.ck-card{border:3px solid color-mix(in srgb,var(--ocr) 70%,transparent)}
-.oc-foot{text-align:center;padding:60px 20px 120px;background:#000013;position:relative}
-.oc-phone{width:240px;height:300px;margin:0 auto 30px;border-radius:34px;background:#111;border:8px solid #222;box-shadow:0 0 0 2px #444,0 30px 60px rgba(120,60,255,.35);transform:rotate(100deg);animation:ocPhone 6s ease-in-out infinite;overflow:hidden}
-@keyframes ocPhone{0%,100%{transform:rotate(-16deg) translateY(0)}50%{transform:rotate(-10deg) translateY(-14px)}}
-.oc-scr{height:100%;background:radial-gradient(circle at 50% 40%,#5b2bd1,#1a0640);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
-.oc-scr img{width:110px!important;height:110px!important;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px #fff,0 0 30px #a070ff;animation:ocTap 1.4s ease-in-out infinite}
-@keyframes ocTap{50%{transform:scale(.9)}}
-.oc-scr b{font:400 30px 'Bebas Neue';color:#fff}.oc-scr span{font-size:11px;letter-spacing:.2em;color:#d9c8ff}
-.oc-foot p{max-width:620px;margin:0 auto 16px;opacity:.8}
-.oc-fs{display:flex;gap:14px;justify-content:center;margin:20px 0}.oc-fs a{width:52px;height:52px;display:grid;place-items:center;background:color-mix(in srgb,var(--ocr) 80%,transparent);border:2px solid #000;border-radius:8px;box-shadow:2px 2px 1px 1px #000;color:#000013;transition:transform .2s}.oc-fs a:hover{transform:rotate(-8deg) scale(1.1)}
-.oc-legal{font-size:12px}
-@keyframes ocSlide{from{opacity:0;transform:translateX(-20px)}}
-@media(max-width:900px){.oc-nav{padding:8px 16px}.oc-logo img{width:56px;height:56px}.oc-links{display:none}.oc-mbuy{display:inline-flex;padding:6px 14px}
-.oc-hero{height:400px;margin-top:72px}.oc-stage{width:320px;height:360px}.oc-hchar{width:260px!important;height:260px!important}.oc-rays{bottom:80px}.oc-rays i{height:200px}.oc-las{width:100%}
-.oc-mq{padding:12px 0}.oc-what,.oc-jour,.oc-tok{grid-template-columns:1fr}.oc-wt{padding:40px 16px;text-align:center}.oc-h1{font-size:64px}.oc-p{font-size:17px}.oc-soc{width:fit-content;margin:20px auto 0}.oc-soc a{width:52px;height:52px}
-.oc-pres{height:420px}.oc-fade{background:linear-gradient(to top,transparent 60%,#000013)}.oc-h2{font-size:56px}.oc-ecow{flex-direction:column;padding:0 16px}.oc-ecoart{width:80%;left:0}.oc-cards{width:100%;margin:-30px 0 0;grid-template-columns:1fr}
-.oc-jour,.oc-tok{padding:40px 16px}.oc-jh{font-size:48px}.oc-tt{font-size:52px}.oc-chevs,.oc-phs{grid-template-columns:1fr 1fr}.oc-rt{font-size:34px}.oc-tg{flex-wrap:wrap}}
-@media (prefers-reduced-motion:reduce){.oc-las,.oc-rays{display:none}}
+:root{
+  --ink:#070203; --bg:#0b0405; --bgx2:#140709; --red:#d3142b; --red-hi:#ff2a43; --red-dk:#6e0913;
+  --gold:#e8b547; --gold-hi:#fbe19a; --gold-dk:#8a5a14; --cream:#f6ecd9; --mute:#bfa9a0;
+  --display:"Rye",Georgia,"Times New Roman",serif;
+  --cond:"Oswald","Arial Narrow",Arial,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Space Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:hidden}
+@supports (overflow-x:clip){html,body{overflow-x:clip}}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{background:var(--bg);color:var(--cream);font:700 17px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
 
-html[data-theme-mode="preset"],html[data-theme-mode="custom"]{--acc:var(--theme-1);--acc2:var(--theme-2);--btnfg:var(--theme-ink);--ocr:var(--theme-1)}
+
+.curtain{position:fixed;inset:0;z-index:100;pointer-events:none;display:flex}
+.curtain i{flex:1;height:100%;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.55),transparent 18%,transparent 80%,rgba(0,0,0,.6)),
+    repeating-linear-gradient(90deg,#4a0610 0,#9b0f22 3.2%,#c8182e 5%,#8d0c1e 7.2%,#3d040c 10%);
+  transition:transform 1.5s cubic-bezier(.7,0,.2,1);box-shadow:0 0 60px #000}
+.curtain b{position:absolute;left:0;right:0;top:0;height:clamp(60px,11vh,110px);z-index:2;
+  background:linear-gradient(#5a0710,#a3122a 70%,#d6a441 71%,#8a5a14 78%,#e8b547 84%,transparent 85%);
+  -webkit-mask:radial-gradient(40px 28px at 40px 100%,transparent 98%,#000) 0 0/80px 100%;
+          mask:radial-gradient(40px 28px at 40px 100%,transparent 98%,#000) 0 0/80px 100%;
+  transition:transform 1.2s .5s cubic-bezier(.7,0,.2,1)}
+.opened .curtain i:nth-of-type(1){transform:translateX(-100%)}
+.opened .curtain i:nth-of-type(2){transform:translateX(100%)}
+.opened .curtain b{transform:translateY(-110%)}
+
+
+.strip{background:var(--ink);color:var(--mute);font:700 10.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:8px 12px;border-bottom:1px solid #2a0d10}
+.nav{position:sticky;top:0;z-index:50;background:rgba(9,3,4,.82);border-bottom:1px solid rgba(232,181,71,.22)}
+@supports (backdrop-filter:blur(8px)){.nav{backdrop-filter:blur(10px) saturate(1.2);background:rgba(9,3,4,.62)}}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:400 22px/1 var(--display);color:var(--gold-hi);letter-spacing:.02em}
+.brand img{width:38px;height:38px;border-radius:50%;border:2px solid var(--gold);box-shadow:0 0 0 2px var(--ink),0 0 18px rgba(232,181,71,.35)}
+.links{display:flex;gap:26px;font:600 14px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase}
+.links a{opacity:.8;transition:opacity .2s,color .2s}
+.links a:hover{opacity:1;color:var(--gold-hi)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 15px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;padding:15px 24px;border-radius:999px;transition:transform .15s,box-shadow .2s,filter .2s;white-space:nowrap}
+.btn-red{background:linear-gradient(180deg,var(--red-hi),var(--red) 55%,#a00d20);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 0 0 2px var(--gold),0 0 0 4px var(--ink),0 10px 30px rgba(211,20,43,.45)}
+.btn-red:hover{transform:translateY(-2px);filter:brightness(1.08);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 0 0 2px var(--gold-hi),0 0 0 4px var(--ink),0 16px 40px rgba(211,20,43,.6)}
+.btn-ghost{color:var(--gold-hi);box-shadow:inset 0 0 0 2px rgba(232,181,71,.7)}
+.btn-ghost:hover{background:rgba(232,181,71,.1);transform:translateY(-2px)}
+.nav .btn{padding:12px 20px;font-size:13px}
+.navr{display:flex;align-items:center;gap:12px}
+.xicon{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;color:var(--gold-hi);box-shadow:inset 0 0 0 2px rgba(232,181,71,.6);transition:.2s}
+.xicon:hover{background:rgba(232,181,71,.12)}
+.btn-x svg{flex:none}
+.final{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+
+
+.hero{position:relative;min-height:min(100svh,1000px);display:flex;align-items:center;overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:0;z-index:-2;background:#0b0405 center/cover no-repeat}
+.hero-media img,.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%}
+.hero-media video{opacity:0;transition:opacity 1s}
+.hero-media video.on{opacity:1}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(90deg,rgba(8,2,3,.92) 0%,rgba(8,2,3,.7) 30%,rgba(8,2,3,.1) 56%,transparent 70%),
+    linear-gradient(0deg,var(--bg) 0%,transparent 22%),
+    radial-gradient(120% 90% at 70% 45%,transparent 50%,rgba(0,0,0,.55))}
+.spot{position:absolute;inset:0;z-index:-1;pointer-events:none;mix-blend-mode:soft-light;
+  background:radial-gradient(420px 420px at var(--mx,30%) var(--my,40%),rgba(255,226,160,.35),transparent 70%)}
+.hero-copy{position:relative;max-width:780px;padding:60px 0 90px}
+.kicker{display:flex;align-items:center;gap:14px;font:600 13px/1 var(--cond);letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+.kicker::before,.kicker::after{content:"";height:1px;width:40px;background:linear-gradient(90deg,transparent,var(--gold))}
+.kicker::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.star{width:12px;height:12px;flex:none;background:var(--gold);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.wordmark{font:400 clamp(5rem,15vw,11.5rem)/.85 var(--display);letter-spacing:.01em;margin:22px 0 18px;position:relative;
+  color:var(--gold-hi);
+  background:linear-gradient(180deg,#fff4cc 0%,#fbe19a 28%,#e8b547 52%,#b67a1f 70%,#f5d27c 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 1px 0 #6e4410) drop-shadow(0 2px 0 #6e4410) drop-shadow(3px 5px 0 var(--red-dk)) drop-shadow(5px 8px 0 #2b0306) drop-shadow(0 18px 30px rgba(0,0,0,.6))}
+.wordmark .sh{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.95) 50%,transparent 60%) -150% 0/60% 100% no-repeat;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 5.5s 2.2s infinite}
+@keyframes shine{0%{background-position:-150% 0}28%,100%{background-position:260% 0}}
+.ribbon{position:relative;display:inline-block;font:700 clamp(15px,2.1vw,21px)/1 var(--cond);letter-spacing:.24em;text-transform:uppercase;color:#fff;
+  padding:14px 44px;background:linear-gradient(180deg,#e21a33,#a80e22);
+  clip-path:polygon(0 0,100% 0,calc(100% - 18px) 50%,100% 100%,0 100%,18px 50%);
+  filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
+.ribbon em{font-style:normal;color:var(--gold-hi)}
+.ribbon::before{content:"";position:absolute;inset:4px 22px;border-top:1px dashed rgba(255,225,160,.55);border-bottom:1px dashed rgba(255,225,160,.55)}
+.hero-sub{margin:26px 0 30px;font-size:clamp(16px,1.6vw,19px);color:#eadbc8;max-width:520px;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.hero-sub b{color:var(--gold-hi)}
+.cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+
+.ticket{position:relative;display:flex;align-items:stretch;margin-top:26px;max-width:560px;min-width:0;
+  background:linear-gradient(90deg,#f6ecd9,#efdcb8);color:#2a0a0d;border-radius:10px;
+  -webkit-mask:radial-gradient(12px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(12px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(12px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(12px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;
+  filter:drop-shadow(0 10px 22px rgba(0,0,0,.55))}
+.ticket .stub{flex:none;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:12px 18px 12px 24px;background:var(--red);color:#fff;border-right:2px dashed rgba(255,255,255,.55);font:700 11px/1.1 var(--cond);letter-spacing:.2em;text-align:center}
+.ticket .stub strong{font:400 19px/1 var(--display);letter-spacing:.02em;margin-top:3px}
+.ticket .body{flex:1;min-width:0;padding:12px 16px}
+.ticket .lbl{font:700 10px/1 var(--mono);letter-spacing:.2em;color:#8b2a30;text-transform:uppercase}
+.ticket .ca{font:700 clamp(12px,1.5vw,14px)/1.3 var(--mono);margin-top:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ticket button{flex:none;margin:10px 22px 10px 0;padding:0 16px;border-radius:8px;background:#2a0a0d;color:var(--gold-hi);font:700 12px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase}
+.ticket button:hover{background:var(--red)}
+
+.scroll-cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);font:600 11px/1 var(--cond);letter-spacing:.3em;color:var(--gold);opacity:.75;display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-cue i{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);animation:cue 2s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+
+.stats{position:relative;z-index:3;background:linear-gradient(180deg,#1b080b,#0f0506);border-top:1px solid rgba(232,181,71,.35);border-bottom:1px solid rgba(232,181,71,.35)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:18px 10px;text-align:center;border-left:1px solid rgba(232,181,71,.14)}
+.stat:first-child{border-left:0}
+.stat span{display:block;font:600 11px/1 var(--cond);letter-spacing:.28em;color:var(--mute);text-transform:uppercase}
+.stat b{display:block;margin-top:8px;font:700 clamp(15px,2vw,21px)/1 var(--mono);color:var(--gold-hi)}
+.stat b.up{color:#4fe08a}.stat b.dn{color:var(--red-hi)}
+
+
+.marquees{position:relative;padding:34px 0 26px;overflow:hidden}
+.mq{display:flex;white-space:nowrap;font:400 clamp(22px,3vw,34px)/1 var(--display);padding:14px 0;border-block:2px solid var(--ink)}
+.mq>div{display:flex;flex:none;animation:mq 38s linear infinite;padding-right:0}
+.mq span{padding:0 22px;display:inline-flex;align-items:center;gap:44px}
+.mq span::after{content:"";width:14px;height:14px;background:currentColor;clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.mq.a{background:var(--red);color:#fff;transform:rotate(-1.6deg) scale(1.04);box-shadow:0 8px 0 var(--ink)}
+.mq.b{background:var(--gold);color:#240709;transform:rotate(1.2deg) scale(1.04);margin-top:-6px}
+.mq.b>div{animation-direction:reverse;animation-duration:44s}
+@keyframes mq{to{transform:translateX(-100%)}}
+
+
+section{position:relative}
+.tent{background:
+  linear-gradient(180deg,var(--bg),transparent 12%,transparent 82%,var(--bg)),
+  radial-gradient(90% 60% at 50% 0%,rgba(211,20,43,.16),transparent 70%),
+  repeating-conic-gradient(from -90deg at 50% -30%,#12060a 0 4deg,#0b0405 4deg 8deg)}
+.pad{padding:clamp(70px,10vw,130px) 0}
+.head{text-align:center;max-width:920px;margin:0 auto clamp(40px,5vw,64px)}
+.head .kicker{justify-content:center}
+.h2{font:400 clamp(2.3rem,5.6vw,4.4rem)/1 var(--display);margin:18px 0 16px;color:var(--cream);text-shadow:3px 4px 0 var(--red-dk),0 14px 30px rgba(0,0,0,.6)}
+.h2 em{font-style:normal;color:var(--gold-hi)}
+.lead{color:var(--mute);font-size:18px}
+
+
+.acts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.act{position:relative;border-radius:18px;overflow:hidden;background:#150709;
+  box-shadow:0 0 0 1px rgba(232,181,71,.55),0 0 0 6px #0b0405,0 0 0 7px rgba(232,181,71,.25),0 24px 50px rgba(0,0,0,.6);
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.act:hover{transform:translateY(-8px) rotate(-.4deg);box-shadow:0 0 0 1px var(--gold-hi),0 0 0 6px #0b0405,0 0 0 7px rgba(232,181,71,.5),0 34px 70px rgba(211,20,43,.35)}
+.act .pic{position:relative;aspect-ratio:4/5;overflow:hidden}
+.act .pic img,.act .pic video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.act:hover .pic img{transform:scale(1.06)}
+.act .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(11,4,5,.2) 60%,#150709 100%)}
+.act .num{position:absolute;top:14px;left:14px;z-index:2;font:700 11px/1 var(--cond);letter-spacing:.28em;background:rgba(11,4,5,.78);color:var(--gold-hi);padding:8px 12px;border-radius:999px;border:1px solid rgba(232,181,71,.5)}
+.act .txt{position:relative;padding:0 20px 24px;margin-top:-54px;z-index:2}
+.act h3{font:400 24px/1.05 var(--display);color:var(--gold-hi);margin-bottom:10px}
+.act p{font-size:15px;color:#d9c7b6;line-height:1.5}
+
+
+.lore{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(30px,5vw,70px);align-items:center}
+.frame{position:relative;border-radius:22px;padding:14px;background:linear-gradient(135deg,#2a0b0f,#120507)}
+.frame::before{content:"";position:absolute;inset:0;border-radius:22px;padding:2px;background:linear-gradient(135deg,var(--gold-hi),var(--gold-dk) 40%,var(--gold) 70%,var(--gold-dk));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+.frame img{border-radius:12px;width:100%;aspect-ratio:2/3;object-fit:cover}
+.bulbs{position:absolute;inset:4px;pointer-events:none;border-radius:20px}
+.bulbs i{position:absolute;width:8px;height:8px;border-radius:50%;background:#ffe9ad;box-shadow:0 0 8px 2px rgba(255,210,120,.8);transform:translate(-50%,-50%);animation:bulb 1.2s steps(1) infinite}
+.bulbs i:nth-child(odd){animation-delay:.6s}
+@keyframes bulb{50%{background:#7a4d14;box-shadow:none}}
+.frame .tag{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);white-space:nowrap}
+.cards{display:grid;gap:16px}
+.card{position:relative;display:grid;grid-template-columns:92px 1fr;gap:18px;align-items:start;padding:20px 22px;border-radius:16px;
+  background:linear-gradient(180deg,rgba(40,12,16,.9),rgba(20,7,9,.9));border:1px solid rgba(232,181,71,.28)}
+.card .yr{font:400 30px/1 var(--display);color:var(--red-hi);text-shadow:2px 2px 0 #2b0306}
+.card h4{font:700 17px/1.2 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:6px}
+.card p{font-size:15px;color:#d9c7b6}
+.card.now{background:linear-gradient(180deg,#b5102a,#7a0a18);border-color:var(--gold)}
+.card.now .yr{color:var(--gold-hi)}
+.card.now p{color:#ffe8e0}
+.quote{margin-top:22px;padding:24px 26px;border-left:3px solid var(--red);background:rgba(211,20,43,.08);border-radius:0 14px 14px 0}
+.quote p{font:400 clamp(20px,2.2vw,25px)/1.3 var(--display);color:var(--cream)}
+.quote cite{display:block;margin-top:12px;font:700 11px/1.4 var(--mono);letter-spacing:.14em;color:var(--mute);font-style:normal;text-transform:uppercase}
+
+
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.rule{position:relative;padding:34px 28px 30px;border-radius:18px;text-align:center;background:linear-gradient(180deg,#1d080b,#110507);border:1px solid rgba(232,181,71,.3);overflow:hidden}
+.rule::before{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 0%,rgba(211,20,43,.12) 0 6deg,transparent 6deg 12deg);-webkit-mask:linear-gradient(#000,transparent 70%);mask:linear-gradient(#000,transparent 70%)}
+.rule>*{position:relative}
+.rule .rn{display:inline-block;font:700 11px/1 var(--mono);letter-spacing:.26em;color:var(--ink);background:var(--gold);padding:7px 12px;border-radius:999px}
+.rule h3{font:400 30px/1.05 var(--display);margin:18px 0 12px;color:var(--cream)}
+.rule p{font-size:15.5px;color:#d9c7b6}
+.rule p b{color:var(--gold-hi)}
+
+
+.tickets{position:relative;overflow:hidden;isolation:isolate}
+.tickets .bg{position:absolute;inset:0;z-index:-2}
+.tickets .bg img,.tickets .bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tickets::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,rgba(11,4,5,.55) 22%,rgba(11,4,5,.6) 60%,var(--bg) 100%)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;counter-reset:s}
+.step{padding:26px 22px;border-radius:16px;background:rgba(14,5,6,.82);border:1px solid rgba(232,181,71,.35)}
+@supports (backdrop-filter:blur(6px)){.step{backdrop-filter:blur(6px);background:rgba(14,5,6,.66)}}
+.step .n{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font:400 22px/1 var(--display);color:#fff;background:radial-gradient(circle at 35% 30%,var(--red-hi),var(--red) 60%,#7a0a18);box-shadow:0 0 0 2px var(--gold),0 0 0 4px var(--ink)}
+.step h4{font:700 18px/1.2 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi);margin:18px 0 8px}
+.step p{font-size:15px;color:#e1d0bf}
+.final{text-align:center;margin-top:54px}
+.final .btn{font-size:18px;padding:20px 38px}
+
+
+footer{background:var(--ink);border-top:1px solid rgba(232,181,71,.2);padding:48px 0 60px;color:#8f7b74;font-size:13px;line-height:1.7}
+footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center;margin-bottom:26px}
+footer .brand{font-size:26px}
+footer nav{display:flex;gap:20px;font:600 13px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;color:var(--cream)}
+footer nav a:hover{color:var(--gold-hi)}
+
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.acts .rv:nth-child(2),.rules .rv:nth-child(2),.steps .rv:nth-child(2){transition-delay:.1s}
+.acts .rv:nth-child(3),.rules .rv:nth-child(3),.steps .rv:nth-child(3){transition-delay:.2s}
+.acts .rv:nth-child(4),.steps .rv:nth-child(4){transition-delay:.3s}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,30px);opacity:0;z-index:90;background:var(--gold);color:var(--ink);font:700 13px/1 var(--cond);letter-spacing:.2em;padding:14px 22px;border-radius:999px;transition:.3s;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+
+@media (max-width:1020px){
+  .acts,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lore{grid-template-columns:1fr}
+  .lore .frame{max-width:440px;margin:0 auto 20px}
+}
+@media (max-width:760px){
+  .links{display:none}
+  .hero{min-height:auto;align-items:flex-end}
+  .mh{display:none}
+  .hero-media{inset:0 0 auto 0;height:150vw}
+  .hero-media img,.hero-media video{object-position:50% 50%}
+  .hero::before{background:linear-gradient(180deg,rgba(11,4,5,.55) 0,transparent 30vw),linear-gradient(0deg,var(--bg) calc(100% - 150vw),rgba(11,4,5,.55) calc(100% - 136vw),transparent calc(100% - 112vw))}
+  .hero-copy{padding:7vw 0 56px;text-align:center;max-width:none}
+  .hgap{height:calc(150vw - 270px)}
+  .hero-copy .kicker{justify-content:center;letter-spacing:.24em;font-size:11px}
+  .hero-copy .kicker::before,.hero-copy .kicker::after{width:22px}
+  .wordmark{margin:10px 0 12px;font-size:27vw}
+  .ribbon{padding:12px 34px;letter-spacing:.18em}
+  .hero-sub{margin:20px auto 22px}
+  .cta{justify-content:center}
+  .ticket{margin-inline:auto;text-align:left}
+  .scroll-cue{display:none}
+  .kicker{font-size:11px;letter-spacing:.22em;gap:10px}
+  .kicker::before,.kicker::after{width:22px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid rgba(232,181,71,.14)}
+  .rules{grid-template-columns:1fr}
+  .card{grid-template-columns:70px 1fr;gap:14px;padding:18px}
+  .card .yr{font-size:24px}
+}
+@media (max-width:520px){
+  .acts,.steps{grid-template-columns:1fr}
+  .act .pic{aspect-ratio:1/1}
+  .act .pic img,.act .pic video{object-position:50% 12%}
+  .ticket .stub{padding:10px 12px 10px 20px}
+  .ticket .stub strong{font-size:16px}
+  .ticket button{margin-right:18px;padding:0 12px}
+  .cta .btn{flex:1}
+  .cta .btn-x{flex:0 0 100%}
+  .xicon{width:40px;height:40px}
+  .nav .btn{padding:11px 16px}
+  .brand{font-size:19px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  .curtain{display:none}
+}
+
+.hero-media{background:#0b0405}
+.gm-stage{--sw:max(144vw,calc(min(100svh,1000px)*2.2222));position:absolute;top:50%;left:calc(72vw - var(--sw)/2);width:var(--sw);aspect-ratio:2000/900;transform:translateY(-50%);background:var(--bg1) center/100% 100% no-repeat;animation:gmKen 20s ease-in-out infinite alternate}
+@keyframes gmKen{from{transform:translateY(-50%) scale(1)}to{transform:translateY(-50%) scale(1.05)}}
+.gm-stage .gchar{position:absolute;inset:auto!important;left:50%!important;bottom:42.6%!important;width:15%!important;height:auto!important;max-width:none!important;max-height:none!important;aspect-ratio:1;object-fit:cover;border-radius:18px;transform:translateX(-50%);transform-origin:50% 100%;box-shadow:0 0 0 3px #e8b547,0 0 0 7px #6e0913,0 30px 80px -10px rgba(0,0,0,.8),0 0 120px rgba(255,214,140,.35);animation:gmBounce 3.2s cubic-bezier(.3,.6,.4,1) infinite}
+@keyframes gmBounce{0%,100%{transform:translateX(-50%) translateY(0) scale(1,1)}45%{transform:translateX(-50%) translateY(-6%) scale(.98,1.02)}55%{transform:translateX(-50%) translateY(-6%) scale(.98,1.02)}92%{transform:translateX(-50%) translateY(0) scale(1.04,.96)}}
+.gm-beam{position:absolute;left:50%;top:-10%;width:34%;height:80%;transform:translateX(-50%);background:conic-gradient(from 180deg at 50% 0,transparent 160deg,rgba(255,226,160,.22) 172deg,rgba(255,226,160,.32) 180deg,rgba(255,226,160,.22) 188deg,transparent 200deg);mix-blend-mode:screen;pointer-events:none;animation:gmBeam 6s ease-in-out infinite}
+@keyframes gmBeam{50%{opacity:.55;transform:translateX(-50%) rotate(2deg)}}
+.gm-conf{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.gm-conf i{position:absolute;top:-20px;width:8px;height:12px;background:var(--gold);opacity:.8;animation:gmFall linear infinite}
+.gm-conf i:nth-child(3n){background:var(--red-hi)}.gm-conf i:nth-child(4n){background:var(--gold-hi);width:6px}
+@keyframes gmFall{to{transform:translateY(110vh) rotate(720deg)}}
+.wordmark{white-space:nowrap}
+.act .pic .gimg,.frame .gchar{width:100%;height:100%;object-fit:cover;display:block}
+#tamer{position:relative;overflow:hidden}
+#tamer::before{content:'';position:absolute;inset:0;background:var(--bg2) center/cover;opacity:.55;pointer-events:none;-webkit-mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent);mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent)}
+#tamer>.wrap{position:relative}
+.tickets .bg{background:var(--bg3) center/cover no-repeat;animation:gmKen2 24s ease-in-out infinite alternate}
+@keyframes gmKen2{to{transform:scale(1.08)}}
+.navr .gm-soc{display:flex;gap:8px}.navr .gm-soc a{width:38px;height:38px;display:grid;place-items:center;border:1px solid rgba(232,181,71,.5);border-radius:50%;color:var(--gold)}
+.brand img{border-radius:50%;object-fit:cover}
+.ticket .ca{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:760px){.hero-media{height:118vw!important}.gm-stage{--sw:250vw;left:-75vw;top:0;transform:none;animation:none}.navr .gm-soc{display:none}}
+
+html[data-theme-mode="preset"],html[data-theme-mode="custom"]{--acc:var(--theme-1);--acc2:var(--theme-2);--btnfg:var(--theme-ink);--red:var(--theme-1);--red-hi:var(--theme-1);--gold:var(--theme-2);--gold-hi:color-mix(in srgb,var(--theme-2) 60%,#fff)}
 
 
 </style>
-<link rel="canonical" href="https://amemedonkey.lol/">
-<meta property="og:url" content="https://amemedonkey.lol/">
+<link rel="canonical" href="https://amemedacity.lol/">
+<meta property="og:url" content="https://amemedacity.lol/">
 </head>
-<body class="a-c38-ocicat" data-ca="9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" class="">
+<body class="a-c14-thegme" data-ca="TBA" class="" data-mx-gl="coins@full" data-mx-gl-tone="dark" data-mx-3d="cards mascot rise">
 
-<header class="oc-nav"><a href="#top" class="oc-logo"><img src="assets/logo.png" alt="A Meme Donkey logo"></a>
-<nav class="oc-links"><a class="oc-b" href="#memes"><span>Memes</span></a><a class="oc-b" href="https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><span>Chart</span></a><a class="oc-b" href="#buy"><span>How to buy</span></a><a class="oc-b" data-buy href="https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l-3-3 1.4-1.4L21.8 8l-5.4 5.4L15 12l3-3H7zm10 10H6l3 3-1.4 1.4L2.2 16l5.4-5.4L9 12l-3 3h11z"/></svg> <span>Buy $AMD</span></a></nav>
-<a class="oc-b oc-mbuy" data-buy href="https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l-3-3 1.4-1.4L21.8 8l-5.4 5.4L15 12l3-3H7zm10 10H6l3 3-1.4 1.4L2.2 16l5.4-5.4L9 12l-3 3h11z"/></svg> <span>Buy $AMD</span></a></header>
+
+<div class="curtain" aria-hidden="true"><i></i><i></i><b></b></div>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/logo.png?v=b6816503" alt="" width="38" height="38">$AMD</a>
+    <nav class="links"><a href="#programme">The Show</a><a href="#tamer">The Lore</a><a href="#rules">House Rules</a><a href="#how">Tickets</a></nav>
+    <div class="navr"><span class="gm-soc"><a data-s href="https://x.com/amemedacity_x" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="https://t.me/amemedacity_tg" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a></span><a class="btn btn-red" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy $AMD <span class="dexon">on Pump.fun</span></a></div>
+  </div>
+</header>
 <main id="top">
-<section class="oc-hero"><div class="oc-hbg" data-bg="1" aria-hidden="true"></div>
-<svg class="oc-las" viewBox="0 0 700 640" preserveAspectRatio="none" aria-hidden="true"><path d="M-60 -20 C 60 200, 300 300, 380 660" style="--d:0s"/><path d="M40 -20 C 160 200, 440 300, 520 660" style="--d:0.7s"/><path d="M140 -20 C 260 200, 180 300, 260 660" style="--d:1.4s"/><path d="M260 -20 C 380 200, 520 300, 600 660" style="--d:2.1s"/><path d="M-120 -20 C 0 200, 100 300, 180 660" style="--d:2.8s"/><path d="M330 -20 C 450 200, 10 300, 90 660" style="--d:3.5s"/><path d="M200 -20 C 320 200, 620 300, 700 660" style="--d:4.2s"/><path d="M80 -20 C 200 200, 360 300, 440 660" style="--d:4.9s"/></svg>
-<div class="oc-glow" aria-hidden="true"></div>
-<div class="oc-stage"><div class="oc-rays" aria-hidden="true"><i style="--r:-62deg;--d:0s"></i><i style="--r:-40deg;--d:0.3s"></i><i style="--r:-22deg;--d:0.6s"></i><i style="--r:22deg;--d:0.9s"></i><i style="--r:40deg;--d:1.2s"></i><i style="--r:62deg;--d:1.5s"></i><i style="--r:-80deg;--d:0.45s"></i><i style="--r:80deg;--d:1.05s"></i></div><img class="gchar oc-hchar" src="assets/char1.webp" alt="A Meme Donkey character"></div></section>
-<section class="ref-post rv" id="origin-post" aria-label="The post that started it all"><div class="ref-post-wrap"><div class="ref-post-head"><span class="ref-post-badge">✦ Origin</span><h2 class="ref-post-title">The post that started it all</h2></div><div class="ref-post-frame"><blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-conversation="none"><a href="https://x.com/jimcramer/status/2117728399267639668">View post on X</a></blockquote><div class="ref-post-fallback" role="complementary"><div class="ref-xmark" aria-hidden="true">𝕏</div><b>@jimcramer</b><p>The post that started it all</p><a class="ref-post-btn" href="https://x.com/jimcramer/status/2117728399267639668" target="_blank" rel="noopener">View post on X →</a></div></div></div></section><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<section class="hero" id="hero">
+  <div class="hero-media"><div class="gm-stage" data-bg="1"><div class="gm-beam"></div><img class="gchar" src="assets/char1.webp?v=749e3fea" alt="A Meme Dacity on the circus pedestal"></div><div class="gm-conf"><i style="left:0%;animation-duration:6.0s;animation-delay:-0.0s"></i><i style="left:37%;animation-duration:13.0s;animation-delay:-2.0s"></i><i style="left:74%;animation-duration:11.0s;animation-delay:-4.0s"></i><i style="left:11%;animation-duration:9.0s;animation-delay:-6.0s"></i><i style="left:48%;animation-duration:7.0s;animation-delay:-8.0s"></i><i style="left:85%;animation-duration:14.0s;animation-delay:-10.0s"></i><i style="left:22%;animation-duration:12.0s;animation-delay:-1.0s"></i><i style="left:59%;animation-duration:10.0s;animation-delay:-3.0s"></i><i style="left:96%;animation-duration:8.0s;animation-delay:-5.0s"></i><i style="left:33%;animation-duration:6.0s;animation-delay:-7.0s"></i><i style="left:70%;animation-duration:13.0s;animation-delay:-9.0s"></i><i style="left:7%;animation-duration:11.0s;animation-delay:-0.0s"></i><i style="left:44%;animation-duration:9.0s;animation-delay:-2.0s"></i><i style="left:81%;animation-duration:7.0s;animation-delay:-4.0s"></i><i style="left:18%;animation-duration:14.0s;animation-delay:-6.0s"></i><i style="left:55%;animation-duration:12.0s;animation-delay:-8.0s"></i><i style="left:92%;animation-duration:10.0s;animation-delay:-10.0s"></i><i style="left:29%;animation-duration:8.0s;animation-delay:-1.0s"></i><i style="left:66%;animation-duration:6.0s;animation-delay:-3.0s"></i><i style="left:3%;animation-duration:13.0s;animation-delay:-5.0s"></i><i style="left:40%;animation-duration:11.0s;animation-delay:-7.0s"></i><i style="left:77%;animation-duration:9.0s;animation-delay:-9.0s"></i><i style="left:14%;animation-duration:7.0s;animation-delay:-0.0s"></i><i style="left:51%;animation-duration:14.0s;animation-delay:-2.0s"></i><i style="left:88%;animation-duration:12.0s;animation-delay:-4.0s"></i><i style="left:25%;animation-duration:10.0s;animation-delay:-6.0s"></i></div></div>
+  <div class="spot" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="kicker"><span class="star"></span>Ladies &amp; Gentlemen<span class="mh"> · Apes &amp; Kittens</span><span class="star"></span></div>
+      <h1 class="wordmark">A Meme Dacity<span class="sh" aria-hidden="true">A Meme Dacity</span></h1>
+      <div class="ribbon"><em>$</em>AMD · <em>Solana</em></div>
+      <div class="hgap" aria-hidden="true"></div>
+      <p class="hero-sub">The most memeable A Meme Dacity on Solana. <b>$AMD</b> is the greatest show on <b>Solana</b> — step right up.</p>
+      <div class="cta">
+        <a class="btn btn-red" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Get Your Ticket <span class="dexon">on Pump.fun</span></a>
+        <a class="btn btn-ghost" href="https://dexscreener.com/solana" target="_blank" rel="noopener">View Chart</a>
+        <a class="btn btn-ghost btn-x" href="https://x.com/amemedacity_x" target="_blank" rel="noopener" aria-label="A Meme Dacity on X"><span>Follow</span></a>
+      </div>
+      <div class="ticket"><div class="stub">ADMIT<strong>ONE</strong></div><div class="body"><div class="lbl">Contract address</div><div class="ca" id="caText">TBA</div></div><button type="button" data-copy="TBA">Copy</button></div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">THE SHOW<i></i></div>
+</section>
+<div class="stats" aria-label="Token"><div class="wrap">
+  <div class="stat"><span>Ticker</span><b>$AMD</b></div><div class="stat"><span>Supply</span><b>1B</b></div><div class="stat"><span>Tax</span><b>0/0</b></div><div class="stat"><span>Liquidity</span><b>Burned</b></div>
+</div></div>
+<div class="marquees" aria-hidden="true"><div class="mq a"><div><span>A Meme Dacity</span><span>Step Right Up</span><span>$AMD on Solana</span><span>Diamond Hands Only</span><span>Admit One</span></div><div><span>A Meme Dacity</span><span>Step Right Up</span><span>$AMD on Solana</span><span>Diamond Hands Only</span><span>Admit One</span></div></div><div class="mq b"><div><span>Hold Your Seat</span><span>The Show Never Closes</span><span>$AMD</span><span>Greatest Show on Solana</span><span>Power to the Holders</span></div><div><span>Hold Your Seat</span><span>The Show Never Closes</span><span>$AMD</span><span>Greatest Show on Solana</span><span>Power to the Holders</span></div></div></div>
+<section class="tent pad" id="programme"><div class="wrap">
+  <div class="head rv"><div class="kicker"><span class="star"></span>Tonight's Programme<span class="star"></span></div><h2 class="h2">Four Acts. <em>Zero Sellers.</em></h2><p class="lead">THE SKYLINE HAS A MAIN CHARACTER.</p></div>
+  <div class="acts"><article class="act rv"><div class="pic"><img class="gimg" src="assets/meme1.webp?v=ef27de17" alt="The Ring of Fire" loading="lazy"></div><span class="num">ACT I</span><div class="txt"><h3>The Ring of Fire</h3><p>The chart caught fire and A Meme Dacity jumped straight through it while everyone watched.</p></div></article><article class="act rv"><div class="pic"><img class="gimg" src="assets/meme2.webp?v=c1aa229c" alt="The High Wire" loading="lazy"></div><span class="num">ACT II</span><div class="txt"><h3>The High Wire</h3><p>Paper hands pulled the net. The holders walked the wire anyway and never looked down.</p></div></article><article class="act rv"><div class="pic"><img class="gimg" src="assets/meme3.webp?v=e4ede14e" alt="The Cannonball" loading="lazy"></div><span class="num">ACT III</span><div class="txt"><h3>The Cannonball</h3><p>$AMD launched on Solana — the loudest entrance the big top has ever heard.</p></div></article><article class="act rv"><div class="pic"><img class="gimg" src="assets/meme4.webp?v=15a79247" alt="The Payout" loading="lazy"></div><span class="num">FINALE</span><div class="txt"><h3>The Payout</h3><p>Supply 1B, tax 0/0, liquidity Burned. The show pays you to stay seated.</p></div></article></div>
+</div></section>
+<section class="pad" id="tamer" style="background:linear-gradient(180deg,var(--bg),#12060a 50%,var(--bg))">
+  <div class="wrap lore">
+    <div class="frame rv"><img class="gchar" src="assets/char2.webp?v=b38f08fa" alt="A Meme Dacity" loading="lazy"><div class="bulbs" aria-hidden="true" id="bulbs"></div><span class="ribbon tag">The Star of the Show</span></div>
+    <div>
+      <div class="rv"><div class="kicker"><span class="star"></span>The Lore<span class="star"></span></div><h2 class="h2" style="text-align:left">A Meme Dacity Runs the Ring. <em>The Holders Run the Show.</em></h2></div>
+      <div class="cards">
+        <div class="card rv"><div class="yr">I</div><div><h4>The Tent Goes Up</h4><p>THE SKYLINE HAS A MAIN CHARACTER.</p></div></div>
+        <div class="card rv"><div class="yr">II</div><div><h4>The Crowd Arrives</h4><p>Word spreads across Solana. Every seat in the big top starts to fill.</p></div></div>
+        <div class="card rv"><div class="yr">III</div><div><h4>The Encore</h4><p>One post, one chart, one ticker — $AMD lights up like it never left.</p></div></div>
+        <div class="card now rv"><div class="yr">NOW</div><div><h4>$AMD On Solana</h4><p>The most memeable A Meme Dacity on Solana. Hold it and you're in the show.</p></div></div>
+      </div>
+      <div class="quote rv"><p>"Everybody came for the tent. They stayed for A Meme Dacity."</p><cite>— Overheard in the cheap seats</cite></div>
+    </div>
+  </div>
+</section>
 
-<div class="oc-mq" aria-hidden="true"><div class="oc-mqt"><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span><span>$AMD</span></div></div>
-<section class="oc-what"><div class="oc-wt"><h1 class="oc-h1">WHAT IS<span> $AMD</span> COIN?</h1>
-<p class="oc-p rv">AMD so far so good...moving up tech nicely A Meme Donkey is a community token on Solana built for long-term holders. What sets $AMD apart is its strong and dedicated community, which continues to drive its development and resilience.</p>
-<div class="oc-soc rv"><a href="https://x.com/amemedonkey_x" data-s aria-label="X" style="--t:-6deg"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://t.me/amemedonkey_tg" data-s aria-label="Telegram" style="--t:12deg"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a href="https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener" aria-label="Chart" style="--t:-12deg"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a><a href="https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" data-buy target="_blank" rel="noopener" aria-label="Buy" style="--t:6deg"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l-3-3 1.4-1.4L21.8 8l-5.4 5.4L15 12l3-3H7zm10 10H6l3 3-1.4 1.4L2.2 16l5.4-5.4L9 12l-3 3h11z"/></svg></a></div></div>
-<div class="oc-pres"><div class="oc-cur" data-bg="2" aria-hidden="true"></div><div class="oc-spot" aria-hidden="true"></div>
-<div class="oc-screen" aria-hidden="true"><div class="oc-sbar">A Meme Donkey Club</div><div class="oc-slines"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-<img class="gchar oc-pchar" src="assets/char2.webp" alt="A Meme Donkey presenting" loading="lazy"><div class="oc-fade" aria-hidden="true"></div></div></section>
-<section class="oc-eco"><h2 class="oc-h2 rv"><span>$AMD</span> ECOSYSTEM</h2>
-<div class="oc-ecow"><div class="oc-ecoart rv-l"><img class="gchar" src="assets/char3.webp" alt="A Meme Donkey builder" loading="lazy"></div><div class="oc-cards"><div class="oc-card rv"><header><span class="oc-ic">🖼</span><h3>Meme Vault</h3></header><p>The $AMD meme vault is where the community drops its finest work. Every post, every raid and every inside joke ends up here — browse it, share it and add your own.</p><a class="oc-cbtn" href="#memes">Open Vault<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="oc-card rv"><header><span class="oc-ic">📈</span><h3>Live Chart</h3></header><p>Follow $AMD on Solana in real time. The chart is live the moment trading opens — watch the candles, track the holders and see the community grow.</p><a class="oc-cbtn" href="https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener">View Chart<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="oc-card rv"><header><span class="oc-ic">🛒</span><h3>How To Buy</h3></header><p>Four simple steps: get a wallet, load SOL, copy the official contract address and swap on Pump.fun. No complicated jargon, just a friendly guide.</p><a class="oc-cbtn" href="#buy">Get $AMD<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="oc-card rv"><header><span class="oc-ic">💬</span><h3>Community</h3></header><p>$AMD is community driven from day one. Join the chat, follow the raids on X and help decide where the journey goes next.</p><a class="oc-cbtn" href="https://t.me/amemedonkey_tg" target="_blank" rel="noopener">Join Us<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div></section>
-<section class="oc-jour"><div class="oc-jart rv-l"><div class="oc-stars" aria-hidden="true"></div><img class="gimg" src="assets/meme1.webp" alt="A Meme Donkey boss" loading="lazy"></div>
-<div class="oc-jt rv-r"><h2 class="oc-jh"><span>A Meme Donkey</span><br>TOKEN JOURNEY</h2>
-<p class="oc-p">$AMD is a community token designed to unite a global crowd of dreamers and builders. Every ambition begins as a small seed with the potential to create lasting impact. The most memeable A Meme Donkey on Solana. Through community-driven initiatives we aim to build a fun, sustainable and dynamic network of holders worldwide.</p>
-<div class="oc-jb"><a class="oc-b" data-buy href="https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l-3-3 1.4-1.4L21.8 8l-5.4 5.4L15 12l3-3H7zm10 10H6l3 3-1.4 1.4L2.2 16l5.4-5.4L9 12l-3 3h11z"/></svg> <span>BUY $AMD</span></a><a class="oc-b" href="https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><span>VIEW CHART</span></a></div></div></section>
-<section class="oc-tok" id="tokenomics"><div class="oc-tbox rv"><h2 class="oc-tt">TOKENOMICS</h2>
-<ul class="oc-tl"><li>✓ Name: A Meme Donkey</li><li>✓ Ticker: $AMD</li><li>✓ Chain: Solana</li><li>✓ Supply: 1B</li><li>✓ Tax: 0/0</li><li>✓ Liquidity: Burned</li><li>✓ 100% community driven</li></ul>
-<div class="oc-ca"><code class="ca-text">9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump</code><button class="oc-copy" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg></button></div>
-<div class="oc-tg"><div><small>NAME</small><b>A Meme Donkey</b></div><div><small>SUPPLY</small><b>1B</b></div><div><small>TICKER</small><b>$AMD</b></div></div></div>
-<div class="oc-pie rv-r"><img src="assets/tpl/tok.webp" alt="" loading="lazy" width="420" height="420"></div></section>
-<section class="oc-road"><div class="oc-rbg" data-bg="3" aria-hidden="true"></div><div class="oc-rbox rv-z"><h2 class="oc-rt">Project RoadMap</h2><div class="oc-chevs"><div class="oc-chev" style="--c:#e7a3ab;--i:0"><b>01</b><ul><li>$AMD launch</li><li>Website live</li><li>Socials open</li><li>First 1,000 holders</li></ul></div><div class="oc-chev" style="--c:#a8644f;--i:1"><b>02</b><ul><li>DexScreener update</li><li>Community raids</li><li>Meme contests</li><li>5,000 holders</li></ul></div><div class="oc-chev" style="--c:#e08c3e;--i:2"><b>03</b><ul><li>Trending push</li><li>Partnerships</li><li>Meme vault v2</li><li>10,000 holders</li></ul></div><div class="oc-chev" style="--c:#3f6b83;--i:3"><b>04</b><ul><li>CEX conversations</li><li>Global community</li><li>Merch drop</li><li>To the moon</li></ul></div></div><div class="oc-phs"><span class="oc-ph" style="--c:#e7a3ab">PHASE 1 ✓</span><span class="oc-ph" style="--c:#a8644f">PHASE 2 ✓</span><span class="oc-ph" style="--c:#e08c3e">PHASE 3</span><span class="oc-ph" style="--c:#3f6b83">PHASE 4</span></div>
-<div class="oc-dao"><b>COMMUNITY<br>DRIVEN</b><span style="--c:#e08c3e">Meme Contests</span><span style="--c:#a8644f">Holder Rewards</span></div></div></section>
-<div class="oc-part" aria-hidden="true"><div class="oc-ptt"><span class="oc-pt">Pump.fun</span><span class="oc-pt">DexScreener</span><span class="oc-pt">$AMD</span><span class="oc-pt">Solana</span><span class="oc-pt">A Meme Donkey</span><span class="oc-pt">Live chart</span><span class="oc-pt">Pump.fun</span><span class="oc-pt">DexScreener</span><span class="oc-pt">$AMD</span><span class="oc-pt">Solana</span><span class="oc-pt">A Meme Donkey</span><span class="oc-pt">Live chart</span><span class="oc-pt">Pump.fun</span><span class="oc-pt">DexScreener</span><span class="oc-pt">$AMD</span><span class="oc-pt">Solana</span><span class="oc-pt">A Meme Donkey</span><span class="oc-pt">Live chart</span><span class="oc-pt">Pump.fun</span><span class="oc-pt">DexScreener</span><span class="oc-pt">$AMD</span><span class="oc-pt">Solana</span><span class="oc-pt">A Meme Donkey</span><span class="oc-pt">Live chart</span></div></div>
 
 <section id="memes" class="ck-sec ck-memes "><div class="ck-w">
-<p class="ck-kick rv">Meme vault</p><h2 class="ck-h2 rv">$AMD <em>MEMES</em></h2>
-<div class="ck-gal rv-stagger"><button class="ck-card" type="button" data-i="0"><img class="gimg" src="assets/meme2.webp" alt="A Meme Donkey meme 1" loading="lazy" width="480" height="480"><span>#01 dreamers club</span></button><button class="ck-card" type="button" data-i="1"><img class="gimg" src="assets/meme3.webp" alt="A Meme Donkey meme 2" loading="lazy" width="480" height="480"><span>#02 boss mode</span></button><button class="ck-card" type="button" data-i="2"><img class="gimg" src="assets/meme4.webp" alt="A Meme Donkey meme 3" loading="lazy" width="480" height="480"><span>#03 suit up</span></button><button class="ck-card" type="button" data-i="3"><img class="gimg" src="assets/meme5.webp" alt="A Meme Donkey meme 4" loading="lazy" width="480" height="480"><span>#04 hold the line</span></button><button class="ck-card" type="button" data-i="4"><img class="gimg" src="assets/meme6.webp" alt="A Meme Donkey meme 5" loading="lazy" width="480" height="480"><span>#05 $AMD szn</span></button><button class="ck-card" type="button" data-i="5"><img class="gimg" src="assets/meme7.webp" alt="A Meme Donkey meme 6" loading="lazy" width="480" height="480"><span>#06 to the moon</span></button><button class="ck-card" type="button" data-i="6"><img class="gimg" src="assets/meme8.webp" alt="A Meme Donkey meme 7" loading="lazy" width="480" height="480"><span>#07 frens only</span></button><button class="ck-card" type="button" data-i="7"><img class="gimg" src="assets/meme9.webp" alt="A Meme Donkey meme 8" loading="lazy" width="480" height="480"><span>#08 no brakes</span></button></div></div></section>
-<section id="buy" class="ck-sec ck-how "><div class="ck-w">
-<p class="ck-kick rv">Getting started</p><h2 class="ck-h2 rv">HOW TO BUY <em>$AMD</em></h2>
-<ol class="ck-steps rv-stagger">
-<li class="ck-step"><span class="n">01</span><h3>Get a wallet</h3><p>Install Phantom or any Solana wallet. Keep your seed phrase offline.</p></li>
-<li class="ck-step"><span class="n">02</span><h3>Load SOL</h3><p>Buy SOL on an exchange and send it to your wallet.</p></li>
-<li class="ck-step"><span class="n">03</span><h3>Copy the CA</h3><p>Use only the official contract address posted here.</p><button class="copy-btn" type="button" data-copy><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> Copy CA</button></li>
-<li class="ck-step"><span class="n">04</span><h3>Swap on Pump.fun</h3><p>Paste the CA, pick an amount, confirm. Welcome in.</p><a class="btn btn-main sm" data-buy href="https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy $AMD <span class="dexon">on Pump.fun</span></a></li>
-</ol></div></section>
+<p class="ck-kick rv">The Sideshow</p><h2 class="ck-h2 rv">Meme <em>Gallery</em></h2>
+<div class="ck-gal rv-stagger"><button class="ck-card" type="button" data-i="0"><img class="gimg" src="assets/meme5.webp?v=7518c18b" alt="A Meme Dacity meme 1" loading="lazy" width="480" height="480"><span>#01 act i</span></button><button class="ck-card" type="button" data-i="1"><img class="gimg" src="assets/meme6.webp?v=cb302296" alt="A Meme Dacity meme 2" loading="lazy" width="480" height="480"><span>#02 act ii</span></button><button class="ck-card" type="button" data-i="2"><img class="gimg" src="assets/meme7.webp?v=8cba4b16" alt="A Meme Dacity meme 3" loading="lazy" width="480" height="480"><span>#03 act iii</span></button><button class="ck-card" type="button" data-i="3"><img class="gimg" src="assets/meme8.webp?v=426aecbe" alt="A Meme Dacity meme 4" loading="lazy" width="480" height="480"><span>#04 finale</span></button><button class="ck-card" type="button" data-i="4"><img class="gimg" src="assets/meme9.webp?v=04392933" alt="A Meme Dacity meme 5" loading="lazy" width="480" height="480"><span>#05 encore</span></button><button class="ck-card" type="button" data-i="5"><img class="gimg" src="assets/meme1.webp?v=ef27de17" alt="A Meme Dacity meme 6" loading="lazy" width="480" height="480"><span>#06 the ring</span></button><button class="ck-card" type="button" data-i="6"><img class="gimg" src="assets/meme2.webp?v=c1aa229c" alt="A Meme Dacity meme 7" loading="lazy" width="480" height="480"><span>#07 the crowd</span></button><button class="ck-card" type="button" data-i="7"><img class="gimg" src="assets/meme3.webp?v=e4ede14e" alt="A Meme Dacity meme 8" loading="lazy" width="480" height="480"><span>#08 the payout</span></button></div></div></section>
+<section id="tokenomics" class="ck-sec ck-tok "><div class="ck-w ck-tk">
+<div class="ck-tk-art rv-l"><img src="assets/logo.png?v=b6816503" alt="A Meme Dacity logo" loading="lazy" width="420" height="420"></div>
+<div class="rv-r" style="min-width:0"><p class="ck-kick">The Box Office</p><h2 class="ck-h2">Ticket <em>Numbers</em></h2>
+<div class="ck-pills"><div class="ck-pill"><small>Name</small><b>A Meme Dacity</b></div><div class="ck-pill"><small>Ticker</small><b>$AMD</b></div><div class="ck-pill"><small>Chain</small><b>Solana</b></div><div class="ck-pill"><small>Supply</small><b>1B</b></div><div class="ck-pill"><small>Tax</small><b>0/0</b></div><div class="ck-pill"><small>LP</small><b>Burned</b></div></div>
+<div class="ca-box"><span class="lbl">CA</span><code class="ca-text">TBA</code><button class="copy-btn" type="button" data-copy aria-label="Copy contract address"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 00-2 2v14h2V3h12zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11z"/></svg> Copy</button></div>
+<p class="ck-note">Only trust the CA posted here and on official $AMD channels.</p></div></div></section>
 <section id="chart" class="ck-sec ck-chartsec "><div class="ck-w">
-<p class="ck-kick rv">Live</p><h2 class="ck-h2 rv">$AMD <em>CHART</em></h2>
-<div class="ck-chart rv"><iframe id="ckFrame" title="A Meme Donkey chart" loading="lazy" data-src="https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15"></iframe><div class="ov" id="ckOv"><img src="assets/logo.png" alt="" loading="lazy"><p>CHART ACTIVATES AT LAUNCH</p><a class="btn btn-ghost sm" href="https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> DexScreener</a></div></div></div></section>
-</main><div class="xlinks" data-xlinks><a href="https://x.com/amemedonkey_x" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a href="https://t.me/amemedonkey_tg" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg><span>Telegram</span></a></div>
-<footer class="oc-foot"><div class="oc-phone" aria-hidden="true"><div class="oc-scr"><img class="gchar" src="assets/char4.webp" alt="" loading="lazy"><b>$AMD</b><span>TAP TO HOLD</span></div></div>
-<p>A Meme Donkey started as a community driven meme coin on Solana. Join us as we journey through our roadmap and more.</p>
-<div class="oc-fs"><a href="https://x.com/amemedonkey_x" data-s><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://t.me/amemedonkey_tg" data-s><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a href="https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a></div>
-<p class="oc-legal">&copy; <span data-year>2026</span> A Meme Donkey ($AMD). Meme coin with no intrinsic value or expectation of financial return. Not financial advice.</p></footer>
-<div class="mbar"><a class="btn btn-main sm" data-buy href="https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png" alt="Pump.fun"> Buy <span class="dexon">on Pump.fun</span></a><a class="btn btn-ghost sm" href="https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump" target="_blank" rel="noopener">Chart</a><button class="copy-btn" type="button" data-copy aria-label="Copy contract address">Copy CA</button></div>
+<p class="ck-kick rv">Live from the Ring</p><h2 class="ck-h2 rv">The <em>Chart</em></h2>
+<div class="ck-chart rv"><iframe id="ckFrame" title="A Meme Dacity chart" loading="lazy" data-src="https://dexscreener.com/solana?embed=1&amp;loadChartSettings=0&amp;trades=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=usd&amp;interval=15"></iframe><div class="ov" id="ckOv"><img src="assets/logo.png?v=b6816503" alt="" loading="lazy"><p>CHART ACTIVATES AT LAUNCH</p><a class="btn btn-ghost sm" href="https://dexscreener.com/solana" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg> DexScreener</a></div></div></div></section>
+<section id="community" class="ck-sec ck-commsec "><div class="ck-w ck-comm">
+<div class="ck-comm-art rv-l"><img class="gchar" src="assets/char3.webp?v=04e7dc20" alt="A Meme Dacity" loading="lazy"></div>
+<div class="rv-r"><p class="ck-kick">Join the Crowd</p><h2 class="ck-h2">Take Your <em>Seat</em></h2><p class="ck-lead">Join the A Meme Dacity community. Buy $AMD. Make memes. Never sell.</p>
+<div class="cta-row"><a class="btn btn-ghost" data-s href="https://x.com/amemedacity_x"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X</a><a class="btn btn-ghost" data-s href="https://t.me/amemedacity_tg"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Telegram</a><a class="btn btn-main" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy $AMD <span class="dexon">on Pump.fun</span></a></div></div></div></section>
+<section class="tent pad" id="rules"><div class="wrap">
+  <div class="head rv"><div class="kicker"><span class="star"></span>House Rules<span class="star"></span></div><h2 class="h2">How the <em>Big Top</em> Works</h2></div>
+  <div class="rules">
+    <div class="rule rv"><span class="rn">RULE 01</span><h3>The Ticket</h3><p><b>$AMD</b> lives on <b>Solana</b>. Total supply <b>1B</b>.</p></div>
+    <div class="rule rv"><span class="rn">RULE 02</span><h3>The House Cut</h3><p>Buy / sell tax: <b>0/0</b>. No hidden acts, no trapdoors.</p></div>
+    <div class="rule rv"><span class="rn">RULE 03</span><h3>The Safety Net</h3><p>Liquidity: <b>Burned</b>. The net stays up for the whole show.</p></div>
+  </div>
+</div></section>
+<section class="tickets pad" id="how">
+  <div class="bg" data-bg="3" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="head rv"><div class="kicker"><span class="star"></span>Box Office Open<span class="star"></span></div><h2 class="h2">Get Your <em>Ticket</em></h2><p class="lead" style="color:#e6d5c4">Four steps from the parking lot to the front row.</p></div>
+    <div class="steps">
+      <div class="step rv"><div class="n">1</div><h4>Get a Wallet</h4><p>Any wallet that speaks Solana.</p></div>
+      <div class="step rv"><div class="n">2</div><h4>Load Up</h4><p>Buy the native Solana coin on an exchange and send it to your wallet.</p></div>
+      <div class="step rv"><div class="n">3</div><h4>Swap for $AMD</h4><p>Hit the button below, or paste the contract address.</p></div>
+      <div class="step rv"><div class="n">4</div><h4>Hold Your Seat</h4><p>The show never closes. Diamond hands get the front row.</p></div>
+    </div>
+    <div class="final rv"><a class="btn btn-red" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy $AMD <span class="dexon">on Pump.fun</span></a><a class="btn btn-ghost btn-x" href="https://x.com/amemedacity_x" target="_blank" rel="noopener"><span>Follow on X</span></a></div>
+  </div>
+</section>
+</main>
+<div class="xlinks" data-xlinks><a href="https://x.com/amemedacity_x" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a href="https://t.me/amemedacity_tg" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg><span>Telegram</span></a></div>
+<footer><div class="wrap">
+  <div class="top"><a class="brand" href="#top"><img src="assets/logo.png?v=b6816503" alt="" width="38" height="38">$AMD</a><nav><a href="#programme">The Show</a><a href="#tamer">The Lore</a><a href="#how">Tickets</a><a data-s href="https://x.com/amemedacity_x" aria-label="X / Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a data-s href="https://t.me/amemedacity_tg" aria-label="Telegram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a data-s href="https://dexscreener.com/solana" aria-label="Dexscreener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2v16h16v2H3zm4 11l4-4 3 3 5-6 1.5 1.3L14 16l-3-3-2.6 2.6z"/></svg></a></nav></div>
+  <p>A Meme Dacity ($AMD) is a meme coin on Solana with no intrinsic value or expectation of financial return. Crypto is volatile — never put in more than you can afford to lose. Nothing here is financial advice.</p>
+</div></footer>
+<div class="mbar"><a class="btn btn-main sm" data-buy href="https://pump.fun/" target="_blank" rel="noopener"><img class="dexic" src="assets/dex.png?v=111fa3a9" alt="Pump.fun"> Buy <span class="dexon">on Pump.fun</span></a><a class="btn btn-ghost sm" href="https://dexscreener.com/solana" target="_blank" rel="noopener">Chart</a><button class="copy-btn" type="button" data-copy aria-label="Copy contract address">Copy CA</button></div>
 <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Meme viewer" hidden><button class="lb-close" type="button" aria-label="Close">&times;</button><button class="lb-nav prev" type="button" aria-label="Previous">&lsaquo;</button><img id="lbImg" alt=""><button class="lb-nav next" type="button" aria-label="Next">&rsaquo;</button></div>
 
 <div id="toast" role="status" aria-live="polite"></div>
 <script>
 (function(){
-var CA="9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump";
+var CA="TBA";
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
 var mobile=/Mobi|Android/i.test(navigator.userAgent)||window.innerWidth<700;
@@ -785,7 +1014,7 @@ function burst(x,y,n,cls){if(reduce)return;n=n||14;cls=cls||'sparkle-burst';
 function confetti(x,y){burst(x,y,mobile?12:28,'confetti-piece')}
 function copy(ev){var done=function(){toast('Contract address copied ✓');if(ev&&ev.clientX)confetti(ev.clientX,ev.clientY)};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(CA).then(done,fb)}else fb();function fb(){var ta=document.createElement('textarea');ta.value=CA;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();done()}}
 document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();copy(e);b.classList.add('copied');setTimeout(function(){b.classList.remove('copied')},1200)})});
-document.querySelectorAll('a[href="https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump"],a.btn-pulse,[data-buy]').forEach(function(a){a.addEventListener('click',function(e){if(e.clientX)confetti(e.clientX,e.clientY)})});
+document.querySelectorAll('a[href="https://pump.fun/"],a.btn-pulse,[data-buy]').forEach(function(a){a.addEventListener('click',function(e){if(e.clientX)confetti(e.clientX,e.clientY)})});
 document.querySelectorAll('a[data-s]').forEach(function(a){var h=a.getAttribute('href');if(!h||h==='#'||h.indexOf('{{')===0){a.style.display='none'}else{a.target='_blank';a.rel='noopener'}});
 document.querySelectorAll('.mq').forEach(function(m){var t=m.querySelector('.mq-track');if(t){m.appendChild(t.cloneNode(true)).setAttribute('aria-hidden','true')}});
 /* reveals */
@@ -982,7 +1211,7 @@ setTimeout(function(){
 })();
 
 /* ===== mx-art (POLISH phase 1): logo cutout, varied placement, no repeated-image grids =====
-   Runs in every generated site. HTML keeps src="assets/logo.png" so redeploy/char wiring is untouched;
+   Runs in every generated site. HTML keeps src="assets/logo.png?v=b6816503" so redeploy/char wiring is untouched;
    everything here is a runtime treatment of whatever image ended up in a slot. */
 (function(){
   var D = document, H = D.documentElement;
@@ -1084,7 +1313,7 @@ setTimeout(function(){
   var reduce = (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) || H.classList.contains('reduced-motion');
   var fine = window.matchMedia && window.matchMedia('(pointer:fine)').matches;
   var small = window.innerWidth < 700;
-  var TK = 'AMD', NM = 'A Meme Donkey';
+  var TK = 'AMD', NM = 'A Meme Dacity';
   if (TK.charAt(0) === '{') TK = 'MEME';   /* unrendered template preview */
   if (NM.charAt(0) === '{') NM = TK;
   function rnd(a, b){ return a + Math.random() * (b - a); }
@@ -1280,6 +1509,309 @@ setTimeout(function(){
   H.setAttribute('data-mx-effects', FX.count);
 }, 0);
 
+/* ===== mx-gl3d: shared themed 3D layer (no libraries, Canvas2D projection + CSS 3D) =====
+   Opt-in per template via body attributes (assemble.py injects them from 3d-upgrade/modes.json):
+     data-mx-gl="mode[:variant][@at]; selector|mode@at"   modes: network globe crystal orbs field helix rings warp coins embers
+       at = mascot | right | left | center | top | bottom | full
+     data-mx-gl-tone="dark|light"   dark = additive glow (screen), light = solid ink-tinted strokes
+     data-mx-3d="cards mascot rise extrude chroma"   CSS 3D depth treatments
+   Colors come from CSS tokens (--a --a2 --part --ink) and are re-read when the theme changes.
+   Reduced motion (or the studio preview) renders one still frame; hidden/off-screen canvases pause. */
+(function(){
+  var D = document, H = D.documentElement, B = D.body; if (!B) return;
+  var spec = (B.getAttribute('data-mx-gl') || '').trim(), fx3 = ' ' + (B.getAttribute('data-mx-3d') || '') + ' ';
+  var mm = function(q){ return window.matchMedia && window.matchMedia(q).matches; };
+  var reduce = mm('(prefers-reduced-motion: reduce)') || H.classList.contains('reduced-motion');
+  var fine = mm('(pointer:fine)'), small = window.innerWidth < 700;
+  var tone = B.getAttribute('data-mx-gl-tone') || 'dark';
+  var h1 = D.querySelector('h1');
+  var hero = D.querySelector('.hero') || (h1 && h1.closest('section,header,[class*="hero"],[class*="mast"],[class*="splash"]')) || D.querySelector('section');
+  var ic = D.querySelector('link[rel="icon"]'), LOGO = ic ? ic.getAttribute('href') || '' : '';
+  var TK = ((D.title.match(/\(\$([^)]+)\)/) || [])[1] || '$').replace(/[{}]/g, '');
+  var M = { x: 0, y: 0, tx: 0, ty: 0, sx: -1e4, sy: -1e4 };
+  var list = [];
+  function rnd(a, b){ return a + Math.random() * (b - a); }
+  function el(t, c, p){ var e = D.createElement(t); if (c) e.className = c; if (p) p.appendChild(e); return e; }
+  function positioned(x){ if (getComputedStyle(x).position === 'static') x.style.position = 'relative'; }
+
+  /* ---------- palette from tokens ---------- */
+  function parseCol(s){
+    var m = s.match(/color\(srgb\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)/); if (m) return [m[1] * 255, m[2] * 255, m[3] * 255].map(Math.round);
+    m = s.match(/rgba?\(\s*([\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]+)/); return m ? [+m[1], +m[2], +m[3]] : null;
+  }
+  function palette(host){
+    var p = el('i', '', host), out = {}; p.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden;visibility:hidden';
+    [['a', 'var(--a,#ffcc33)'], ['a2', 'var(--a2,var(--a,#ff6699))'], ['part', 'var(--part,var(--a2,var(--a,#fff)))'], ['ink', 'var(--ink,#ffffff)']].forEach(function(k){
+      p.style.color = '#fff'; p.style.color = k[1]; out[k[0]] = parseCol(getComputedStyle(p).color) || [255, 255, 255];
+    });
+    p.remove(); return out;
+  }
+  function css(c, a){ return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + (a == null ? 1 : a) + ')'; }
+  function mix(c, d, t){ return [0, 1, 2].map(function(i){ return Math.round(c[i] + (d[i] - c[i]) * t); }); }
+  function sprite(c, light){
+    var s = D.createElement('canvas'); s.width = s.height = 64; var x = s.getContext('2d'), g = x.createRadialGradient(32, 32, 0, 32, 32, 32);
+    if (light) { g.addColorStop(0, css(c, 1)); g.addColorStop(.35, css(c, .85)); g.addColorStop(1, css(c, 0)); }
+    else { g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(.22, css(mix(c, [255, 255, 255], .45), .9)); g.addColorStop(.5, css(c, .35)); g.addColorStop(1, css(c, 0)); }
+    x.fillStyle = g; x.fillRect(0, 0, 64, 64); return s;
+  }
+
+  /* ---------- math ---------- */
+  function rot(p, ax, ay){ var cy = Math.cos(ay), sy = Math.sin(ay), cx = Math.cos(ax), sx = Math.sin(ax);
+    var x = p[0] * cy + p[2] * sy, z = -p[0] * sy + p[2] * cy, y = p[1] * cx - z * sx; z = p[1] * sx + z * cx; return [x, y, z]; }
+  function fib(n){ var o = [], g = Math.PI * (3 - Math.sqrt(5)); for (var i = 0; i < n; i++) { var y = 1 - (i / (n - 1)) * 2, r = Math.sqrt(1 - y * y), t = g * i; o.push([Math.cos(t) * r, y, Math.sin(t) * r]); } return o; }
+  var ICO = (function(){ var t = (1 + Math.sqrt(5)) / 2, v = [[-1, t, 0], [1, t, 0], [-1, -t, 0], [1, -t, 0], [0, -1, t], [0, 1, t], [0, -1, -t], [0, 1, -t], [t, 0, -1], [t, 0, 1], [-t, 0, -1], [-t, 0, 1]];
+    var n = Math.hypot(1, t); v = v.map(function(p){ return [p[0] / n, p[1] / n, p[2] / n]; }); var e = [];
+    for (var i = 0; i < 12; i++) for (var j = i + 1; j < 12; j++) { var d = Math.hypot(v[i][0] - v[j][0], v[i][1] - v[j][1], v[i][2] - v[j][2]); if (d < 1.1) e.push([i, j]); } return { v: v, e: e }; })();
+  var OCT = { v: [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]], e: [[0, 2], [0, 3], [0, 4], [0, 5], [1, 2], [1, 3], [1, 4], [1, 5], [2, 4], [2, 5], [3, 4], [3, 5]] };
+  var CUBE = (function(){ var v = [], e = []; for (var i = 0; i < 8; i++) v.push([(i & 1 ? 1 : -1) * .62, (i & 2 ? 1 : -1) * .62, (i & 4 ? 1 : -1) * .62]);
+    for (i = 0; i < 8; i++) for (var b = 1; b < 8; b <<= 1) if (!(i & b)) e.push([i, i | b]); return { v: v, e: e }; })();
+
+  /* ---------- modes: each returns {draw(ctx,t,S)} where S = {cx,cy,R,w,h,form,proj,spr,P,light} ---------- */
+  var MODES = {
+    network: function(S){
+      var N = small ? 110 : 240, home = [], start = [], pos = [], sz = [], hot = [], ed = [];
+      for (var i = 0; i < N; i++) { var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = i < N * .15 ? Math.random() * .55 : .85 + Math.random() * .2 + (Math.random() < .06 ? .55 : 0);
+        home.push([Math.sin(v) * Math.cos(u) * r * 1.2, Math.cos(v) * r, Math.sin(v) * Math.sin(u) * r * .95]); start.push([rnd(-4, 4), rnd(-3, 3), rnd(-3, 2)]); pos.push(start[i].slice()); hot.push(Math.random() < .22); sz.push(hot[i] ? rnd(5, 8) : rnd(3, 5)); }
+      for (i = 0; i < N; i++) { var d = []; for (var j = 0; j < N; j++) if (j !== i) { var a = home[i], b = home[j]; d.push([(a[0] - b[0]) * (a[0] - b[0]) + (a[1] - b[1]) * (a[1] - b[1]) + (a[2] - b[2]) * (a[2] - b[2]), j]); }
+        d.sort(function(p, q){ return p[0] - q[0]; }); for (var k = 0; k < 3; k++) if (d[k][0] < .1 && d[k][1] > i) ed.push([i, d[k][1]]); }
+      for (i = 0; i < N; i++) { var L = Math.hypot(home[i][0], home[i][1], home[i][2]); if (L > 1.25) ed.push([-1, i]); }
+      var pulses = []; for (i = 0; i < (small ? 24 : 60); i++) pulses.push({ e: (Math.random() * ed.length) | 0, t: Math.random(), s: rnd(.4, 1.2) });
+      var scr = [];
+      return { draw: function(x, t, dt){
+        var br = 1 + Math.sin(t * 1.2) * .03, ay = t * .08 + M.x * .5, ax = -M.y * .3;
+        for (var i = 0; i < N; i++) { var h = home[i], f = S.form, q = [h[0] * br + Math.sin(t * .7 + i) * .02, h[1] * br + Math.cos(t * .6 + i * 1.3) * .02, h[2] * br];
+          q = [start[i][0] + (q[0] - start[i][0]) * f, start[i][1] + (q[1] - start[i][1]) * f, start[i][2] + (q[2] - start[i][2]) * f];
+          var p = pos[i]; p[0] += (q[0] - p[0]) * .08; p[1] += (q[1] - p[1]) * .08; p[2] += (q[2] - p[2]) * .08;
+          var s = S.proj(rot(p, ax, ay)); var dx = s[0] - M.sx, dy = s[1] - M.sy, dd = dx * dx + dy * dy, rr = S.R * S.R * .12;
+          if (dd < rr) { var k = (1 - dd / rr) * 26; s[0] += dx / Math.sqrt(dd + 1) * k; s[1] += dy / Math.sqrt(dd + 1) * k; } scr[i] = s; }
+        var hub = S.proj(rot([0, 0, 0], ax, ay));
+        x.lineWidth = S.light ? 1.3 : 1; x.strokeStyle = css(S.light ? mix(S.P.a2, [0, 0, 0], .35) : mix(S.P.ink, S.P.a2, .4), (S.light ? .55 : .2) * S.form); x.beginPath();
+        ed.forEach(function(e){ var A = e[0] < 0 ? hub : scr[e[0]], C = scr[e[1]]; if (e[0] >= 0) { x.moveTo(A[0], A[1]); x.lineTo(C[0], C[1]); } }); x.stroke();
+        x.strokeStyle = css(S.P.a, (S.light ? .6 : .32) * S.form); x.beginPath(); ed.forEach(function(e){ if (e[0] < 0) { x.moveTo(hub[0], hub[1]); x.lineTo(scr[e[1]][0], scr[e[1]][1]); } }); x.stroke();
+        for (i = 0; i < N; i++) { var s2 = scr[i], z = s2[3], r = sz[i] * z * (1 + .25 * Math.sin(t * 2 + i)) * S.k; x.globalAlpha = Math.min(1, .35 + z * .6); x.drawImage(hot[i] ? S.spr.a : S.spr.ink, s2[0] - r * 2, s2[1] - r * 2, r * 4, r * 4); }
+        var hr = 26 * S.k * S.form; x.globalAlpha = 1; x.drawImage(S.spr.a, hub[0] - hr * 2, hub[1] - hr * 2, hr * 4, hr * 4);
+        pulses.forEach(function(p){ p.t += dt * p.s; if (p.t > 1) { p.t = 0; p.e = (Math.random() * ed.length) | 0; } var e = ed[p.e], A = e[0] < 0 ? hub : scr[e[0]], C = scr[e[1]];
+          var px = A[0] + (C[0] - A[0]) * p.t, py = A[1] + (C[1] - A[1]) * p.t, r = 7 * S.k; x.globalAlpha = S.form; x.drawImage(S.spr.part, px - r * 2, py - r * 2, r * 4, r * 4); });
+        x.globalAlpha = 1; } };
+    },
+    globe: function(S){
+      var pts = fib(small ? 320 : 680), sat = []; for (var i = 0; i < 5; i++) sat.push({ r: rnd(1.25, 1.6), s: rnd(.3, .7) * (i % 2 ? 1 : -1), tilt: rnd(-.9, .9), o: rnd(0, 6.3) });
+      return { draw: function(x, t){
+        var ay = t * .12 + M.x * .6, ax = .35 - M.y * .3, f = S.form;
+        for (var i = 0; i < pts.length; i++) { var p = pts[i], q = rot([p[0] * f, p[1] * f, p[2] * f], ax, ay), s = S.proj(q), front = q[2] < 0, r = (front ? 2.4 : 1.4) * s[3] * S.k;
+          x.globalAlpha = front ? .95 : .28; x.drawImage(i % 9 ? S.spr.ink : S.spr.a, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); }
+        x.globalAlpha = .5; x.strokeStyle = css(S.P.a2, .5); x.lineWidth = 1.2; x.beginPath();
+        for (var k = 0; k <= 96; k++) { var a = k / 96 * Math.PI * 2, s2 = S.proj(rot([Math.cos(a) * 1.35, 0, Math.sin(a) * 1.35], ax + .25, ay * .3)); k ? x.lineTo(s2[0], s2[1]) : x.moveTo(s2[0], s2[1]); } x.stroke();
+        sat.forEach(function(o, j){ var a = o.o + t * o.s, s3 = S.proj(rot([Math.cos(a) * o.r, Math.sin(a) * o.r * o.tilt * .5, Math.sin(a) * o.r], ax, ay * .2)), r = 9 * s3[3] * S.k; x.globalAlpha = 1; x.drawImage(j % 2 ? S.spr.a : S.spr.part, s3[0] - r * 2, s3[1] - r * 2, r * 4, r * 4); });
+        x.globalAlpha = 1; } };
+    },
+    crystal: function(S, variant){
+      var G = variant === 'cube' ? CUBE : variant === 'oct' ? OCT : ICO, IN = variant === 'cube' ? OCT : variant === 'oct' ? CUBE : OCT, dust = [];
+      for (var i = 0; i < (small ? 60 : 140); i++) dust.push([rnd(-2.4, 2.4), rnd(-1.6, 1.6), rnd(-1.5, 1.5)]);
+      function wire(g, sc, ax, ay, col, w){ var s = g.v.map(function(v){ return S.proj(rot([v[0] * sc, v[1] * sc, v[2] * sc], ax, ay)); });
+        x0.lineWidth = w; x0.strokeStyle = col; x0.beginPath(); g.e.forEach(function(e){ x0.moveTo(s[e[0]][0], s[e[0]][1]); x0.lineTo(s[e[1]][0], s[e[1]][1]); }); x0.stroke(); return s; }
+      var x0;
+      return { draw: function(x, t){
+        x0 = x; var ay = t * .25 + M.x * .8, ax = t * .13 - M.y * .5, f = S.form, b = 1 + Math.sin(t * 1.4) * .04;
+        dust.forEach(function(d, i){ var s = S.proj(rot(d, ax * .2, ay * .2)), r = 1.6 * s[3] * S.k; x.globalAlpha = .55; x.drawImage(S.spr.part, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); });
+        x.globalAlpha = 1;
+        var vs = wire(G, 1.05 * f * b, ax, ay, css(S.P.a, .85), 1.6 * S.k + .4);
+        wire(G, 1.12 * f * b, ax, ay, css(S.P.a2, .25), 5 * S.k);
+        wire(IN, .5 * f, -ax * 1.3, -ay * 1.6, css(S.P.a2, .75), 1.2);
+        vs.forEach(function(s, i){ var r = 7 * s[3] * S.k * (1 + .3 * Math.sin(t * 3 + i)); x.drawImage(i % 3 ? S.spr.ink : S.spr.a, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); });
+        var c = S.proj([0, 0, 0]), cr = 40 * S.k * f; x.globalAlpha = .55; x.drawImage(S.spr.a2, c[0] - cr * 2, c[1] - cr * 2, cr * 4, cr * 4); x.globalAlpha = 1; } };
+    },
+    orbs: function(S){
+      var O = []; for (var i = 0; i < (small ? 9 : 16); i++) O.push({ p: [rnd(-2.6, 2.6), rnd(-1.6, 1.6), rnd(-1.2, 2)], r: rnd(.08, .26), c: i % 3, ph: rnd(0, 6.3), sp: rnd(.2, .5) });
+      return { draw: function(x, t){
+        var q = O.map(function(o){ var p = [o.p[0] + Math.sin(t * o.sp + o.ph) * .18, o.p[1] + Math.cos(t * o.sp * .8 + o.ph) * .22, o.p[2]]; p[0] += M.x * (1.4 - p[2] * .4) * .3; p[1] += M.y * (1.4 - p[2] * .4) * .2; return { o: o, s: S.proj(p) }; })
+          .sort(function(a, b){ return a.s[2] - b.s[2]; });
+        q.forEach(function(e){ var o = e.o, s = e.s, R = o.r * S.R * s[3] * S.form, c = o.c === 0 ? S.P.a : o.c === 1 ? S.P.a2 : S.P.part; if (R < 1) return;
+          var g = x.createRadialGradient(s[0] - R * .35, s[1] - R * .4, R * .05, s[0], s[1], R);
+          g.addColorStop(0, css(mix(c, [255, 255, 255], .75), .95)); g.addColorStop(.45, css(c, .85)); g.addColorStop(1, css(mix(c, [0, 0, 0], .55), .9));
+          x.globalAlpha = Math.max(.25, Math.min(1, s[3] * .9)); x.fillStyle = g; x.beginPath(); x.arc(s[0], s[1], R, 0, 6.2832); x.fill();
+          x.globalAlpha *= .5; x.strokeStyle = css(mix(c, [255, 255, 255], .5), .6); x.lineWidth = Math.max(1, R * .04); x.beginPath(); x.arc(s[0], s[1], R * .96, -2.4, -.9); x.stroke();
+          x.globalAlpha = .9; x.fillStyle = 'rgba(255,255,255,.75)'; x.beginPath(); x.ellipse(s[0] - R * .38, s[1] - R * .45, R * .16, R * .09, -.6, 0, 6.2832); x.fill(); });
+        x.globalAlpha = 1; } };
+    },
+    field: function(S){
+      var cols = small ? 34 : 58, rows = small ? 18 : 28;
+      return { draw: function(x, t){
+        var f = S.form, cam = 2.2;
+        for (var j = rows - 1; j >= 0; j--) { var z = j / rows * 6 + .4, prev = null; x.beginPath();
+          for (var i = 0; i < cols; i++) { var u = (i / (cols - 1) - .5) * 9, y = .9 + Math.sin(u * .9 + t * 1.1 + z * .6) * .16 * f + Math.cos(z * 1.3 - t * .8) * .12 * f - M.y * .2;
+            var sc = cam / (cam + z), px = S.w / 2 + (u + M.x * .6 * z * .2) * sc * S.w * .14, py = S.h * .42 + y * sc * S.h * .5;
+            i ? x.lineTo(px, py) : x.moveTo(px, py);
+            if (i % 2 === 0) { var r = 2.2 * sc * S.k * 1.6; x.globalAlpha = Math.min(1, sc * 1.4); x.drawImage(j % 4 ? S.spr.part : S.spr.a, px - r * 2, py - r * 2, r * 4, r * 4); } }
+          x.globalAlpha = Math.min(S.light ? .85 : .6, (S.light ? .3 : .12) + (cam / (cam + z)) * .6); x.strokeStyle = css(mix(S.P.a, S.P.a2, j / rows), .7); x.lineWidth = 1; x.stroke(); }
+        x.globalAlpha = 1; } };
+    },
+    helix: function(S){
+      var n = small ? 46 : 80;
+      return { draw: function(x, t){
+        var ay = t * .6 + M.x * .8, ax = -M.y * .25 + .15, f = S.form, A = [], Bp = [];
+        for (var i = 0; i < n; i++) { var v = i / (n - 1), y = (v - .5) * 3.2, a = v * Math.PI * 4.2, r = .62 * f;
+          A.push(S.proj(rot([Math.cos(a) * r, y, Math.sin(a) * r], ax, ay))); Bp.push(S.proj(rot([Math.cos(a + Math.PI) * r, y, Math.sin(a + Math.PI) * r], ax, ay))); }
+        x.lineWidth = 1; for (i = 0; i < n; i += 3) { x.strokeStyle = css(S.light ? mix(S.P.a2, [0, 0, 0], .3) : S.P.ink, (S.light ? .4 : .16) + .2 * ((A[i][3] + Bp[i][3]) / 2 - .6)); x.beginPath(); x.moveTo(A[i][0], A[i][1]); x.lineTo(Bp[i][0], Bp[i][1]); x.stroke(); }
+        [[A, S.spr.a], [Bp, S.spr.a2]].forEach(function(st){ st[0].forEach(function(s, i){ var r = (3 + 2.5 * Math.sin(t * 2 - i * .3)) * s[3] * S.k + 1.5; x.globalAlpha = Math.min(1, s[3] * .8); x.drawImage(st[1], s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); }); });
+        x.globalAlpha = 1; } };
+    },
+    rings: function(S){
+      var R = [{ r: .92, tx: 1.2, tz: .2, s: .5, n: 5 }, { r: 1.12, tx: 1.32, tz: -.5, s: -.35, n: 4 }, { r: 1.34, tx: 1.05, tz: .75, s: .25, n: 3 }];
+      return { draw: function(x, t){
+        var f = S.form; R.forEach(function(g, gi){ var ax = g.tx - M.y * .3, ay = g.tz + M.x * .4 + t * .05, pts = [];
+          for (var k = 0; k <= 120; k++) { var a = k / 120 * Math.PI * 2; pts.push(S.proj(rot([Math.cos(a) * g.r * f, 0, Math.sin(a) * g.r * f], ax, ay))); }
+          for (k = 0; k < 120; k++) { var p = pts[k], q = pts[k + 1]; x.globalAlpha = (S.light ? .55 : .35) + .6 * Math.max(0, p[3] - .7); x.strokeStyle = css(gi % 2 ? S.P.a2 : S.P.a, 1); x.lineWidth = (gi === 0 ? 3 : 2) * p[3] * Math.max(1, S.k); x.beginPath(); x.moveTo(p[0], p[1]); x.lineTo(q[0], q[1]); x.stroke(); }
+          for (var m = 0; m < g.n; m++) { var a2 = t * g.s + m / g.n * Math.PI * 2, s = S.proj(rot([Math.cos(a2) * g.r * f, 0, Math.sin(a2) * g.r * f], ax, ay)), r = (m ? 6 : 10) * s[3] * S.k; x.globalAlpha = 1; x.drawImage(m % 2 ? S.spr.part : S.spr.a, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); } });
+        x.globalAlpha = 1; } };
+    },
+    warp: function(S){
+      var st = []; for (var i = 0; i < (small ? 160 : 380); i++) st.push({ a: rnd(0, 6.283), r: rnd(.15, 1), z: rnd(.05, 1), c: i % 5 });
+      return { draw: function(x, t, dt){
+        var sp = reduce ? 0 : dt * .22, cx = S.cx + M.x * 40, cy = S.cy + M.y * 30, D2 = Math.hypot(S.w, S.h) * .6 * S.form;
+        x.lineCap = 'round';
+        st.forEach(function(s){ var z0 = s.z; s.z -= sp; if (s.z <= .02) { s.z = 1; s.a = rnd(0, 6.283); z0 = 1; }
+          var k1 = s.r / s.z, k0 = s.r / Math.min(1, z0 + .035), ca = Math.cos(s.a), sa = Math.sin(s.a);
+          var x1 = cx + ca * k1 * D2 * .25, y1 = cy + sa * k1 * D2 * .25, x0 = cx + ca * k0 * D2 * .25, y0 = cy + sa * k0 * D2 * .25;
+          x.globalAlpha = Math.min(1, (1 - s.z) * 1.4); x.strokeStyle = css(s.c ? (s.c % 2 ? S.P.a : S.P.ink) : S.P.a2, 1); x.lineWidth = (1 - s.z) * 3.4 * S.k + .6; x.beginPath(); x.moveTo(x0, y0); x.lineTo(x1, y1); x.stroke(); });
+        x.globalAlpha = .9; var r = S.R * .55; x.drawImage(S.spr.a2, cx - r, cy - r, r * 2, r * 2); x.globalAlpha = 1; } };
+    },
+    coins: function(S){
+      var C = []; for (var i = 0; i < (small ? 7 : 13); i++) C.push({ p: [rnd(-2.6, 2.6), rnd(-1.7, 1.7), rnd(-1, 1.8)], r: rnd(.13, .24), sp: rnd(.8, 1.8) * (i % 2 ? 1 : -1), ph: rnd(0, 6.3), fall: rnd(.04, .12) });
+      return { draw: function(x, t){
+        var q = C.map(function(c){ var y = ((c.p[1] + t * c.fall + 1.7) % 3.4) - 1.7; var p = [c.p[0] + M.x * .3 * (1.5 - c.p[2] * .4), y + M.y * .2, c.p[2]]; return { c: c, s: S.proj(p) }; }).sort(function(a, b){ return a.s[2] - b.s[2]; });
+        q.forEach(function(e){ var c = e.c, s = e.s, R = c.r * S.R * s[3] * S.form, a = t * c.sp + c.ph, w = Math.cos(a), aw = Math.abs(w), th = R * .16; if (R < 2) return;
+          var gold = S.P.a, dark = mix(gold, [0, 0, 0], .45), lite = mix(gold, [255, 255, 255], .55);
+          x.globalAlpha = Math.max(.35, Math.min(1, s[3]));
+          x.fillStyle = css(dark, 1); x.beginPath(); x.ellipse(s[0] + (w < 0 ? -1 : 1) * th * Math.sqrt(1 - aw * aw), s[1], Math.max(R * aw, 1.5), R, 0, 0, 6.2832); x.fill();
+          var g = x.createLinearGradient(s[0] - R, s[1] - R, s[0] + R, s[1] + R); g.addColorStop(0, css(lite, 1)); g.addColorStop(.5, css(gold, 1)); g.addColorStop(1, css(dark, 1));
+          x.fillStyle = g; x.beginPath(); x.ellipse(s[0], s[1], Math.max(R * aw, 1), R, 0, 0, 6.2832); x.fill();
+          x.strokeStyle = css(lite, .8); x.lineWidth = Math.max(1, R * .07); x.beginPath(); x.ellipse(s[0], s[1], Math.max(R * aw * .78, .5), R * .78, 0, 0, 6.2832); x.stroke();
+          if (aw > .25) { x.save(); x.translate(s[0], s[1]); x.scale(aw * (w < 0 ? -1 : 1), 1); x.fillStyle = css(dark, .9); x.font = '900 ' + Math.round(R * (TK.length > 3 ? .5 : .9)) + 'px system-ui,sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(TK.length > 4 ? '$' : (TK.length > 1 ? TK.slice(0, 3) : '$'), 0, R * .04); x.restore(); }
+          x.globalAlpha *= .8; x.fillStyle = 'rgba(255,255,255,.7)'; x.beginPath(); x.ellipse(s[0] - R * aw * .35, s[1] - R * .45, R * aw * .18 + .5, R * .1, -.5, 0, 6.2832); x.fill(); });
+        x.globalAlpha = 1; } };
+    },
+    embers: function(S){
+      var E = []; for (var i = 0; i < (small ? 90 : 220); i++) E.push({ p: [rnd(-3, 3), rnd(-2, 2), rnd(-1.5, 2.2)], v: rnd(.08, .28), ph: rnd(0, 6.3), c: i % 4 });
+      return { draw: function(x, t, dt){
+        E.forEach(function(e){ if (!reduce) e.p[1] -= dt * e.v; if (e.p[1] < -2.1) { e.p[1] = 2.1; e.p[0] = rnd(-3, 3); }
+          var p = [e.p[0] + Math.sin(t * .7 + e.ph) * .15 + M.x * (1.4 - e.p[2] * .4) * .35, e.p[1] + M.y * .2, e.p[2]], s = S.proj(p), r = (4 + 2.5 * Math.sin(t * 3 + e.ph)) * s[3] * S.k + 1.5;
+          x.globalAlpha = Math.max(.15, Math.min(1, s[3] * .9)) * S.form; x.drawImage(e.c ? (e.c % 2 ? S.spr.part : S.spr.a) : S.spr.a2, s[0] - r * 2, s[1] - r * 2, r * 4, r * 4); });
+        x.globalAlpha = 1; } };
+    }
+  };
+
+  /* ---------- anchor: where the object sits inside its host ---------- */
+  function mascotOf(host){
+    var c = Array.prototype.slice.call(host.querySelectorAll('img.gchar,img,[class*="mascot"]')).filter(function(m){ return !m.closest('nav,.top,a,button,.mx-gal,.mq,.mx-fx') && m.offsetWidth >= 90 && m.offsetHeight >= 90; });
+    c.sort(function(a, b){ return b.offsetWidth * b.offsetHeight - a.offsetWidth * a.offsetHeight; }); return c[0] || null;
+  }
+  function place(L){
+    var hr = L.cv.getBoundingClientRect(), w = L.cv.clientWidth || hr.width, h = L.cv.clientHeight || hr.height, at = L.at, cx = w / 2, cy = h / 2, R = Math.min(w, h) * .36;
+    if (at === 'mascot') { var m = mascotOf(L.host); if (m) { var r = m.getBoundingClientRect(); cx = r.left - hr.left + r.width / 2; cy = r.top - hr.top + r.height / 2; R = Math.max(Math.max(r.width, r.height) * .62, Math.min(w, h) * .3); } else at = 'right'; }
+    if (at === 'right') { cx = w > 760 ? w * .72 : w * .5; cy = w > 760 ? h * .48 : h * .3; R = Math.min(w * .26, h * .38); }
+    if (at === 'left') { cx = w > 760 ? w * .26 : w * .5; cy = w > 760 ? h * .5 : h * .3; R = Math.min(w * .26, h * .38); }
+    if (at === 'top') { cy = h * .3; R = Math.min(w, h) * .3; }
+    if (at === 'bottom') { cy = h * .72; R = Math.min(w * .4, h * .36); }
+    if (at === 'full') R = Math.min(w, h) * .5;
+    R = Math.max(80, Math.min(R, Math.max(w, h) * .45));
+    /* the object sits BEHIND the mascot: feathered cut-out over the mascot box */
+    var mk = mascotOf(L.host); L.cut = null;
+    if (mk && !B.hasAttribute('data-mx-gl-nocut')) { var q = mk.getBoundingClientRect(); if (q.width * q.height < w * h * .5 && q.width > 0) { var cc = [q.left - hr.left + q.width / 2, q.top - hr.top + q.height / 2, q.width * .56, q.height * .56], dx = (cx - cc[0]) / cc[2], dy = (cy - cc[1]) / cc[3];
+        /* only cut if the object stays readable: it sits outside the mascot, or wraps well beyond it */
+        if (at === 'full' || dx * dx + dy * dy > 1.2 || R > Math.max(cc[2], cc[3]) * 1.5) L.cut = cc; } }
+    L.S.cx = cx; L.S.cy = cy; L.S.R = R; L.S.w = w; L.S.h = h; L.S.k = Math.max(.6, Math.min(1.5, R / 260));
+  }
+
+  var dpr = Math.min(window.devicePixelRatio || 1, small ? 1.25 : 1.6);
+  function mount(host, mode, variant, at, idx){
+    if (!MODES[mode] || !host) return;
+    positioned(host);
+    var cv = el('canvas', 'mx-gl mx-gl-' + mode + ' mx-gl-at-' + at); cv.setAttribute('aria-hidden', 'true'); cv.setAttribute('data-mx-gl-mode', mode);
+    cv.classList.add(tone === 'light' ? 'mx-gl-light' : 'mx-gl-dark');
+    /* layer placement: just above the last full-cover background layer of the host, so the scene art stays under it and the copy stays over it */
+    var hr0 = host.getBoundingClientRect(), bgl = null, zf = B.getAttribute('data-mx-gl-z');
+    Array.prototype.forEach.call(host.children, function(k){ if (k === cv || k.classList.contains('mx-fx') || /^(SCRIPT|STYLE)$/.test(k.tagName)) return; var st = getComputedStyle(k), r = k.getBoundingClientRect();
+      if ((st.position === 'absolute' || st.position === 'fixed') && r.width * r.height >= hr0.width * Math.min(hr0.height, window.innerHeight * 1.2) * .6 && !k.querySelector('h1,a[href],button')) bgl = k; });
+    if (zf) { host.appendChild(cv); cv.style.zIndex = zf; }
+    else if (bgl) { host.insertBefore(cv, bgl.nextSibling); var zz = getComputedStyle(bgl).zIndex; cv.style.zIndex = zz === 'auto' ? 'auto' : zz; }
+    else { var fxl = host.querySelector(':scope > .mx-fx'); if (fxl) host.insertBefore(cv, fxl.nextSibling); else host.insertBefore(cv, host.firstChild); }
+    if (host.offsetHeight > window.innerHeight * 1.4) cv.classList.add('mx-gl-tall');
+    var x = cv.getContext('2d'); if (!x) { cv.remove(); return; }
+    var S = { form: reduce ? 1 : 0, light: tone === 'light' };
+    S.proj = function(p){ var f = 3.2, s = f / (f + p[2]); return [S.cx + p[0] * S.R * s, S.cy + p[1] * S.R * s, p[2], s]; };
+    var L = { host: host, cv: cv, x: x, S: S, at: at, mode: mode, vis: true, t0: performance.now(), last: performance.now(), t: rnd(0, 20) };
+    function theme(){ var P = palette(host); if (S.light) { P.ink = mix(P.ink, [0, 0, 0], .1); ['a', 'a2', 'part'].forEach(function(k){ var c = P[k], L = (c[0] * .299 + c[1] * .587 + c[2] * .114) / 255; if (L > .55) P[k] = mix(c, [0, 0, 0], Math.min(.5, (L - .45) * 1.2)); }); } S.P = P; S.spr = { a: sprite(P.a, S.light), a2: sprite(P.a2, S.light), part: sprite(P.part, S.light), ink: sprite(S.light ? P.ink : mix(P.ink, [255, 255, 255], .4), S.light) }; }
+    function size(){ var w = cv.clientWidth, h = cv.clientHeight; cv.width = Math.max(1, Math.round(w * dpr)); cv.height = Math.max(1, Math.round(h * dpr)); x.setTransform(dpr, 0, 0, dpr, 0, 0); place(L); }
+    theme(); size(); L.inst = MODES[mode](S, variant); L.theme = theme; L.size = size;
+    L.frame = function(now){ var dt = Math.min((now - L.last) / 1000, .05); L.last = now; if (!reduce) L.t += dt;
+      if (!reduce && S.form < 1) S.form = Math.min(1, 1 - Math.pow(1 - Math.min(1, (now - L.t0) / 2400), 3));
+      x.clearRect(0, 0, S.w, S.h); x.globalCompositeOperation = S.light ? 'source-over' : 'lighter'; L.inst.draw(x, L.t, dt);
+      if (L.cut) { var c = L.cut; x.globalCompositeOperation = 'destination-out'; x.save(); x.translate(c[0], c[1]); x.scale(c[2], c[3]); var g = x.createRadialGradient(0, 0, 0, 0, 0, 1); g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(.82, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)'); x.fillStyle = g; x.beginPath(); x.arc(0, 0, 1, 0, 6.2832); x.fill(); x.restore(); }
+      x.globalCompositeOperation = 'source-over'; };
+    if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ L.vis = es[0].isIntersecting; }).observe(cv);
+    if ('ResizeObserver' in window) new ResizeObserver(function(){ size(); if (reduce) L.frame(performance.now()); }).observe(cv);
+    if (reduce) setTimeout(function(){ size(); L.frame(performance.now()); }, 600);
+    list.push(L);
+  }
+
+  /* ---------- parse spec + mount ---------- */
+  if (spec) spec.split(';').forEach(function(part, i){
+    part = part.trim(); if (!part) return; var host = hero, sel = null;
+    if (part.indexOf('|') >= 0) { sel = part.split('|')[0].trim(); part = part.split('|')[1].trim(); try { host = D.querySelector(sel); } catch(e){ host = null; } }
+    var m = part.match(/^(\w+)(?::(\w+))?(?:@(\w+))?$/); if (!m) return;
+    if (small && i > 0 && !sel) return;
+    mount(host, m[1], m[2] || '', m[3] || (sel ? 'center' : 'mascot'), i);
+  });
+  if (list.length) {
+    H.setAttribute('data-mx-gl-on', list.map(function(l){ return l.mode; }).join(' '));
+    if (fine && !reduce) window.addEventListener('pointermove', function(e){
+      M.tx = e.clientX / window.innerWidth * 2 - 1; M.ty = e.clientY / window.innerHeight * 2 - 1;
+      var r = list[0].cv.getBoundingClientRect(); M.sx = e.clientX - r.left; M.sy = e.clientY - r.top; }, { passive: true });
+    new MutationObserver(function(){ list.forEach(function(l){ l.theme(); if (reduce) l.frame(performance.now()); }); }).observe(H, { attributes: true, attributeFilter: ['style', 'data-theme-mode', 'data-theme-preset', 'class'] });
+    if (reduce) list.forEach(function(l){ l.frame(performance.now()); });
+    else (function loop(now){ requestAnimationFrame(loop); if (D.hidden) return; M.x += (M.tx - M.x) * .05; M.y += (M.ty - M.y) * .05;
+      list.forEach(function(l){ if (l.vis) l.frame(now); else l.last = now; }); })(performance.now());
+    window.addEventListener('load', function(){ list.forEach(function(l){ l.size(); if (reduce) l.frame(performance.now()); }); });
+  }
+
+  /* ---------- CSS 3D depth treatments ---------- */
+  var tilts = [];
+  function freeT(n){ return n && n !== D.body && !n.hasAttribute('data-tilt') && !n.classList.contains('tilt-3d') && !n.classList.contains('mx3d-tilt') && getComputedStyle(n).position !== 'fixed'; }
+  function baseT(n){ var t = getComputedStyle(n).transform; return t && t !== 'none' && t !== 'matrix(1, 0, 0, 1, 0, 0)' ? ' ' + t : ''; }
+  function addTilt(n, amt, glare){ if (!freeT(n)) return false; n.classList.add('mx3d-tilt'); if (glare && !n.querySelector(':scope > .mx3d-glare') && !/^(IMG|svg|CANVAS|VIDEO)$/i.test(n.tagName)) { positioned(n); var g = el('span', 'mx3d-glare', n); g.setAttribute('aria-hidden', 'true'); } tilts.push({ n: n, a: amt, b: '' }); return true; }
+  function cardList(){ var o = [], seen = [];
+    function push(c){ if (o.length >= 40 || seen.indexOf(c) >= 0 || c.closest('.mx-hide,nav,.mq,.mx-band,.mx-fx,[aria-hidden="true"]') || (hero && (c === hero || c.contains(hero)))) return; var w = c.offsetWidth, h = c.offsetHeight; if (w < 110 || h < 80 || w > Math.min(760, window.innerWidth * .62) || h > 720) return; if (o.some(function(x){ return x.contains(c) || c.contains(x); })) return; seen.push(c); o.push(c); }
+    D.querySelectorAll('.mx-card').forEach(push);
+    if (o.length < 6) D.querySelectorAll('section [class*="card"],section [class*="tile"],section li[class],footer [class*="card"]').forEach(push);
+    return o; }
+  var got3 = [];
+  var CARDS = cardList();
+  if (fx3.indexOf(' cards ') >= 0) { var nc = 0; CARDS.forEach(function(c){ if (addTilt(c, 9, true)) nc++; }); if (nc) got3.push('cards'); }
+  if (fx3.indexOf(' mascot ') >= 0 && hero) { var mc = mascotOf(hero); if (mc) { var tgt = freeT(mc) ? mc : null; if (tgt && addTilt(tgt, 14, false)) { tgt.classList.add('mx3d-mascot'); tilts[tilts.length - 1].b = baseT(tgt); got3.push('mascot'); } } }
+  if (fx3.indexOf(' extrude ') >= 0 || fx3.indexOf(' chroma ') >= 0) { var hh = D.querySelector('h1'); if (hh) { var cs = getComputedStyle(hh), fill = cs.webkitTextFillColor || cs.color;
+    if (!/transparent|rgba\([^)]*,\s*0\)/.test(fill) && cs.backgroundClip !== 'text' && cs.webkitBackgroundClip !== 'text') { hh.classList.add(fx3.indexOf(' chroma ') >= 0 ? 'mx3d-chroma' : 'mx3d-extrude'); got3.push('type'); } } }
+  if (fx3.indexOf(' rise ') >= 0 && !reduce && 'IntersectionObserver' in window) {
+    var rq = CARDS.filter(function(c){ return !c.classList.contains('mx-gal') && !c.querySelector('.mx-gal'); });
+    rq.forEach(function(c){ if (c.parentElement && getComputedStyle(c.parentElement).perspective === 'none') c.parentElement.style.perspective = '1100px'; });
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (!e.isIntersecting) return; io.unobserve(e.target); try { e.target.animate([{ rotate: '1 0 0 22deg', opacity: .001 }, { rotate: '1 0 0 0deg', opacity: 1 }], { duration: 900, easing: 'cubic-bezier(.16,1,.3,1)', delay: (Array.prototype.indexOf.call(e.target.parentElement.children, e.target) % 6) * 70 }); } catch(_){} }); }, { threshold: .12 });
+    rq.forEach(function(c){ if (c.getBoundingClientRect().top > window.innerHeight) io.observe(c); }); if (rq.length) got3.push('rise');
+  }
+  if (tilts.length && fine && !reduce) {
+    var cur = null;
+    D.addEventListener('pointermove', function(e){
+      var hit = null; for (var i = 0; i < tilts.length; i++) { var n = tilts[i].n; if (n.classList.contains('mx3d-mascot')) continue; if (n.contains(e.target)) { hit = tilts[i]; break; } }
+      if (cur && cur !== hit) { cur.n.style.transform = ''; cur.n.classList.remove('mx3d-hot'); }
+      if (hit && hit !== cur) hit.b = baseT(hit.n);
+      cur = hit; if (hit) { var r = hit.n.getBoundingClientRect(), px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+        hit.n.classList.add('mx3d-hot'); hit.n.style.transform = 'perspective(900px) rotateX(' + ((.5 - py) * hit.a).toFixed(2) + 'deg) rotateY(' + ((px - .5) * hit.a).toFixed(2) + 'deg)' + hit.b;
+        hit.n.style.setProperty('--gx', (px * 100).toFixed(1) + '%'); hit.n.style.setProperty('--gy', (py * 100).toFixed(1) + '%'); }
+      tilts.forEach(function(t){ if (t.n.classList.contains('mx3d-mascot')) t.n.style.transform = 'perspective(1000px) rotateX(' + (-(e.clientY / window.innerHeight - .5) * t.a).toFixed(2) + 'deg) rotateY(' + ((e.clientX / window.innerWidth - .5) * t.a).toFixed(2) + 'deg)' + t.b; });
+    }, { passive: true });
+  }
+  if (got3.length) H.setAttribute('data-mx-3d-on', got3.join(' '));
+})();
+
 </script>
 <script>
 
@@ -1295,8 +1827,11 @@ var par=$$('[data-par]');if(par.length&&!RM){var tick=false;function upd(){tick=
 })();
 
 
-(function(){var D=document,n=D.querySelector('.oc-nav');addEventListener('scroll',function(){n.classList.toggle('sc',scrollY>20)},{passive:true});
-var h=D.querySelector('.oc-hchar'),st=D.querySelector('.oc-stage');if(!window.__RM&&h&&matchMedia('(pointer:fine)').matches){D.querySelector('.oc-hero').addEventListener('mousemove',function(e){var x=e.clientX/innerWidth-.5;st.style.transform='translateX('+(x*24).toFixed(1)+'px)'})}
+(function(){var d=document,root=d.documentElement;requestAnimationFrame(function(){setTimeout(function(){root.classList.add('opened')},250)});setTimeout(function(){var c=d.querySelector('.curtain');if(c)c.remove()},2600);
+var hero=d.getElementById('hero');if(hero)hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();hero.style.setProperty('--mx',(e.clientX-r.left)+'px');hero.style.setProperty('--my',(e.clientY-r.top)+'px')});
+var b=d.getElementById('bulbs'),n=11,m=16,h='';if(b){for(var i=0;i<=n;i++){h+='<i style="left:'+(i/n*100)+'%;top:0"></i><i style="left:'+(i/n*100)+'%;top:100%"></i>'}for(var j=1;j<m;j++){h+='<i style="top:'+(j/m*100)+'%;left:0"></i><i style="top:'+(j/m*100)+'%;left:100%"></i>'}b.innerHTML=h}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});d.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var w=d.querySelector('.hero .wordmark');function fit(){if(!w)return;w.style.fontSize='';var p=w.parentNode.clientWidth,cs=parseFloat(getComputedStyle(w).fontSize);if(w.scrollWidth>p)w.style.fontSize=Math.max(28,cs*p/w.scrollWidth*.97)+'px'}fit();addEventListener('resize',fit);d.fonts&&d.fonts.ready.then(fit);
 })();
 
 

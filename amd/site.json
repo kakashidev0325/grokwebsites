@@ -1,35 +1,35 @@
 {
   "format": "meme-site-studio/site@1",
-  "name": "A Meme Donkey",
+  "name": "A Meme Dacity",
   "ticker": "AMD",
-  "template": "c38-ocicat",
-  "domain": "amemedonkey.lol",
-  "ca": "9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump",
+  "template": "c14-thegme",
+  "domain": "amemedacity.lol",
+  "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "preset",
-  "theme_preset": "solana",
+  "theme_mode": "original",
+  "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "live",
+  "domain_status": "not_connected",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "amemedonkey.lol"
+      "host": "amemedacity.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.amemedonkey.lol"
+      "host": "www.amemedacity.lol"
     }
   ],
   "tagline": "",
-  "about": "AMD so far so good...moving up tech nicely",
-  "x_url": "https://x.com/amemedonkey_x",
-  "tg_url": "https://t.me/amemedonkey_tg",
-  "ref_x_url": "https://x.com/jimcramer/status/2117728399267639668",
+  "about": "THE SKYLINE HAS A MAIN CHARACTER.",
+  "x_url": "https://x.com/amemedacity_x",
+  "tg_url": "https://t.me/amemedacity_tg",
+  "ref_x_url": "",
   "socials": [],
   "buy_url": "",
   "dexs_url": "",
@@ -75,12 +75,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/coin/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump",
-    "chart_page": "https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump",
-    "chart_embed": "https://dexscreener.com/solana/9VHCDisE9pybDt5eCuKv1AyddCx8gksuxpoWi6vjpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/",
+    "chart_page": "https://dexscreener.com/solana",
+    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "amd",
-  "project_id": "pmw2a0m0pzbcjs",
-  "exported_at": "2026-11-04T18:41:34.329Z"
+  "project_id": "pmw4cvcq428n1z",
+  "exported_at": "2026-11-06T02:28:55.620Z"
 }
