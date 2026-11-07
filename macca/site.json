@@ -27,7 +27,7 @@
   ],
   "tagline": "",
   "about": "Macca the Gator, straight out of GTA VI’s Leonida.\nThe mascot of our independent memecoin crew.",
-  "x_url": "https://x.com/maccarobin",
+  "x_url": "https://x.com/maccaonrobin",
   "tg_url": "maccaonrobin",
   "ref_x_url": "https://x.com/Dexerto/status/2103142695380070745",
   "socials": [],
@@ -72,7 +72,8 @@
   "characters": [
     "assets/char1.webp",
     "assets/char2.webp",
-    "assets/char3.webp"
+    "assets/char3.webp",
+    "assets/char4.webp"
   ],
   "backgrounds": [
     "assets/gpt-bg1.webp",
@@ -90,5 +91,5 @@
   },
   "site_slug": "macca",
   "project_id": "pmw4xfp3g4kmtj",
-  "exported_at": "2026-11-07T05:21:42.604Z"
+  "exported_at": "2026-11-07T08:17:23.267Z"
 }
