@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "Claudia Coin",
   "ticker": "CLAUDIA",
-  "template": "c51-flora-floor",
+  "template": "c40-jupcat",
   "domain": "claudiarobin.lol",
   "ca": "0x7f16bf40f5b3aad63d99a1296e176a2fb2e0588c",
   "chain": "robinhood",
@@ -70,5 +70,5 @@
   },
   "site_slug": "claudia",
   "project_id": "pmw6yyh43ykv8p",
-  "exported_at": "2026-11-07T23:09:54.722Z"
+  "exported_at": "2026-11-07T23:13:09.793Z"
 }
