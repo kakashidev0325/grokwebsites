@@ -2,15 +2,15 @@
   "format": "meme-site-studio/site@1",
   "name": "Elysion Cat",
   "ticker": "ECAT",
-  "template": "c31-getkitty",
+  "template": "c51-flora-floor",
   "domain": "elysioncat.lol",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "Mythic elegance meets pure feline meme energy.",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/elysioncat",
+  "tg_url": "https://t.me/elysioncat_tg",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -81,5 +81,5 @@
   },
   "site_slug": "ecat",
   "project_id": "pmw6nuivi4vtei",
-  "exported_at": "2026-11-07T17:11:37.361Z"
+  "exported_at": "2026-11-07T17:20:34.747Z"
 }
