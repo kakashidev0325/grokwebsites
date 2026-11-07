@@ -1,7 +1,7 @@
 {
   "format": "meme-site-studio/site@1",
-  "name": "Jos\u00e9 Musk",
-  "ticker": "Jos\u00e9",
+  "name": "José Musk",
+  "ticker": "José",
   "template": "c54-baskt-cards",
   "domain": "josemusk.lol",
   "ca": "TBA",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "Building the meme economy from the ground up.",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/josemusk_x",
+  "tg_url": "https://t.me/josemusk_tg",
   "ref_x_url": "https://x.com/arlenellaban/status/2119142182674399495",
   "socials": [],
   "buy_url": "",
@@ -74,5 +74,5 @@
   },
   "site_slug": "edoge",
   "project_id": "pmw6qplqmzrz3k",
-  "exported_at": "2026-11-07T19:11:47.947Z"
+  "exported_at": "2026-11-07T19:17:39.685Z"
 }
