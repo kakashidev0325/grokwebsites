@@ -2,27 +2,27 @@
   "format": "meme-site-studio/site@1",
   "name": "Claudia Coin",
   "ticker": "CLAUDIA",
-  "template": "c52-bureau-nebula",
-  "domain": "claudiacoin.lol",
+  "template": "c51-flora-floor",
+  "domain": "claudiarobin.lol",
   "ca": "TBA",
   "chain": "solana",
   "theme_mode": "preset",
-  "theme_preset": "solana",
-  "theme_primary": "#9945ff",
-  "theme_secondary": "#14f195",
+  "theme_preset": "cyber-lime",
+  "theme_primary": "#c8ff00",
+  "theme_secondary": "#7cff00",
   "domain_status": "not_connected",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "claudiacoin.lol"
+      "host": "claudiarobin.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.claudiacoin.lol"
+      "host": "www.claudiarobin.lol"
     }
   ],
   "tagline": "",
@@ -69,6 +69,6 @@
     "chain_name": "Solana"
   },
   "site_slug": "claudia",
-  "project_id": "pmw6xr3y1idwxm",
-  "exported_at": "2026-11-07T21:48:54.199Z"
+  "project_id": "pmw6yyh43ykv8p",
+  "exported_at": "2026-11-07T22:22:44.755Z"
 }
