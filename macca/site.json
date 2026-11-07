@@ -4,7 +4,7 @@
   "ticker": "MACCA",
   "template": "c13-cowl",
   "domain": "maccaonrobin.lol",
-  "ca": "0x4332e728a9df27545e78656ea391fd172723a011",
+  "ca": "TBA",
   "chain": "robinhood",
   "theme_mode": "preset",
   "theme_preset": "cyber-lime",
@@ -27,7 +27,7 @@
   ],
   "tagline": "",
   "about": "Macca the Gator, straight out of GTA VI’s Leonida.\nThe mascot of our independent memecoin crew.",
-  "x_url": "maccaonrobin",
+  "x_url": "https://x.com/maccarobin",
   "tg_url": "maccaonrobin",
   "ref_x_url": "https://x.com/Dexerto/status/2103142695380070745",
   "socials": [],
@@ -83,12 +83,12 @@
     "dex_name": "Uniswap V4",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0x4332e728a9df27545e78656ea391fd172723a011",
-    "chart_page": "https://dexscreener.com/robinhood/0x4332e728a9df27545e78656ea391fd172723a011",
-    "chart_embed": "https://dexscreener.com/robinhood/0x4332e728a9df27545e78656ea391fd172723a011?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://app.uniswap.org/",
+    "chart_page": "https://dexscreener.com/robinhood",
+    "chart_embed": "https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Robinhood"
   },
   "site_slug": "macca",
   "project_id": "pmw4xfp3g4kmtj",
-  "exported_at": "2026-11-07T03:03:45.452Z"
+  "exported_at": "2026-11-07T05:21:42.604Z"
 }
