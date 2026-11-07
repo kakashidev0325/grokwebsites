@@ -4,7 +4,7 @@
   "ticker": "José",
   "template": "c54-baskt-cards",
   "domain": "josemusk.lol",
-  "ca": "FTrbc3sUPbTsKiNK3e5wWeAaGBuLwmY9RWtKJCSpump",
+  "ca": "HgRk5aPDzwDCrdcuD2KoavBHBrNYbUdmUPXusnyapump",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
@@ -67,12 +67,12 @@
     "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://pump.fun/coin/FTrbc3sUPbTsKiNK3e5wWeAaGBuLwmY9RWtKJCSpump",
-    "chart_page": "https://dexscreener.com/solana/FTrbc3sUPbTsKiNK3e5wWeAaGBuLwmY9RWtKJCSpump",
-    "chart_embed": "https://dexscreener.com/solana/FTrbc3sUPbTsKiNK3e5wWeAaGBuLwmY9RWtKJCSpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/coin/HgRk5aPDzwDCrdcuD2KoavBHBrNYbUdmUPXusnyapump",
+    "chart_page": "https://dexscreener.com/solana/HgRk5aPDzwDCrdcuD2KoavBHBrNYbUdmUPXusnyapump",
+    "chart_embed": "https://dexscreener.com/solana/HgRk5aPDzwDCrdcuD2KoavBHBrNYbUdmUPXusnyapump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "edoge",
   "project_id": "pmw6qplqmzrz3k",
-  "exported_at": "2026-11-07T19:19:32.620Z"
+  "exported_at": "2026-11-07T20:32:48.402Z"
 }
