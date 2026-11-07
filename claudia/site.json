@@ -10,7 +10,7 @@
   "theme_preset": "cyber-lime",
   "theme_primary": "#c8ff00",
   "theme_secondary": "#7cff00",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "There's a music video on Claudia's official website featuring the actual $CLAUDIA coin logo.",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/claudiarobin_x",
+  "tg_url": "https://t.me/claudiarobin_tg",
   "ref_x_url": "https://x.com/asdfhgdev_pf/status/2119159731319435437",
   "socials": [],
   "buy_url": "",
@@ -70,5 +70,5 @@
   },
   "site_slug": "claudia",
   "project_id": "pmw6yyh43ykv8p",
-  "exported_at": "2026-11-07T22:22:44.755Z"
+  "exported_at": "2026-11-07T22:55:22.354Z"
 }
