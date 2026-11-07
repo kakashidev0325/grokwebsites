@@ -2,7 +2,7 @@
   "format": "meme-site-studio/site@1",
   "name": "Macca The Gator",
   "ticker": "MACCA",
-  "template": "c13-cowl",
+  "template": "c25-welovecats",
   "domain": "maccaonrobin.lol",
   "ca": "0x46c2812f7da4c382e804159a287bee1ab8f4e0c5",
   "chain": "robinhood",
@@ -91,5 +91,5 @@
   },
   "site_slug": "macca",
   "project_id": "pmw4xfp3g4kmtj",
-  "exported_at": "2026-11-07T08:31:54.044Z"
+  "exported_at": "2026-11-07T08:49:50.587Z"
 }
