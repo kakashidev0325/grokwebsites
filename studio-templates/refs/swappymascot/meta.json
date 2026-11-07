@@ -1,0 +1,233 @@
+{
+  "slug": "swappymascot",
+  "url": "https://swappymascot.fun",
+  "status": "ok",
+  "reason": "",
+  "title": "SWAPPY\u2122 \u2014 A mascot two years in the making",
+  "final_url": "https://swappymascot.fun/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(255, 245, 251)",
+    "color": "rgb(0, 0, 0)",
+    "font": "\"Times New Roman\"",
+    "fonts": [
+      "DM Sans",
+      "Lilita One"
+    ],
+    "colors": [
+      "rgb(255, 245, 251)",
+      "rgb(0, 0, 0)",
+      "rgba(255, 245, 251, 0.96)",
+      "rgb(48, 18, 45)",
+      "rgb(239, 239, 239)",
+      "rgb(249, 192, 226)",
+      "rgb(255, 255, 255)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "lore-hero",
+        "h": 749
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "lore-hero-copy",
+        "h": 615
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "lore-emphasis lore-hero-emphasis",
+        "h": 58
+      },
+      {
+        "tag": "H1",
+        "id": "lore-hero-title",
+        "cls": "",
+        "h": 235
+      },
+      {
+        "tag": "NAV",
+        "id": "",
+        "cls": "lore-hero-socials",
+        "h": 46
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "lore-hero-contract",
+        "h": 66
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "lore-hero-actions",
+        "h": 65
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "lore-hero-art",
+        "h": 645
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "lore-hero-charms",
+        "h": 645
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "lore-hero-oval",
+        "h": 711
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "lore-halftone lore-hero-halftone",
+        "h": 686
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "lore-handwritten lore-hero-note",
+        "h": 171
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "lore-handwritten lore-hero-note-bottom",
+        "h": 78
+      },
+      {
+        "tag": "svg",
+        "id": "",
+        "cls": "[object SVGAnimatedString]",
+        "h": 59
+      },
+      {
+        "tag": "svg",
+        "id": "",
+        "cls": "[object SVGAnimatedString]",
+        "h": 54
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "lore-emphasis lore-hero-art-emphasis",
+        "h": 61
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "lore-ticker",
+        "h": 51
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "lore-timeline",
+        "h": 3555
+      },
+      {
+        "tag": "SECTION",
+        "id": "receipts",
+        "cls": "lore-sources",
+        "h": 551
+      }
+    ],
+    "imgCount": 13,
+    "imgs": [
+      {
+        "src": "https://swappymascot.fun/lore/swappy-cutout.webp",
+        "w": 1199,
+        "h": 1312,
+        "alt": ""
+      },
+      {
+        "src": "https://swappymascot.fun/brand/dexscreener-icon.png",
+        "w": 48,
+        "h": 48,
+        "alt": ""
+      },
+      {
+        "src": "https://swappymascot.fun/brand/dexscreener-icon.png",
+        "w": 48,
+        "h": 48,
+        "alt": ""
+      },
+      {
+        "src": "https://swappymascot.fun/lore/chapter-1-1.jpg",
+        "w": 801,
+        "h": 800,
+        "alt": ""
+      },
+      {
+        "src": "https://swappymascot.fun/lore/chapter-5-1.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": ""
+      },
+      {
+        "src": "https://swappymascot.fun/lore/swappy-cutout.webp",
+        "w": 1199,
+        "h": 1312,
+        "alt": "Swappy, a pink penguin wearing a unicorn hood with a heart o"
+      },
+      {
+        "src": "https://swappymascot.fun/lore/x-post-01.webp",
+        "w": 1194,
+        "h": 1326,
+        "alt": "Screenshot of the original Uniswap X post from August 31, 20"
+      },
+      {
+        "src": "https://swappymascot.fun/lore/x-post-02.webp",
+        "w": 1194,
+        "h": 2022,
+        "alt": "Screenshot of the original Uniswap X post from October 16, 2"
+      },
+      {
+        "src": "https://swappymascot.fun/lore/x-post-03.webp",
+        "w": 1194,
+        "h": 3039,
+        "alt": "Screenshot of the original Uniswap X post from December 19, "
+      },
+      {
+        "src": "https://swappymascot.fun/brand/uniswap-mark.png",
+        "w": 240,
+        "h": 240,
+        "alt": ""
+      },
+      {
+        "src": "https://swappymascot.fun/lore/x-post-05.webp",
+        "w": 1194,
+        "h": 3180,
+        "alt": "Screenshot of the original Uniswap X post from September 20,"
+      },
+      {
+        "src": "https://swappymascot.fun/lore/swappy-cutout.webp",
+        "w": 1199,
+        "h": 1312,
+        "alt": ""
+      },
+      {
+        "src": "https://swappymascot.fun/lore/swappy-cutout.webp",
+        "w": 1199,
+        "h": 1312,
+        "alt": ""
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": true,
+    "hasChart": false,
+    "hasVideo": true,
+    "scrollH": 5639,
+    "title": "SWAPPY\u2122 \u2014 A mascot two years in the making"
+  },
+  "css_urls": [
+    "https://swappymascot.fun/assets/LoreApp-0xMbej1K.css"
+  ]
+}

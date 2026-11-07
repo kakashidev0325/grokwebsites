@@ -1,0 +1,62 @@
+{
+  "slug": "builderbnb",
+  "url": "https://builderbnb.xyz",
+  "status": "ok",
+  "reason": "",
+  "title": "Are You a Real Builder? \u2014 Builder",
+  "final_url": "https://builderbnb.xyz/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(13, 12, 10)",
+    "color": "rgb(243, 238, 227)",
+    "font": "Inter, system-ui, sans-serif",
+    "fonts": [
+      "Clash Display",
+      "Inter",
+      "Arial"
+    ],
+    "colors": [
+      "rgb(13, 12, 10)",
+      "rgb(243, 238, 227)",
+      "rgba(13, 12, 10, 0.82)",
+      "rgba(243, 238, 227, 0.62)",
+      "rgb(232, 84, 63)",
+      "rgb(26, 8, 6)",
+      "rgb(255, 255, 255)",
+      "rgb(0, 0, 0)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "quiz-hero",
+        "h": 348
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "block",
+        "h": 654
+      },
+      {
+        "tag": "SECTION",
+        "id": "leaderboard",
+        "cls": "block",
+        "h": 674
+      }
+    ],
+    "imgCount": 0,
+    "imgs": [],
+    "hasSticky": true,
+    "hasMarquee": false,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 2153,
+    "title": "Are You a Real Builder? \u2014 Builder"
+  },
+  "css_urls": [
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap",
+    "https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap",
+    "https://builderbnb.xyz/styles.css"
+  ]
+}

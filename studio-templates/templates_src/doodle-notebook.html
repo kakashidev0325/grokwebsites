@@ -1,0 +1,54 @@
+@@FONTS@@ family=Permanent+Marker&family=Patrick+Hand&family=Caveat:wght@700
+@@CSS@@
+:root{--paper:#fdfcf7;--line:#c9dcf0;--margin:#f3a2a2;--ink:#1f2a44;--hl:#fff176;--red:#e63946;--blue:#2f6fde}
+body{font-family:'Patrick Hand',cursive;font-size:21px;color:var(--ink);background:var(--paper) repeating-linear-gradient(transparent 0 33px,var(--line) 33px 34px);background-attachment:local}
+body::before{content:"";position:fixed;left:72px;top:0;bottom:0;width:2px;background:var(--margin);z-index:0}
+.mk{font-family:'Permanent Marker',cursive;font-weight:400}.cv{font-family:Caveat,cursive}
+.wrap{max-width:1080px;margin:auto;padding:0 24px 0 100px;position:relative;z-index:1}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 24px 10px 100px;flex-wrap:wrap;gap:10px;position:relative;z-index:2}
+nav .b{display:flex;gap:10px;align-items:center;font-family:'Permanent Marker';font-size:1.6rem}nav .b img{width:46px;height:46px;border-radius:50%;border:2px solid var(--ink)}
+nav .l{display:flex;gap:20px}nav .l a{position:relative}nav .l a:hover{color:var(--red)}nav .l a:hover::after{content:"";position:absolute;left:-6px;right:-6px;top:-6px;bottom:-6px;border:2px solid var(--red);border-radius:50% 45% 55% 40%}
+.soc{display:flex;gap:12px}.soc a{font-size:1.4rem;width:44px;height:44px;display:grid;place-items:center;border:2px solid var(--ink);border-radius:46% 54% 40% 60%/55% 45% 55% 45%;transform:rotate(-4deg)}.soc a:hover{background:var(--hl)}
+.sk{border:2.5px solid var(--ink);border-radius:255px 15px 225px 15px/15px 225px 15px 255px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:30px 0 60px}
+h1{font-family:'Permanent Marker';font-size:clamp(3.6rem,10vw,8rem);margin:0;line-height:.95;transform:rotate(-3deg)}h1 .hl{background:linear-gradient(transparent 55%,var(--hl) 55% 90%,transparent 90%)}
+.scrib{position:relative;display:inline-block}.scrib svg{position:absolute;left:-5%;bottom:-18px;width:110%;height:30px}
+.hero .note{font-size:1.5rem;margin:24px 0}
+.arrow{font-family:Caveat;font-size:1.8rem;color:var(--red);transform:rotate(-6deg);display:inline-block}
+.hero .pic{position:relative}.hero .pic img{width:100%;max-width:440px;margin:auto;background:#fff;padding:14px 14px 50px;box-shadow:2px 4px 12px rgba(0,0,0,.15);transform:rotate(3deg)}
+.tapeS{position:absolute;width:120px;height:34px;background:rgba(255,241,118,.75);top:-10px;left:50%;transform:translateX(-50%) rotate(-4deg);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.pic .cap{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-family:Caveat;font-size:1.8rem;transform:rotate(3deg)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Permanent Marker';font-size:1.3rem;padding:12px 24px;background:#fff;color:var(--ink);transition:.15s;margin:6px 10px 6px 0}.btn:hover{background:var(--hl);transform:rotate(-2deg)}.btn.r{background:var(--red);color:#fff}.btn.r:hover{background:var(--ink)}
+.ca{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 16px;background:#fff;margin-top:16px}.ca .ca-text{flex:1;font-size:1.1rem}.ca button{font-family:'Permanent Marker';background:var(--hl);padding:6px 14px}
+.tick{border-block:2px dashed var(--ink);padding:10px 0;font-family:'Permanent Marker';font-size:1.6rem;background:var(--hl);position:relative;z-index:1}.tick span{display:inline-flex;gap:2.5rem}
+section{padding:70px 0}
+h2{font-family:'Permanent Marker';font-size:clamp(2.4rem,6vw,4rem);margin:0 0 30px;display:inline-block;transform:rotate(-2deg)}
+h2::after{content:"";display:block;height:8px;margin-top:-6px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10'%3E%3Cpath d='M0 6 Q 25 0 50 5 T 100 5 T 150 5 T 200 4' fill='none' stroke='%23e63946' stroke-width='3'/%3E%3C/svg%3E") 0 0/100% 100%}
+.sticky{background:var(--hl);padding:24px;box-shadow:3px 6px 14px rgba(0,0,0,.15);transform:rotate(-2deg);position:relative}.sticky:nth-child(2){background:#ffd1dc;transform:rotate(2deg)}.sticky:nth-child(3){background:#c8f7c5;transform:rotate(-1deg)}.sticky:nth-child(4){background:#cde7ff;transform:rotate(1.5deg)}
+.stickies{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}.sticky .v{font-family:'Permanent Marker';font-size:1.8rem}.sticky:hover{transform:rotate(0) scale(1.05);z-index:2}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+.about p{font-size:1.4rem;line-height:34px;margin:0 0 34px}
+.todo{list-style:none;padding:0;font-size:1.4rem;line-height:34px;margin:0}.todo li::before{content:"☐ ";font-size:1.5rem}.todo li.d::before{content:"☑ ";color:var(--red)}.todo li.d{text-decoration:line-through;text-decoration-color:var(--red)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{padding:20px;background:#fff;position:relative}.step .n{font-family:'Permanent Marker';font-size:2.6rem;color:var(--blue);position:absolute;top:-28px;left:-10px;transform:rotate(-10deg)}
+.chartw{margin-top:40px;padding:8px;background:#fff}
+.polas{display:flex;flex-wrap:wrap;gap:26px;justify-content:center}.pola{background:#fff;padding:12px 12px 40px;width:210px;box-shadow:2px 6px 14px rgba(0,0,0,.18);position:relative;transition:.2s}.pola:nth-child(odd){transform:rotate(-4deg)}.pola:nth-child(even){transform:rotate(3deg)}.pola:hover{transform:rotate(0) scale(1.08);z-index:3}.pola img{width:100%;aspect-ratio:1;object-fit:cover}.pola span{position:absolute;bottom:8px;left:0;right:0;text-align:center;font-family:Caveat;font-size:1.5rem}
+footer{padding:40px 24px 50px 100px;font-size:1.1rem;position:relative;z-index:1}
+@media(max-width:860px){body::before{left:22px}.wrap{padding:0 18px 0 40px}nav{padding:16px 18px 8px 40px}nav .l{display:none}.hero,.about{grid-template-columns:1fr}.stickies,.steps{grid-template-columns:1fr 1fr;row-gap:40px}footer{padding:30px 18px 40px 40px}}
+@@BODY@@
+<nav><a class="b" href="#"><img src="{{LOGO}}" alt="">${{TICKER}}</a><div class="l"><a href="#about">about</a><a href="#numbers">numbers</a><a href="#buy">how to buy</a><a href="#memes">memes</a></div><div class="soc">[[SOCIALS]]</div></nav>
+<header class="wrap hero">
+ <div><span class="arrow">↓ this guy right here</span><h1><span class="hl">{{NAME}}</span></h1><p class="note">{{TAGLINE}} <span class="scrib">no really.<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M2 12 C 20 2, 40 18, 60 8 S 90 14, 98 6" fill="none" stroke="#e63946" stroke-width="3"/></svg></span></p>
+ <a class="btn sk r" data-s href="{{BUY_URL}}">[[BUY]] buy ${{TICKER}}</a><a class="btn sk" data-s href="{{DEXS_URL}}">[[DEX]] chart</a>
+ <div class="ca sk"><b class="mk">CA:</b><span class="ca-text">{{CA}}</span><button class="sk" data-copy>copy</button></div></div>
+ <div class="pic"><div class="tapeS"></div><img src="{{LOGO}}" alt="{{NAME}}"><div class="cap">me, probably</div></div>
+</header>
+<div class="tick mq"><div class="mq-track"><span>✎ ${{TICKER}} ✎ just a lil guy ✎ on {{CHAIN_NAME}} ✎ draw ur own meme ✎ {{NAME}} ✎</span></div></div>
+<section id="about"><div class="wrap"><h2>the story (so far)</h2><div class="about"><div class="rv"><p>{{ABOUT}}</p><p>it started as a doodle in the margin. now it's a whole thing. honestly we're as surprised as you are.</p></div>
+ <div class="sticky rv"><b class="mk" style="font-size:1.5rem">to-do list:</b><ul class="todo"><li class="d">launch on {{CHAIN_NAME}}</li><li class="d">make a website (this one!)</li><li>1,000 holders</li><li>trend on X</li><li>get listed everywhere</li><li>touch grass?</li></ul></div></div></div></section>
+<section id="numbers"><div class="wrap"><h2>the boring numbers</h2><div class="stickies"><div class="sticky rv"><div>supply</div><div class="v">{{SUPPLY}}</div></div><div class="sticky rv"><div>tax</div><div class="v">{{TAX}}</div></div><div class="sticky rv"><div>liquidity</div><div class="v">{{LP}}</div></div><div class="sticky rv"><div>chain</div><div class="v">{{CHAIN_NAME}}</div></div></div></div></section>
+<section id="buy"><div class="wrap"><h2>how to buy (easy)</h2><div class="steps"><div class="step sk rv"><span class="n">1</span><p>get {{WALLET}}</p></div><div class="step sk rv"><span class="n">2</span><p>buy some {{NATIVE}}</p></div><div class="step sk rv"><span class="n">3</span><p>go to {{DEX}}, paste CA</p></div><div class="step sk rv"><span class="n">4</span><p>swap for ${{TICKER}} :)</p></div></div>
+ <p style="margin-top:30px"><a class="btn sk r" data-s href="{{BUY_URL}}">[[BUY]] ok let's go →</a></p><div class="chartw sk rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></div></section>
+<section id="memes"><div class="wrap"><h2>fridge of memes</h2><div class="polas"><div class="pola rv"><img class="gimg" src="{{LOGO}}" alt=""><span>monday</span></div><div class="pola rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:grayscale(1)"><span>after the dip</span></div><div class="pola rv"><img class="gimg" src="{{LOGO}}" alt="" style="filter:hue-rotate(120deg)"><span>alien phase</span></div><div class="pola rv"><img class="gimg" src="{{LOGO}}" alt="" style="transform:scaleX(-1)"><span>other side</span></div></div>
+ <div style="text-align:center;margin-top:50px"><span class="arrow" style="font-size:2rem">come hang out ↓</span><br><a class="btn sk" data-s href="{{X_URL}}">[[X]] X / twitter</a><a class="btn sk r" data-s href="{{TG_URL}}">[[TG]] telegram</a></div></div></section>
+<footer><p class="cv" style="font-size:1.6rem;margin:0">— {{NAME}}, <span data-year></span></p><p>${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. It's a doodle. Not financial advice.</p></footer>
+@@JS@@

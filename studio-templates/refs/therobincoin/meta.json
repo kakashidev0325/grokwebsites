@@ -1,0 +1,341 @@
+{
+  "slug": "therobincoin",
+  "url": "https://therobincoin.xyz",
+  "status": "ok",
+  "reason": "",
+  "title": "$ROBIN \u2014 The Frog That Belongs on Robinhood Chain",
+  "final_url": "https://therobincoin.xyz/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(11, 20, 14)",
+    "color": "rgb(237, 243, 237)",
+    "font": "\"IBM Plex Mono\", \"IBM Plex Mono Fallback\", monospace",
+    "fonts": [
+      "IBM Plex Mono",
+      "Anton",
+      "Geist"
+    ],
+    "colors": [
+      "rgb(11, 20, 14)",
+      "rgb(237, 243, 237)",
+      "rgba(2, 12, 7, 0.28)",
+      "rgb(206, 245, 15)",
+      "rgb(16, 30, 21)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "top",
+        "cls": "hero hero-alpha",
+        "h": 900
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-background",
+        "h": 1030
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-scrim",
+        "h": 900
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-mark-panel",
+        "h": 824
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-mark",
+        "h": 589
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-copy",
+        "h": 639
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "cls": "hero-kicker",
+        "h": 17
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "hero-kicker-dot",
+        "h": 7
+      },
+      {
+        "tag": "H1",
+        "id": "",
+        "cls": "hero-statement HeroIdentity-module__1_9TWq__identity",
+        "h": 187
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "hero-answer",
+        "h": 187
+      },
+      {
+        "tag": "B",
+        "id": "",
+        "cls": "hero-highlight",
+        "h": 132
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "cls": "hero-refrain",
+        "h": 76
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-actions",
+        "h": 68
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "ticker",
+        "h": 51
+      },
+      {
+        "tag": "SECTION",
+        "id": "lore",
+        "cls": "lore section-pad",
+        "h": 1485
+      },
+      {
+        "tag": "SECTION",
+        "id": "archives",
+        "cls": "archive-proof archive-compact",
+        "h": 512
+      },
+      {
+        "tag": "SECTION",
+        "id": "memes",
+        "cls": "meme-section section-pad",
+        "h": 4267
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "Reactions-module__rB9KJa__reactions",
+        "h": 1977
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "alpha-banner alpha-interlude",
+        "h": 520
+      },
+      {
+        "tag": "SECTION",
+        "id": "tokenomics",
+        "cls": "token-section section-pad",
+        "h": 770
+      }
+    ],
+    "imgCount": 75,
+    "imgs": [
+      {
+        "src": "https://therobincoin.xyz/images/hero2.png",
+        "w": 1935,
+        "h": 813,
+        "alt": "Robin strides upward across green candlesticks toward the mo"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/web/wordmark-rh.png",
+        "w": 1272,
+        "h": 500,
+        "alt": "$ROBIN"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/web/circle-rh.png",
+        "w": 1500,
+        "h": 1500,
+        "alt": ""
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Uniswap_Logo.svg",
+        "w": 641,
+        "h": 640,
+        "alt": ""
+      },
+      {
+        "src": "https://therobincoin.xyz/images/brand/dex-black-logo.webp",
+        "w": 250,
+        "h": 250,
+        "alt": ""
+      },
+      {
+        "src": "https://therobincoin.xyz/images/robin-head.png",
+        "w": 1500,
+        "h": 1500,
+        "alt": "Robin, Kermit's nephew, wearing a Robin Hood hat."
+      },
+      {
+        "src": "https://therobincoin.xyz/images/heart-hands.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin makes a heart shape with his hands."
+      },
+      {
+        "src": "https://therobincoin.xyz/images/moods/pepe-robin.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin resting his chin on his hand with a knowing look"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/moods/still-holding.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin lifting a dumbbell with a bag of $Robin hanging from i"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/moods/tender-eyes.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin looking up with big pleading eyes"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/moods/sleep.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin asleep under his blanket"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/moods/smug.png",
+        "w": 1500,
+        "h": 1500,
+        "alt": "Robin with a knowing smile"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/moods/shock.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin holding his head in shock"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/moods/panic.png",
+        "w": 1500,
+        "h": 1500,
+        "alt": "Red-faced Robin panicking"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/moods/suspicious.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin giving a suspicious sideways glance"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/web/money-printer.png",
+        "w": 512,
+        "h": 512,
+        "alt": ""
+      },
+      {
+        "src": "https://therobincoin.xyz/images/web/community-robin.png",
+        "w": 512,
+        "h": 512,
+        "alt": "Robin community joining hands"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/green-volley.png",
+        "w": 1672,
+        "h": 941,
+        "alt": "Robin on a unicorn leading a volley of arrows with the Sherw"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/kingdom-arrival.png",
+        "w": 1920,
+        "h": 1080,
+        "alt": "Robin arriving at a forest castle on a unicorn carrying bags"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/tuxedo-robin.png",
+        "w": 1774,
+        "h": 887,
+        "alt": "Robin in a tuxedo raising a glass"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/robin-matrix.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin inside the green matrix"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/moon-landing.png",
+        "w": 1122,
+        "h": 1402,
+        "alt": "Robin plants his flag on the moon"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/laser-eyes.png",
+        "w": 1737,
+        "h": 905,
+        "alt": "Robin with laser eyes"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/space-selfie.png",
+        "w": 1520,
+        "h": 1034,
+        "alt": "Robin takes a selfie in space"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/robin-portal.png",
+        "w": 1123,
+        "h": 1400,
+        "alt": "Robin looks through a glowing portal"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/night-trader.png",
+        "w": 1426,
+        "h": 1103,
+        "alt": "Robin trading late at night"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/storm.png",
+        "w": 1457,
+        "h": 1079,
+        "alt": "A giant Robin storm rolls over the city"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/divine-robin.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin receives a divine blessing"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/rich-robin.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "Robin flying in private jet luxury"
+      },
+      {
+        "src": "https://therobincoin.xyz/images/memes/green-volley.png",
+        "w": 1672,
+        "h": 941,
+        "alt": "Robin on a unicorn leading a volley of arrows with the Sherw"
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": true,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 13868,
+    "title": "$ROBIN \u2014 The Frog That Belongs on Robinhood Chain"
+  },
+  "css_urls": [
+    "https://therobincoin.xyz/_next/static/chunks/3m10jh5x-u09l.css",
+    "https://therobincoin.xyz/_next/static/chunks/3n2zojje3cz19.css"
+  ]
+}

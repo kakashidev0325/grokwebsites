@@ -1,0 +1,230 @@
+{
+  "slug": "thejoecoin",
+  "url": "https://thejoecoin.com",
+  "status": "ok",
+  "reason": "",
+  "title": "$JOE |\u00a0The Emoti Guy",
+  "final_url": "https://thejoecoin.com/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(15, 15, 15)",
+    "color": "rgb(51, 51, 51)",
+    "font": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+    "fonts": [
+      "-apple-system",
+      "Poppins",
+      "W"
+    ],
+    "colors": [
+      "rgb(15, 15, 15)",
+      "rgb(51, 51, 51)",
+      "rgba(255, 255, 255, 0.79)"
+    ],
+    "sections": [],
+    "imgCount": 41,
+    "imgs": [
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/2f2cf8849814de01b0a1a685e16be3f8dfd6c473d73b76b1145e0e6c074626b1.avif",
+        "w": 64,
+        "h": 64,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/2f2cf8849814de01b0a1a685e16be3f8dfd6c473d73b76b1145e0e6c074626b1.avif",
+        "w": 64,
+        "h": 64,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/sticker.webp",
+        "w": 512,
+        "h": 497,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/joecoinpfp-ezgif.com-speed.gif",
+        "w": 500,
+        "h": 500,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-17-34.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-18-06.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-19-13.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-20-38.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-21-32.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-24-14.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-25-23.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-27-20.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-28-43.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-32-58.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-36-08.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-37-57.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_11-42-13.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_14-00-12.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_14-26-33.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_14-30-44.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_14-40-06.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/firefox_2025-09-23_14-41-54.png",
+        "w": 256,
+        "h": 256,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/joe.png",
+        "w": 248,
+        "h": 250,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/joecoin-pfp__21_-removebg-preview-e1767968203257.png",
+        "w": 464,
+        "h": 314,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/images-removebg-preview.png",
+        "w": 229,
+        "h": 221,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/eth.png",
+        "w": 128,
+        "h": 128,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/joe.png",
+        "w": 248,
+        "h": 250,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/joe.png",
+        "w": 248,
+        "h": 250,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/eth.png",
+        "w": 128,
+        "h": 128,
+        "alt": ""
+      },
+      {
+        "src": "https://thejoecoin.com/wp-content/uploads/2026/01/Joescreener-1-e1767960241225.png",
+        "w": 800,
+        "h": 147,
+        "alt": ""
+      }
+    ],
+    "hasSticky": false,
+    "hasMarquee": false,
+    "hasChart": true,
+    "hasVideo": false,
+    "scrollH": 6830,
+    "title": "$JOE |\u00a0The Emoti Guy"
+  },
+  "css_urls": [
+    "https://thejoecoin.com/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.5",
+    "https://thejoecoin.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.5",
+    "https://thejoecoin.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.5",
+    "https://thejoecoin.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.5",
+    "https://thejoecoin.com/wp-content/uploads/elementor/css/post-4.css?ver=1793082640",
+    "https://thejoecoin.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.3.5",
+    "https://thejoecoin.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.3.5",
+    "https://thejoecoin.com/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.34.0",
+    "https://thejoecoin.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.3.5",
+    "https://thejoecoin.com/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=4.3.5",
+    "https://thejoecoin.com/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-push.min.css?ver=4.3.5",
+    "https://thejoecoin.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=4.3.5",
+    "https://thejoecoin.com/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=4.3.5",
+    "https://thejoecoin.com/wp-content/uploads/elementor/css/post-13.css?ver=1793082641"
+  ]
+}

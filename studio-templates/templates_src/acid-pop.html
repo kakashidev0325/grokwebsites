@@ -1,0 +1,58 @@
+@@FONTS@@ family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@500;700
+@@CSS@@
+:root{--lime:#d4ff3a;--k:#0d0d0d;--w:#fff;--pink:#ff5fa2;--blue:#5b7cff;--orange:#ff8a3d}
+body{background:var(--lime);color:var(--k);font-family:Inter,sans-serif}
+.bg{font-family:'Bricolage Grotesque',sans-serif}
+.wrap{max-width:1240px;margin:auto;padding:0 22px}
+nav{padding:16px 0}nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.pillnav{display:flex;gap:4px;background:var(--k);padding:6px;border-radius:999px}.pillnav a{color:var(--w);padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px}.pillnav a:hover{background:var(--lime);color:var(--k)}
+.b{display:flex;gap:10px;align-items:center;font-family:'Bricolage Grotesque';font-weight:800;font-size:1.5rem}.b img{width:44px;height:44px;border-radius:50%;border:3px solid var(--k);object-fit:cover}
+.soc{display:flex;gap:6px}.soc a{width:44px;height:44px;border-radius:50%;background:var(--k);color:var(--lime);display:grid;place-items:center;transition:.2s}.soc a:hover{transform:rotate(-12deg) scale(1.1);background:var(--pink);color:var(--k)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border-radius:999px;font-weight:700;font-size:1.05rem;background:var(--k);color:var(--lime);transition:.2s}.btn:hover{transform:scale(1.05) rotate(-2deg)}.btn.w{background:var(--w);color:var(--k);border:3px solid var(--k)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:30px 0 70px}
+.kick{display:inline-flex;gap:8px;align-items:center;background:var(--w);border:2px solid var(--k);border-radius:999px;padding:6px 14px 6px 6px;font-weight:700;font-size:14px}.kick b{background:var(--pink);border-radius:999px;padding:3px 10px}
+h1{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(3.6rem,10vw,9rem);line-height:.86;letter-spacing:-.045em;margin:20px 0}
+h1 .em{display:inline-block;background:var(--k);color:var(--lime);padding:0 .14em;border-radius:.2em;transform:rotate(-3deg)}
+.lead{font-size:1.3rem;font-weight:500;max-width:32ch}
+.mascot{position:relative;aspect-ratio:1}.mascot .blob{position:absolute;inset:4%;background:var(--pink);border-radius:42% 58% 63% 37%/41% 44% 56% 59%;animation:morph 9s ease-in-out infinite;border:4px solid var(--k)}@keyframes morph{50%{border-radius:58% 42% 35% 65%/55% 62% 38% 45%;transform:rotate(12deg)}}
+.mascot img{position:relative;width:84%;margin:8% auto 0;animation:hop 3s ease-in-out infinite}@keyframes hop{50%{transform:translateY(-16px) rotate(-3deg)}}
+.tag{position:absolute;background:var(--w);border:3px solid var(--k);border-radius:999px;padding:8px 16px;font-weight:700;box-shadow:4px 4px 0 var(--k);animation:hop 4s ease-in-out infinite}
+.ca{display:flex;align-items:center;gap:10px;background:var(--w);border:3px solid var(--k);border-radius:999px;padding:6px 6px 6px 20px;margin-top:26px;max-width:580px;box-shadow:6px 6px 0 var(--k)}.ca .ca-text{flex:1;font-size:13px;font-weight:700}.ca button{border:0;background:var(--k);color:var(--lime);border-radius:999px;padding:12px 18px;font-weight:700}
+.band{background:var(--k);color:var(--lime);font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(2rem,5vw,3.6rem);padding:14px 0;transform:rotate(-2deg);margin:0 -20px}.band span{display:inline-flex;gap:2.5rem;align-items:center}.band img{width:50px;height:50px;border-radius:50%}
+.band.b2{background:var(--pink);color:var(--k);transform:rotate(2deg);margin-top:-14px;--mq-speed:34s}
+section{padding:110px 0}
+h2{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(2.8rem,7vw,6rem);letter-spacing:-.04em;line-height:.9;margin:0 0 40px}
+.cardx{background:var(--w);border:3px solid var(--k);border-radius:32px;padding:32px;box-shadow:8px 8px 0 var(--k)}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}.about p{font-size:1.35rem;font-weight:500;line-height:1.5}
+.emo{display:grid;place-items:center;font-size:7rem;background:var(--blue);color:var(--w)}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.nums .cardx{text-align:left}.nums .v{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(2rem,3.6vw,3rem);letter-spacing:-.03em}.nums .cardx:nth-child(1){background:var(--pink)}.nums .cardx:nth-child(2){background:var(--orange)}.nums .cardx:nth-child(3){background:var(--blue);color:var(--w)}.nums .cardx:nth-child(4){background:var(--k);color:var(--lime)}
+.nums .cardx:hover,.steps .cardx:hover{transform:translate(-4px,-4px);box-shadow:12px 12px 0 var(--k)}.cardx{transition:.2s}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.steps .n{width:56px;height:56px;border-radius:50%;background:var(--lime);border:3px solid var(--k);display:grid;place-items:center;font-family:'Bricolage Grotesque';font-weight:800;font-size:1.6rem;margin-bottom:14px}
+.chartx{margin-top:30px;border:3px solid var(--k);border-radius:32px;overflow:hidden;box-shadow:8px 8px 0 var(--k)}
+.road{display:flex;gap:18px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}.road .cardx{min-width:320px;scroll-snap-align:start}.road .cardx:first-child{background:var(--k);color:var(--lime)}
+.memes{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.memes img{width:100%;aspect-ratio:1;object-fit:cover;border:3px solid var(--k);border-radius:24px;background:var(--w);transition:.2s}.memes img:nth-child(1){grid-column:span 2;grid-row:span 2}.memes img:hover{transform:rotate(-4deg) scale(1.04)}
+.final{background:var(--k);color:var(--lime);border-radius:40px;padding:80px 30px;text-align:center}.final h2{color:var(--lime)}
+footer{padding:30px 0 50px;font-weight:700;font-size:14px}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+#rain span{position:fixed;top:-60px;font-size:34px;pointer-events:none;z-index:99;animation:fall linear forwards}@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
+@media(max-width:900px){.pillnav{display:none}.hero,.about{grid-template-columns:1fr}.mascot{max-width:400px;margin:auto;order:-1}.nums,.steps{grid-template-columns:1fr 1fr}.memes{grid-template-columns:repeat(3,1fr)}.emo{min-height:200px}}
+@media(max-width:520px){.nums,.steps{grid-template-columns:1fr}.soc a{width:38px;height:38px}}
+@@BODY@@
+<nav><div class="wrap"><a class="b" href="#"><img src="{{LOGO}}" alt="">{{NAME}}</a><div class="pillnav"><a href="#about">About</a><a href="#numbers">Numbers</a><a href="#buy">Buy</a><a href="#next">Next</a><a href="#memes">Memes</a></div><div class="soc">[[SOCIALS]]</div></div></nav>
+<header class="wrap hero">
+ <div><span class="kick"><b>LIVE</b> on {{CHAIN_NAME}} ✨</span><h1>Meet <span class="em">${{TICKER}}</span>.</h1><p class="lead">{{TAGLINE}}</p>
+ <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px"><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a><a class="btn w" data-s href="{{DEXS_URL}}">[[DEX]] Chart</a></div>
+ <div class="ca"><span class="ca-text">{{CA}}</span><button data-copy>Copy CA</button></div></div>
+ <div class="mascot"><div class="blob"></div><img src="{{LOGO}}" alt="{{NAME}}"><span class="tag" style="top:8%;left:-4%">100% community 💚</span><span class="tag" style="bottom:12%;right:-2%;animation-delay:-2s">0% tax 🔥</span></div>
+</header>
+<div class="band mq"><div class="mq-track"><span>${{TICKER}} <img src="{{LOGO}}" alt=""> {{NAME}} <img src="{{LOGO}}" alt=""> GOOD VIBES ONLY <img src="{{LOGO}}" alt=""></span></div></div>
+<div class="band b2 mq rev"><div class="mq-track"><span>✦ NO TEAM ✦ NO PRESALE ✦ JUST {{TICKER}} ✦ {{CHAIN_NAME}} ✦</span></div></div>
+<section id="about"><div class="wrap"><h2>Okay but<br>what is it?</h2><div class="about"><div class="cardx rv"><p>{{ABOUT}}</p><p>It's the coin your group chat won't stop talking about. It's a mood. It's a movement. It's ${{TICKER}}.</p></div><div class="cardx emo rv">🤪</div></div></div></section>
+<section id="numbers" style="padding-top:0"><div class="wrap"><h2>The numbers</h2><div class="nums"><div class="cardx rv"><div>Supply</div><div class="v">{{SUPPLY}}</div></div><div class="cardx rv"><div>Tax</div><div class="v">{{TAX}}</div></div><div class="cardx rv"><div>Liquidity</div><div class="v">{{LP}}</div></div><div class="cardx rv"><div>Chain</div><div class="v">{{CHAIN_NAME}}</div></div></div></div></section>
+<section id="buy" style="padding-top:0"><div class="wrap"><h2>Get some</h2><div class="steps"><div class="cardx rv"><div class="n">1</div><b>Get {{WALLET}}</b><p>Takes 2 minutes.</p></div><div class="cardx rv"><div class="n">2</div><b>Add {{NATIVE}}</b><p>From any exchange.</p></div><div class="cardx rv"><div class="n">3</div><b>Open {{DEX}}</b><p>Paste the CA.</p></div><div class="cardx rv"><div class="n">4</div><b>Swap!</b><p>Welcome to ${{TICKER}}.</p></div></div><div class="chartx rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></div></section>
+<section id="next" style="padding-top:0"><div class="wrap"><h2>What's next →</h2><div class="road"><div class="cardx"><b>Now</b><h3 class="bg" style="font-size:2rem;margin:8px 0">Launch szn</h3><p>Fair launch, socials, first 1k holders.</p></div><div class="cardx"><b>Soon</b><h3 class="bg" style="font-size:2rem;margin:8px 0">Everywhere</h3><p>Listings, trending, big collabs.</p></div><div class="cardx"><b>Later</b><h3 class="bg" style="font-size:2rem;margin:8px 0">Main character</h3><p>CEX, merch, IRL events.</p></div><div class="cardx"><b>Eventually</b><h3 class="bg" style="font-size:2rem;margin:8px 0">🌕</h3><p>You know where.</p></div></div></div></section>
+<section id="memes" style="padding-top:0"><div class="wrap"><h2>Memes ✌️</h2><div class="memes"><img class="gimg rv" src="{{LOGO}}" alt=""><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:hue-rotate(90deg)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:hue-rotate(180deg)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:hue-rotate(270deg)"><img class="gimg rv" src="{{LOGO}}" alt="" style="transform:scaleX(-1)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:grayscale(1)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:saturate(3)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:invert(1)"><img class="gimg rv" src="{{LOGO}}" alt="" style="filter:sepia(1)"></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="final rv"><h2>Don't be late.</h2><div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn w" data-s href="{{TG_URL}}">[[TG]] Join Telegram</a><a class="btn w" data-s href="{{X_URL}}">[[X]] Follow on X</a><button class="btn" id="party" style="background:var(--lime);color:var(--k);border:0">🎉 Party mode</button></div></div></div></section>
+<footer><div class="wrap"><span>© <span data-year></span> {{NAME}}</span><span style="max-width:620px">${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. Not financial advice.</span></div></footer>
+<div id="rain"></div>
+@@JS@@
+document.getElementById('party').addEventListener('click',function(){var L=document.querySelector('.b img').src;for(var i=0;i<40;i++){var s=document.createElement('span');s.style.left=Math.random()*100+'vw';s.style.animationDuration=(2+Math.random()*3)+'s';s.style.animationDelay=Math.random()+'s';s.innerHTML=Math.random()>.5?'<img src="'+L+'" style="width:44px;height:44px;border-radius:50%">':['🎉','💚','✨','🚀'][i%4];document.getElementById('rain').appendChild(s);setTimeout(function(x){return function(){x.remove()}}(s),6000)}});

@@ -1,0 +1,250 @@
+{
+  "slug": "hmmmm",
+  "url": "https://hmmmm.fun",
+  "status": "ok",
+  "reason": "",
+  "title": "$HMM \u2014 the sound your brain makes before you do something dumb",
+  "final_url": "https://hmmmm.fun/",
+  "http": 200,
+  "style": {
+    "bg": "oklch(0.975 0.02 85)",
+    "color": "oklch(0.22 0.03 260)",
+    "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+    "fonts": [
+      "Inter",
+      "Fraunces"
+    ],
+    "colors": [
+      "oklch(0.975 0.02 85)",
+      "oklch(0.22 0.03 260)",
+      "oklab(0.975 0.00174312 0.0199239 / 0.7)",
+      "oklch(0.7 0.22 142)",
+      "oklch(0.99 0.005 85)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "top",
+        "cls": "relative",
+        "h": 608
+      },
+      {
+        "tag": "SECTION",
+        "id": "8ball",
+        "cls": "py-16 sm:py-24",
+        "h": 648
+      },
+      {
+        "tag": "SECTION",
+        "id": "depot",
+        "cls": "overflow-hidden border-y border-border bg-ink py-14 sm:py-20",
+        "h": 614
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "bg-ink text-cream",
+        "h": 44
+      },
+      {
+        "tag": "SECTION",
+        "id": "buy",
+        "cls": "py-16 sm:py-24",
+        "h": 1271
+      }
+    ],
+    "imgCount": 377,
+    "imgs": [
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/8da126c2-0dc2-4b6b-a6f9-ae431beb6c7d/hmm-emblem-cat.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "the thinking cat emblem"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/3e841157-2d4d-4008-b370-ae79fbdc8889/thinking-cat.png",
+        "w": 1254,
+        "h": 1254,
+        "alt": "a cat gazing thoughtfully at a sunset meadow, thinking about"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/8a3fdd47-b302-4d85-adbf-30a7b3eb0ce3/meme-062.jpg",
+        "w": 1400,
+        "h": 787,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/85e98b2d-c24a-49a1-8cfa-caa0617e446b/meme-153.jpg",
+        "w": 1400,
+        "h": 1400,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/cf3ed5f8-59bc-4115-8237-c2cbf38fec40/meme-063.jpg",
+        "w": 1400,
+        "h": 1011,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/2a094026-e9c7-48f6-9e26-dc983a8d9af8/meme-154.jpg",
+        "w": 1400,
+        "h": 1260,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/f0b2a17c-1dfa-43e3-867f-142cb202cd81/meme-135.jpg",
+        "w": 733,
+        "h": 732,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/0821787c-b2af-4a72-b207-4f82d2be9279/meme-031.jpg",
+        "w": 1400,
+        "h": 1009,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/78d0a32d-7d6f-4ea2-a212-ef3ebdd7c35c/meme-166.jpg",
+        "w": 1280,
+        "h": 838,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/378182f1-681b-4d14-802a-f19354e10cd1/meme-008.jpg",
+        "w": 1400,
+        "h": 1400,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/595ed292-8769-40a3-a684-e1df07c86153/meme-177.jpg",
+        "w": 1080,
+        "h": 952,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/cbac18ea-a9a4-4e54-b3f9-bbea6a6d2712/meme-186.jpg",
+        "w": 1280,
+        "h": 812,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/7ef45088-08db-4458-8d7a-bf45d3024e85/meme-055.jpg",
+        "w": 1149,
+        "h": 1369,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/9fee2f88-5486-4da3-9e37-39ec37e42553/meme-002.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/0dde9a46-4e88-44da-8025-80d2b5ec43ff/meme-130.jpg",
+        "w": 1200,
+        "h": 1200,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/c1a202f7-d6c0-464c-8c6b-b08554b33202/meme-131.jpg",
+        "w": 730,
+        "h": 732,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/8a3fdd47-b302-4d85-adbf-30a7b3eb0ce3/meme-062.jpg",
+        "w": 1400,
+        "h": 787,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/85e98b2d-c24a-49a1-8cfa-caa0617e446b/meme-153.jpg",
+        "w": 1400,
+        "h": 1400,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/cf3ed5f8-59bc-4115-8237-c2cbf38fec40/meme-063.jpg",
+        "w": 1400,
+        "h": 1011,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/2a094026-e9c7-48f6-9e26-dc983a8d9af8/meme-154.jpg",
+        "w": 1400,
+        "h": 1260,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/f0b2a17c-1dfa-43e3-867f-142cb202cd81/meme-135.jpg",
+        "w": 733,
+        "h": 732,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/0821787c-b2af-4a72-b207-4f82d2be9279/meme-031.jpg",
+        "w": 1400,
+        "h": 1009,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/78d0a32d-7d6f-4ea2-a212-ef3ebdd7c35c/meme-166.jpg",
+        "w": 1280,
+        "h": 838,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/378182f1-681b-4d14-802a-f19354e10cd1/meme-008.jpg",
+        "w": 1400,
+        "h": 1400,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/595ed292-8769-40a3-a684-e1df07c86153/meme-177.jpg",
+        "w": 1080,
+        "h": 952,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/cbac18ea-a9a4-4e54-b3f9-bbea6a6d2712/meme-186.jpg",
+        "w": 1280,
+        "h": 812,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/7ef45088-08db-4458-8d7a-bf45d3024e85/meme-055.jpg",
+        "w": 1149,
+        "h": 1369,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/9fee2f88-5486-4da3-9e37-39ec37e42553/meme-002.jpg",
+        "w": 1024,
+        "h": 1024,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/0dde9a46-4e88-44da-8025-80d2b5ec43ff/meme-130.jpg",
+        "w": 1200,
+        "h": 1200,
+        "alt": "hmm meme"
+      },
+      {
+        "src": "https://hmmmm.fun/__l5e/assets-v1/c1a202f7-d6c0-464c-8c6b-b08554b33202/meme-131.jpg",
+        "w": 730,
+        "h": 732,
+        "alt": "hmm meme"
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": true,
+    "hasChart": true,
+    "hasVideo": false,
+    "scrollH": 3535,
+    "title": "$HMM \u2014 the sound your brain makes before you do something dumb"
+  },
+  "css_urls": [
+    "https://hmmmm.fun/assets/styles-DqN936aP.css",
+    "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+  ]
+}

@@ -1,0 +1,56 @@
+@@FONTS@@ family=UnifrakturMaguntia&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@500;700
+@@CSS@@
+:root{--paper:#f4efe3;--ink:#161412;--red:#b3001b;--mut:#5c554b;--rule:#2b2722}
+body{background:#d8d0bf;color:var(--ink);font-family:'Old Standard TT',serif;font-size:17px;line-height:1.55}
+.sheet{max-width:1220px;margin:24px auto;background:var(--paper);padding:26px 34px 40px;box-shadow:0 20px 60px rgba(0,0,0,.25);background-image:radial-gradient(rgba(0,0,0,.035) 1px,transparent 1px);background-size:4px 4px}
+.os{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.04em}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:13px;border-bottom:1px solid var(--rule);padding-bottom:8px;gap:10px;flex-wrap:wrap}
+.soc{display:flex;gap:14px}.soc a:hover{color:var(--red)}
+.mast{text-align:center;padding:12px 0 6px;border-bottom:4px double var(--rule)}.mast h1{font-family:UnifrakturMaguntia,cursive;font-weight:400;font-size:clamp(3rem,10vw,7.4rem);margin:0;line-height:1}
+.dateline{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--rule);font-family:Oswald;font-size:13px;text-transform:uppercase;letter-spacing:.08em;gap:10px;flex-wrap:wrap}
+.dateline nav{display:flex;gap:18px}.dateline a:hover{color:var(--red)}
+.ext{background:var(--red);color:#fff;font-family:Oswald;font-weight:700;padding:6px 0;margin:14px 0;font-size:1.05rem;--mq-speed:35s}.ext span{display:inline-flex;gap:2.5rem}
+.headline{font-family:Oswald;font-weight:700;text-transform:uppercase;font-size:clamp(2.6rem,8vw,6.6rem);line-height:.92;margin:16px 0 10px;text-align:center;letter-spacing:-.01em}.headline em{color:var(--red);font-style:normal}
+.deck{text-align:center;font-style:italic;font-size:1.35rem;margin:0 auto 18px;max-width:46ch}
+.front{display:grid;grid-template-columns:1fr 2fr 1fr;gap:24px;border-top:1px solid var(--rule);padding-top:18px}
+.front>div{border-right:1px solid var(--rule);padding-right:24px}.front>div:last-child{border:0;padding:0}
+.photo{position:relative}.photo img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#e9e2d2;filter:grayscale(1) contrast(1.2);border:1px solid var(--rule)}.photo figcaption{font-size:13px;font-style:italic;color:var(--mut);margin-top:6px}
+.photo .stamp{position:absolute;top:14px;right:14px;border:4px solid var(--red);color:var(--red);font-family:Oswald;font-weight:700;padding:6px 12px;transform:rotate(12deg);font-size:1.3rem;background:rgba(244,239,227,.8)}
+.cols{column-count:2;column-gap:24px;column-rule:1px solid #c9c0ae;text-align:justify;hyphens:auto}.cols p:first-child::first-letter{font-family:Oswald;font-weight:700;float:left;font-size:4rem;line-height:.85;padding:4px 8px 0 0}
+h3.k{font-family:Oswald;text-transform:uppercase;font-size:1.3rem;margin:0 0 8px;border-bottom:2px solid var(--ink);padding-bottom:4px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:Oswald;font-weight:700;text-transform:uppercase;padding:12px 18px;background:var(--ink);color:var(--paper);margin:4px 8px 4px 0;transition:.15s}.btn:hover{background:var(--red)}.btn.o{background:transparent;color:var(--ink);border:2px solid var(--ink)}.btn.o:hover{background:var(--ink);color:var(--paper)}
+.ca{border:2px dashed var(--ink);padding:12px;margin:14px 0;font-size:14px}.ca .ca-text{display:block;font-family:ui-monospace,monospace;margin:6px 0 10px}.ca .cut{font-family:Oswald;font-size:12px;color:var(--mut)}
+.market{font-family:ui-monospace,monospace;font-size:14px;width:100%;border-collapse:collapse}.market td{border-bottom:1px dotted var(--mut);padding:6px 0}.market td:last-child{text-align:right;font-weight:700}
+.sec{border-top:4px double var(--rule);margin-top:30px;padding-top:16px}
+.sec h2{font-family:Oswald;text-transform:uppercase;font-size:clamp(1.8rem,4vw,2.8rem);margin:0 0 14px;line-height:1}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.grid4>div{padding:0 18px;border-right:1px solid var(--rule)}.grid4>div:first-child{padding-left:0}.grid4>div:last-child{border:0}
+.grid4 .n{font-family:Oswald;font-weight:700;font-size:2.6rem;color:var(--red);line-height:1}
+.chartb{border:1px solid var(--rule);margin-top:20px;filter:grayscale(.2)}
+.classified{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ad{border:2px solid var(--ink);padding:16px;text-align:center}.ad b{font-family:Oswald;text-transform:uppercase;font-size:1.3rem;display:block}
+.comics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.comics figure{margin:0;border:2px solid var(--ink);padding:8px}.comics img{width:100%;aspect-ratio:1;object-fit:cover;filter:grayscale(1) contrast(1.3)}.comics figcaption{font-style:italic;font-size:14px;text-align:center;margin-top:6px}
+.legal{border-top:1px solid var(--rule);margin-top:30px;padding-top:12px;font-size:12px;color:var(--mut);text-align:center}
+@media(max-width:900px){.sheet{margin:0;padding:18px}.front{grid-template-columns:1fr}.front>div{border-right:0;padding-right:0;border-bottom:1px solid var(--rule);padding-bottom:18px}.cols{column-count:1}.grid4,.comics{grid-template-columns:1fr 1fr;row-gap:20px}.grid4>div{padding:0 10px;border:0}.classified{grid-template-columns:1fr}.dateline nav{display:none}}
+@@BODY@@
+<div class="sheet">
+<div class="top"><span class="os">Vol. CXLII · No. 1 · Price: 1 ${{TICKER}}</span><span class="soc">[[SOCIALS]]</span></div>
+<div class="mast"><h1>The {{NAME}} Times</h1></div>
+<div class="dateline"><span id="today">MONDAY</span><nav><a href="#markets">Markets</a><a href="#guide">Guide</a><a href="#outlook">Outlook</a><a href="#comics">Comics</a></nav><span>{{CHAIN_NAME}} Edition · Late Final</span></div>
+<div class="ext mq"><div class="mq-track"><span>EXTRA! EXTRA! ${{TICKER}} TAKES {{CHAIN_NAME}} BY STORM ★ LOCAL DEGEN REFUSES TO SELL ★ ANALYSTS BAFFLED ★ PAPER HANDS IN SHAMBLES ★</span></div></div>
+<div class="headline">{{NAME}} <em>Shocks</em> Markets!</div>
+<p class="deck">"{{TAGLINE}}" — sources close to the chart confirm the story is real, and spreading fast.</p>
+<div class="front">
+ <div><h3 class="k">In Brief</h3><p><b>CONTRACT:</b> Readers are advised to verify the official address before purchase.</p><div class="ca"><span class="cut">✂ - - - clip &amp; keep - - -</span><span class="ca-text">{{CA}}</span><button class="btn" data-copy>Copy Address</button></div><a class="btn" data-s href="{{BUY_URL}}">[[BUY]] Buy ${{TICKER}}</a><a class="btn o" data-s href="{{DEXS_URL}}">[[DEX]] Chart</a></div>
+ <div><figure class="photo" style="margin:0"><img src="{{LOGO}}" alt="{{NAME}}"><span class="stamp">EXCLUSIVE</span><figcaption>Pictured: {{NAME}}, seen here moments before becoming the talk of the timeline.</figcaption></figure>
+ <div class="cols" style="margin-top:14px"><p>{{ABOUT}}</p><p>Witnesses describe a scene of unprecedented enthusiasm. "I've never seen anything like it," said one holder, who asked to be identified only by a profile picture. "First it was a joke. Then it was a community. Now it's a movement."</p><p>When reached for comment, the team said there is no team. Officials at rival coins declined to comment, citing "personal reasons" and "a very red chart."</p></div></div>
+ <div id="markets"><h3 class="k">Markets</h3><table class="market"><tr><td>Ticker</td><td>${{TICKER}}</td></tr><tr><td>Supply</td><td>{{SUPPLY}}</td></tr><tr><td>Tax</td><td>{{TAX}}</td></tr><tr><td>Liquidity</td><td>{{LP}}</td></tr><tr><td>Chain</td><td>{{CHAIN_NAME}}</td></tr><tr><td>Sentiment</td><td style="color:var(--red)">▲ EUPHORIC</td></tr></table>
+ <h3 class="k" style="margin-top:22px">Weather</h3><p>Green candles with a 90% chance of FOMO by evening.</p></div>
+</div>
+<div class="sec" id="guide"><h2>A Reader's Guide to Acquiring ${{TICKER}}</h2><div class="grid4"><div class="rv"><div class="n">I.</div><p>Obtain a wallet such as <b>{{WALLET}}</b>.</p></div><div class="rv"><div class="n">II.</div><p>Purchase <b>{{NATIVE}}</b> through a reputable exchange.</p></div><div class="rv"><div class="n">III.</div><p>Proceed to <b>{{DEX}}</b>; enter the contract address.</p></div><div class="rv"><div class="n">IV.</div><p>Execute the swap. Frame this newspaper.</p></div></div>
+ <div class="chartb rv"><div class="chart"><iframe src="{{CHART_URL}}" title="chart" loading="lazy"></iframe></div></div></div>
+<div class="sec" id="outlook"><h2>Outlook &amp; Classifieds</h2><div class="classified"><div class="ad rv"><b>Phase One</b>Launch. Socials. One thousand faithful readers.</div><div class="ad rv"><b>Phase Two</b>Listings in every major publication (CoinGecko, CMC).</div><div class="ad rv"><b>Phase Three</b>WANTED: exchanges, collaborators, the Moon. Inquire within.</div></div></div>
+<div class="sec" id="comics"><h2>The Funny Pages</h2><div class="comics"><figure class="rv"><img class="gimg" src="{{LOGO}}" alt=""><figcaption>"Buy high?"</figcaption></figure><figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="transform:scaleX(-1)"><figcaption>"Sell low?"</figcaption></figure><figure class="rv"><img class="gimg" src="{{LOGO}}" alt=""><figcaption>"Never."</figcaption></figure><figure class="rv"><img class="gimg" src="{{LOGO}}" alt="" style="transform:rotate(-6deg)"><figcaption>"Just hold."</figcaption></figure></div>
+ <p style="text-align:center;margin-top:24px"><a class="btn" data-s href="{{X_URL}}">[[X]] Letters to the Editor (X)</a><a class="btn o" data-s href="{{TG_URL}}">[[TG]] Subscribe (Telegram)</a></p></div>
+<p class="legal">${{TICKER}} is a meme coin with no intrinsic value or expectation of financial return. This publication is satire and for entertainment only. Not financial advice. © <span data-year></span> The {{NAME}} Times.</p>
+</div>
+@@JS@@
+document.getElementById('today').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).toUpperCase();

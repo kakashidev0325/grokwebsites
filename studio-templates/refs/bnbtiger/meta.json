@@ -1,0 +1,318 @@
+{
+  "slug": "bnbtiger",
+  "url": "https://bnbtiger.top",
+  "status": "ok",
+  "reason": "",
+  "title": "Fierce Firm Victory - BNBTIGER Official Website",
+  "final_url": "https://bnbtiger.top/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(0, 158, 237)",
+    "color": "rgb(33, 37, 41)",
+    "font": "\"Lilita One\", sans-serif",
+    "fonts": [
+      "Lilita One",
+      "Inter"
+    ],
+    "colors": [
+      "rgb(0, 158, 237)",
+      "rgb(33, 37, 41)",
+      "rgb(252, 252, 253)",
+      "rgb(3, 6, 58)",
+      "rgb(255, 213, 2)",
+      "rgb(23, 198, 83)",
+      "rgb(246, 177, 0)",
+      "rgb(255, 255, 255)"
+    ],
+    "sections": [
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "hero-1 section-space-top",
+        "h": 1058
+      },
+      {
+        "tag": "H1",
+        "id": "",
+        "cls": "hero-1__title mb-10 text-light text-stroke-md text-shadow-md gsap-text-animation",
+        "h": 128
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--1 gsap-fade-in",
+        "h": 64
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--2 gsap-fade-in",
+        "h": 158
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--3 gsap-fade-in",
+        "h": 81
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--4 gsap-fade-in",
+        "h": 229
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--5 gsap-fade-in",
+        "h": 76
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--6 gsap-fade-in",
+        "h": 173
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--7 gsap-fade-in",
+        "h": 89
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--8 gsap-fade-in",
+        "h": 45
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--9 gsap-fade-in",
+        "h": 32
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--10 gsap-fade-in",
+        "h": 41
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--11 gsap-fade-in",
+        "h": 50
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--12 gsap-fade-in",
+        "h": 54
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "img-fluid hero-1__element hero-1__element--13 gsap-fade-in",
+        "h": 35
+      }
+    ],
+    "imgCount": 75,
+    "imgs": [
+      {
+        "src": "https://bnbtiger.top/static/picture/homo.png",
+        "w": 200,
+        "h": 200,
+        "alt": "BNBTiger"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/logo-yellow.png",
+        "w": 220,
+        "h": 31,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-img-11",
+        "w": 640,
+        "h": 640,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-bg-1.png",
+        "w": 1600,
+        "h": 1165,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-cloud-1.png",
+        "w": 1600,
+        "h": 454,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-1.png",
+        "w": 100,
+        "h": 64,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-2.png",
+        "w": 234,
+        "h": 158,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-3.png",
+        "w": 120,
+        "h": 81,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-4.png",
+        "w": 230,
+        "h": 229,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-5.png",
+        "w": 120,
+        "h": 76,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-6.png",
+        "w": 200,
+        "h": 173,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-7.png",
+        "w": 120,
+        "h": 89,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-8.png",
+        "w": 47,
+        "h": 45,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-9.png",
+        "w": 60,
+        "h": 32,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-10.png",
+        "w": 66,
+        "h": 41,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-11.png",
+        "w": 87,
+        "h": 50,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-12.png",
+        "w": 56,
+        "h": 54,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-13.png",
+        "w": 68,
+        "h": 35,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-img-1.png",
+        "w": 1024,
+        "h": 1024,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/about-img-1-bg.png",
+        "w": 987,
+        "h": 986,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/about-element-4.png",
+        "w": 162,
+        "h": 155,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/about-element-1.png",
+        "w": 79,
+        "h": 78,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/about-element-2.png",
+        "w": 79,
+        "h": 78,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/about-element-3.png",
+        "w": 250,
+        "h": 187,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/how-to-buy-img-1.png",
+        "w": 500,
+        "h": 500,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/how-to-element-1.png",
+        "w": 200,
+        "h": 198,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/hero-element-2.png",
+        "w": 234,
+        "h": 158,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/tokenomics-img-1.png",
+        "w": 584,
+        "h": 584,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/road-map-element-1.png",
+        "w": 135,
+        "h": 134,
+        "alt": "image"
+      },
+      {
+        "src": "https://bnbtiger.top/static/picture/road-map-element-2.png",
+        "w": 127,
+        "h": 91,
+        "alt": "image"
+      }
+    ],
+    "hasSticky": false,
+    "hasMarquee": true,
+    "hasChart": false,
+    "hasVideo": true,
+    "scrollH": 8151,
+    "title": "Fierce Firm Victory - BNBTIGER Official Website"
+  },
+  "css_urls": [
+    "https://bnbtiger.top/static/css/bootstrap.css",
+    "https://bnbtiger.top/static/css/bootstrap-icons.css",
+    "https://bnbtiger.top/static/css/simplebar.css",
+    "https://bnbtiger.top/static/css/swiper-bundle.css",
+    "https://bnbtiger.top/static/css/ff-1.css",
+    "https://bnbtiger.top/static/css/ff-2.css",
+    "https://bnbtiger.top/static/css/style.css"
+  ]
+}

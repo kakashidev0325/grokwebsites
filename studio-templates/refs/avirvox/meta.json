@@ -1,0 +1,154 @@
+{
+  "slug": "avirvox",
+  "url": "https://www.avirvox.io",
+  "status": "ok",
+  "reason": "",
+  "title": "Avirvox Labs | The Participation Layer",
+  "final_url": "https://www.avirvox.io/",
+  "http": 200,
+  "style": {
+    "bg": "rgb(9, 4, 17)",
+    "color": "rgb(246, 237, 248)",
+    "font": "Poppins, \"Poppins Fallback\"",
+    "fonts": [
+      "Poppins",
+      "Instrument Serif"
+    ],
+    "colors": [
+      "rgb(9, 4, 17)",
+      "rgb(246, 237, 248)",
+      "lab(1.41455 1.6558 -2.79498 / 0.9)",
+      "rgb(255, 255, 255)",
+      "rgb(20, 11, 29)",
+      "rgb(8, 4, 15)"
+    ],
+    "sections": [
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "page-particles",
+        "h": 6061
+      },
+      {
+        "tag": "SECTION",
+        "id": "home",
+        "cls": "overflow-hidden pb-[clamp(24px,3vw,43px)]",
+        "h": 1081
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "pointer-events-none absolute inset-0 bg-[url('/images/hero-bg.webp')] bg-cover b",
+        "h": 924
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-metric-card flex min-h-[clamp(72px,6.1vw,88px)] flex-col items-center justi",
+        "h": 88
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-metric-card flex min-h-[clamp(72px,6.1vw,88px)] flex-col items-center justi",
+        "h": 88
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-metric-card flex min-h-[clamp(72px,6.1vw,88px)] flex-col items-center justi",
+        "h": 88
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-metric-card flex min-h-[clamp(72px,6.1vw,88px)] flex-col items-center justi",
+        "h": 88
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-metric-card flex min-h-[clamp(72px,6.1vw,88px)] flex-col items-center justi",
+        "h": 88
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "hero-metric-card flex min-h-[clamp(72px,6.1vw,88px)] flex-col items-center justi",
+        "h": 88
+      },
+      {
+        "tag": "SECTION",
+        "id": "about",
+        "cls": "mx-auto max-w-[1440px] px-5 py-20 lg:px-10",
+        "h": 649
+      },
+      {
+        "tag": "SECTION",
+        "id": "ecosystem",
+        "cls": "relative isolate mx-auto max-w-7xl px-5 pt-6 pb-8 sm:px-8",
+        "h": 878
+      },
+      {
+        "tag": "SECTION",
+        "id": "avx",
+        "cls": "mx-auto w-full max-w-[1390px] overflow-x-clip px-5 py-[clamp(64px,8vw,120px)] lg",
+        "h": 1085
+      },
+      {
+        "tag": "SECTION",
+        "id": "",
+        "cls": "mx-auto w-full max-w-[1344px] px-4 py-6 md:px-6",
+        "h": 608
+      },
+      {
+        "tag": "SECTION",
+        "id": "roadmap",
+        "cls": "mx-auto w-full max-w-[1344px] overflow-x-clip px-5 py-[clamp(64px,8vw,120px)] lg",
+        "h": 1215
+      },
+      {
+        "tag": "SECTION",
+        "id": "participate",
+        "cls": "mx-auto max-w-[1276px] px-5 py-12 xl:px-0",
+        "h": 546
+      }
+    ],
+    "imgCount": 9,
+    "imgs": [
+      {
+        "src": "https://www.avirvox.io/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=256&q=75",
+        "w": 157,
+        "h": 53,
+        "alt": "Avirvox Labs"
+      },
+      {
+        "src": "https://www.avirvox.io/_next/image?url=%2Fassets%2Fimages%2Fgraph.png&w=384&q=75",
+        "w": 313,
+        "h": 313,
+        "alt": "AVX utility connecting eight nodes in the Avirvox Labs ecosy"
+      },
+      {
+        "src": "https://www.avirvox.io/_next/image?url=%2Fassets%2Fimages%2Flogo-simple.png&w=256&q=75",
+        "w": 178,
+        "h": 161,
+        "alt": ""
+      },
+      {
+        "src": "https://www.avirvox.io/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=256&q=75",
+        "w": 157,
+        "h": 53,
+        "alt": "Avirvox Labs"
+      }
+    ],
+    "hasSticky": true,
+    "hasMarquee": true,
+    "hasChart": false,
+    "hasVideo": false,
+    "scrollH": 6654,
+    "title": "Avirvox Labs | The Participation Layer"
+  },
+  "css_urls": [
+    "https://www.avirvox.io/_next/static/immutable/chunks/05j-de81gn21v.css"
+  ]
+}
