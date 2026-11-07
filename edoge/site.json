@@ -1,35 +1,35 @@
 {
   "format": "meme-site-studio/site@1",
-  "name": "Elysion Doge",
-  "ticker": "EDOGE",
+  "name": "José Musk",
+  "ticker": "José",
   "template": "c54-baskt-cards",
-  "domain": "elysiondoge.lol",
+  "domain": "josemusk.lol",
   "ca": "TBA",
   "chain": "solana",
   "theme_mode": "original",
   "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "elysiondoge.lol"
+      "host": "josemusk.lol"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.elysiondoge.lol"
+      "host": "www.josemusk.lol"
     }
   ],
   "tagline": "",
-  "about": "A mythical Shiba finds its home on Solana.",
+  "about": "Building the meme economy from the ground up.",
   "x_url": "",
   "tg_url": "",
-  "ref_x_url": "",
+  "ref_x_url": "https://x.com/arlenellaban/status/2119142182674399495",
   "socials": [],
   "buy_url": "",
   "dexs_url": "",
@@ -43,7 +43,7 @@
   "wallet": "",
   "vercel_a": "",
   "vercel_cname": "",
-  "logo": "assets/logo.webp",
+  "logo": "assets/logo.png",
   "banner": "assets/banner.webp",
   "images": [
     "assets/meme1.webp",
@@ -74,5 +74,5 @@
   },
   "site_slug": "edoge",
   "project_id": "pmw6qplqmzrz3k",
-  "exported_at": "2026-11-07T18:31:46.635Z"
+  "exported_at": "2026-11-07T19:11:47.947Z"
 }
