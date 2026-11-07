@@ -10,7 +10,7 @@
   "theme_preset": "",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "Rocco the dog was confirmed by Rockstar in screenshots on November 5th 2026.",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/roccorobin_x",
+  "tg_url": "https://t.me/roccorobin_tg",
   "ref_x_url": "https://x.com/RockstarGames/status/2118357919229964343",
   "socials": [],
   "buy_url": "",
@@ -59,5 +59,5 @@
   },
   "site_slug": "rocco",
   "project_id": "pmw6mttb9q8fvz",
-  "exported_at": "2026-11-07T16:43:04.616Z"
+  "exported_at": "2026-11-07T16:47:22.981Z"
 }
