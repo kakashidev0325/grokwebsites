@@ -10,7 +10,7 @@
   "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -27,8 +27,8 @@
   ],
   "tagline": "",
   "about": "The larger the titty, the lower the fees on my blockchain",
-  "x_url": "",
-  "tg_url": "",
+  "x_url": "https://x.com/btcsolonx",
+  "tg_url": "https://t.me/btcsolontg",
   "ref_x_url": "",
   "socials": [],
   "buy_url": "",
@@ -72,5 +72,5 @@
   },
   "site_slug": "btcsol1",
   "project_id": "pmw7xc0nnw23tm",
-  "exported_at": "2026-11-08T14:33:58.272Z"
+  "exported_at": "2026-11-08T18:21:10.181Z"
 }
