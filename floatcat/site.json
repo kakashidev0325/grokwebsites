@@ -4,13 +4,13 @@
   "ticker": "FLOATCAT",
   "template": "c50-maxbnb",
   "domain": "floatcatsol.lol",
-  "ca": "TBA",
+  "ca": "6su7bnRHedae92kCE98uyuN7nqYHdCkMK6G9Z3uhpump",
   "chain": "solana",
   "theme_mode": "preset",
   "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "not_connected",
+  "domain_status": "live",
   "dns_records": [
     {
       "type": "A",
@@ -25,8 +25,8 @@
       "host": "www.floatcatsol.lol"
     }
   ],
-  "tagline": "The sky cat that just floats on Solana.",
-  "about": "A glossy white cat, navy stripes, and a sky that never lands.",
+  "tagline": "",
+  "about": "A smooth cat, a deep blue vibe, and pure meme energy.",
   "x_url": "",
   "tg_url": "",
   "ref_x_url": "",
@@ -36,9 +36,9 @@
   "supply": "",
   "tax": "",
   "lp": "",
-  "dex": "jupiter",
-  "dex_auto": true,
-  "dex_name": "Jupiter",
+  "dex": "pumpfun",
+  "dex_auto": false,
+  "dex_name": "Pump.fun",
   "native": "",
   "wallet": "",
   "vercel_a": "",
@@ -67,15 +67,15 @@
   ],
   "backgrounds": [],
   "resolved": {
-    "dex_name": "Jupiter",
+    "dex_name": "Pump.fun",
     "dex_logo": "assets/dex.png",
     "buy_url_source": "dex",
-    "buy_url": "https://jup.ag/",
-    "chart_page": "https://dexscreener.com/solana",
-    "chart_embed": "https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
+    "buy_url": "https://pump.fun/coin/6su7bnRHedae92kCE98uyuN7nqYHdCkMK6G9Z3uhpump",
+    "chart_page": "https://dexscreener.com/solana/6su7bnRHedae92kCE98uyuN7nqYHdCkMK6G9Z3uhpump",
+    "chart_embed": "https://dexscreener.com/solana/6su7bnRHedae92kCE98uyuN7nqYHdCkMK6G9Z3uhpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15",
     "chain_name": "Solana"
   },
   "site_slug": "floatcat",
   "project_id": "pmw75bxhg1ws0n",
-  "exported_at": "2026-11-08T01:21:10.570Z"
+  "exported_at": "2026-11-08T02:05:11.054Z"
 }
