@@ -25,8 +25,8 @@
       "host": "www.floatcatsol.lol"
     }
   ],
-  "tagline": "",
-  "about": "A smooth cat, a deep blue vibe, and pure meme energy.",
+  "tagline": "The sky cat that just floats on Solana.",
+  "about": "A glossy white cat, navy stripes, and a sky that never lands.",
   "x_url": "https://x.com/floatcatsol_x",
   "tg_url": "https://t.me/floatcatsol_tg",
   "ref_x_url": "",
@@ -77,5 +77,267 @@
   },
   "site_slug": "floatcat",
   "project_id": "pmw75bxhg1ws0n",
-  "exported_at": "2026-11-08T02:07:29.748Z"
+  "exported_at": "2026-11-08T02:07:29.748Z",
+  "copy_overrides": [
+    {
+      "find": "<span>Trade</span><br><span>memes.</span><br><span class=\"y\">Spread</span><br><span class=\"y\">giggles.</span>",
+      "replace": "<span>Float</span><br><span>Cat.</span><br><span class=\"y\">Just</span><br><span class=\"y\">floats.</span>"
+    },
+    {
+      "find": "The most memeable Float Cat on Solana.",
+      "replace": "The sky cat that just floats on Solana."
+    },
+    {
+      "find": "A smooth cat, a deep blue vibe, and pure meme energy.",
+      "replace": "A glossy white cat, navy stripes, and a sky that never lands."
+    },
+    {
+      "find": "World of Float Cat",
+      "replace": "Sky of Float Cat"
+    },
+    {
+      "find": "Meet <b>Float Cat</b>, the cheerful mascot turning on-chain activity into smiles, memes and good vibes.",
+      "replace": "Meet <b>Float Cat</b>, the glossy white cat with navy stripes, turning Solana trades into clouds and calm."
+    },
+    {
+      "find": "See the journey",
+      "replace": "See the sky path"
+    },
+    {
+      "find": "Scroll into Float Cat’s world",
+      "replace": "Scroll into Float Cat’s sky"
+    },
+    {
+      "find": "<em>it belongs.</em>",
+      "replace": "<em>it floats.</em>"
+    },
+    {
+      "find": "Meet Float Cat",
+      "replace": "Meet the sky cat"
+    },
+    {
+      "find": "A little mascot.<br>A very big mission.",
+      "replace": "A little sky cat.<br>A very calm float."
+    },
+    {
+      "find": "Float Cat is the cheerful face of $FLOATCAT on Solana. Every buy and sell carries a 0/0 tax, liquidity is Burned, and the whole thing can be checked on-chain.",
+      "replace": "Float Cat is the sky cat behind $FLOATCAT on Solana. Every buy and sell carries a 0/0 tax, liquidity is Burned, and the float can be checked on-chain."
+    },
+    {
+      "find": "The journey of a trade",
+      "replace": "The journey of a float"
+    },
+    {
+      "find": "See where every $FLOATCAT trade goes.",
+      "replace": "See where every $FLOATCAT trade lifts."
+    },
+    {
+      "find": "No mystery wallet. No vague promises. Just a simple flow built to be checked on-chain.",
+      "replace": "No mystery wallet. No vague promises. Just a simple float you can check on-chain."
+    },
+    {
+      "find": "A buy or sell happens on Solana.",
+      "replace": "A buy or sell lifts off on Solana."
+    },
+    {
+      "find": "Value is routed",
+      "replace": "Value lifts off"
+    },
+    {
+      "find": "<small>impact</small>",
+      "replace": "<small>clouds</small>"
+    },
+    {
+      "find": "Giggles funded",
+      "replace": "Clouds funded"
+    },
+    {
+      "find": "Replay the journey",
+      "replace": "Replay the sky ride"
+    },
+    {
+      "find": "Live on-chain impact",
+      "replace": "Live on-chain float"
+    },
+    {
+      "find": "Proof beats promises.",
+      "replace": "Floats beat promises."
+    },
+    {
+      "find": "lives on Solana",
+      "replace": "floats on Solana"
+    },
+    {
+      "find": "Vibe trail",
+      "replace": "Sky trail"
+    },
+    {
+      "find": "gm posted",
+      "replace": "sky posted"
+    },
+    {
+      "find": "meme shipped",
+      "replace": "meme floated"
+    },
+    {
+      "find": "new holder waved",
+      "replace": "holder lifted off"
+    },
+    {
+      "find": "rocket fueled",
+      "replace": "rocket lifted"
+    },
+    {
+      "find": "sticker dropped",
+      "replace": "sticker floated"
+    },
+    {
+      "find": "raid joined",
+      "replace": "cloud joined"
+    },
+    {
+      "find": "candle admired",
+      "replace": "cloud admired"
+    },
+    {
+      "find": "The world of Float Cat",
+      "replace": "The sky of Float Cat"
+    },
+    {
+      "find": "Learning. Exploring. Going up.",
+      "replace": "Floating. Drifting. Going up."
+    },
+    {
+      "find": "alt=\"Float Cat world 1\"",
+      "replace": "alt=\"Float Cat liftoff\""
+    },
+    {
+      "find": "<small>Markets</small><b>Float Cat only studies green candles.</b>",
+      "replace": "<small>Liftoff</small><b>Float Cat lifts off on green candles.</b>"
+    },
+    {
+      "find": "alt=\"Float Cat world 2\"",
+      "replace": "alt=\"Stay calm and float\""
+    },
+    {
+      "find": "<small>Cooking</small><b>Let him cook.</b>",
+      "replace": "<small>Calm</small><b>Stay calm. Float.</b>"
+    },
+    {
+      "find": "alt=\"Float Cat world 3\"",
+      "replace": "alt=\"Never selling Float Cat\""
+    },
+    {
+      "find": "<small>Discovery</small><b>Finding gems.</b>",
+      "replace": "<small>Hold</small><b>Never selling.</b>"
+    },
+    {
+      "find": "alt=\"Float Cat world 4\"",
+      "replace": "alt=\"Zero gravity gains\""
+    },
+    {
+      "find": "<small>Adventure</small><b>Ready for liftoff.</b>",
+      "replace": "<small>Orbit</small><b>Zero gravity gains.</b>"
+    },
+    {
+      "find": "Play the adventure ▶",
+      "replace": "Play the sky ride ▶"
+    },
+    {
+      "find": "giggles:",
+      "replace": "floats:"
+    },
+    {
+      "find": "More giggles",
+      "replace": "More clouds"
+    },
+    {
+      "find": "<em>scrapbook</em>",
+      "replace": "<em>cloud book</em>"
+    },
+    {
+      "find": "alt=\"Float Cat meme 1\"",
+      "replace": "alt=\"Hodl and nap\""
+    },
+    {
+      "find": "#01 green candles only",
+      "replace": "#01 hodl and nap"
+    },
+    {
+      "find": "alt=\"Float Cat meme 2\"",
+      "replace": "alt=\"Paper hands? Not me\""
+    },
+    {
+      "find": "#02 let him cook",
+      "replace": "#02 no paper hands"
+    },
+    {
+      "find": "alt=\"Float Cat meme 3\"",
+      "replace": "alt=\"Rides the pump\""
+    },
+    {
+      "find": "#03 finding gems",
+      "replace": "#03 rides the pump"
+    },
+    {
+      "find": "alt=\"Float Cat meme 4\"",
+      "replace": "alt=\"Wagmi on Solana\""
+    },
+    {
+      "find": "#04 liftoff",
+      "replace": "#04 wagmi on sol"
+    },
+    {
+      "find": "alt=\"Float Cat meme 5\"",
+      "replace": "alt=\"Inner peace, outer gains\""
+    },
+    {
+      "find": "#05 hello frens",
+      "replace": "#05 inner peace"
+    },
+    {
+      "find": "alt=\"Float Cat meme 6\"",
+      "replace": "alt=\"Strong hands only\""
+    },
+    {
+      "find": "#06 study break",
+      "replace": "#06 strong hands"
+    },
+    {
+      "find": "alt=\"Float Cat meme 7\"",
+      "replace": "alt=\"Next stop: the moon\""
+    },
+    {
+      "find": "#07 sunny day",
+      "replace": "#07 balloon moon"
+    },
+    {
+      "find": "alt=\"Float Cat meme 8\"",
+      "replace": "alt=\"Bull run party\""
+    },
+    {
+      "find": "#08 to the moon",
+      "replace": "#08 bull run party"
+    },
+    {
+      "find": "src=\"assets/meme1.webp?v=a8a9e8db\" alt=\"Float Cat\"",
+      "replace": "src=\"assets/meme1.webp?v=a8a9e8db\" alt=\"Just floating to the moon\""
+    },
+    {
+      "find": "Ready for liftoff?",
+      "replace": "Ready to float up?"
+    },
+    {
+      "find": "Join Float Cat on Solana.",
+      "replace": "Join the float on Solana."
+    },
+    {
+      "find": "Trade $FLOATCAT on Pump.fun and join the community.",
+      "replace": "Trade $FLOATCAT on Pump.fun and float with the community."
+    },
+    {
+      "find": "Float Cat is a community meme token.",
+      "replace": "Float Cat is a community meme token on Solana."
+    }
+  ]
 }
