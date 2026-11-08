@@ -1,32 +1,32 @@
 {
   "format": "meme-site-studio/site@1",
-  "name": "Big Testicle Coin",
+  "name": "Big Titty Claudia",
   "ticker": "BTC",
-  "template": "ut-hyperinu",
-  "domain": "btconsol.lol",
+  "template": "c09-manifesting",
+  "domain": "btcsol.fun",
   "ca": "TBA",
   "chain": "solana",
-  "theme_mode": "original",
-  "theme_preset": "",
+  "theme_mode": "preset",
+  "theme_preset": "solana",
   "theme_primary": "#9945ff",
   "theme_secondary": "#14f195",
-  "domain_status": "live",
+  "domain_status": "not_connected",
   "dns_records": [
     {
       "type": "A",
       "name": "@",
       "value": "76.76.21.21",
-      "host": "btconsol.lol"
+      "host": "btcsol.fun"
     },
     {
       "type": "CNAME",
       "name": "www",
       "value": "cname.vercel-dns.com",
-      "host": "www.btconsol.lol"
+      "host": "www.btcsol.fun"
     }
   ],
   "tagline": "",
-  "about": "Hold $BTC. Receive BTC from trading fees. Paid in WBTC.",
+  "about": "The larger the titty, the lower the fees on my blockchain",
   "x_url": "",
   "tg_url": "",
   "ref_x_url": "",
@@ -44,7 +44,7 @@
   "vercel_a": "",
   "vercel_cname": "",
   "logo": "assets/logo.png",
-  "banner": "assets/banner.webp",
+  "banner": "assets/banner.png",
   "images": [],
   "characters": [],
   "backgrounds": [],
@@ -58,6 +58,6 @@
     "chain_name": "Solana"
   },
   "site_slug": "btc",
-  "project_id": "pmvwrlg5tcbsu0",
-  "exported_at": "2026-10-31T18:58:50.587Z"
+  "project_id": "pmw7xc0nnw23tm",
+  "exported_at": "2026-11-08T14:24:56.282Z"
 }
